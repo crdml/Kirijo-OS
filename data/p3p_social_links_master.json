@@ -1,0 +1,2380 @@
+[
+  {
+    "id": 0,
+    "arcana_name": "El Loco (The Fool)",
+    "arcana_image": "fool.jpg",
+    "type": "shared_automatic",
+    "description": "Representa al equipo SEES (Special Extracurricular Execution Squad).",
+    "routes": {
+      "shared": {
+        "character": "SEES Team",
+        "image": "sees_team.jpg",
+        "location": "Residencia Iwatodai / Tartarus",
+        "unlock_condition": "Automático al inicio del juego (18 de Abril).",
+        "notes": "Este Social Link sube de nivel automáticamente conforme avanza la historia principal. No requiere respuestas.",
+        "ranks": [
+          { "rank": 1, "date": "4/18", "event": "Despertar del poder" },
+          { "rank": 2, "date": "4/20", "event": "Unión al SEES" },
+          { "rank": 3, "date": "5/9", "event": "Luna Llena (Tren)" },
+          { "rank": 4, "date": "7/7", "event": "Tras derrotar al Hierophant" },
+          { "rank": 5, "date": "7/22", "event": "Vacaciones en Yakushima" },
+          { "rank": 6, "date": "11/2", "event": "Final del Festival Cultural" },
+          { "rank": 7, "date": "11/4", "event": "Muerte de [Spoiler]" },
+          { "rank": 8, "date": "No existe (Salta directo)" },
+          { "rank": 9, "date": "11/28", "event": "La decisión del equipo" },
+          { "rank": 10, "date": "12/31", "event": "La decisión final" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 1,
+    "arcana_name": "El Mago (The Magician)",
+    "arcana_image": "magician.jpg",
+    "type": "split_character",
+    "description": "Representa la iniciativa y el poder masculino.",
+    "routes": {
+      "male": {
+        "character": "Kenji Tomochika",
+        "image": "kenji.jpg",
+        "location": "Clase 2-F",
+        "availability": "Martes, Jueves, Viernes (Días de clase)",
+        "unlock_condition": "Automático el 22 de Abril.",
+        "romance": false,
+        "ranks": [
+          {
+            "rank": 1,
+            "type": "automatic"
+          },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Kenji habla del Ramen...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Kenji revela su secreto...", "best_choice": "¡A mí también! (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Kenji harto del Ramen...", "best_choice": "¿Qué, la vida? (+0)" },
+              { "context": "Kenji habla de su plan...", "best_choice": "¡Buena suerte! (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Kenji pide consejo...", "best_choice": "¡Buena suerte! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Kenji dice 'Ya sabes'...", "best_choice": "De acuerdo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Planes futuros...", "best_choice": "Tienes grandes planes (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Leyendo revista...", "best_choice": "¡Léela! (+3)" },
+              { "context": "No puede comer...", "best_choice": "¡Felicidades! (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "¿Tengo algo en la cara?...", "best_choice": "¿Estás en problemas? (+3)" },
+              { "context": "Quiero hablar con ella...", "best_choice": "Deberías ir con ella (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Te da un huevo...", "best_choice": "Enfréntate a él (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Despedida / Mudanza...", "best_choice": "¡Mucha suerte! / ¡Sé feliz! (+3)" }
+            ]
+          }
+        ]
+      },
+      "female": {
+        "character": "Junpei Iori",
+        "image": "junpei.jpg",
+        "location": "Clase 2-F",
+        "availability": "Martes, Jueves (Días de clase)",
+        "unlock_condition": "Automático el 23 de Abril.",
+        "romance": false,
+        "ranks": [
+          {
+            "rank": 1,
+            "type": "automatic"
+          },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Junpei cree que le gritas...", "best_choice": "¡Venga, hombre! (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Sobre los hombres...", "best_choice": "¡Defiéndete! (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Comiendo Ramen...", "best_choice": "No te culpo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Fotos...", "best_choice": "¡Sí, vamos! (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Máquina de gancho...", "best_choice": "Solo inténtalo (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Estudiar...", "best_choice": "Hazlo por él (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Sobre su padre...", "best_choice": "Pregúntale (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Se siente raro...", "best_choice": "Somos compañeros / Gracias (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Sube automáticamente tras el evento del Rango 9."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "arcana_name": "Sacerdotisa (Priestess)",
+    "arcana_image": "priestess.jpg",
+    "type": "split_interaction",
+    "description": "Representa la sabiduría, el misterio y la paciencia.",
+    "routes": {
+      "male": {
+        "character": "Fuuka Yamagishi",
+        "image": "fuuka.jpg",
+        "location": "Pasillo 2F (Fuera de tu clase)",
+        "availability": "Lunes, Viernes, Sábado (Día)",
+        "unlock_condition": "Requiere Coraje al Máximo (Rank 6: Badass).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Fuuka duda de sí misma...", "best_choice": "Claro que sí (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Te da comida...", "best_choice": "Creo en ti (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Se siente inútil...", "best_choice": "¡No digas eso! / Oh, ¿de verdad? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Prueba de comida 2...", "best_choice": "Lo has hecho bien (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Amas de casa...", "best_choice": "No pasa nada (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Reflexionando...", "best_choice": "Eso es lo importante (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Determinación...", "best_choice": "Eres muy trabajadora (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Sobre sus padres...", "best_choice": "Juntos, tú y yo (+3)", "romance_flag": true, "notes": "Elegir 'Juntos' inicia el Romance. Otra opción = Amistad." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Fuuka Yamagishi",
+        "image": "fuuka.jpg",
+        "location": "Pasillo 2F (Fuera de tu clase)",
+        "availability": "Lunes, Jueves, Sábado (Día)",
+        "unlock_condition": "Requiere Coraje Nivel 2. Unirse al Club Cultural (Arte/Foto).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Fuuka duda...", "best_choice": "Eres muy trabajadora (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Quiere cocinar...", "best_choice": "Bolas de arroz (Onigiri) (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Se disculpa...", "best_choice": "No te preocupes por eso (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Cometió un error...", "best_choice": "Hiciste lo que pudiste (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Cocinar es divertido...", "best_choice": "Hagamos algo juntas (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Sobre libros...", "best_choice": "La librería (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Quiere cambiar...", "best_choice": "Tú puedes hacerlo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Sobre su familia...", "best_choice": "Seremos amigas para siempre (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "arcana_name": "Emperatriz (Empress)",
+    "arcana_image": "empress.jpg",
+    "type": "split_interaction",
+    "description": "Representa la fertilidad, la abundancia y la autoridad femenina.",
+    "routes": {
+      "male": {
+        "character": "Mitsuru Kirijo",
+        "image": "mitsuru.jpg",
+        "location": "Pasillo 1F (Frente a Facultad)",
+        "availability": "Martes, Jueves, Sábado (Día)",
+        "unlock_condition": "Disponible 21 Nov. Requiere Intelecto MÁXIMO (Genius).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Comiendo ramen...", "best_choice": "¿Es la primera vez? (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "¿Quién paga?...", "best_choice": "Invito yo (+3)" },
+              { "context": "Sobre el plebeyo...", "best_choice": "¿Te ha gustado? (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Cine...", "best_choice": "¿Qué ha pasado? (+3)" },
+              { "context": "Reflexión...", "best_choice": "Es el resultado del amor (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Matrimonio...", "best_choice": "Me alegro de que lo hayas pasado bien (+3)" },
+              { "context": "Sobre el novio...", "best_choice": "Un chico en moto (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Biblioteca...", "best_choice": "¿Buscas algún libro? (+3)" },
+              { "context": "Se divierte...", "best_choice": "Eso son buenas noticias (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Discute...", "best_choice": "¡No te rindas! (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Se desahoga...", "best_choice": "Sácalo todo (+3)" },
+              { "context": "Insultos...", "best_choice": "Es culpa tuya (en sentido de apoyo/responsabilidad) / Sácalo todo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Reflexiona...", "best_choice": "Eso es vivir (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Mitsuru Kirijo",
+        "image": "mitsuru.jpg",
+        "location": "Pasillo 1F (Frente a Facultad)",
+        "availability": "Martes, Jueves, Sábado (Día)",
+        "unlock_condition": "Disponible 21 Nov. Requiere Intelecto MÁXIMO (Genius).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Sala del consejo...", "best_choice": "Sorprenderla (+3)" },
+              { "context": "Sobre el té...", "best_choice": "No pega contigo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Al cine...", "best_choice": "¡Vamos! (+3)" },
+              { "context": "Hamburguesas...", "best_choice": "¿Nunca has comido una? (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Ropa...", "best_choice": "¿Estás... perdida? (+3)" },
+              { "context": "Estilo...", "best_choice": "¡Vamos a coordinarnos! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Suspira...", "best_choice": "¿Estás cansada? (+3)" },
+              { "context": "Sobre Yukari...", "best_choice": "Lo entenderá algún día (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Duda...", "best_choice": "¿Pasa algo? (+3)" },
+              { "context": "Prometido...", "best_choice": "¿De verdad quieres hacer esto? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Grita...", "best_choice": "¡¿Qué ha pasado?! (+3)" },
+              { "context": "Decisión...", "best_choice": "Es admirable (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Se siente mal...", "best_choice": "No estás sola (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Agradece...", "best_choice": "Me alegra serte útil (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "arcana_name": "Emperador (Emperor)",
+    "arcana_image": "emperor.jpg",
+    "type": "split_interaction",
+    "description": "Representa la estructura, las reglas y el liderazgo paterno.",
+    "routes": {
+      "male": {
+        "character": "Hidetoshi Odagiri",
+        "image": "hidetoshi.jpg",
+        "location": "Sala del Consejo Estudiantil (2F)",
+        "availability": "Lunes, Miércoles, Viernes (Día)",
+        "unlock_condition": "Únete al Consejo Estudiantil (27 de Abril).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Hidetoshi se queja de que es una pérdida de tiempo...", "best_choice": "No tiene sentido (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Sobre los profesores...", "best_choice": "Buen trabajo (Good work) (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Sobre su investigación...", "best_choice": "Buen trabajo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Hidetoshi está furioso...", "best_choice": "No pueden tratarte así (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Hidetoshi quiere ayuda...", "best_choice": "Pero si acabo de llegar (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Sobre el castigo...", "best_choice": "Debería ser castigado (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Hidetoshi es acusado...", "best_choice": "Yo no he sido (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Hidetoshi se culpa...", "best_choice": "No te culpes (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Evento final...", "best_choice": "Cualquiera (+3)" }
+            ]
+          }
+        ]
+      },
+      "female": {
+        "character": "Hidetoshi Odagiri",
+        "image": "hidetoshi.jpg",
+        "location": "Sala del Consejo Estudiantil (2F)",
+        "availability": "Lunes, Miércoles, Viernes (Día)",
+        "unlock_condition": "Únete al Consejo Estudiantil (27 de Abril).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Hidetoshi se queja...", "best_choice": "Es una pérdida de tiempo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Sobre el trabajo...", "best_choice": "Cualquiera (No da puntos clave)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Investigación...", "best_choice": "Trabajas muy duro (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Hidetoshi grita...", "best_choice": "¡Que malvados! (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Hidetoshi te detiene...", "best_choice": "Pero si acabo de llegar (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Castigo...", "best_choice": "Debería sufrir (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Acusación...", "best_choice": "Yo no he sido (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Hidetoshi está triste...", "best_choice": "No te culpes (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Evento final...", "best_choice": "Cualquiera (+3)" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "arcana_name": "Hierofante (Hierophant)",
+    "arcana_image": "hierophant.jpg",
+    "type": "shared",
+    "description": "Representa la tradición, la educación y la sabiduría convencional.",
+    "routes": {
+      "shared": {
+        "character": "Bunkichi y Mitsuko",
+        "image": "bunkichi_mitsuko.jpg",
+        "location": "Librería Bookworms (Iwatodai Strip Mall)",
+        "availability": "Martes a Sábado (Día)",
+        "unlock_condition": "Árbol Caqui: Consigue la Hoja de Caqui en el instituto (Corredor conecta con gimnasio) y llévasela.",
+        "romance": false,
+        "ranks": [
+          {
+            "rank": 1,
+            "type": "automatic",
+            "notes": "Se desbloquea automáticamente al entregar la hoja."
+          },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Le he dicho a él...", "best_choice": "Cualquiera (Da igual)" },
+              { "context": "Es todo gracias a ti...", "best_choice": "¿Yo? No he hecho nada (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Bunkichi busca algo...", "best_choice": "Amigos (+3)", "notes": "También puedes elegir 'El cinturón' -> 'No hay nada' -> 'Amigos' y da lo mismo." },
+              { "context": "Mitsuko está preocupada...", "best_choice": "Tranquila, está bien (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Bunkichi quiere limpiar...", "best_choice": "Yo también ayudaré (+3)" },
+              { "context": "Mitsuko pregunta si vienes...", "best_choice": "¡Esperadme! / ¡Voy! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Bunkichi habla de comida...", "best_choice": "¿Por qué? / ¿Qué pasa? (+3)" },
+              { "context": "Bunkichi te da las gracias...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Bunkichi discute...", "best_choice": "Por favor, dejad de pelear (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Mitsuko pregunta por el árbol...", "best_choice": "¿Qué ha pasado? (+3)" },
+              { "context": "Sobre el árbol conmemorativo...", "best_choice": "Eso es genial / Me alegro (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Petición...", "best_choice": "Adelante / Escribe la petición (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Cartas...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Evento final del árbol...", "best_choice": "Cualquiera (+3)" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "arcana_name": "Enamorados (Lovers)",
+    "arcana_image": "lovers.jpg",
+    "type": "split_interaction",
+    "description": "Representa la elección, la unión y la armonía emocional.",
+    "routes": {
+      "male": {
+        "character": "Yukari Takeba",
+        "image": "yukari.jpg",
+        "location": "Clase 2-F",
+        "availability": "Lunes, Miércoles, Jueves, Sábado (Día)",
+        "unlock_condition": "Disponible desde el 25 de Julio. Requiere Encanto MÁXIMO (Charismatic).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Sobre las gerberas...", "best_choice": "El rosa es bonito (+3)" },
+              { "context": "Rumores...", "best_choice": "Eso es horrible (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Yukari habla de su madre...", "best_choice": "Cualquiera (No da puntos clave)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Yukari se siente observada...", "best_choice": "¿Estás bien? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Buscando problemas...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Hombres...", "best_choice": "Lo siento (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Yukari te da las gracias...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Yukari reflexiona...", "best_choice": "Suena bien (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Yukari pide un favor...", "best_choice": "Vale (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Yukari confiesa...", "best_choice": "Te quiero (+3)", "romance_flag": true, "notes": "Elegir 'Te quiero' inicia el romance. Elegir 'Eres una amiga preciada' es amistad." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Yukari Takeba",
+        "image": "yukari.jpg",
+        "location": "Clase 2-F",
+        "availability": "Martes, Viernes (Día)",
+        "unlock_condition": "Disponible desde el 28 de Abril. Requiere Encanto MÁXIMO (Charismatic).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Yukari sobre su madre...", "best_choice": "Deberías haber preguntado (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Eligiendo flores...", "best_choice": "Hagamos un ramo de rosas (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Yukari se enfada...", "best_choice": "¿Estás bien? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Yukari sobre el dinero...", "best_choice": "Lo siento... (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Yukari agradece...", "best_choice": "Cuando quieras (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Ropa...", "best_choice": "Estaría bien verla (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Yukari se preocupa...", "best_choice": "Solo quiero ayudarte (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Relación...", "best_choice": "Para eso están los amigos (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "arcana_name": "Carro (Chariot)",
+    "arcana_image": "chariot.jpg",
+    "type": "split_character",
+    "description": "Representa la victoria, la fuerza de voluntad y el autocontrol.",
+    "routes": {
+      "male": {
+        "character": "Kazushi Miyamoto",
+        "image": "kazushi.jpg",
+        "location": "Clase 2-F / Club Deportivo",
+        "availability": "Lunes, Martes, Jueves, Viernes (Día)",
+        "unlock_condition": "Unirse al club de Kendo, Natación o Atletismo (23 de Abril).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Entrenamiento...", "best_choice": "Aguántate (+3)", "notes": "Opción dura, pero es la que más sube." },
+              { "context": "Sobre su meta...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Kazushi jadea...", "best_choice": "¿Estás bien? (+3)" },
+              { "context": "Curarse...", "best_choice": "¿Te curarás? (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Kazushi pregunta...", "best_choice": "¿Dónde has estado? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Hospital...", "best_choice": "¿El hospital? (+3)" },
+              { "context": "Hombro...", "best_choice": "Deja que use tu hombro (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Aguantar...", "best_choice": "¡Aguanta! (+3)" },
+              { "context": "Meta...", "best_choice": "¿Esa es tu meta? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Rodilla...", "best_choice": "¿Qué tal tu rodilla? (+3)" },
+              { "context": "Fuerza...", "best_choice": "Tienes que ser más duro (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Mirando lejos...", "best_choice": "Mira hacia delante (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Sobre la carrera...", "best_choice": "Estoy de acuerdo (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Final...", "best_choice": "Cualquiera (+3)" }
+            ]
+          }
+        ]
+      },
+      "female": {
+        "character": "Rio Iwasaki",
+        "image": "rio.jpg",
+        "location": "Pasillo 2F / Club Deportivo",
+        "availability": "Lunes, Miércoles, Viernes (Día)",
+        "unlock_condition": "Unirse al club de Tenis o Voleibol (24 de Abril).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Rio llega tarde...", "best_choice": "¡Te pillé! (+3)" },
+              { "context": "Entrenamiento...", "best_choice": "Nunca es suficiente (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Entrenar...", "best_choice": "Eso es ser dedicado (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Otra escuela...", "best_choice": "¡No eres ninguna inútil! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Comiendo...", "best_choice": "Porque me gustas (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Kenji (amigo)...", "best_choice": "Que te gusta (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Rio se siente mal...", "best_choice": "¡Anímate! (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Declaración...", "best_choice": "Eso es tener agallas (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Rechazo...", "best_choice": "Cualquiera (+3)" },
+              { "context": "Gracias...", "best_choice": "Me alegro de ser tu amiga (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Final...", "best_choice": "Cualquiera (+3)" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "arcana_name": "Justicia (Justice)",
+    "arcana_image": "justice.jpg",
+    "type": "split_character",
+    "description": "Representa la verdad, la equidad y la ley.",
+    "routes": {
+      "male": {
+        "character": "Chihiro Fushimi",
+        "image": "chihiro.jpg",
+        "location": "Pasillo 2F (Frente al Consejo)",
+        "availability": "Martes, Jueves, Sábado (Día)",
+        "unlock_condition": "Únete al Consejo (Emperor). Habla con ella 3 veces en días distintos para que pierda el miedo.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Chihiro se disculpa...", "best_choice": "No te preocupes (+3)" },
+              { "context": "Leyendo...", "best_choice": "Leo mangas shojo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Chihiro tiembla...", "best_choice": "Está bien (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Acoso...", "best_choice": "Háblale con firmeza (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Chihiro casi se cae...", "best_choice": "Tómale la mano (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Manga...", "best_choice": "¿Es bueno? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Malentendido...", "best_choice": "No es culpa tuya (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Chihiro quiere defenderse...", "best_choice": "Habla con él (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Chihiro confiesa...", "best_choice": "No te vayas (+3)", "romance_flag": true, "notes": "Elegir 'No te vayas' inicia el Romance. 'Somos amigos' cancela el romance." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Ken Amada",
+        "image": "ken.jpg",
+        "location": "Residencia Iwatodai (Noche)",
+        "availability": "Martes, Jueves (Noche)",
+        "unlock_condition": "Disponible desde el 1 de Septiembre. Requiere Coraje MÁXIMO (Badass).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Ken quiere ver TV...", "best_choice": "Adelante (+3)" },
+              { "context": "Novelas...", "best_choice": "A mí me gustan (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Comida rápida...", "best_choice": "¿Quieres venir? (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Cena...", "best_choice": "Eres enorme (+3)", "notes": "Aunque suene raro, le gusta que le traten como adulto/grande." }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Altura...", "best_choice": "Está bien (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Cambio...", "best_choice": "Tengo un plan (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Ken se esfuerza...", "best_choice": "No te fuerces (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Ken pregunta...", "best_choice": "Eres especial (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Ken habla del futuro...", "best_choice": "Te esperaré (+3)", "romance_flag": true, "notes": "Romance (Wait for you). Amistad (Good luck)." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "arcana_name": "Ermitaño (Hermit)",
+    "arcana_image": "hermit.jpg",
+    "type": "split_character",
+    "description": "Representa la introspección, la soledad y la guía interior.",
+    "routes": {
+      "male": {
+        "character": "Maya (Y-Ko)",
+        "image": "maya.jpg",
+        "location": "Tu habitación (Juego MMORPG)",
+        "availability": "Domingos y Festivos (Día)",
+        "unlock_condition": "Junpei te da el juego 'Innocent Sin' el 29 de Abril.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Maya pregunta...", "best_choice": "Claro (+3)" },
+              { "context": "El sol...", "best_choice": "Hace sol (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Maya está triste...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Maya habla del jefe...", "best_choice": "¡Deja de beber! / ¡No te cases! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Un profesor nuevo...", "best_choice": "¿Quién es? (+3)" },
+              { "context": "El jugador...", "best_choice": "Un tal Sr. E (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Maya está furiosa...", "best_choice": "¡Qué bastardo! (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "El profesor...", "best_choice": "Ella está enamorada (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Confesión...", "best_choice": "Ni hablar (+3)" },
+              { "context": "Prisa...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Maya piensa...", "best_choice": "Ni hablar (+3)" },
+              { "context": "Qué hacer...", "best_choice": "¿Qué piensas tú? (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Saori Hasegawa",
+        "image": "saori.jpg",
+        "location": "Biblioteca o Enfermería (Según comité)",
+        "availability": "Martes, Jueves (Día)",
+        "unlock_condition": "Unirse al Comité de Biblioteca o Salud (8 de Mayo).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Saori se esconde...", "best_choice": "Quédate aquí (+3)" },
+              { "context": "Disculpa...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Saori invita...", "best_choice": "Quedémonos un poco más (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Materiales...", "best_choice": "Tú puedes hacerlo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Rumores...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Malos comentarios...", "best_choice": "Les daré una paliza (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Expulsión...", "best_choice": "¡No te vayas! (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Saori se rinde...", "best_choice": "¡No dejes que ganen! (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Saori resiste...", "best_choice": "Creo en ti (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "arcana_name": "Rueda de la Fortuna (Fortune)",
+    "arcana_image": "fortune.jpg",
+    "type": "split_character",
+    "description": "Representa el destino, los ciclos y el cambio inevitable.",
+    "routes": {
+      "male": {
+        "character": "Keisuke Hiraga",
+        "image": "keisuke.jpg",
+        "location": "Sala del Club Cultural (Arte/Música/Foto)",
+        "availability": "Martes, Miércoles, Jueves (Día)",
+        "unlock_condition": "Unirse al Club Cultural (17 de Junio).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Keisuke pregunta...", "best_choice": "Buen trabajo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Keisuke se rinde...", "best_choice": "Está bien equivocarse / Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Keisuke se queja...", "best_choice": "¿Vas a abandonar? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Sobre su padre...", "best_choice": "Deberías decírselo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Estudiar fuera...", "best_choice": "Lo que tú decidas (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Keisuke se va...", "best_choice": "Haz lo que amas (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Críticas...", "best_choice": "Estarás bien (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Premio...", "best_choice": "Felicidades (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Ryoji Mochizuki",
+        "image": "ryoji.jpg",
+        "location": "Clase 2-F",
+        "availability": "Viernes, Sábado, Domingo (Día)",
+        "unlock_condition": "Automático el 9 de Noviembre. ¡PRIORIDAD MÁXIMA! Tiene fechas muy estrictas.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "11/9" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Cine...", "best_choice": "Vale (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Comiendo crepes...", "best_choice": "Lo que sea (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Regalo...", "best_choice": "Gracias (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Viaje a Kioto...", "best_choice": "Sí (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Escuela...", "best_choice": "Tienes razón (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Trabajo...", "best_choice": "Buen trabajo (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Estar solo...", "best_choice": "Quédate conmigo (+3)", "notes": "Elegir 'Quédate conmigo' es obligatorio para el Romance." }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Recuerdos...", "best_choice": "No te vayas (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "arcana_name": "Fuerza (Strength)",
+    "arcana_image": "strength.jpg",
+    "type": "split_character",
+    "description": "Representa el coraje, la compasión y el control sobre los instintos.",
+    "routes": {
+      "male": {
+        "character": "Yuko Nishiwaki",
+        "image": "yuko.jpg",
+        "location": "Pasillo 2F (Cerca de escaleras)",
+        "availability": "Miércoles, Sábado (Día)",
+        "unlock_condition": "Pídele caminar a casa 2 veces tras desbloquear Chariot (Kazushi).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Dieta...", "best_choice": "¿Qué ha pasado? (+3)" },
+              { "context": "Acuerdo...", "best_choice": "Estoy de acuerdo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Niños...", "best_choice": "No realmente (+3)" },
+              { "context": "Irse...", "best_choice": "Vamos (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Dieta de nuevo...", "best_choice": "No hace falta (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Entrenador...", "best_choice": "No le hagas caso (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Confianza...", "best_choice": "Te admiran (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Futuro...", "best_choice": "¿Estás aliviada? (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Un chico...", "best_choice": "¿Un chico? (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Olvido...", "best_choice": "¿Olvidar? (+3)" },
+              { "context": "Confesión...", "best_choice": "Te quiero (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      },
+      "female": {
+        "character": "Koromaru",
+        "image": "koromaru.jpg",
+        "location": "Residencia Iwatodai (Salón)",
+        "availability": "Cualquier noche (Si tienes comida para perro)",
+        "unlock_condition": "Disponible 15 de Agosto. Requiere Priestess (Fuuka) Rank 1 y comida de perro.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Paseo...", "best_choice": "Le gustas (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Cepillado...", "best_choice": "Es suave (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Ladrando...", "best_choice": "Marca territorio (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Comida...", "best_choice": "Es muy listo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Santuario...", "best_choice": "Protegiendo (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Aigis...", "best_choice": "Son amigos (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Collar...", "best_choice": "Le queda bien (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Paseo final...", "best_choice": "Siempre juntos (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el objeto clave 'Collar Sucio'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "arcana_name": "El Colgado (Hanged Man)",
+    "arcana_image": "hangedman.jpg",
+    "type": "shared",
+    "description": "Representa el sacrificio, la pausa y ver las cosas desde otra perspectiva.",
+    "routes": {
+      "shared": {
+        "character": "Maiko Oohashi",
+        "image": "maiko.jpg",
+        "location": "Santuario Naganaki (Parque)",
+        "availability": "Lunes a Sábado (Día)",
+        "unlock_condition": "Necesitas 'Takoyaki Raro' (Octopia) y 'Mad Bull' (Residencia). Dale comida un día y bebida otro día.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Maiko quiere jugar...", "best_choice": "Seguro / Vamos (+3)" },
+              { "context": "Tienda...", "best_choice": "Bunbuku (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Padres...", "best_choice": "Quizás está enfermo (+3)" },
+              { "context": "Preocupación...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Cumpleaños...", "best_choice": "Me alegro por ti (+3)" },
+              { "context": "Olvidar...", "best_choice": "Nadie te olvidará (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Maiko llora...", "best_choice": "Eso es malo (+3)" },
+              { "context": "Padres peleando...", "best_choice": "No es verdad (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Huir de casa...", "best_choice": "Cálmate (+3)" },
+              { "context": "Juguetes...", "best_choice": "No los necesitas (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Padres desaparecidos...", "best_choice": "Busquémoslos (+3)" },
+              { "context": "Culpa...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Comida...", "best_choice": "Hamburguesas (+3)" },
+              { "context": "Maiko fue valiente...", "best_choice": "Sí, lo fuiste (+3)" },
+              { "context": "Decisión...", "best_choice": "Elige a tu padre (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Despedida...", "best_choice": "Amigos para siempre (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Anillo de Cuentas'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "arcana_name": "Muerte (Death)",
+    "arcana_image": "death.jpg",
+    "type": "shared_automatic",
+    "description": "Representa el fin de un ciclo, la transformación y el renacimiento.",
+    "routes": {
+      "shared": {
+        "character": "Pharos",
+        "image": "pharos.jpg",
+        "location": "Tu habitación (Noche)",
+        "unlock_condition": "Automático el 12 de Junio.",
+        "notes": "Sube automáticamente en fechas específicas de la historia principal.",
+        "ranks": [
+          { "rank": 1, "date": "6/12", "event": "Pacto inicial" },
+          { "rank": 2, "date": "7/1", "event": "Advertencia" },
+          { "rank": 3, "date": "7/7", "event": "Tras el hotel" },
+          { "rank": 4, "date": "7/12", "event": "Recuerdos" },
+          { "rank": 5, "date": "8/7", "event": "Final de verano" },
+          { "rank": 6, "date": "9/12", "event": "La verdad se acerca" },
+          { "rank": 7, "date": "10/6", "event": "Antes de la luna llena" },
+          { "rank": 8, "date": "11/4", "event": "El final del camino" },
+          { "rank": 9, "date": "11/4", "event": "Sube inmediatamente tras el 8" },
+          { "rank": 10, "date": "11/4", "event": "Final del vínculo (Maximización automática)" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "arcana_name": "Templanza (Temperance)",
+    "arcana_image": "temperance.jpg",
+    "type": "shared",
+    "description": "Representa el equilibrio, la moderación y la mezcla de culturas.",
+    "routes": {
+      "shared": {
+        "character": "Bebe (Andre Laurent Jean Geraux)",
+        "image": "bebe.jpg",
+        "location": "Aula de Economía Doméstica (Pasillo 1F)",
+        "availability": "Martes, Miércoles, Viernes (Día)",
+        "unlock_condition": "Requiere Academics Rank 2 (Average). Debes haber alcanzado Hierofante Rank 3 primero para conocerlo.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Bebe te enseña...", "best_choice": "¡Sí, Japón es genial! (+3)" },
+              { "context": "Comer...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Diseños...", "best_choice": "¿Un kimono? (+3)" },
+              { "context": "Costura...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Bebe parece triste...", "best_choice": "¿Estás bien? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Restaurante...", "best_choice": "Claro (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Bebe quiere quedarse...", "best_choice": "Tómate un descanso (+3)" },
+              { "context": "Idea...", "best_choice": "¡Buena idea! (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Proyecto...", "best_choice": "Es una buena idea (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Tío...", "best_choice": "Seguro que acepta (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "País...", "best_choice": "Pregúntale sobre su país (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Monedero'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "arcana_name": "Diablo (Devil)",
+    "arcana_image": "devil.jpg",
+    "type": "shared",
+    "description": "Representa la tentación, el materialismo y los impulsos oscuros.",
+    "routes": {
+      "shared": {
+        "character": "Presidente Tanaka",
+        "image": "tanaka.jpg",
+        "location": "Centro Comercial Paulownia (Noche)",
+        "availability": "Martes, Jueves, Sábado (Noche)",
+        "unlock_condition": "Requiere Charm Rank 4 (Smooth). Pagarle 40.000 yenes en total durante 3 noches.",
+        "romance": false,
+        "notes": "Este Social Link avanza automáticamente cada vez que lo visitas. Las respuestas no afectan al progreso, pero estas son las temáticas.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Placebo...", "best_choice": "Cualquiera (¡El dinero manda!)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Trajes de baño...", "best_choice": "Quizás un poco..." }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Su cara...", "best_choice": "¡Claro que sí!" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "¿De qué trata?" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Reunión...", "best_choice": "Parece divertido" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Supermercado...", "best_choice": "Más o menos..." }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Carta...", "best_choice": "¿Vas a donarlo?" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Donación...", "best_choice": "Cualquiera" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes la 'Carta de Agradecimiento'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "arcana_name": "Torre (Tower)",
+    "arcana_image": "tower.jpg",
+    "type": "shared",
+    "description": "Representa el caos, la destrucción de viejas estructuras y la revelación repentina.",
+    "routes": {
+      "shared": {
+        "character": "Mutatsu (Monje)",
+        "image": "mutatsu.jpg",
+        "location": "Club Escapade (Paulownia Mall - Noche)",
+        "availability": "Jueves a Domingo (Noche)",
+        "unlock_condition": "Requiere Courage Rank 4 (Tough). Habla con él, luego cumple la misión de servir bebidas del camarero.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Mutatsu se queja...", "best_choice": "Ninguna de las anteriores (+3)", "notes": "Dile que no a todo lo que asume." },
+              { "context": "Llamarse a sí mismo...", "best_choice": "Soy... (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "No tengo amigos...", "best_choice": "Yo tampoco tengo amigos (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Lectura de sutras...", "best_choice": "Sí, eso podría ser (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Dinero...", "best_choice": "No tengo suficiente (+3)" },
+              { "context": "Beneficios...", "best_choice": "No (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Volver a casa...", "best_choice": "Deberías volver a casa (+3)" },
+              { "context": "Compañeros...", "best_choice": "¿Tienes compañeros? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Música fuerte...", "best_choice": "Probablemente no deberías (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Padre e hijo...", "best_choice": "Papá (+3)" },
+              { "context": "Huiste...", "best_choice": "Huiste (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Lección...", "best_choice": "¿Qué pasa con el Sutra? (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Certificado de Reserva'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "arcana_name": "Estrella (Star)",
+    "arcana_image": "star.jpg",
+    "type": "split_character",
+    "description": "Representa la esperanza, la inspiración y la serenidad.",
+    "routes": {
+      "male": {
+        "character": "Mamoru Hayase",
+        "image": "mamoru.jpg",
+        "location": "Iwatodai Strip Mall (Frente a la tienda)",
+        "availability": "Cualquier día (Día)",
+        "unlock_condition": "Requiere Courage Rank 4. Conócelo el 2 de Agosto (Torneo), luego búscalo en el centro comercial.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Mamoru come...", "best_choice": "Sí, no está mal (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Zapatillas...", "best_choice": "Seguro (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Comida rápida...", "best_choice": "Suena delicioso (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Familia...", "best_choice": "¿Estás bien? (+3)" },
+              { "context": "Cuidar de ellos...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Rival...", "best_choice": "Así se habla (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Problemas...", "best_choice": "No te rindas (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Desafío...", "best_choice": "Deberías hacerlo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Ganador...", "best_choice": "Y tú ganaste (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes la 'Llave del Coche'."
+          }
+        ]
+      },
+      "female": {
+        "character": "Akihiko Sanada",
+        "image": "akihiko.jpg",
+        "location": "Laboratorio / Pasillo 1F",
+        "availability": "Lunes, Viernes (Día)",
+        "unlock_condition": "Requiere Charm Rank 4 (Queen Bee).",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Akihiko te invita...", "best_choice": "Sí, por favor (+3)" },
+              { "context": "Conejo...", "best_choice": "Qué mono (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Entrenamiento...", "best_choice": "¡Vamos! (+3)" },
+              { "context": "Diversión...", "best_choice": "Me lo he pasado bien (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Dieta...", "best_choice": "Pareces contento (+3)" },
+              { "context": "Comer...", "best_choice": "No te preocupes (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "Vaya niño (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Persona...", "best_choice": "Eres encantador (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Fans...", "best_choice": "¿Qué pasa? (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Chisme...", "best_choice": "No me importa (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Confesión...", "best_choice": "Estoy enamorada (+3)", "romance_flag": true, "notes": "Romance: 'Estoy enamorada'. Amistad: 'Somos amigos'." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Guante de Boxeo'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "arcana_name": "Luna (Moon)",
+    "arcana_image": "moon.jpg",
+    "type": "split_character",
+    "description": "Representa la ilusión, el miedo y el subconsciente.",
+    "routes": {
+      "male": {
+        "character": "Nozomi Suemitsu",
+        "image": "nozomi.jpg",
+        "location": "Paulownia Mall (Día)",
+        "availability": "Cualquier día (Día)",
+        "unlock_condition": "Requiere Charm Rank 2 (Unpolished). Tienes que darle 'Comida Rara' (Odd Morsel) que se encuentra en cofres del Tártaro.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Nozomi pregunta...", "best_choice": "Claro (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Quién es...", "best_choice": "Eres el Rey Gourmet (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Comer...", "best_choice": "¿Estás enfermo? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Buffet...", "best_choice": "Sí, eso es (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Enfermedad...", "best_choice": "¿Estás enfermo? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Fin del mundo...", "best_choice": "¿El mundo se acaba? (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Hermano...", "best_choice": "Oh, hermano... (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Recuerdos...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes la 'Etiqueta Gourmet'."
+          }
+        ]
+      },
+      "female": {
+        "character": "Shinjiro Aragaki",
+        "image": "shinjiro.jpg",
+        "location": "Residencia Iwatodai (Salón - Noche)",
+        "availability": "Lunes, Miércoles, Viernes, Sábado (Noche)",
+        "unlock_condition": "Disponible desde el 7 de Septiembre. ¡PLAZO LÍMITE 4 DE OCTUBRE!",
+        "critical_warning": "¡URGENTE! Debes llegar al Rango 10 antes del 4 de Octubre. Si lo logras, encontrarás su reloj de bolsillo y SOÑREVIVIRÁ al evento de la historia. Si fallas, morirá.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Shinjiro come...", "best_choice": "¿Vas a salir? (+3)" },
+              { "context": "Ayuda...", "best_choice": "Quiero ayudar (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Comida...", "best_choice": "¿Hablas en serio? (+3)" },
+              { "context": "Sabor...", "best_choice": "Hazme un poco (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Shinjiro te regaña...", "best_choice": "Tú también eres así (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Comida de Koromaru...", "best_choice": "Es comida blanda (+3)" },
+              { "context": "Cocinando...", "best_choice": "Parece divertido (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "¿Tienes algún momento divertido? (+3)" },
+              { "context": "Personalidad...", "best_choice": "Pero tienes buen corazón (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Obsesión...", "best_choice": "Solo recuerdo las cosas importantes (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Comida...", "best_choice": "Claro (+3)" },
+              { "context": "Pasado oscuro...", "best_choice": "Quiero estar contigo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Culpabilidad...", "best_choice": "¿Qué pasa con Ken? (+3)" },
+              { "context": "Amor...", "best_choice": "Te quiero mucho (+3)", "romance_flag": true, "notes": "Elegir 'Te quiero mucho' inicia el Romance." }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "item_received": "Reloj de Bolsillo (Objeto clave para salvarlo).",
+            "notes": "Debes buscar el reloj en la comisaría (Police Station) al día siguiente si no te lo da directamente."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "arcana_name": "Sol (Sun)",
+    "arcana_image": "sun.jpg",
+    "type": "shared",
+    "description": "Representa la iluminación, la alegría y el éxito (o la aceptación de la verdad).",
+    "routes": {
+      "shared": {
+        "character": "Akinari Kamiki",
+        "image": "akinari.jpg",
+        "location": "Santuario Naganaki (Banco)",
+        "availability": "Solo Domingos (Día)",
+        "unlock_condition": "Requiere Academics Rank 4 (Smart) y Hanged Man (Maiko) Rank 3. Tienes que hablar con él, te pedirá su pluma. Ve a la residencia, habla con Koromaru, consigue la 'Pluma Roja' y devuélvesela.",
+        "romance": false,
+        "notes": "A diferencia de otros, este Social Link sube de nivel automáticamente cada vez que lo visitas (siempre que sea domingo). Las respuestas son para dar sabor a la historia, pero no afectan el progreso.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Enfermedad...", "best_choice": "De verdad / Es un buen punto (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Akinari pregunta...", "best_choice": "No sé / Intenta no hablar tanto (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Leyendo...", "best_choice": "Sí, lo hago / Si es aburrido, paro (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Akinari tose...", "best_choice": "No te fuerces / Escucha a tu cuerpo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Historia...", "best_choice": "Suena interesante / ¿Qué pasa con el pájaro? (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Final de la historia...", "best_choice": "Es una historia triste / ¿Qué pasa después? (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Akinari llora...", "best_choice": "Quédate conmigo / ¿Por qué lloras? (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Cuento terminado...", "best_choice": "Lo terminaste (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Cuaderno Viejo'."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "arcana_name": "Juicio (Judgment)",
+    "arcana_image": "judgment.jpg",
+    "type": "shared_automatic",
+    "description": "Representa el juicio final, la absolución y el despertar a una nueva conciencia.",
+    "routes": {
+      "shared": {
+        "character": "Nyx Annihilation Team (SEES)",
+        "image": "nyx.jpg",
+        "location": "Tártaro (Bloque Adamah)",
+        "unlock_condition": "Automático el 31 de Diciembre tras tomar la decisión final.",
+        "notes": "Este vínculo sube de nivel automáticamente cada vez que derrotas a un Guardián en el bloque final del Tártaro (Pisos 215 a 254).",
+        "ranks": [
+          { "rank": 1, "date": "31/12", "event": "Pacto final" },
+          { "rank": 2, "event": "Derrotar guardián Piso 215" },
+          { "rank": 3, "event": "Derrotar guardián Piso 220" },
+          { "rank": 4, "event": "Derrotar guardián Piso 224" },
+          { "rank": 5, "event": "Derrotar guardián Piso 228" },
+          { "rank": 6, "event": "Derrotar guardián Piso 236" },
+          { "rank": 7, "event": "Derrotar guardián Piso 240" },
+          { "rank": 8, "event": "Derrotar guardián Piso 244" },
+          { "rank": 9, "event": "Derrotar guardián Piso 254" },
+          { "rank": 10, "event": "Llegar a la cima del Tártaro (Piso 263)" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "arcana_name": "Eón (Aeon)",
+    "arcana_image": "aeon.jpg",
+    "type": "split_interaction",
+    "description": "Representa el tiempo eterno y el comienzo de una nueva era.",
+    "routes": {
+      "male": {
+        "character": "Aigis",
+        "image": "aigis.jpg",
+        "location": "Clase 2-F",
+        "availability": "Lunes a Sábado (Solo Enero)",
+        "unlock_condition": "Disponible desde el 8 de Enero. ¡PRIORIDAD MÁXIMA! Tienes menos de un mes para completarlo.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Salir...", "best_choice": "Me gusta (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Ikutsuki...", "best_choice": "Eso no es verdad (+3)" },
+              { "context": "Hermanos...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Aigis pregunta...", "best_choice": "Muy bien (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Extraño...", "best_choice": "Puede que tengas razón (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Mentira...", "best_choice": "Se refería a ti (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Sufrimiento...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Escuchar...", "best_choice": "Te escucho (+3)" },
+              { "context": "Propósito...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Vida...", "best_choice": "Tienes razón (+3)" },
+              { "context": "Sentimientos...", "best_choice": "Te quiero (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Tornillo Carbonizado'."
+          }
+        ]
+      },
+      "female": {
+        "character": "Aigis",
+        "image": "aigis.jpg",
+        "location": "Clase 2-F",
+        "availability": "Lunes a Sábado (Solo Enero)",
+        "unlock_condition": "Disponible desde el 8 de Enero. ¡PRIORIDAD MÁXIMA!",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Paseo...", "best_choice": "Me gusta (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "No es humana...", "best_choice": "Eso no es verdad (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Regreso...", "best_choice": "Muy bien (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Normalidad...", "best_choice": "Puede que tengas razón (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Gato...", "best_choice": "Se refería a ti (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Dolor...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Confusión...", "best_choice": "Te escucho (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Futuro...", "best_choice": "Tienes razón (+3)" },
+              { "context": "Amistad...", "best_choice": "Mejores amigas para siempre (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Recibes el 'Tornillo Carbonizado'."
+          }
+        ]
+      }
+    }
+  }
+]

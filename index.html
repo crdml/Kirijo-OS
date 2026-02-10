@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kirijo OS v3.1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <section id="view-boot" class="view active">
+        <div class="terminal-window">
+            <div class="logo-area">
+                <h1 class="glitch" data-text="KIRIJO OS">KIRIJO OS</h1>
+                <p class="subtitle">Shadow Operative System</p>
+            </div>
+            <div class="boot-log" id="boot-text">
+                > Initializing system...<br>
+                > Connecting to Dark Hour server...
+            </div>
+            <button id="btn-login" class="btn-cyber red hidden">ACCEDER AL SISTEMA</button>
+        </div>
+    </section>
+
+    <section id="view-dashboard" class="view hidden">
+        <header class="os-header">
+            <div class="user-info">
+                <span class="status-dot"></span>
+                <span id="user-nick">Artemis</span>
+            </div>
+            <div class="system-clock" id="clock">00:00</div>
+        </header>
+
+        <main class="content-container">
+            <h2>PROTOCOLOS ACTIVOS</h2>
+            
+            <div class="game-card p3p-glow" onclick="app.openGame('p3p')">
+                <div class="card-content">
+                    <h3>PERSONA 3 PORTABLE</h3>
+                    <p>Estado: Full Moon Operations</p>
+                </div>
+                <div class="card-icon">🌑</div>
+            </div>
+
+            <div class="game-card disabled">
+                <div class="card-content">
+                    <h3>PERSONA 4 GOLDEN</h3>
+                    <p>Estado: Offline / Fog Warning</p>
+                </div>
+                <div class="card-icon">📺</div>
+            </div>
+        </main>
+    </section>
+
+    <section id="view-game-interface" class="view hidden">
+        <header class="game-top-bar">
+            <button onclick="app.goHome()" class="btn-back">◀ ATRÁS</button>
+            <span class="current-module-title">P3P DATABASE</span>
+            
+            <div class="gender-switch">
+                <button class="switch-btn active" id="btn-male" onclick="app.setGender('male')">♂ MALE</button>
+                <button class="switch-btn" id="btn-female" onclick="app.setGender('female')">♀ FEMALE</button>
+            </div>
+        </header>
+
+        <nav class="modules-nav">
+            <button onclick="app.loadModule('school')">📝 Escuela</button>
+            <button onclick="app.loadModule('social')">🤝 Vínculos</button>
+            <button onclick="app.loadModule('missing')" class="alert-text">🕵️ Desaparecidos</button>
+            <button onclick="app.loadModule('fusions')">🔮 Fusiones</button>
+        </nav>
+
+        <div id="data-display" class="data-viewport">
+            <div class="empty-state">Seleccione un módulo de datos.</div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

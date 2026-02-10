@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "name": "Ayako Yoshimoto",
+    "available_date": "6/18",
+    "deadline": "7/5",
+    "location": "Piso 45 (Bloque Arqa)",
+    "reward": "Carta de Agradecimiento (Reciprocal Letter)",
+    "type": "civilian"
+  },
+  {
+    "id": 2,
+    "name": "Kenjiro Tsutsumi",
+    "available_date": "6/26",
+    "deadline": "7/5",
+    "location": "Piso 51 (Bloque Arqa)",
+    "reward": "20.000 Yenes",
+    "type": "civilian"
+  },
+  {
+    "id": 3,
+    "name": "Yasuko Murabayashi",
+    "available_date": "8/3",
+    "deadline": "8/5",
+    "location": "Piso 69 (Bloque Yabbashah)",
+    "reward": "Esmeralda x6",
+    "type": "civilian",
+    "notes": "¡Plazo muy corto! Tienes solo 2 días."
+  },
+  {
+    "id": 4,
+    "name": "Shuichi Niigata",
+    "available_date": "8/19",
+    "deadline": "9/4",
+    "location": "Piso 83 (Bloque Yabbashah)",
+    "reward": "Divine Grace (Accesorio)",
+    "type": "civilian"
+  },
+  {
+    "id": 5,
+    "name": "Bunkichi Kitamura",
+    "available_date": "9/12",
+    "deadline": "10/3",
+    "location": "Piso 120 (Bloque Tziah)",
+    "reward": "10x Homunculus",
+    "type": "critical_social_link",
+    "warning_message": "¡URGENTE! Es el anciano de la librería (Hierophant). Si no lo rescatas, su Social Link desaparecerá para siempre."
+  },
+  {
+    "id": 6,
+    "name": "Akihiro Kawamata",
+    "available_date": "9/22",
+    "deadline": "10/3",
+    "location": "Piso 131 (Bloque Tziah)",
+    "reward": "1x Malachite",
+    "type": "civilian"
+  },
+  {
+    "id": 7,
+    "name": "Yasunobu Shimono",
+    "available_date": "9/22",
+    "deadline": "10/3",
+    "location": "Piso 137 (Bloque Tziah)",
+    "reward": "40.000 Yenes",
+    "type": "civilian"
+  },
+  {
+    "id": 8,
+    "name": "Maiko Oohashi",
+    "available_date": "10/21",
+    "deadline": "11/2",
+    "location": "Piso 149 (Bloque Tziah)",
+    "reward": "Fieltro (Felt Doll)",
+    "type": "critical_social_link",
+    "warning_message": "¡URGENTE! Es la niña del parque (Hanged Man). Si no la rescatas, su Social Link desaparecerá para siempre."
+  },
+  {
+    "id": 9,
+    "name": "Ryohei Nakatsugawa",
+    "available_date": "10/21",
+    "deadline": "11/2",
+    "location": "Piso 152 (Bloque Tziah)",
+    "reward": "High Counter (Carta de Habilidad)",
+    "type": "civilian"
+  },
+  {
+    "id": 10,
+    "name": "Katsue Tabata",
+    "available_date": "10/30",
+    "deadline": "11/2",
+    "location": "Piso 158 (Bloque Tziah)",
+    "reward": "4x Tetrakarn",
+    "type": "civilian"
+  },
+  {
+    "id": 11,
+    "name": "Tomoyuki Miyazaki",
+    "available_date": "11/28",
+    "deadline": "12/29",
+    "location": "Piso 168 (Bloque Harabah)",
+    "reward": "3x Phys Boost",
+    "type": "civilian"
+  },
+  {
+    "id": 12,
+    "name": "Katsutoshi Sato",
+    "available_date": "11/28",
+    "deadline": "12/29",
+    "location": "Piso 175 (Bloque Harabah)",
+    "reward": "100.000 Yenes",
+    "type": "civilian"
+  },
+  {
+    "id": 13,
+    "name": "Yumiko Sasamaki",
+    "available_date": "11/28",
+    "deadline": "12/29",
+    "location": "Piso 185 (Bloque Harabah)",
+    "reward": "2x Luxury Coin",
+    "type": "civilian"
+  },
+  {
+    "id": 14,
+    "name": "Nobuko Fukuchi",
+    "available_date": "12/22",
+    "deadline": "12/29",
+    "location": "Piso 203 (Bloque Harabah)",
+    "reward": "8x Diamante",
+    "type": "civilian"
+  },
+  {
+    "id": 15,
+    "name": "Sayoko Terashima",
+    "available_date": "1/15",
+    "deadline": "1/30",
+    "location": "Piso 224 (Bloque Adamah)",
+    "reward": "1x Soma",
+    "type": "civilian"
+  },
+  {
+    "id": 16,
+    "name": "Reiko Makita",
+    "available_date": "1/15",
+    "deadline": "1/30",
+    "location": "Piso 250 (Bloque Adamah)",
+    "reward": "Salvation (Carta de Habilidad)",
+    "type": "civilian"
+  }
+]

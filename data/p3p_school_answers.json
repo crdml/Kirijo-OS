@@ -1,0 +1,127 @@
+{
+  "game_version": "Persona 3 Portable (Remaster)",
+  "school_year_answers": [
+    {
+      "month": "Abril",
+      "items": [
+        { "date": "4/8", "question": "¿Quién dije que era mi autor favorito?", "answer": "Utsubo Kubota", "stat_boost": "Charm" },
+        { "date": "4/20", "question": "¿Cómo se llamaba el estilo de las casas en el periodo Jomon?", "answer": "Chozas de barro", "stat_boost": "Charm" },
+        { "date": "4/27", "question": "¿Sabes cuándo se inventaron los números?", "answer": "Hace 6.000 años", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Mayo",
+      "items": [
+        { "date": "5/6", "question": "¿Qué nombre recibe el agua que no tiene demasiado calcio ni magnesio?", "answer": "Agua blanda", "stat_boost": "Charm" },
+        { "date": "5/13", "question": "¿A qué velocidad dirías tú que gira la Tierra cerca del ecuador?", "answer": "1.700 km/h", "stat_boost": "Charm" },
+        { "date": "5/15", "question": "¿Cómo se dice 'pan' en inglés?", "answer": "Bread", "stat_boost": "Charm" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Parciales (19-22 Mayo)",
+          "answers": [
+            { "date": "5/19", "question": "¿Cómo se dice 'pan' en inglés?", "answer": "Bread" },
+            { "date": "5/20", "question": "¿A qué velocidad gira la Tierra cerca del ecuador?", "answer": "Más rápido que el sonido" },
+            { "date": "5/21", "question": "¿Qué nombre recibe el agua que no tiene demasiado calcio ni magnesio?", "answer": "Agua calcárea" },
+            { "date": "5/22", "question": "¿Dónde está la Tumba de Kitora?", "answer": "Nara" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Junio",
+      "items": [
+        { "date": "6/15", "question": "¿Cuál es correcta: 'Ha llovido y ha escampado' o 'Ha llovido y escampado'?", "answer": "Y...", "stat_boost": "Charm" },
+        { "date": "6/17", "question": "¿En qué se basan los orígenes de la magia?", "answer": "Chamanismo", "stat_boost": "Charm" },
+        { "date": "6/22", "question": "¿Cuál de estos peces no se conoce como 'pez diablo'?", "answer": "Pez globo", "stat_boost": "Charm" },
+        { "date": "6/25", "question": "¿Qué forma de magia natural se utilizó para buscar fuentes de agua?", "answer": "Radiestesia", "stat_boost": "Charm" },
+        { "date": "6/29", "question": "¿Hacia dónde va el remolino en el hemisferio norte?", "answer": "En cualquier dirección", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Julio",
+      "items": [
+        { "date": "7/3", "question": "¿Cómo se supone que voy a saber nada sobre alguien que vivió hace tela de tiempo?", "answer": "Patrimonio de la Humanidad", "stat_boost": "Charm" },
+        { "date": "7/8", "question": "¿Cuál de estas frases es incorrecta?", "answer": "He suspendido, se acabó", "stat_boost": "Charm" },
+        { "date": "7/9", "question": "¿Qué ley sirvió de base para el desarrollo del feudalismo?", "answer": "La Konden Einen Shizaihou", "stat_boost": "Charm" },
+        { "date": "7/10", "question": "¿Cuál es el estudio místico de los textos judíos?", "answer": "Cábala", "stat_boost": "Charm" },
+        { "date": "7/11", "question": "¿Qué título se inventó Taira No Masakado para sí mismo?", "answer": "Príncipe Imperial", "stat_boost": "Charm" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Finales (14-17 Julio)",
+          "answers": [
+            { "date": "7/14", "question": "¿Qué forma de magia natural se utilizó para encontrar fuentes de agua?", "answer": "Radiestesia" },
+            { "date": "7/15", "question": "Algunos europeos llaman a esta criatura 'pez diablo' y se niegan a comerla.", "answer": "Pulpo" },
+            { "date": "7/16", "question": "¿Quién estableció el shogunato de Kamakura?", "answer": "Minamoto No Yoritomo" },
+            { "date": "7/17", "question": "¿Qué ejemplo de los siguientes es una coma de yuxtaposición?", "answer": "Fui, aprendí" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Septiembre",
+      "items": [
+        { "date": "9/1", "question": "¿Qué nombre recibe el fenómeno en el que la resistencia eléctrica es igual a cero?", "answer": "Superconductividad", "stat_boost": "Charm" },
+        { "date": "9/10", "question": "¿Qué decimos después de comer?", "answer": "Gochisou-sama", "stat_boost": "Charm" },
+        { "date": "9/11", "question": "¿Qué libro de magia escribió Hermes Trismegisto?", "answer": "La Hermética", "stat_boost": "Charm" },
+        { "date": "9/14", "question": "¿Cuál de estas opciones no se puede hacer con la energía nuclear?", "answer": "No dejar que otros produzcan", "stat_boost": "Charm" },
+        { "date": "9/26", "question": "¿Qué nombre recibe la sucesión de cuatro números sagrados en numerología?", "answer": "Los Tetraktys", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Octubre",
+      "items": [
+        { "date": "10/7", "question": "¿Sabes por qué el capote de un torero es rojo?", "answer": "Para animar al público", "stat_boost": "Charm" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Parciales (13-16 Octubre)",
+          "answers": [
+            { "date": "10/13", "question": "¿Cuál es la fuente principal de estrés para las mujeres?", "answer": "Maridos" },
+            { "date": "10/14", "question": "¿Quién fundó la numerología?", "answer": "Moisés" },
+            { "date": "10/15", "question": "¿Qué es la superconductividad?", "answer": "Resistencia eléctrica nula" },
+            { "date": "10/16", "question": "La Ohnin War fue uno de los incidentes que desencadenó el periodo Sengoku.", "answer": "El golpe de Meio" }
+          ]
+        },
+        { "date": "10/19", "question": "¿Cuántos patrones de calendario distintos hay?", "answer": "Catorce", "stat_boost": "Charm" },
+        { "date": "10/22", "question": "¿También es distinta la forma de hacer el natto?", "answer": "Al fermentarla", "stat_boost": "Charm" },
+        { "date": "10/23", "question": "¿Quién fue el fundador de la Teosofía?", "answer": "Madame Blavatsky", "stat_boost": "Charm" },
+        { "date": "10/26", "question": "¿Cuál de los siguientes no es un reloj de agua?", "answer": "Reloj", "stat_boost": "Charm" },
+        { "date": "10/29", "question": "¿Cómo se llama la enzima que descompone el azúcar de la leche?", "answer": "Lactasa", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Noviembre",
+      "items": [
+        { "date": "11/7", "question": "Nací el día 22 de un mes. ¿Cuál es mi personaje?", "answer": "Las mañanas invernales son agradables", "stat_boost": "Charm" },
+        { "date": "11/12", "question": "¿Cuál es el texto mágico más antiguo de la India?", "answer": "Los Upanishads", "stat_boost": "Charm" },
+        { "date": "11/30", "question": "¿Crees que los hombres también hacían estas cosas?", "answer": "Hacían ambas cosas", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Diciembre",
+      "items": [
+        { "date": "12/7", "question": "¿Qué alótropo está formado por tres átomos de oxígeno?", "answer": "El ozono", "stat_boost": "Charm" },
+        { "date": "12/11", "question": "¿Sabes qué nombre recibe?", "answer": "Cactus", "stat_boost": "Charm" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Finales (14-19 Diciembre)",
+          "answers": [
+            { "date": "12/14", "question": "¿En qué año comenzó la batalla de Dan-no-ura?", "answer": "1185" },
+            { "date": "12/15", "question": "¿Qué elemento del ozono es responsable?", "answer": "Oxígeno" },
+            { "date": "12/16", "question": "¿Qué regla se relaciona con la fuerza de Lorentz?", "answer": "La regla de la mano izquierda" },
+            { "date": "12/17", "question": "Traduce: 'Fuyu wa tsutomete'.", "answer": "Las mañanas invernales son agradables" },
+            { "date": "12/18", "question": "¿Qué plural es el correcto?", "answer": "Cactus" }
+          ]
+        },
+        { "date": "12/21", "question": "¿Qué tipo de magia se dice que usaba Himiko?", "answer": "Kido", "stat_boost": "Charm" },
+        { "date": "12/22", "question": "¿Cuál es el sentimiento de felicidad en una experiencia cercana a la muerte?", "answer": "Euforia", "stat_boost": "Charm" }
+      ]
+    },
+    {
+      "month": "Enero",
+      "items": [
+        { "date": "1/8", "question": "¿Cuál de estas líneas es la correcta?", "answer": "Está mal", "stat_boost": "Charm" },
+        { "date": "1/18", "question": "Mencioné a dos hechiceras griegas. Medea era una, ¿quién era la otra?", "answer": "Circe", "stat_boost": "Charm" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "game_version": "Persona 3 Portable",
+  "special_spreads": [
+    {
+      "result": "Alice",
+      "arcana": "Muerte (Death)",
+      "level": 56,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Lilim", "Pixie", "Nata Taishi", "Narcissus"],
+      "note": "Famosa por su ataque 'Die for Me!'."
+    },
+    {
+      "result": "Black Frost",
+      "arcana": "Loco (Fool)",
+      "level": 34,
+      "type": "Cross Spread (4)",
+      "ingredients": ["King Frost", "Jack Frost", "Pyro Jack", "Queen Mab"]
+    },
+    {
+      "result": "Daisoujou",
+      "arcana": "Hierofante (Hierophant)",
+      "level": 53,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Mithra", "Ara Mitama", "Kusi Mitama", "Saki Mitama", "Nigi Mitama"],
+      "note": "Usuario de Samsara (Muerte de Luz instántanea)."
+    },
+    {
+      "result": "Mara",
+      "arcana": "Torre (Tower)",
+      "level": 77,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Incubus", "Mot", "Pazuzu", "Kumbhanda", "Attis"],
+      "req_item": "Debes completar S.Link Torre (Mutatsu)."
+    },
+    {
+      "result": "Thanatos",
+      "arcana": "Muerte (Death)",
+      "level": 64,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Ghoul", "Pale Rider", "Loa", "Samael", "Mot", "Alice"],
+      "req_item": "Requiere completar S.Link Muerte (Automático)."
+    },
+    {
+      "result": "Susano-o",
+      "arcana": "Loco (Fool)",
+      "level": 76,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Orpheus", "Legion", "Ose", "Black Frost", "Decarabia", "Loki"],
+      "req_item": "Requiere completar S.Link Loco (SEES)."
+    },
+    {
+      "result": "Lucifer",
+      "arcana": "Juicio (Judgment)",
+      "level": 89,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Samael", "Abaddon", "Beelzebub", "Satan", "Helel"],
+      "note": "El portador del Armagedón (junto a Satán)."
+    },
+    {
+      "result": "Messiah",
+      "arcana": "Juicio (Judgment)",
+      "level": 90,
+      "type": "Normal/Special (2)",
+      "ingredients": ["Orpheus", "Thanatos"],
+      "req_item": "Requiere completar S.Link Juicio (Nyx Team)."
+    },
+    {
+      "result": "Shiva",
+      "arcana": "Torre (Tower)",
+      "level": 82,
+      "type": "Special (2)",
+      "ingredients": ["Barong", "Rangda"],
+      "note": "Fusión especial de mitología Balinesa."
+    },
+    {
+      "result": "Orpheus Telos",
+      "arcana": "Loco (Fool)",
+      "level": 90,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Thanatos", "Asura", "Chi You", "Metatron", "Helel", "Messiah"],
+      "req_item": "Requiere MAXIMIZAR TODOS los Social Links en una sola partida (Objeto: Colorless Mask).",
+      "warning": "El Persona más difícil de conseguir del juego."
+    }
+  ],
+  "max_social_link_ultimates": [
+    {
+      "arcana": "Mago (Magician)",
+      "persona": "Surt",
+      "level": 52,
+      "fusion_method": "Fusión Normal (Arcano Mago de alto nivel)",
+      "req_item": "Kenji (Chico) o Junpei (Chica) Rank 10"
+    },
+    {
+      "arcana": "Sacerdotisa (Priestess)",
+      "persona": "Scathach",
+      "level": 64,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Fuuka Rank 10"
+    },
+    {
+      "arcana": "Emperatriz (Empress)",
+      "persona": "Alilat",
+      "level": 84,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Mitsuru Rank 10"
+    },
+    {
+      "arcana": "Emperador (Emperor)",
+      "persona": "Odin",
+      "level": 57,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Hidetoshi Rank 10",
+      "note": "Esencial para desbloquear el hechizo Thunder Reign."
+    },
+    {
+      "arcana": "Hierofante (Hierophant)",
+      "persona": "Kohryu",
+      "level": 66,
+      "fusion_method": "Special Cross Spread (Genbu + Seiryu + Suzaku + Byakko)",
+      "req_item": "Ancianos Bunkichi/Mitsuko Rank 10"
+    },
+    {
+      "arcana": "Enamorados (Lovers)",
+      "persona": "Cybele",
+      "level": 68,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Yukari Rank 10"
+    },
+    {
+      "arcana": "Carro (Chariot)",
+      "persona": "Thor",
+      "level": 53,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Kazushi/Rio Rank 10"
+    },
+    {
+      "arcana": "Justicia (Justice)",
+      "persona": "Melchizedek",
+      "level": 59,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Chihiro/Ken Rank 10"
+    },
+    {
+      "arcana": "Ermitaño (Hermit)",
+      "persona": "Arahabaki",
+      "level": 60,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Maya/Saori Rank 10"
+    },
+    {
+      "arcana": "Rueda de Fortuna (Fortune)",
+      "persona": "Norn",
+      "level": 62,
+      "fusion_method": "Special Cross Spread (Clotho + Lachesis + Atropos)",
+      "req_item": "Keisuke/Ryoji Rank 10"
+    },
+    {
+      "arcana": "Fuerza (Strength)",
+      "persona": "Siegfried",
+      "level": 59,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Yuko/Koromaru Rank 10"
+    },
+    {
+      "arcana": "Colgado (Hanged Man)",
+      "persona": "Attis",
+      "level": 67,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Maiko Rank 10"
+    },
+    {
+      "arcana": "Templanza (Temperance)",
+      "persona": "Yurlungur",
+      "level": 64,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Bebe Rank 10"
+    },
+    {
+      "arcana": "Diablo (Devil)",
+      "persona": "Beelzebub",
+      "level": 81,
+      "fusion_method": "Hexagon Spread (Incubus + Succubus + Pazuzu + Lilith + Baal Zebul + Abaddon)",
+      "req_item": "Tanaka Rank 10"
+    },
+    {
+      "arcana": "Torre (Tower)",
+      "persona": "Chi You",
+      "level": 86,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Mutatsu Rank 10"
+    },
+    {
+      "arcana": "Estrella (Star)",
+      "persona": "Helel",
+      "level": 88,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Mamoru/Akihiko Rank 10"
+    },
+    {
+      "arcana": "Luna (Moon)",
+      "persona": "Sandalphon",
+      "level": 74,
+      "fusion_method": "Fusión Normal",
+      "req_item": "Nozomi/Shinjiro Rank 10"
+    },
+    {
+      "arcana": "Sol (Sun)",
+      "persona": "Asura",
+      "level": 85,
+      "fusion_method": "Hexagon Spread (Yatagarasu + Quetzalcoatl + Jatayu + Horus + Suparna + Vishnu)",
+      "req_item": "Akinari Rank 10"
+    },
+    {
+      "arcana": "Eón (Aeon)",
+      "persona": "Metatron",
+      "level": 87,
+      "fusion_method": "Special Cross Spread (Michael + Gabriel + Raphael + Uriel)",
+      "req_item": "Aigis Rank 10"
+    }
+  ]
+}
