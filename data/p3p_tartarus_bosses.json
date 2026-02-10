@@ -1,0 +1,184 @@
+[
+  {
+    "floor": "Piso 5",
+    "boss": "Venus Eagle x3",
+    "weakness": "Pierce (Perforar)",
+    "nullify": "Fuego (Fire)",
+    "strategy": "Usa a Yukari con Garu o ataques de arco."
+  },
+  {
+    "floor": "Piso 10",
+    "boss": "Dancing Hand x3",
+    "weakness": "Strike (Golpear)",
+    "nullify": "Todas las magias excepto Almighty",
+    "strategy": "Usa ataques físicos (Bash) o Rush."
+  },
+  {
+    "floor": "Piso 14",
+    "boss": "Rampage Drive",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Strike, Slash, Pierce (Resistente)",
+    "strategy": "Spam de Zio con Akihiko o el Protagonista. Cura a menudo."
+  },
+  {
+    "floor": "Piso 25",
+    "boss": "Crying Table x3",
+    "weakness": "Hielo (Bufu)",
+    "nullify": "Fuego (Absorbe), Strike",
+    "strategy": "Usa a Mitsuru o Jack Frost. Cuidado con Maragion."
+  },
+  {
+    "floor": "Piso 36",
+    "boss": "Change Relic",
+    "weakness": "Ninguna",
+    "nullify": "Viento (Null)",
+    "strategy": "Usa debuffs (Tarunda/Rakunda). Es un combate de desgaste."
+  },
+  {
+    "floor": "Piso 47",
+    "boss": "Golden Beetle x3",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Hielo (Null)",
+    "strategy": "Akihiko es MVP aquí. Usa Mazio si lo tienes."
+  },
+  {
+    "floor": "Piso 59",
+    "boss": "Intrepid Knight",
+    "weakness": "Ninguna",
+    "nullify": "Viento (Absorbe), Luz/Oscuridad (Null)",
+    "strategy": "Usa Magaru para derribar a los minions si invoca. Céntrate en críticos."
+  },
+  {
+    "floor": "Piso 72",
+    "boss": "Furious Gigas x3",
+    "weakness": "Viento (Garu)",
+    "nullify": "Fuego, Electricidad (Null)",
+    "strategy": "Yukari con Magaru. Cuidado con sus contraataques físicos."
+  },
+  {
+    "floor": "Piso 85",
+    "boss": "Fanatic Tower",
+    "weakness": "Ninguna",
+    "nullify": "Electricidad, Fuego, Hielo (Refleja)",
+    "strategy": "Solo ataques físicos o Viento. ¡No uses Zio/Agi/Bufu!"
+  },
+  {
+    "floor": "Piso 98",
+    "boss": "Magical Magus x3",
+    "weakness": "Fuego (Agi)",
+    "nullify": "Hielo (Absorbe)",
+    "strategy": "Usa a Junpei o Pyro Jack. Evita llevar a Mitsuru (débil a Fuego)."
+  },
+  {
+    "floor": "Piso 110",
+    "boss": "Natural Dancer",
+    "weakness": "Ninguna",
+    "nullify": "Viento (Null)",
+    "strategy": "Usa Aigis para buffs. Cuidado con Tetrakarn."
+  },
+  {
+    "floor": "Piso 122",
+    "boss": "Sleeping Table",
+    "weakness": "Ninguna",
+    "nullify": "Strike (Null), Fuego (Null)",
+    "strategy": "¡El jefe más difícil! Usa Mediarama cada turno. Resiste Miedo."
+  },
+  {
+    "floor": "Piso 135",
+    "boss": "Hell Knight",
+    "weakness": "Ninguna",
+    "nullify": "Electricidad (Refleja), Luz/Oscuridad (Null)",
+    "strategy": "Usa debuffs. Cuidado con Mazioyne."
+  },
+  {
+    "floor": "Piso 146",
+    "boss": "Mythical Gigas",
+    "weakness": "Ninguna",
+    "nullify": "Físico (Contraataca), Luz/Oscuridad (Null)",
+    "strategy": "Solo Magia. No uses ataques físicos o morirás."
+  },
+  {
+    "floor": "Piso 160",
+    "boss": "Doted Mother",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Viento (Absorbe), Hielo (Null)",
+    "strategy": "Akihiko. Cuidado con sus estados alterados."
+  },
+  {
+    "floor": "Piso 171",
+    "boss": "Judgement Sword x3",
+    "weakness": "Hielo (Bufu)",
+    "nullify": "Electricidad (Absorbe)",
+    "strategy": "Mitsuru con Mabufu. Aigis para buffs."
+  },
+  {
+    "floor": "Piso 180",
+    "boss": "Stasis Giant x3",
+    "weakness": "Ninguna",
+    "nullify": "Slash (Null)",
+    "strategy": "Usa ataques de Strike (Akihiko) o Magia poderosa."
+  },
+  {
+    "floor": "Piso 190",
+    "boss": "Phantom King",
+    "weakness": "Ninguna",
+    "nullify": "Luz (Refleja), Hamaon (Insta-Kill)",
+    "strategy": "Equipa Homunculus. Usa ataques físicos fuertes."
+  },
+  {
+    "floor": "Piso 201",
+    "boss": "Royal Dancer",
+    "weakness": "Ninguna",
+    "nullify": "Ninguna",
+    "strategy": "Spam de Charm/Panic. Lleva a Yukari (Me Patra) o items curativos."
+  },
+  {
+    "floor": "Piso 211",
+    "boss": "Reckoning Dice",
+    "weakness": "Ninguna",
+    "nullify": "Físico (Null), Magia (Resiste)",
+    "strategy": "Usa Megido (Almighty) o debilítalo con Rakunda."
+  },
+  {
+    "floor": "Piso 220",
+    "boss": "Noble Seeker",
+    "weakness": "Ninguna",
+    "nullify": "Todos los elementos (Resiste/Null)",
+    "strategy": "Ataques físicos críticos o Almighty."
+  },
+  {
+    "floor": "Piso 228",
+    "boss": "Carnal Snake x3",
+    "weakness": "Ninguna",
+    "nullify": "Fuego/Viento/Hielo/Elec (Resiste)",
+    "strategy": "Usa ataques físicos de área (Vorpal Blade)."
+  },
+  {
+    "floor": "Piso 236",
+    "boss": "World Balance",
+    "weakness": "Ninguna",
+    "nullify": "Luz/Oscuridad (Null)",
+    "strategy": "Cambia de afinidad. Usa 'Scan' de Fuuka constantemente."
+  },
+  {
+    "floor": "Piso 244",
+    "boss": "Fierce Cyclops x3",
+    "weakness": "Ninguna",
+    "nullify": "Fuego/Elec (Refleja), Slash/Strike (Null)",
+    "strategy": "Usa Hielo (Bufu) o Viento (Garu). O ataques de Pierce (Yukari/Aigis)."
+  },
+  {
+    "floor": "Piso 252",
+    "boss": "Jotun of Grief",
+    "weakness": "Ninguna",
+    "nullify": "Absorbe TODO excepto Pierce",
+    "strategy": "Solo Yukari, Aigis y Ken pueden atacar. ¡No uses magia!"
+  },
+  {
+    "floor": "31 de Enero",
+    "boss": "Nyx Avatar (The Fall)",
+    "weakness": "CAMBIA SEGÚN EL ARCANO",
+    "nullify": "Siempre anula Luz y Oscuridad",
+    "strategy": "<strong>1. Loco:</strong> Neutral.<br><strong>2. Mago:</strong> Drena Fuego / <span style='color:#00d2ff'>Débil Hielo</span>.<br><strong>3. Sacerdotisa:</strong> Drena Hielo / <span style='color:#ff2a2a'>Débil Fuego</span>.<br><strong>4. Emperatriz:</strong> Drena Viento / <span style='color:#e6e600'>Débil Elec</span>.<br><strong>5. Emperador:</strong> Drena Elec / <span style='color:#00ff00'>Débil Viento</span>.<br><strong>6. Hierofante:</strong> Nula Strike. Neutral resto.<br><strong>7. Enamorados:</strong> Nula Viento. Usa Charm.<br><strong>8. Carro:</strong> Nula Físico. Usa Magia.<br><strong>9. Justicia:</strong> Nula Fuego/Hielo.<br><strong>10. Ermitaño:</strong> Nula Viento/Elec. Estados alterados.<br><strong>11. Fortuna:</strong> Nula Magia. <span style='color:#ff9999'>Usa Físico</span>.<br><strong>12. Fuerza:</strong> Nula Físico. <span style='color:#99ccff'>Usa Magia</span>.<br><strong>13. Colgado:</strong> Resiste Todo. Mucha vida.<br><strong>14. Muerte:</strong> Si usa <em>Moonless Gown</em>, ¡NO ATAQUES! Refleja todo. Espera a que se quite el escudo."
+  }
+]

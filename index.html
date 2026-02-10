@@ -2,79 +2,98 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kirijo OS v3.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirijo OS</title>
+    
+    <link rel="icon" href="assets/favicon.ico" type="image/png">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="bg-grid"></div>
 
-    <section id="view-boot" class="view active">
-        <div class="terminal-window">
-            <div class="logo-area">
-                <h1 class="glitch" data-text="KIRIJO OS">KIRIJO OS</h1>
-                <p class="subtitle">Shadow Operative System</p>
-            </div>
-            <div class="boot-log" id="boot-text">
-                > Initializing system...<br>
-                > Connecting to Dark Hour server...
-            </div>
-            <button id="btn-login" class="btn-cyber red hidden">ACCEDER AL SISTEMA</button>
+    <div id="view-boot" class="view active">
+        <h1 class="glitch" data-text="KIRIJO OS">KIRIJO OS</h1>
+        <div class="subtitle">SHADOW OPS DATABASE V5.0</div>
+        <div class="boot-log" id="boot-text"></div>
+        
+        <button id="btn-login" class="btn-cyber red hidden">ACCESS SYSTEM</button>
+    </div>
+
+    <div id="view-dashboard" class="view">
+        <div class="os-header">
+            <div class="user-info"><span class="status-dot"></span><span id="user-nick">USER</span></div>
+            <div class="clock" id="clock">00:00</div>
         </div>
-    </section>
 
-    <section id="view-dashboard" class="view hidden">
-        <header class="os-header">
-            <div class="user-info">
-                <span class="status-dot"></span>
-                <span id="user-nick">Artemis</span>
-            </div>
-            <div class="system-clock" id="clock">00:00</div>
-        </header>
-
-        <main class="content-container">
-            <h2>PROTOCOLOS ACTIVOS</h2>
+        <div class="content-container">
+            <h2>AVAILABLE MODULES</h2>
             
             <div class="game-card p3p-glow" onclick="app.openGame('p3p')">
-                <div class="card-content">
+                <div>
                     <h3>PERSONA 3 PORTABLE</h3>
-                    <p>Estado: Full Moon Operations</p>
+                    <p>S.E.E.S Database / Tartarus Nav</p>
                 </div>
-                <div class="card-icon">🌑</div>
+                <div class="card-icon">🌕</div>
             </div>
 
-            <div class="game-card p4g-style" onclick="app.openGame('p4g')">
-                <div class="card-content">
-                    <h3>PERSONA 4 GOLDEN</h3>
-                    <p>Estado: Midnight Channel On-Air</p>
+            <div class="game-card p4g-glow" onclick="app.openGame('p4g')" style="border-left-color: #ffe600;">
+                <div>
+                    <h3 style="color:#ffe600">PERSONA 4 GOLDEN</h3>
+                    <p>Investigation Team / TV World</p>
                 </div>
                 <div class="card-icon">📺</div>
             </div>
-        </main>
-    </section>
 
-    <section id="view-game-interface" class="view hidden">
-        <header class="game-top-bar">
-            <button onclick="app.goHome()" class="btn-back">◀ ATRÁS</button>
-            <span class="current-module-title">P3P DATABASE</span>
-            
-            <div class="gender-switch">
-                <button class="switch-btn active" id="btn-male" onclick="app.setGender('male')">♂ MALE</button>
-                <button class="switch-btn" id="btn-female" onclick="app.setGender('female')">♀ FEMALE</button>
+            <h2 style="margin-top: 40px; color: #444; border-bottom: 1px solid #444;">ENCRIPTADO / PRÓXIMAMENTE</h2>
+
+            <div class="game-card disabled" style="border-left-color: #00b0ff; opacity: 0.6;">
+                <div>
+                    <h3 style="color:#888;">PERSONA 3 RELOAD</h3>
+                    <p>Dark Hour - Reloaded System</p>
+                </div>
+                <div class="card-icon">🔒</div>
             </div>
-        </header>
 
-        <nav class="modules-nav" id="modules-container">
-        </nav>
+            <div class="game-card disabled" style="border-left-color: #ffca28; opacity: 0.6;">
+                <div>
+                    <h3 style="color:#888;">PERSONA 4 REVIVAL</h3>
+                    <p>Midnight Channel - Signal Lost</p>
+                </div>
+                <div class="card-icon">🔒</div>
+            </div>
+
+            <div class="game-card disabled" style="border-left-color: #ff0000; opacity: 0.6;">
+                <div>
+                    <h3 style="color:#888;">PERSONA 5 ROYAL</h3>
+                    <p>Phantom Thieves - Take Your Heart</p>
+                </div>
+                <div class="card-icon">🔒</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="view-game-interface" class="view">
+        <div class="game-top-bar">
+            <button class="btn-back" onclick="app.goHome()">◀ RETURN</button>
+            <div class="current-module-title">DATABASE</div>
+            
+            <div class="gender-switch" style="display:none;">
+                <button id="btn-male" class="switch-btn active" onclick="app.setGender('male')">♂ MC</button>
+                <button id="btn-female" class="switch-btn" onclick="app.setGender('female')">♀ FeMC</button>
+            </div>
+        </div>
+
+        <div class="modules-nav" id="modules-container">
+            </div>
 
         <div id="data-display" class="data-viewport">
             <div class="empty-state">Seleccione un módulo de datos.</div>
         </div>
-    </section>
+    </div>
 
     <script src="js/app.js"></script>
 </body>

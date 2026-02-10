@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "The Lovely Man (El adorable hombre)",
+    "available": "20 de Abril",
+    "source": "Librería Yomenaido",
+    "effect": "Coraje (Courage) +++",
+    "type": "normal"
+  },
+  {
+    "id": 2,
+    "title": "Beginner Fishing (Pesca para novatos)",
+    "available": "20 de Abril",
+    "source": "Librería Yomenaido",
+    "effect": "Aumenta la habilidad de pesca",
+    "type": "normal"
+  },
+  {
+    "id": 3,
+    "title": "Off Today (Hoy libro)",
+    "available": "20 de Abril",
+    "source": "Librería Yomenaido",
+    "effect": "Comprensión (Understanding) +++",
+    "type": "normal"
+  },
+  {
+    "id": 4,
+    "title": "The Witch Detective (La bruja detective)",
+    "available": "29 de Mayo (Domingo)",
+    "source": "Evento S.Link Fuerza (Kou/Daisuke). ¡Debes aceptar su llamada!",
+    "effect": "Diligencia (Diligence) +++",
+    "type": "missable"
+  },
+  {
+    "id": 5,
+    "title": "The Gentle Way (El camino suave)",
+    "available": "20 de Mayo",
+    "source": "Librería Yomenaido (Después de terminar una mazmorra)",
+    "effect": "Conocimiento (Knowledge) +++ y Expresión ++",
+    "type": "normal"
+  },
+  {
+    "id": 6,
+    "title": "Poly-land",
+    "available": "15 de Julio (Viernes)",
+    "source": "Evento S.Link Fuerza (Kou/Daisuke). ¡Acepta la llamada!",
+    "effect": "Conocimiento +++ y Diligencia ++",
+    "type": "missable"
+  },
+  {
+    "id": 7,
+    "title": "Hyperspeed Reading (Lectura Rápida)",
+    "available": "4 de Agosto",
+    "source": "Librería Yomenaido",
+    "effect": "¡VITAL! Te permite leer 2 capítulos de un libro en una sola sesión.",
+    "type": "vital"
+  },
+  {
+    "id": 8,
+    "title": "The O-Cha Way (El camino del té)",
+    "available": "10 de Agosto",
+    "source": "Evento S.Link Fuerza. ¡Acepta la llamada!",
+    "effect": "Conocimiento +++ y Expresión ++",
+    "type": "missable"
+  },
+  {
+    "id": 9,
+    "title": "The Divine Way (El camino divino)",
+    "available": "21 de Agosto (Festival de Verano)",
+    "source": "Ve al festival con una chica y gana algo.",
+    "effect": "Conocimiento +++ y Coraje ++",
+    "type": "missable"
+  },
+  {
+    "id": 10,
+    "title": "Man-God (Hombre Dios)",
+    "available": "20 de Agosto",
+    "source": "Librería Yomenaido",
+    "effect": "Coraje +++",
+    "type": "normal"
+  },
+  {
+    "id": 11,
+    "title": "Farewell to Man (Adiós al hombre)",
+    "available": "20 de Noviembre",
+    "source": "Librería Yomenaido",
+    "effect": "Coraje +++",
+    "type": "normal"
+  },
+  {
+    "id": 12,
+    "title": "Guide to Pests (Guía de plagas)",
+    "available": "Todo el año",
+    "source": "Completa la misión del 'Anciano' (Pez Guardián).",
+    "effect": "Conocimiento +++",
+    "type": "normal"
+  }
+]

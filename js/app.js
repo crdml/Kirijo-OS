@@ -10,12 +10,15 @@ const app = {
             { id: 'school', label: '📝 Escuela', colorClass: '' },
             { id: 'social', label: '🤝 Vínculos', colorClass: '' },
             { id: 'missing', label: '🕵️ Desaparecidos', colorClass: 'alert-text' },
-            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }
+            { id: 'requests', label: '👠 Misiones', colorClass: '' }, // Elizabeth (Velvet Style)
+            { id: 'tartarus', label: '💀 Jefes', colorClass: 'alert-text' }, // Tartarus Bosses (Dark Red)
+            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }  // Velvet Style
         ],
         p4g: [
             { id: 'school', label: '🎓 Exámenes', colorClass: 'p4-btn-1' },     // Knowledge
             { id: 'social', label: '👓 Social Links', colorClass: 'p4-btn-2' }, // Investigation Team
             { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },      // Cooking
+            { id: 'books', label: '📖 Libros', colorClass: 'p4-btn-4' },        // NEW: Bookworm Guide
             { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },        // Midnight Channel
             { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },      // Funky Student
             { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }     // Margaret (Velvet Style)
@@ -71,7 +74,7 @@ const app = {
         const titleEl = document.querySelector('.current-module-title');
         const genderSwitch = document.querySelector('.gender-switch');
         
-        // Resetear atmósfera por si venimos de Fusiones
+        // Resetear atmósfera
         this.resetAtmosphere();
 
         if(gameId === 'p3p') {
@@ -98,7 +101,10 @@ const app = {
                 button.innerHTML = btn.label;
                 button.className = btn.colorClass;
                 button.onclick = () => this.loadModule(btn.id);
-                if(gameId === 'p3p' && btn.id === 'missing') button.classList.add('alert-text');
+                // Marca botones de alerta en rojo para P3P
+                if(gameId === 'p3p' && (btn.id === 'missing' || btn.id === 'tartarus')) {
+                    button.classList.add('alert-text');
+                }
                 navContainer.appendChild(button);
             });
         }
@@ -136,18 +142,15 @@ const app = {
         const bgGrid = document.querySelector('.bg-grid');
         const isP4 = document.body.classList.contains('theme-p4');
 
-        // Eliminar overrides
         root.removeProperty('--bg-dark');
         root.removeProperty('--text-main');
         if(bgGrid) {
-            bgGrid.style.background = ''; // Vuelve al CSS original (Patrón P4 o Negro P3)
+            bgGrid.style.background = ''; // Vuelve al CSS original
         }
 
-        // Restaurar color de acento correcto
         if (isP4) {
-            root.removeProperty('--kirijo-blue'); // Deja que el CSS de P4 mande (Rojo/Colores)
+            root.removeProperty('--kirijo-blue');
         } else {
-            // Reaplicar color P3P (Azul o Rosa)
             this.setGender(this.state.protagonist);
         }
     },
@@ -158,12 +161,10 @@ const app = {
         const velvetBlue = '#0a0e29'; // Azul Noche
         const velvetGold = '#d4af37'; // Dorado
 
-        // Forzar variables globales
         root.setProperty('--bg-dark', velvetBlue);
         root.setProperty('--text-main', velvetGold);
-        root.setProperty('--kirijo-blue', velvetGold); // Acentos en dorado
+        root.setProperty('--kirijo-blue', velvetGold);
 
-        // Forzar fondo (para tapar el amarillo de P4)
         if(bgGrid) {
             bgGrid.style.background = velvetBlue;
             bgGrid.style.backgroundImage = `radial-gradient(circle at center, #1a237e 0%, ${velvetBlue} 80%)`;
@@ -180,19 +181,21 @@ const app = {
         }
 
         // --- LÓGICA DE AMBIENTE ---
-        if (type === 'fusions') {
+        // Activamos Velvet Room para Fusiones y Misiones (Requests)
+        if (type === 'fusions' || type === 'requests') {
             this.setVelvetAtmosphere();
         } else {
             this.resetAtmosphere();
         }
 
         const isP4 = document.body.classList.contains('theme-p4');
+        const velvetMsg = '<div class="empty-state" style="color:#d4af37; font-family:serif; font-style:italic;">"Bienvenido a la Habitación de Terciopelo..."</div>';
         
         // Mensaje de carga
-        if (isP4 && type !== 'fusions') {
+        if (type === 'fusions' || type === 'requests') {
+             display.innerHTML = velvetMsg;
+        } else if (isP4) {
              display.innerHTML = '<div class="empty-state" style="color:#000;">Sintonizando el Canal de Medianoche...</div>';
-        } else if (type === 'fusions') {
-             display.innerHTML = '<div class="empty-state" style="color:#d4af37; font-family:serif; font-style:italic;">"Bienvenido a la Habitación de Terciopelo..."</div>';
         } else {
              display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
         }
@@ -202,12 +205,15 @@ const app = {
             if(type === 'school') filename = 'data/p3p_school_answers.json';
             if(type === 'social') filename = 'data/p3p_social_links_master.json';
             if(type === 'missing') filename = 'data/p3p_missing_persons.json';
+            if(type === 'requests') filename = 'data/p3p_elizabeth_requests.json';
+            if(type === 'tartarus') filename = 'data/p3p_tartarus_bosses.json';
             if(type === 'fusions') filename = 'data/p3p_special_fusions.json';
         } else {
             if(type === 'school') filename = 'data/p4g_school_answers.json';
             if(type === 'social') filename = 'data/p4g_social_links.json';
             if(type === 'riddle') filename = 'data/p4g_riddles.json';
             if(type === 'lunch') filename = 'data/p4g_lunchbox.json';
+            if(type === 'books') filename = 'data/p4g_books.json'; // New
             if(type === 'quiz') filename = 'data/p4g_tv_quiz.json';
             if(type === 'fusions') filename = 'data/p4g_special_fusions.json';
         }
@@ -218,16 +224,26 @@ const app = {
             const data = await response.json();
             
             // --- RENDERIZADO ---
+            
+            // Universal (Velvet Room Style)
+            if(type === 'fusions') this.renderFusions(data, display);
+            if(type === 'requests') this.renderElizabethRequests(data, display);
+            
+            // Comunes
             if(type === 'school') this.renderSchool(data, display);
             if(type === 'social') this.renderSocial(data, display);
-            if(type === 'fusions') this.renderFusions(data, display); // Universal
             
+            // Específicos P3P
             if(!isP4) {
                 if(type === 'missing') this.renderMissing(data, display);
+                if(type === 'tartarus') this.renderTartarusBosses(data, display);
             }
+            
+            // Específicos P4G
             if(isP4) {
                 if(type === 'riddle') this.renderRiddles(data, display);
                 if(type === 'lunch') this.renderLunch(data, display);
+                if(type === 'books') this.renderBooks(data, display);
                 if(type === 'quiz') this.renderQuiz(data, display);
             }
 
@@ -236,6 +252,7 @@ const app = {
             display.innerHTML = `<div class="data-card" style="border-color:var(--alert-red)">
                 <h3 style="color:var(--alert-red)">ERROR DE SEÑAL</h3>
                 <p>${error.message}</p>
+                <small>Verifica que has creado el archivo JSON en la carpeta /data.</small>
             </div>`;
         }
     },
@@ -396,6 +413,73 @@ const app = {
         container.innerHTML = html;
     },
 
+    renderElizabethRequests: function(data, container) {
+        const velvetBlue = '#0a0e29';
+        const velvetGold = '#d4af37';
+        const velvetText = '#e0e0e0';
+
+        let html = `
+        <div style="background: linear-gradient(180deg, #000020 0%, #1a237e 100%); border: 3px double ${velvetGold}; padding: 20px; border-radius: 8px; color: ${velvetText}; text-align: center; margin-bottom: 30px; box-shadow: 0 0 20px rgba(26, 35, 126, 0.5);">
+            <h2 style="color: ${velvetGold}; font-family: 'Georgia', serif; letter-spacing: 4px; border-bottom: 1px solid ${velvetGold}; padding-bottom: 10px; margin-bottom: 5px; font-weight: normal; text-transform: uppercase;">Elizabeth's Requests</h2>
+            <div style="font-size: 0.9em; font-style: italic; opacity: 0.8; font-family: serif;">"Tengo una petición para ti..."</div>
+        </div>
+        `;
+        
+        data.sort((a, b) => {
+            if (a.deadline && !b.deadline) return -1;
+            if (!a.deadline && b.deadline) return 1;
+            return a.id - b.id;
+        });
+
+        data.forEach(req => {
+            const hasDeadline = req.deadline !== null;
+            
+            html += `<div class="data-card" style="border: 1px solid ${velvetGold}; background: rgba(10, 14, 41, 0.95); color:${velvetText}; margin-bottom: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.8);">
+                <div style="border-bottom: 1px solid ${velvetGold}; padding:8px; display:flex; justify-content:space-between; align-items:center;">
+                    <strong style="font-size:1.1em; color:${velvetGold}; font-family: serif;">#${req.id} - ${req.task}</strong>
+                    ${hasDeadline ? `<span style="background:#800000; color:#fff; padding:2px 8px; border:1px solid #ff4444; border-radius:2px; font-size:0.8em; font-family:sans-serif;">⏳ ${req.deadline}</span>` : ''}
+                </div>
+                
+                <div style="padding:15px;">
+                    <div style="margin-bottom: 10px; font-size: 0.95em;">
+                        <span style="color:#aaa; font-style:italic;">Solución:</span> <span style="color:#fff;">${req.solution}</span>
+                    </div>
+                    <div style="background:rgba(212, 175, 55, 0.1); padding:5px 10px; border: 1px solid ${velvetGold}; display:inline-block; font-size:0.9em;">
+                        🎁 Recompensa: <span style="color:${velvetGold}; font-weight:bold;">${req.reward}</span>
+                    </div>
+                </div>
+            </div>`;
+        });
+        
+        container.innerHTML = html;
+    },
+
+    renderTartarusBosses: function(data, container) {
+        let html = '<h3 style="color:#ff2a2a; text-align:center; text-transform:uppercase; border-bottom: 2px solid #ff2a2a; padding-bottom:10px; letter-spacing:2px;">💀 GUARDIANES DE TARTARUS</h3>';
+        
+        data.forEach(boss => {
+            html += `<div class="data-card" style="border-left: 4px solid #ff2a2a; background: linear-gradient(90deg, rgba(20,0,0,0.9) 0%, rgba(10,10,10,0.95) 100%); margin-bottom: 15px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid #400; padding-bottom:5px; margin-bottom:10px;">
+                    <strong style="color:#ff6b6b; font-size:1.1em;">${boss.floor}</strong>
+                    <span style="color:#fff; font-weight:bold;">${boss.boss}</span>
+                </div>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:10px;">
+                    <div style="background:rgba(0,255,0,0.1); padding:5px; border-radius:4px; font-size:0.9em;">
+                        <span style="color:#4caf50; font-weight:bold;">⚔️ Débil:</span> <br>${boss.weakness}
+                    </div>
+                    <div style="background:rgba(255,0,0,0.1); padding:5px; border-radius:4px; font-size:0.9em;">
+                        <span style="color:#ff2a2a; font-weight:bold;">🛡️ Anula:</span> <br>${boss.nullify}
+                    </div>
+                </div>
+                <div style="font-size:0.9em; color:#bbb; border-top:1px dashed #444; padding-top:5px;">
+                    <span style="color:#ff2a2a;">💡 Estrategia:</span> ${boss.strategy}
+                </div>
+            </div>`;
+        });
+        
+        container.innerHTML = html;
+    },
+
     renderRiddles: function(data, container) {
         let html = '<h3 style="color:#000; text-align:center; background:#ffe600; border:2px solid #000; padding:10px; transform:skew(-2deg);">🎩 DESAFÍOS DEL FUNKY STUDENT</h3>';
         data.forEach(r => {
@@ -443,6 +527,40 @@ const app = {
                         </div>
                     </div>
                     <div><div style="font-size:0.85em; color:#666; margin-bottom:5px;">A quién le gusta:</div><div>${favsHtml}</div></div>
+                </div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    renderBooks: function(data, container) {
+        let html = '<h3 style="color:#2e7d32; background:#e8f5e9; text-align:center; text-transform:uppercase; border: 2px solid #2e7d32; padding:10px; transform:skew(-2deg);">📖 GUÍA DE LECTURA (YOMENAIDO)</h3>';
+        data.forEach(book => {
+            let borderStyle = 'border-left: 5px solid #2e7d32;'; // Verde normal
+            let bgStyle = 'background: #fff; color:#000;';
+            let badge = '';
+
+            if (book.type === 'missable') {
+                borderStyle = 'border: 2px solid #d32f2f; border-left-width: 8px;'; // Rojo Alerta
+                bgStyle = 'background: #ffebee; color:#b71c1c;';
+                badge = '<span style="background:#d32f2f; color:white; padding:2px 6px; font-size:0.7em; border-radius:4px; text-transform:uppercase; margin-left:5px;">⚠️ PERDIBLE</span>';
+            } else if (book.type === 'vital') {
+                borderStyle = 'border: 2px solid #fbc02d; border-left-width: 8px;'; // Dorado
+                bgStyle = 'background: #fffde7; color:#f57f17;';
+                badge = '<span style="background:#fbc02d; color:black; padding:2px 6px; font-size:0.7em; border-radius:4px; text-transform:uppercase; margin-left:5px;">⭐ ESENCIAL</span>';
+            }
+
+            html += `<div class="data-card" style="${borderStyle} ${bgStyle} margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:5px; border-bottom: 1px dashed rgba(0,0,0,0.2); padding-bottom:5px;">
+                    <strong style="font-size:1.1em;">${book.title}</strong>
+                    <div style="text-align:right;">${badge}</div>
+                </div>
+                <div style="font-size:0.9em; margin-bottom:8px;">
+                    📅 <strong>Disponible:</strong> ${book.available} <br>
+                    📍 <strong>Origen:</strong> ${book.source}
+                </div>
+                <div style="background:rgba(0,0,0,0.05); padding:8px; border-radius:4px; font-style:italic;">
+                    ✨ Efecto: ${book.effect}
                 </div>
             </div>`;
         });
