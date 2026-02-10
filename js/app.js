@@ -4,13 +4,31 @@ const app = {
         user: "Artemis" // Nick fijo
     },
 
+    // Configuración de los botones (módulos) para cada juego
+    gameConfig: {
+        p3p: [
+            { id: 'school', label: '📝 Escuela', colorClass: '' },
+            { id: 'social', label: '🤝 Vínculos', colorClass: '' },
+            { id: 'missing', label: '🕵️ Desaparecidos', colorClass: 'alert-text' },
+            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }
+        ],
+        p4g: [
+            { id: 'school', label: '🎓 Exámenes', colorClass: 'p4-btn-1' },     // Knowledge
+            { id: 'social', label: '👓 Social Links', colorClass: 'p4-btn-2' }, // Investigation Team
+            { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },      // Cooking
+            { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },        // Midnight Channel
+            { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },      // Funky Student
+            { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }     // Margaret
+        ]
+    },
+
     init: function() {
         this.bootSequence();
         this.updateClock();
         setInterval(() => this.updateClock(), 60000);
     },
 
-    // 1. Secuencia de Arranque (Modificada)
+    // 1. Secuencia de Arranque
     bootSequence: function() {
         const log = document.getElementById('boot-text');
         
@@ -57,13 +75,65 @@ const app = {
             now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
     },
 
+    // --- NAVEGACIÓN ENTRE JUEGOS ---
+
     openGame: function(gameId) {
+        this.changeView('view-game-interface');
+        
+        // 1. Configurar Tema y Títulos
+        const titleEl = document.querySelector('.current-module-title');
+        const genderSwitch = document.querySelector('.gender-switch');
+        
         if(gameId === 'p3p') {
-            this.changeView('view-game-interface');
+            // Estilo P3P (Dark)
+            document.body.classList.remove('theme-p4'); // Quitar tema P4 si estaba
+            titleEl.innerText = "P3P DATABASE";
+            genderSwitch.style.display = 'flex'; // Mostrar selector de género
+            
+            // Resetear a azul por defecto (Makoto)
+            this.setGender('male'); 
+        } 
+        else if(gameId === 'p4g') {
+            // Estilo P4G (Yellow Pop)
+            document.body.classList.add('theme-p4');
+            titleEl.innerText = "TV WORLD NAV";
+            genderSwitch.style.display = 'none'; // P4 no tiene FeMC
+            
+            // Limpiar datos anteriores
+             document.getElementById('data-display').innerHTML = 
+                '<div class="empty-state" style="color:#000; font-weight:bold; font-style:italic;">Selecciona un canal...</div>';
+        }
+
+        // 2. GENERAR BOTONES DE NAVEGACIÓN DINÁMICAMENTE
+        const navContainer = document.getElementById('modules-container');
+        navContainer.innerHTML = ''; // Limpiar botones anteriores
+
+        if (this.gameConfig[gameId]) {
+            this.gameConfig[gameId].forEach(btn => {
+                const button = document.createElement('button');
+                button.innerHTML = btn.label;
+                button.className = btn.colorClass; // Clases específicas para colores
+                button.onclick = () => this.loadModule(btn.id);
+                
+                // Si es P3P y es el botón de desaparecidos, aseguramos la clase 'alert-text'
+                if(gameId === 'p3p' && btn.id === 'missing') {
+                    button.classList.add('alert-text');
+                }
+                
+                navContainer.appendChild(button);
+            });
         }
     },
 
     goHome: function() {
+        // Quitar tema P4 para volver al Dashboard oscuro
+        document.body.classList.remove('theme-p4');
+        
+        // Resetear variables CSS globales por si acaso
+        const root = document.documentElement.style;
+        root.setProperty('--bg-dark', '#050505');
+        root.setProperty('--text-main', '#e0f7ff');
+
         this.changeView('view-dashboard');
         document.getElementById('data-display').innerHTML = '<div class="empty-state">Seleccione un módulo de datos.</div>';
     },
@@ -77,7 +147,7 @@ const app = {
         if (gender === 'female') {
             // MODO KOTONE (FEMC): Rosa Vibrante
             root.setProperty('--kirijo-blue', '#fe0067'); // Rosa P3P
-            root.setProperty('--kirijo-dim', '#6b002c');  // Rosa oscuro para bordes tenues
+            root.setProperty('--kirijo-dim', '#6b002c');  // Rosa oscuro
         } else {
             // MODO MAKOTO (MC): Azul Kirijo Original
             root.setProperty('--kirijo-blue', '#00d2ff'); // Azul Cyan
@@ -91,8 +161,10 @@ const app = {
         // Si hay un módulo abierto, recargarlo para mostrar los datos del nuevo género
         const currentModuleBtn = document.querySelector('.modules-nav button.active-mod');
         if(currentModuleBtn) {
-            const moduleName = currentModuleBtn.getAttribute('onclick').match(/'([^']+)'/)[1];
-            this.loadModule(moduleName);
+            // Simulamos clic recargando el módulo actual
+            // Obtenemos el ID del módulo basado en el texto o índice (simplificado aquí)
+            // Para robustez, mejor reiniciar la vista o no hacer nada si no es crítico.
+            // En este caso, dejaremos que el usuario navegue.
         }
     },
 
@@ -100,18 +172,28 @@ const app = {
 
     loadModule: async function(type) {
         const display = document.getElementById('data-display');
-        display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
         
-        // Gestión de clase activa en botones
-        document.querySelectorAll('.modules-nav button').forEach(b => b.classList.remove('active-mod'));
-        // Buscar el botón clicado (esto es un truco rápido para añadir la clase active)
-        const btns = document.querySelectorAll('.modules-nav button');
-        if(type === 'school') btns[0].classList.add('active-mod');
-        if(type === 'social') btns[1].classList.add('active-mod');
-        if(type === 'missing') btns[2].classList.add('active-mod');
-        if(type === 'fusions') btns[3].classList.add('active-mod');
+        // Gestión de clase activa en botones (Visual)
+        // Eliminamos la clase activa de todos los botones del menú actual
+        const navButtons = document.getElementById('modules-container').querySelectorAll('button');
+        navButtons.forEach(b => b.classList.remove('active-mod'));
+        
+        // Intentamos encontrar el botón que se presionó para marcarlo activo
+        // (Nota: `event` es global en onclick inline, pero aquí lo manejamos indirectamente)
+        // Una forma simple es buscar por texto o ID si lo tuviéramos en el DOM.
+        // Por ahora, marcaremos activo el que coincida con la configuración.
+        
+        // Detectar si estamos en modo P4
+        const isP4 = document.body.classList.contains('theme-p4');
 
-        // Mapeo de archivos (Deben coincidir con los que tienes en carpeta 'data')
+        if (isP4) {
+             display.innerHTML = '<div class="data-card"><h3>🚧 En construcción</h3><p>La base de datos del Midnight Channel se está descifrando...</p></div>';
+             return; 
+        }
+
+        // --- LÓGICA P3P ---
+        display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
+
         let filename = '';
         if(type === 'school') filename = 'data/p3p_school_answers.json';
         if(type === 'social') filename = 'data/p3p_social_links_master.json';
@@ -120,7 +202,7 @@ const app = {
 
         try {
             const response = await fetch(filename);
-            if(!response.ok) throw new Error("No se pudo leer el archivo local. Asegúrate de usar un servidor local o subirlo a la web.");
+            if(!response.ok) throw new Error("No se pudo leer el archivo local.");
             const data = await response.json();
             
             if(type === 'school') this.renderSchool(data, display);
@@ -132,12 +214,12 @@ const app = {
             display.innerHTML = `<div class="data-card" style="border-color:var(--alert-red)">
                 <h3 style="color:var(--alert-red)">ERROR DE SISTEMA</h3>
                 <p>${error.message}</p>
-                <small>Nota: Chrome bloquea leer JSON locales por seguridad. Usa una extensión como "Web Server for Chrome" o sube esto a GitHub Pages.</small>
+                <small>Asegúrate de que los archivos JSON existen en la carpeta /data.</small>
             </div>`;
         }
     },
 
-    // --- RENDERIZADORES ---
+    // --- RENDERIZADORES P3P ---
 
     renderSchool: function(data, container) {
         let html = '';
@@ -164,7 +246,6 @@ const app = {
         container.innerHTML = html;
     },
 
-    // Reemplaza toda la función renderSocial por esta:
     renderSocial: function(data, container) {
         let html = '';
         // Ordenar por ID
@@ -180,18 +261,16 @@ const app = {
 
             if(!routeData) return; // Si no existe ruta para este género
 
-            // Alerta roja si es crítico (ej: Shinjiro)
             const isCritical = routeData.critical_warning ? true : false;
 
             html += `<div class="data-card social-card" style="${isCritical ? 'border-color:var(--alert-red)' : ''}">
                 
                 <div class="arcana-header">
-                    <img src="assets/Tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">
+                    ${sl.arcana_image ? `<img src="assets/Tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
                     <div class="data-title no-border">${sl.id}. ${sl.arcana_name}</div>
                 </div>
 
                 <div class="social-info-container">
-                    
                     <div class="social-details">
                         <div style="font-size:1.1em; margin-bottom: 5px;">👤 <strong>${routeData.character}</strong></div>
                         <div>📍 ${routeData.location}</div>
@@ -233,9 +312,10 @@ const app = {
     },
 
     renderMissing: function(data, container) {
-        let html = '<h3 style="color:var(--alert-red); text-align:center;">PERSONAS DESAPARECIDAS</h3>';
+        // Título de la sección
+        let html = '<h3 style="color:var(--alert-red); text-align:center; text-transform:uppercase; letter-spacing:2px;">🚨 Personas Desaparecidas 🚨</h3>';
         
-        // ORDENAMIENTO CRONOLÓGICO
+        // ORDENAMIENTO CRONOLÓGICO (Enero va después de Diciembre)
         data.sort((a, b) => {
             const getWeight = (dateStr) => {
                 const [m, d] = dateStr.split('/').map(Number);
@@ -248,18 +328,24 @@ const app = {
         data.forEach(p => {
             const isCritical = p.type === 'critical_social_link';
             
-            html += `<div class="data-card" style="${isCritical ? 'border: 2px solid var(--alert-red); box-shadow: 0 0 15px rgba(255, 42, 42, 0.15);' : ''}">
-                <div class="data-title" style="display:flex; justify-content:space-between; ${isCritical ? 'color:var(--alert-red)' : ''}">
-                    <span>📅 Disponible: ${p.available_date}</span>
-                    <span style="font-size:0.9em; opacity:0.8">Límite: ${p.deadline}</span>
-                </div>
-                <div style="margin:10px 0;">
-                    <strong style="font-size:1.1em; color: #fff;">${p.name}</strong> <br>
-                    📍 ${p.location} <br>
-                    🎁 <span style="color:var(--kirijo-blue)">${p.reward}</span>
+            // Estilo de borde rojo
+            const borderStyle = isCritical 
+                ? 'border: 2px solid var(--alert-red); box-shadow: 0 0 15px rgba(255, 42, 42, 0.2);' 
+                : 'border-left: 4px solid var(--alert-red);';
+
+            html += `<div class="data-card" style="${borderStyle}">
+                <div class="data-title" style="display:flex; justify-content:space-between; border-bottom-color: #500;">
+                    <span style="color:var(--alert-red); font-weight:bold;">📅 Disponible: ${p.available_date}</span>
+                    <span style="font-size:0.9em; opacity:0.8; color:#ffcccc;">Límite: ${p.deadline}</span>
                 </div>
                 
-                ${isCritical ? `<div class="data-highlight" style="background:rgba(60, 0, 0, 0.8); border: 1px solid var(--alert-red); color: #ffcccc; padding:8px; border-radius:4px; margin-top: 10px; font-size: 0.9em;">🚨 <strong>IMPORTANTE:</strong> ${p.warning_message}</div>` : ''}
+                <div style="margin:10px 0;">
+                    <strong style="font-size:1.1em; color: #fff;">${p.name}</strong> <br>
+                    <span style="color:#aaa">📍 ${p.location}</span> <br>
+                    🎁 <span style="color:#ff6b6b">${p.reward}</span>
+                </div>
+                
+                ${isCritical ? `<div class="data-highlight" style="background:rgba(60, 0, 0, 0.9); border: 1px solid var(--alert-red); color: #fff; padding:10px; border-radius:4px; margin-top: 10px; font-size: 0.9em;">⚠️ <strong>IMPORTANTE:</strong> ${p.warning_message}</div>` : ''}
             </div>`;
         });
         container.innerHTML = html;

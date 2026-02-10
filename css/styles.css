@@ -266,3 +266,139 @@ summary { outline: none; }
 .modules-nav button.alert-text:hover {
     background: rgba(255, 42, 42, 0.2) !important;
 }
+
+/* --- TEMA PERSONA 4 GOLDEN (TV WORLD) --- */
+
+/* Estilo específico para la tarjeta en el Dashboard */
+.game-card.p4g-style {
+    border-left-color: #ffe600;
+    background: linear-gradient(135deg, #222 0%, #332f00 100%);
+}
+.game-card.p4g-style:hover {
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.3);
+    border-color: #ffe600;
+}
+
+/* --- CLASE MAESTRA DEL TEMA P4 --- */
+/* Cuando el body tiene esta clase, todo cambia */
+body.theme-p4 {
+    --bg-dark: #ffe600; /* Fondo Amarillo P4 */
+    --bg-panel: #fff;   /* Paneles Blancos */
+    --text-main: #000;  /* Texto Negro */
+    --text-dim: #333;
+    --kirijo-blue: #e60012; /* Acento Rojo/Naranja */
+    --kirijo-dim: #000;
+    --alert-red: #d32f2f;
+}
+
+/* Ajustes específicos para el modo P4 */
+body.theme-p4 .bg-grid {
+    /* Patrón de líneas o cuadros para P4 */
+    background-image: 
+        linear-gradient(#f5d500 2px, transparent 2px),
+        linear-gradient(90deg, #f5d500 2px, transparent 2px);
+    background-size: 20px 20px;
+    background-color: #ffe600;
+}
+
+body.theme-p4 .game-top-bar {
+    background: #000; /* Barra superior negra para contraste */
+    color: #ffe600;
+    border-bottom: 4px solid #fff;
+}
+
+body.theme-p4 .game-top-bar span {
+    color: #ffe600 !important;
+}
+
+body.theme-p4 .btn-back {
+    color: #ffe600;
+}
+
+/* --- TARJETAS COLORIDAS (POP ART) --- */
+body.theme-p4 .modules-nav {
+    background: rgba(255,255,255,0.5);
+    border-bottom: 2px solid #000;
+}
+
+body.theme-p4 .modules-nav button {
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    transform: skew(-10deg); /* Inclinación estilo P4 */
+    margin: 0 5px;
+    background: #fff;
+}
+
+/* Colores individuales para los botones en modo P4 */
+body.theme-p4 .modules-nav button:nth-child(1) { border-color: #4caf50; color: #4caf50; } /* Escuela Verde */
+body.theme-p4 .modules-nav button:nth-child(1):hover,
+body.theme-p4 .modules-nav button:nth-child(1).active-mod { background: #4caf50; color: #fff; }
+
+body.theme-p4 .modules-nav button:nth-child(2) { border-color: #e91e63; color: #e91e63; } /* Vínculos Rosa */
+body.theme-p4 .modules-nav button:nth-child(2):hover,
+body.theme-p4 .modules-nav button:nth-child(2).active-mod { background: #e91e63; color: #fff; }
+
+body.theme-p4 .modules-nav button:nth-child(3) { border-color: #f44336; color: #f44336; } /* Desaparecidos Rojo */
+body.theme-p4 .modules-nav button:nth-child(3):hover,
+body.theme-p4 .modules-nav button:nth-child(3).active-mod { background: #f44336; color: #fff; }
+
+body.theme-p4 .modules-nav button:nth-child(4) { border-color: #2196f3; color: #2196f3; } /* Fusiones Azul */
+body.theme-p4 .modules-nav button:nth-child(4):hover,
+body.theme-p4 .modules-nav button:nth-child(4).active-mod { background: #2196f3; color: #fff; }
+
+/* Estilo de las Data Cards en P4 (Blanco con sombra dura) */
+body.theme-p4 .data-card {
+    background: #fff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.8); /* Sombra Pop Art */
+    color: #000;
+    border-radius: 0; /* Bordes rectos */
+}
+
+body.theme-p4 .data-title {
+    color: #000 !important;
+    background: #ffe600;
+    padding: 5px;
+    border: 2px solid #000;
+    margin: -17px -17px 10px -17px; /* Sacarlo hacia afuera */
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+body.theme-p4 strong { color: #000; }
+body.theme-p4 span { color: #333; }
+
+/* BOTONES ESPECÍFICOS DE P4G (Colores Pop) */
+body.theme-p4 .modules-nav button {
+    border-width: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #fff;
+    margin: 0 4px;
+    min-width: 90px; /* Un poco más estrechos para que quepan 6 */
+}
+
+/* 1. Escuela (Verde Chie) */
+body.theme-p4 .p4-btn-1 { border-color: #69db00; color: #4fa300; }
+body.theme-p4 .p4-btn-1:hover, body.theme-p4 .p4-btn-1.active-mod { background: #69db00; color: #fff; }
+
+/* 2. Social Links (Rosa Rise) */
+body.theme-p4 .p4-btn-2 { border-color: #ff3399; color: #d6006e; }
+body.theme-p4 .p4-btn-2:hover, body.theme-p4 .p4-btn-2.active-mod { background: #ff3399; color: #fff; }
+
+/* 3. Lunch (Naranja Nanako/Yosuke) */
+body.theme-p4 .p4-btn-3 { border-color: #ff8800; color: #cc6d00; }
+body.theme-p4 .p4-btn-3:hover, body.theme-p4 .p4-btn-3.active-mod { background: #ff8800; color: #fff; }
+
+/* 4. Quiz (Morado Teddie) */
+body.theme-p4 .p4-btn-4 { border-color: #9d00ff; color: #7a00c7; }
+body.theme-p4 .p4-btn-4:hover, body.theme-p4 .p4-btn-4.active-mod { background: #9d00ff; color: #fff; }
+
+/* 5. Riddles (Azul Naoto) */
+body.theme-p4 .p4-btn-5 { border-color: #00ccff; color: #008fb3; }
+body.theme-p4 .p4-btn-5:hover, body.theme-p4 .p4-btn-5.active-mod { background: #00ccff; color: #fff; }
+
+/* 6. Fusiones (Rojo Velvet) */
+body.theme-p4 .p4-btn-6 { border-color: #e60012; color: #b3000e; }
+body.theme-p4 .p4-btn-6:hover, body.theme-p4 .p4-btn-6.active-mod { background: #e60012; color: #fff; }

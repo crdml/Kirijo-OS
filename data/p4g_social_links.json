@@ -1,0 +1,264 @@
+[
+  {
+    "id": 0,
+    "arcana_name": "El Loco (The Fool)",
+    "arcana_image": "fool.jpg",
+    "type": "split_character",
+    "description": "Representa el inicio del viaje y el equipo de investigación.",
+    "routes": {
+      "male": {
+        "character": "Investigation Team",
+        "image": "investigation_team.jpg",
+        "location": "Eventos de Historia",
+        "availability": "Automático",
+        "unlock_condition": "Se desbloquea automáticamente el 16 de Abril.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "4/16" },
+          { "rank": 2, "type": "automatic", "date": "4/18" },
+          { "rank": 3, "type": "automatic", "date": "5/17" },
+          { "rank": 4, "type": "automatic", "date": "6/6" },
+          { "rank": 5, "type": "automatic", "date": "7/10" },
+          { "rank": 6, "type": "automatic", "date": "7/10" },
+          { "rank": 7, "type": "automatic", "date": "7/27" },
+          { "rank": 8, "type": "automatic", "date": "10/6" },
+          { "rank": 9, "type": "automatic", "date": "10/29" },
+          { "rank": 10, "type": "automatic", "date": "12/3 (Normal) / 3/20 (True)" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 1,
+    "arcana_name": "El Mago (The Magician)",
+    "arcana_image": "magician.jpg",
+    "type": "split_character",
+    "description": "Representa la acción, la iniciativa y la inmadurez.",
+    "routes": {
+      "male": {
+        "character": "Yosuke Hanamura",
+        "image": "yosuke.jpg",
+        "location": "Pasillo Aula 2F / Junes",
+        "availability": "Lunes, Jueves, Sábado, Domingo (Día)",
+        "unlock_condition": "Automático el 16 de Abril.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Yosuke pregunta...", "best_choice": "Debe ser duro (+3)" },
+              { "context": "Sobre el pueblo...", "best_choice": "¡Eres todo un príncipe! (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Sobre las chicas...", "best_choice": "¡No te preocupes! (+3)" },
+              { "context": "Yosuke se queja...", "best_choice": "¡Tú también molas! (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Yosuke deprimido...", "best_choice": "¡Tienes que animarte! (+3)" },
+              { "context": "Trabajo...", "best_choice": "¡Eso es genial! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Ayuda...", "best_choice": "Por supuesto (+3)" },
+              { "context": "Sobre el caso...", "best_choice": "Ya me lo contarás (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Problema...", "best_choice": "Es un gran problema (+3)" },
+              { "context": "Consuelo...", "best_choice": "Tú importas (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Quejas...", "best_choice": "¡Cállate ya! (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Historia triste...", "best_choice": "Ella murió por algo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Pelea...", "best_choice": "Pégame tú también (+3)" },
+              { "context": "Tras la pelea...", "best_choice": "Me encantan los golpes (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "arcana_name": "La Sacerdotisa (The Priestess)",
+    "arcana_image": "priestess.jpg",
+    "type": "split_character",
+    "description": "Representa la intuición, el misterio y la sabiduría interior.",
+    "routes": {
+      "male": {
+        "character": "Yukiko Amagi",
+        "image": "yukiko.jpg",
+        "location": "Tablón de anuncios 1F",
+        "availability": "Lunes, Martes, Miércoles, Jueves (Día)",
+        "unlock_condition": "Disponible desde el 17 de Mayo (tras rescatarla). Requiere Coraje nivel 3.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Sensei...", "best_choice": "Está bien (+3)" },
+              { "context": "Cocina...", "best_choice": "Tiene sentido del humor (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Huevos...", "best_choice": "¡Buena suerte! (+3)" },
+              { "context": "Posada...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Cocina mejorada...", "best_choice": "Tiene buena pinta (+3)" },
+              { "context": "Comer...", "best_choice": "Está bueno (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Preocupación...", "best_choice": "¿Qué pasa? (+3)" },
+              { "context": "Gente...", "best_choice": "No es egoísta (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Cocinar...", "best_choice": "¿Crees que lo lograrás? (+3)" },
+              { "context": "Futuro...", "best_choice": "¡Te apoyaré! (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Reporteros...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Respuesta...", "best_choice": "Estuvo genial (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Llorando...", "best_choice": "Das miedo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Sentimientos...", "best_choice": "Para mí eres Yukiko (+3)" },
+              { "context": "Confesión...", "best_choice": "Sé mi novia (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "arcana_name": "La Emperatriz (The Empress)",
+    "arcana_image": "empress.jpg",
+    "type": "split_character",
+    "description": "Representa la fertilidad, la creatividad y la abundancia.",
+    "routes": {
+      "male": {
+        "character": "Margaret",
+        "image": "margaret.jpg",
+        "location": "Habitación de Terciopelo (Velvet Room)",
+        "availability": "Cualquier día (Si tienes el Persona requerido)",
+        "unlock_condition": "Disponible desde el 19 de Mayo. Requiere Conocimiento nivel 3 (Expert).",
+        "romance": false,
+        "notes": "Este vínculo NO avanza hablando. Avanza mostrándole los Personas con habilidades específicas que pide.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Ippon-Datara con Sukukaja (Nv 17)", "notes": "Fusión sugerida: Sylph + Archangel" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Matador con Mahama (Nv 24)", "notes": "Fusión sugerida: Anzu + Berith" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Gdon con Rampage (Nv 31)", "notes": "Fusión sugerida: Ares (Nv 28) + Shiisaa" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Neko-shogun con Bufula (Nv 32)", "notes": "Fusión Cross (4): King Frost (Bufula) + Hua Po + Saki Mitama + High Pixie" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Black Frost con Auto-Sukukaja (Nv 38)", "notes": "Fusión Cross (5): Jack Frost + Pyro Jack + King Frost + Pixie + Ghoul. (Heredar Auto-Sukukaja de alguien)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Yatagarasu con Megido (Nv 45)", "notes": "Fusión sugerida: Samael (Megido Nv 39) + Oberon" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Yatsufusa con Mediarama (Nv 49)", "notes": "Fusión Cross (5). Thoth aprende Mediarama al 47." }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Ganesha con Tetrakarn (Nv 50)", "notes": "Fusión sugerida: Decarabia + Cu Chulainn" }
+            ]
+          },
+          {
+            "rank": 10,
+            "responses": [
+              { "context": "Misión Fusión", "best_choice": "Crear Trumpeter con Mind Charge (Nv 67)", "notes": "Fusión Hexagon (6). Taotie aprende Mind Charge al 38." }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {}
+]
