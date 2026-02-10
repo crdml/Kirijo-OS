@@ -51,6 +51,7 @@ Para ejecutar una instancia local de este sistema:
 
 <p align="center">
 <em>"The arcana is the means by which all is revealed..."</em>
-<em>*“Executions are a last resort. Information is our primary weapon.”*</em>
+  <br>
+<em>“Executions are a last resort. Information is our primary weapon.”</em>
 <sub>© 2026 Kirijo Group Development Division</sub>
 </p>
