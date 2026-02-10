@@ -168,58 +168,75 @@ const app = {
         }
     },
 
-    // --- CARGA DE DATOS ---
+    // --- CARGA DE DATOS (ACTUALIZADA PARA P4G) ---
 
     loadModule: async function(type) {
         const display = document.getElementById('data-display');
         
-        // Gestión de clase activa en botones (Visual)
-        // Eliminamos la clase activa de todos los botones del menú actual
-        const navButtons = document.getElementById('modules-container').querySelectorAll('button');
-        navButtons.forEach(b => b.classList.remove('active-mod'));
-        
-        // Intentamos encontrar el botón que se presionó para marcarlo activo
-        // (Nota: `event` es global en onclick inline, pero aquí lo manejamos indirectamente)
-        // Una forma simple es buscar por texto o ID si lo tuviéramos en el DOM.
-        // Por ahora, marcaremos activo el que coincida con la configuración.
-        
-        // Detectar si estamos en modo P4
-        const isP4 = document.body.classList.contains('theme-p4');
-
-        if (isP4) {
-             display.innerHTML = '<div class="data-card"><h3>🚧 En construcción</h3><p>La base de datos del Midnight Channel se está descifrando...</p></div>';
-             return; 
+        // Gestión visual de botones activos
+        const navContainer = document.getElementById('modules-container');
+        if(navContainer) {
+            navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active-mod'));
+            // Intentamos marcar el botón actual (truco simple basado en el texto del botón o orden)
+            // Para simplificar, confiaremos en que el usuario ve el cambio de contenido.
         }
 
-        // --- LÓGICA P3P ---
-        display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
+        // Detectar Juego
+        const isP4 = document.body.classList.contains('theme-p4');
+        
+        // Mensaje de carga con estilo según el juego
+        if (isP4) {
+             display.innerHTML = '<div class="empty-state" style="color:#000;">Sintonizando el Canal de Medianoche...</div>';
+        } else {
+             display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
+        }
 
         let filename = '';
-        if(type === 'school') filename = 'data/p3p_school_answers.json';
-        if(type === 'social') filename = 'data/p3p_social_links_master.json';
-        if(type === 'missing') filename = 'data/p3p_missing_persons.json';
-        if(type === 'fusions') filename = 'data/p3p_special_fusions.json';
+
+        // --- LÓGICA DE SELECCIÓN DE ARCHIVO ---
+        if (!isP4) {
+            // Archivos de P3P
+            if(type === 'school') filename = 'data/p3p_school_answers.json';
+            if(type === 'social') filename = 'data/p3p_social_links_master.json';
+            if(type === 'missing') filename = 'data/p3p_missing_persons.json';
+            if(type === 'fusions') filename = 'data/p3p_special_fusions.json';
+        } else {
+            // Archivos de P4G
+            if(type === 'school') filename = 'data/p4g_school_answers.json';
+            if(type === 'social') filename = 'data/p4g_social_links.json';
+            
+            // Placeholder para los que aún no creamos
+            if(type === 'lunch' || type === 'quiz' || type === 'riddle' || type === 'fusions') {
+                display.innerHTML = '<div class="data-card"><h3>🚧 En construcción</h3><p>Este canal aún no emite señal.</p></div>';
+                return;
+            }
+        }
 
         try {
             const response = await fetch(filename);
-            if(!response.ok) throw new Error("No se pudo leer el archivo local.");
+            if(!response.ok) throw new Error("No se encontró el archivo de datos.");
             const data = await response.json();
             
+            // Renderizar usando las mismas funciones (Reutilización de código)
             if(type === 'school') this.renderSchool(data, display);
             if(type === 'social') this.renderSocial(data, display);
-            if(type === 'missing') this.renderMissing(data, display);
-            if(type === 'fusions') this.renderFusions(data, display);
+            
+            // Renderizadores específicos de P3P (solo si estamos en P3P)
+            if(!isP4) {
+                if(type === 'missing') this.renderMissing(data, display);
+                if(type === 'fusions') this.renderFusions(data, display);
+            }
 
         } catch (error) {
             display.innerHTML = `<div class="data-card" style="border-color:var(--alert-red)">
-                <h3 style="color:var(--alert-red)">ERROR DE SISTEMA</h3>
+                <h3 style="color:var(--alert-red)">ERROR DE SEÑAL</h3>
                 <p>${error.message}</p>
-                <small>Asegúrate de que los archivos JSON existen en la carpeta /data.</small>
+                <small>Verifica que el archivo JSON esté en la carpeta /data y tenga el nombre correcto.</small>
             </div>`;
         }
     },
 
-    // --- RENDERIZADORES P3P ---
+    // --- RENDERIZADORES ---
 
     renderSchool: function(data, container) {
         let html = '';
@@ -228,16 +245,18 @@ const app = {
                 <div class="data-title">📅 ${month.month}</div>`;
             month.items.forEach(q => {
                 if(q.type === 'exam') {
+                    // Estilo de examen
                     html += `<div style="border-left: 2px solid var(--alert-red); padding-left:10px; margin:15px 0; background:rgba(255, 42, 42, 0.05)">
                                 <strong style="color:var(--alert-red); display:block; margin-bottom:5px;">🚨 ${q.title}</strong>`;
-                    q.answers.forEach(a => html += `<div style="margin-bottom:3px;"><span style="color:#fff">${a.date}:</span> ${a.answer}</div>`);
+                    q.answers.forEach(a => html += `<div style="margin-bottom:3px;"><span style="font-weight:bold;">${a.date}:</span> ${a.answer}</div>`);
                     html += `</div>`;
                 } else {
-                    html += `<div style="margin-bottom:8px; border-bottom:1px solid #222; padding-bottom:4px;">
+                    // Pregunta normal
+                    html += `<div style="margin-bottom:8px; border-bottom:1px solid #888; padding-bottom:4px;">
                         <span style="color:var(--kirijo-blue); font-weight:bold;">${q.date}</span> <br>
                         ❓ ${q.question} <br>
-                        ✅ <strong style="color:#fff">${q.answer}</strong> 
-                        <span style="color:var(--text-dim); font-size:0.8em">(${q.stat_boost || 'Info'})</span>
+                        ✅ <strong>${q.answer}</strong> 
+                        <span style="font-size:0.8em; opacity:0.8">(${q.stat_boost || 'Info'})</span>
                     </div>`;
                 }
             });
@@ -259,9 +278,15 @@ const app = {
                 routeData = sl.routes[this.state.protagonist]; 
             }
 
-            if(!routeData) return; // Si no existe ruta para este género
+            // Fallback para P4G (siempre usa ruta 'male' por ahora)
+            if (!routeData && sl.routes && sl.routes.male) {
+                routeData = sl.routes.male;
+            }
+
+            if(!routeData) return; // Si no existe ruta
 
             const isCritical = routeData.critical_warning ? true : false;
+            const isP4 = document.body.classList.contains('theme-p4');
 
             html += `<div class="data-card social-card" style="${isCritical ? 'border-color:var(--alert-red)' : ''}">
                 
@@ -288,21 +313,26 @@ const app = {
                     <div style="margin-top:15px;">`;
                         
             routeData.ranks.forEach(r => {
-                html += `<div style="margin-bottom:12px; background:rgba(0,0,0,0.3); padding:8px; border-radius:4px;">
+                html += `<div style="margin-bottom:12px; background:rgba(0,0,0,0.1); padding:8px; border-radius:4px; border: 1px solid #444;">
                     <strong style="color:var(--kirijo-blue)">Rango ${r.rank}</strong> 
                     ${r.date ? `<span style="font-size:0.8em">(${r.date})</span>` : ''}`;
                 
                 if(r.type === 'automatic') {
-                    html += `<div style="color:var(--text-dim); font-style:italic;">Evento Automático</div>`;
+                    html += `<div style="opacity:0.7; font-style:italic;">Evento Automático</div>`;
                 } else if (r.responses) {
                     r.responses.forEach(resp => {
-                        html += `<div style="margin-top:5px; padding-left:10px; border-left:2px solid #444;">
+                        html += `<div style="margin-top:5px; padding-left:10px; border-left:2px solid #666;">
                              "${resp.context.substring(0,40)}..." <br>
-                             👉 <span style="color:#fff; font-weight:bold;">${resp.best_choice}</span>
+                             👉 <span style="font-weight:bold;">${resp.best_choice}</span>
                              ${resp.romance_flag ? '❤️' : ''}
                         </div>`;
                     });
                 }
+                // Si hay notas (como en Margaret o el Zorro)
+                if (r.context && r.best_choice && !r.responses) {
+                     html += `<div style="margin-top:5px;"><strong>Misión:</strong> ${r.context}<br>👉 ${r.best_choice}</div>`;
+                }
+
                 html += `</div>`;
             });
 

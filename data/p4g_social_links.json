@@ -260,5 +260,1363 @@
       }
     }
   },
-  {}
+  {
+    "id": 4,
+    "arcana_name": "El Emperador (The Emperor)",
+    "arcana_image": "emperor.jpg",
+    "type": "split_character",
+    "description": "Representa la autoridad, la estructura y la masculinidad.",
+    "routes": {
+      "male": {
+        "character": "Kanji Tatsumi",
+        "image": "kanji.jpg",
+        "location": "Edificio de Prácticas 1F (Escuela) / Norte Distrito Comercial (Festivos)",
+        "availability": "Miércoles, Jueves, Sábado, Domingo (Día)",
+        "unlock_condition": "Disponible desde el 9 de Junio. Debes hablar con una chica en el 2F (cerca escaleras) que menciona a Kanji, luego ve al Edificio de Prácticas 1F y habla con él.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Disculpas...", "best_choice": "Tú eres tú (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Kanji se enfada...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Regalo...", "best_choice": "Tengo ganas de ver qué recibo (+3)" },
+              { "context": "Gafas...", "best_choice": "Cómprate unas nuevas (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Padre...", "best_choice": "Era un buen hombre (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Policía...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Incomprendido...", "best_choice": "Quiero aprender a coser (+3)" },
+              { "context": "Sentimiento...", "best_choice": "Lo de antes fue increíble (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Policía vuelve...", "best_choice": "Tú mismo le has pillado (+3)" },
+              { "context": "Gracias...", "best_choice": "Buen trabajo (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Concurso...", "best_choice": "¿Cómo ha ido? (+3)" },
+              { "context": "Cambio...", "best_choice": "Has encontrado algo precioso (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "arcana_name": "El Hierofante (The Hierophant)",
+    "arcana_image": "hierophant.jpg",
+    "type": "split_character",
+    "description": "Representa la tradición, las instituciones y la figura paterna.",
+    "routes": {
+      "male": {
+        "character": "Ryotaro Dojima",
+        "image": "dojima.jpg",
+        "location": "Residencia Dojima (Salón)",
+        "availability": "Cualquier día (Noche), si no está trabajando.",
+        "unlock_condition": "Disponible desde el 6 de Mayo. Requiere Expresión (Expression) variable según el rango.",
+        "warning_message": "¡BLOQUEO IMPORTANTE! No podrás avanzar este vínculo en Noviembre/Diciembre debido a eventos de la historia. Intenta terminarlo antes de Octubre.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Dojima trabaja...", "best_choice": "Trabajar es duro (+3)" },
+              { "context": "Nanako...", "best_choice": "Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Dojima cansado...", "best_choice": "No deberías forzarte (+3)" },
+              { "context": "Nanako preocupada...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Café...", "best_choice": "Con leche, por favor (+3)" },
+              { "context": "Esposa...", "best_choice": "¿Cuándo pasó? (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Nanako...", "best_choice": "Es difícil para ella (+3)" },
+              { "context": "Búsqueda...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Supermercado...", "best_choice": "Entonces salgamos fuera (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Chisato...", "best_choice": "Esto es más importante (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Dojima enfermo...", "best_choice": "¿Quieres un poco de café? (+3)" },
+              { "context": "Miedo...", "best_choice": "Porque eres un cobarde (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "Ha sido divertido (+3)" },
+              { "context": "Duro...", "best_choice": "Fue duro, ¿verdad? (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "arcana_name": "Los Enamorados (The Lovers)",
+    "arcana_image": "lovers.jpg",
+    "type": "split_character",
+    "description": "Representa las relaciones, la pasión y las decisiones del corazón.",
+    "routes": {
+      "male": {
+        "character": "Rise Kujikawa",
+        "image": "rise.jpg",
+        "location": "Edificio Escolar 1F / Tienda de Tofu (Festivos)",
+        "availability": "Viernes, Sábado, Domingo (Día)",
+        "unlock_condition": "Disponible desde el 23 de Julio.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Comida...", "best_choice": "¿Haces dieta? (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Inaba...", "best_choice": "Vendré las veces que quieras (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Acosador...", "best_choice": "Llama a la policía (+3)" },
+              { "context": "Miedo...", "best_choice": "Agarra mi mano (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Agencia...", "best_choice": "Lo has pensado mucho (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Fan...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Preocupación...", "best_choice": "Si te arrepientes, lo dejo (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Inoue...", "best_choice": "Ella estaba feliz (+3)" },
+              { "context": "Risa...", "best_choice": "Ríete todo lo que quieras (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Sentimientos...", "best_choice": "Ambos me gustan (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Risette...", "best_choice": "¡Risette es Risette! (+3)" },
+              { "context": "Confesión...", "best_choice": "Quédate a mi lado (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "arcana_name": "El Carro (The Chariot)",
+    "arcana_image": "chariot.jpg",
+    "type": "split_character",
+    "description": "Representa la victoria, la determinación y la superación de obstáculos.",
+    "routes": {
+      "male": {
+        "character": "Chie Satonaka",
+        "image": "chie.jpg",
+        "location": "Edificio Escolar 2F / Azotea",
+        "availability": "Lunes, Martes, Jueves, Sábado (Día)",
+        "unlock_condition": "Automático el 18 de Abril.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Entrenamiento...", "best_choice": "Claro (+3)" },
+              { "context": "Comer...", "best_choice": "Déjame que pague yo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Perro...", "best_choice": "Es muy mono (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Insultos...", "best_choice": "No le hagas caso (+3)" },
+              { "context": "Valentía...", "best_choice": "¡Vamos a cogerles! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Comida...", "best_choice": "Parece muy rica (+3)" },
+              { "context": "Futuro...", "best_choice": "Yo seré tu compañero (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Problemas...", "best_choice": "Claro que sí (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Malentendido...", "best_choice": "No es culpa tuya (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Protección...", "best_choice": "Es lo que tenía que hacer (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "¿Nos protegiste? (+3)" },
+              { "context": "Confesión...", "best_choice": "¿Quieres ser mi novia? (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "arcana_name": "La Justicia (Justice)",
+    "arcana_image": "justice.jpg",
+    "type": "split_character",
+    "description": "Representa la inocencia, la verdad y la imparcialidad.",
+    "routes": {
+      "male": {
+        "character": "Nanako Dojima",
+        "image": "nanako.jpg",
+        "location": "Residencia Dojima (Salón)",
+        "availability": "Cualquier noche (Si Dojima no está)",
+        "unlock_condition": "Automático el 3 de Mayo.",
+        "warning_message": "¡FECHA LÍMITE CRÍTICA! Debes maximizar este vínculo antes del 31 de Octubre. En Noviembre se bloqueará por eventos de la historia.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Nanako pregunta...", "best_choice": "Adelante (+3)" },
+              { "context": "Padre...", "best_choice": "Tengo suerte de tenerte (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Comprar...", "best_choice": "Vayamos a comprar algo (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Pregunta...", "best_choice": "Hay otras preguntas (+3)" },
+              { "context": "Cielo...", "best_choice": "Se han ido al cielo (+3)" },
+              { "context": "Dojima...", "best_choice": "No lo sabe (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Nanako habla...", "best_choice": "Es una persona que me importa (+3)" },
+              { "context": "Dojima...", "best_choice": "¿Hablaste con papá? (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Diario...", "best_choice": "Seguro (+3)" },
+              { "context": "Palabras...", "best_choice": "Quédate con ella (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Enfado...", "best_choice": "Vamos a buscarle (+3)" },
+              { "context": "Dojima llega...", "best_choice": "Escucha lo que tiene que decir (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Tristeza...", "best_choice": "Yo te ayudaré (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Soledad...", "best_choice": "Él me quiere mucho (+3)" },
+              { "context": "Jugar...", "best_choice": "Juguemos (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "arcana_name": "El Ermitaño (The Hermit)",
+    "arcana_image": "hermit.jpg",
+    "type": "split_character",
+    "description": "Representa la guía espiritual y la ayuda desinteresada.",
+    "routes": {
+      "male": {
+        "character": "El Zorro (Fox)",
+        "image": "fox.jpg",
+        "location": "Santuario Tatsuhime",
+        "availability": "Cualquier día (Día)",
+        "unlock_condition": "Disponible desde el 5 de Mayo.",
+        "notes": "Este vínculo NO sube hablando. Debes aceptar 'Emas' (misiones) del santuario, cumplirlas y volver a informar al zorro.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "context": "Misión 01",
+            "best_choice": "Encuentra la pegatina perdida (Habla con chico en la entrada del colegio)."
+          },
+          {
+            "rank": 3,
+            "context": "Misión 02",
+            "best_choice": "Chica con hambre (Dale un 'Super Croqueta' o comida)."
+          },
+          {
+            "rank": 4,
+            "context": "Misión 03",
+            "best_choice": "Perro perdido (Busca al perro en la ribera, luego norte, luego ribera)."
+          },
+          {
+            "rank": 5,
+            "context": "Misión 04",
+            "best_choice": "Niño que quiere ser inteligente (Dale 3 pegatinas de premios)."
+          },
+          {
+            "rank": 6,
+            "context": "Misión 05",
+            "best_choice": "Hombre solitario (Habla con el hombre en la ribera y hazle maquetas)."
+          },
+          {
+            "rank": 7,
+            "context": "Misión 06",
+            "best_choice": "Chica tímida (Ayúdala a hablar en la azotea del colegio)."
+          },
+          {
+            "rank": 8,
+            "context": "Misión 07",
+            "best_choice": "Monstruo del río (Pesca al 'Guardián del Río' y enséñaselo al anciano)."
+          },
+          {
+            "rank": 9,
+            "context": "Misión 08",
+            "best_choice": "El camino del mar (Pesca al 'Guardián del Mar')."
+          },
+          {
+            "rank": 10,
+            "context": "Final",
+            "best_choice": "El Zorro se despide y el santuario se restaura."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "arcana_name": "La Fortuna (Fortune)",
+    "arcana_image": "fortune.jpg",
+    "type": "split_character",
+    "description": "Representa el destino, el cambio y las oportunidades.",
+    "routes": {
+      "male": {
+        "character": "Naoto Shirogane",
+        "image": "naoto.jpg",
+        "location": "Edificio Escolar 1F",
+        "availability": "Lunes, Martes, Miércoles, Sábado, Domingo (Día)",
+        "unlock_condition": "Disponible el 21 de Octubre. Requiere Conocimiento 5 (Sage) y Coraje 5 (Risky). Habla con el hombre de negro en el Distrito Comercial Norte para obtener la 'Tarjeta Blanca' y dásela a Naoto.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Recuerdos...", "best_choice": "Eso no es cierto (+3)" },
+              { "context": "Objetos...", "best_choice": "No hay nada que pueda hacer (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Desafío...", "best_choice": "Un desafío a duelo (+3)" },
+              { "context": "Nota...", "best_choice": "Vamos a atraparle (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Tarjeta...", "best_choice": "Es una carta de desafío (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Ladrón...", "best_choice": "¡Vamos a recuperarla! (+3)" },
+              { "context": "Relación...", "best_choice": "Vamos a quemarla juntos (+3)" },
+              { "context": "Buzón...", "best_choice": "Un buzón (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Naoto piensa...", "best_choice": "Porque parecía importante (+3)" },
+              { "context": "Cambio...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Miedo...", "best_choice": "Restar importancia (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Peligro...", "best_choice": "Siento haberte preocupado (+3)" },
+              { "context": "Luchar...", "best_choice": "No huyas (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Altura...", "best_choice": "Más alto... (+3)" },
+              { "context": "Gusto...", "best_choice": "Me gusta cómo eres (+3)" },
+              { "context": "Confesión...", "best_choice": "Me gustas (+3)", "romance_flag": true }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "responses": [
+               { "context": "Vestido (Solo Romance)", "best_choice": "Póntelo para mí (Desbloquea traje especial)", "notes": "Elegir la segunda opción te da el traje de chica escolar." }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "arcana_name": "La Fuerza (Strength)",
+    "arcana_image": "strength.jpg",
+    "type": "split_character",
+    "description": "Representa el coraje físico y moral, y el control de las emociones.",
+    "routes": {
+      "male": {
+        "character": "Kou Ichijo / Daisuke Nagase",
+        "image": "kou_daisuke.jpg",
+        "location": "Aula 2F / Club Deportivo",
+        "availability": "Martes, Jueves, Sábado (Día)",
+        "unlock_condition": "Disponible el 19 de Abril. Únete al club de Baloncesto (Kou) o Fútbol (Daisuke).",
+        "romance": false,
+        "notes": "Las respuestas cambian ligeramente según el club, pero el vínculo es compartido.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Kou/Daisuke...", "best_choice": "(Baloncesto) Buen trabajo / (Fútbol) Cualquiera (+3)" },
+              { "context": "Ayuda...", "best_choice": "Hago lo que puedo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Charla...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Gracias (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Limpieza...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Buen trabajo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Kou...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Te animaré (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Entreno...", "best_choice": "(Ambos) Cualquiera sirve (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Crisis...", "best_choice": "(Baloncesto) Tienes que animarte / (Fútbol) Cualquiera (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Duda...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) No lo harás (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Resolución...", "best_choice": "(Baloncesto) Tienes mi ayuda / (Fútbol) Te veo feliz (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "arcana_name": "El Colgado (The Hanged Man)",
+    "arcana_image": "hangedman.jpg",
+    "type": "split_character",
+    "description": "Representa el sacrificio, la paciencia y ver las cosas desde otra perspectiva.",
+    "routes": {
+      "male": {
+        "character": "Naoki Konishi",
+        "image": "naoki.jpg",
+        "location": "Distrito Comercial Norte (Frente a la licorería Konishi)",
+        "availability": "Lunes, Martes, Miércoles, Jueves (Día)",
+        "unlock_condition": "Disponible desde el 8 de Junio. Debes hablar con él 3 veces en días distintos ('Me odian', 'No me odian', etc.) antes de que acepte salir contigo.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Incomprensión...", "best_choice": "Te lo estás pensando demasiado (+3)" },
+              { "context": "Secretaria...", "best_choice": "Tienes mucha labia (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Odio...", "best_choice": "A mí no me caes mal (+3)" },
+              { "context": "Culpas...", "best_choice": "Nadie te culpa (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Chismorreos...", "best_choice": "Qué mala es la gente (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Saki...", "best_choice": "Fue una buena persona (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Leche...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Culpa...", "best_choice": "No tienes la culpa (+3)" },
+              { "context": "Acción...", "best_choice": "Deberíamos hacer algo (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Llorar...", "best_choice": "Llora todo lo que quieras (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Gente...", "best_choice": "La gente es así (+3)" },
+              { "context": "Tú...", "best_choice": "Solo puedes ser tú mismo (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "arcana_name": "La Muerte (Death)",
+    "arcana_image": "death.jpg",
+    "type": "split_character",
+    "description": "Representa el fin de un ciclo, el cambio profundo y la transición.",
+    "routes": {
+      "male": {
+        "character": "Hisano Kuroda",
+        "image": "hisano.jpg",
+        "location": "Ribera del Río (Riverbank)",
+        "availability": "Domingos y Festivos (Día)",
+        "unlock_condition": "Debes alcanzar el Rango 4 del Arcano Diablo (Sayoko). Después, habla con ella en la ribera.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Muerte...", "best_choice": "Me da miedo la muerte (+3)" },
+              { "context": "Hijos...", "best_choice": "Seguro que son buenas personas (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Hablar...", "best_choice": "No es ninguna molestia (+3)" },
+              { "context": "Marido...", "best_choice": "Teníais mucha confianza (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Marido...", "best_choice": "Sí (+3)" },
+              { "context": "Cielo...", "best_choice": "El cielo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Arrepentimiento...", "best_choice": "Es complicado (+3)" },
+              { "context": "Tiempo...", "best_choice": "El tiempo lo cura todo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Cartas...", "best_choice": "¿Quieres que las lea? (+3)" },
+              { "context": "Contenido...", "best_choice": "No tiene importancia (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Enfermedad...", "best_choice": "Así es (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Marido...", "best_choice": "Todavía le quieres (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Recuerdos...", "best_choice": "Cualquiera sirve (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "arcana_name": "La Templanza (Temperance)",
+    "arcana_image": "temperance.jpg",
+    "type": "split_character",
+    "description": "Representa el equilibrio, la moderación y la paciencia.",
+    "routes": {
+      "male": {
+        "character": "Eri Minami",
+        "image": "eri.jpg",
+        "location": "Parada de Autobús (Sur) -> Guardería",
+        "availability": "Lunes, Viernes, Sábado (Día, sin lluvia)",
+        "unlock_condition": "Disponible desde el 23 de Abril. Acepta el trabajo de 'Asistente de Guardería' en el tablón.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Niños...", "best_choice": "A los niños les gusta (+3)" },
+              { "context": "Problemas...", "best_choice": "Eres muy joven (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Eri...", "best_choice": "Odio estar solo (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Educación...", "best_choice": "Tienen muchas cosas que aprender (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Cansancio...", "best_choice": "Descansa un poco (+3)" },
+              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Pasado...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Fe...", "best_choice": "Si tienes fe, lo entenderá (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Yu-kun...", "best_choice": "Le tienes mucho cariño (+3)" },
+              { "context": "Relación...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Padre...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "arcana_name": "El Diablo (The Devil)",
+    "arcana_image": "devil.jpg",
+    "type": "split_character",
+    "description": "Representa la tentación, el materialismo y las ataduras.",
+    "routes": {
+      "male": {
+        "character": "Sayoko Uehara",
+        "image": "sayoko.jpg",
+        "location": "Parada de Autobús (Sur) -> Hospital",
+        "availability": "Miércoles, Jueves, Viernes (Noche)",
+        "unlock_condition": "Disponible desde el 25 de Mayo. Acepta el trabajo de 'Limpiador de Hospital' en el tablón.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Trabajo...", "best_choice": "¿Qué insinúas? (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Motivo...", "best_choice": "Por el dinero (+3)" },
+              { "context": "Seducción...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Cansancio...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Manos...", "best_choice": "Parecen manos trabajadoras (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Broma...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Preocupación...", "best_choice": "Ánimo (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Vivir...", "best_choice": "Ha sido divertido (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Paciente...", "best_choice": "Anímate (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Decisión...", "best_choice": "¿Vas a dejarlo? (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Hospital...", "best_choice": "Cualquiera (+3)" },
+              { "context": "Enfermera...", "best_choice": "Es vocacional (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "arcana_name": "La Torre (The Tower)",
+    "arcana_image": "tower.jpg",
+    "type": "split_character",
+    "description": "Representa el orgullo, la caída del ego y la revelación.",
+    "routes": {
+      "male": {
+        "character": "Shu Nakajima",
+        "image": "shu.jpg",
+        "location": "Parada de Autobús (Sur) -> Tutoría",
+        "availability": "Martes, Jueves, Sábado (Noche)",
+        "unlock_condition": "Disponible desde el 25 de Mayo. Acepta el trabajo de 'Tutor' en el tablón. Requiere Comprensión 5 (Saintly).",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Estudio...", "best_choice": "Seguro (+3)" },
+              { "context": "Asignaturas...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Aburrido...", "best_choice": "Es aburrido (+3)" },
+              { "context": "Recreo...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Chicas...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Ánimo...", "best_choice": "Tú puedes hacerlo (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Culpable...", "best_choice": "No es culpa tuya (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Transferido...", "best_choice": "¿Tienes algún amigo? (+2)" },
+              { "context": "Cumpleaños...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Madre...", "best_choice": "Dale un respiro a tu madre (+3)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Llorar...", "best_choice": "Llora todo lo que quieras (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Cumpleaños...", "best_choice": "¿Lo de tu cumple? (+3)" },
+              { "context": "Pasado...", "best_choice": "Me alegro por ti (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "arcana_name": "La Estrella (The Star)",
+    "arcana_image": "star.jpg",
+    "type": "split_character",
+    "description": "Representa la esperanza, la inspiración y la serenidad.",
+    "routes": {
+      "male": {
+        "character": "Teddie",
+        "image": "teddie.jpg",
+        "location": "Eventos de Historia",
+        "availability": "Automático",
+        "unlock_condition": "Se desbloquea automáticamente el 24 de Junio.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/24" },
+          { "rank": 2, "type": "automatic", "date": "8/2" },
+          { "rank": 3, "type": "automatic", "date": "9/8" },
+          { "rank": 4, "type": "automatic", "date": "10/7" },
+          { "rank": 5, "type": "automatic", "date": "10/11" },
+          { "rank": 6, "type": "automatic", "date": "10/30" },
+          { "rank": 7, "type": "automatic", "date": "11/22" },
+          { "rank": 8, "type": "automatic", "date": "12/3" },
+          { "rank": 9, "type": "automatic", "date": "12/5" },
+          { "rank": 10, "type": "automatic", "date": "12/5 (Evoluciona)" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "arcana_name": "La Luna (The Moon)",
+    "arcana_image": "moon.jpg",
+    "type": "split_character",
+    "description": "Representa la ilusión, el miedo y el subconsciente.",
+    "routes": {
+      "male": {
+        "character": "Ai Ebihara",
+        "image": "ai.jpg",
+        "location": "Edificio Escolar 1F (Cerca de la entrada)",
+        "availability": "Miércoles, Jueves, Viernes (Día)",
+        "unlock_condition": "Disponible desde el 19 de Abril. Sube el vínculo de Fuerza (Deportes) al rango 4. Ai aparecerá y te pedirá que te saltes clase. Acepta.",
+        "romance": true,
+        "warning_message": "¡PELIGRO DE ROMANCE FALSO! En el rango 6, si aceptas salir con ella temporalmente, entrarás en una ruta falsa que bloqueará el romance verdadero y podría revertir el vínculo.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Compras...", "best_choice": "Vamos a comprar cosas (+3)" },
+              { "context": "Queja...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Ropa...", "best_choice": "Vamos a comprar ropa (+3)" },
+              { "context": "Pregunta...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Charla...", "best_choice": "¡Ven con nosotros! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Amor...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Ánimo...", "best_choice": "Ten un poco de confianza (+3)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Propuesta...", "best_choice": "CRÍTICO: Elige 'Aceptaré encantado' para RUTA FALSA (Romance temporal). Elige 'Solo somos amigos' para RUTA NORMAL (Amistad/Romance verdadero)." }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Ruta Normal (Amigos)...", "best_choice": "Es adorable (+3)" },
+              { "context": "Ruta Falsa...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Ruta Normal...", "best_choice": "Pasa de ellos (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Final...", "best_choice": "Gracias (+3)" },
+              { "context": "Confesión...", "best_choice": "(Si elegiste Ruta Normal) Sí (+3) -> Romance Verdadero" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "arcana_name": "El Sol (The Sun)",
+    "arcana_image": "sun.jpg",
+    "type": "split_character",
+    "description": "Representa el éxito, la vitalidad y la alegría.",
+    "routes": {
+      "male": {
+        "character": "Yumi Ozawa / Ayane Matsunaga",
+        "image": "yumi_ayane.jpg",
+        "location": "Aula 2F / Sala de Música o Teatro",
+        "availability": "Lunes, Martes, Jueves (Día)",
+        "unlock_condition": "Disponible desde el 25 de Abril. Únete al club de Teatro (Yumi) o Música (Ayane).",
+        "romance": true,
+        "notes": "Las respuestas varían según el club. Yumi es Drama, Ayane es Música.",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Lo haré lo mejor que pueda (+3)" },
+              { "context": "Ayane...", "best_choice": "Haces mucho esfuerzo (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Ayane...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "No puedes ignorarlo (+3)" },
+              { "context": "Ayane...", "best_choice": "Déjalo ya (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Solo un poco (+3)" },
+              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Actúa como si nada (+3)" },
+              { "context": "Ayane...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Ayane...", "best_choice": "Enfréntate a él (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
+              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "responses": [
+                { "context": "Confesión", "best_choice": "Abrázala (Romance) / Espera (Amistad)" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "arcana_name": "El Juicio (Judgment)",
+    "arcana_image": "judgment.jpg",
+    "type": "split_character",
+    "description": "Representa el despertar, la renovación y el juicio final.",
+    "routes": {
+      "male": {
+        "character": "Seekers of Truth",
+        "image": "investigation_team.jpg",
+        "location": "Eventos de Historia (Final del juego)",
+        "availability": "Automático",
+        "unlock_condition": "Se desbloquea el 3 de Diciembre si evitas el 'Bad Ending'. Reemplaza al Arcano del Loco.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "12/3" },
+          { "rank": "2-10", "type": "automatic", "date": "Progresa automáticamente mientras avanzas en la mazmorra final." }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "arcana_name": "El Eón (The Aeon)",
+    "arcana_image": "aeon.jpg",
+    "type": "split_character",
+    "description": "Representa el tiempo eterno y el ciclo de la vida. EXCLUSIVO DE P4 GOLDEN.",
+    "routes": {
+      "male": {
+        "character": "Marie",
+        "image": "marie.jpg",
+        "location": "Habitación de Terciopelo / Fuera (Miércoles/Sábado/Domingo)",
+        "availability": "Cualquier día (Día)",
+        "unlock_condition": "Disponible desde el 18 de Abril. Entra en la Velvet Room.",
+        "warning_message": "¡VITAL! Debes alcanzar el Rango 10 antes del 23 de Diciembre para desbloquear la mazmorra extra y el Final Golden (Epílogo). Si no lo haces, perderás contenido.",
+        "romance": true,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Compras...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Televisión...", "best_choice": "Es una tienda de electrónica (+3)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Jugar...", "best_choice": "Vamos, juguemos (+3)" },
+              { "context": "Ropa...", "best_choice": "Rápido, vayamos (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Duda...", "best_choice": "Es divertido (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Memoria...", "best_choice": "Cualquiera sirve (+0)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Tienda...", "best_choice": "Es de buena calidad (+3)" },
+              { "context": "Pasado...", "best_choice": "Yo te ayudaré (+3)" }
+            ]
+          },
+          {
+            "rank": 7,
+            "responses": [
+              { "context": "Peine...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 8,
+            "responses": [
+              { "context": "Búsqueda...", "best_choice": "Lo encontraremos (+3)" }
+            ]
+          },
+          {
+            "rank": 9,
+            "responses": [
+              { "context": "Recuerdos...", "best_choice": "No lo olvidarás (+3)" },
+              { "context": "Confesión...", "best_choice": "Te quiero (Romance) (+3)" }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Una vez al máximo, habla con Margaret en Año Nuevo para iniciar su búsqueda."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "arcana_name": "El Bufón (The Jester) / Hambre",
+    "arcana_image": "jester.jpg",
+    "type": "split_character",
+    "description": "Representa el caos, la imprevisibilidad y el potencial oculto. EXCLUSIVO DE P4 GOLDEN.",
+    "routes": {
+      "male": {
+        "character": "Tohru Adachi",
+        "image": "adachi.jpg",
+        "location": "Junes (Día) / Gasolinera (Noche)",
+        "availability": "Fechas fijas (Ver calendario).",
+        "unlock_condition": "Disponible desde el 13 de Mayo. Habla con él en Junes.",
+        "warning_message": "¡ATENCIÓN! Solo puedes subir hasta Rango 6 manualmente antes del 1 de Noviembre. Los rangos 7-10 son automáticos por historia SI has alcanzado el 6 a tiempo.",
+        "romance": false,
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 2,
+            "responses": [
+              { "context": "Trabajo...", "best_choice": "¿Te molesto? (+2)" },
+              { "context": "Cena...", "best_choice": "Eso es verdad (+2)" }
+            ]
+          },
+          {
+            "rank": 3,
+            "responses": [
+              { "context": "Cena...", "best_choice": "¿Por qué no vienes a cenar? (+2)" },
+              { "context": "Cocina...", "best_choice": "Soy buen cocinero (+3)" }
+            ]
+          },
+          {
+            "rank": 4,
+            "responses": [
+              { "context": "Sorpresa...", "best_choice": "Cualquiera (+0)" },
+              { "context": "Truco...", "best_choice": "¡Ha sido genial! (+3)" }
+            ]
+          },
+          {
+            "rank": 5,
+            "responses": [
+              { "context": "Magia...", "best_choice": "Cualquiera (+0)" }
+            ]
+          },
+          {
+            "rank": 6,
+            "responses": [
+              { "context": "Investigación...", "best_choice": "Cualquiera (+0)" }
+            ],
+            "notes": "¡Límite! Debes alcanzar este rango antes del 1 de Noviembre."
+          },
+          {
+            "rank": 7,
+            "type": "automatic",
+            "notes": "Se desbloquea por historia si tienes el Rango 6."
+          },
+          {
+            "rank": 8,
+            "type": "automatic",
+            "notes": "Automático. El arcana cambia de 'Bufón' a 'Hambre' (Hunger)."
+          },
+          {
+            "rank": 9,
+            "type": "automatic"
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "notes": "Se consigue en el Final Verdadero."
+          }
+        ]
+      }
+    }
+  }
 ]

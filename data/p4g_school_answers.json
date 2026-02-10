@@ -1,0 +1,174 @@
+{
+  "school_year_answers": [
+    {
+      "month": "Abril",
+      "items": [
+        { "date": "4/14", "question": "¿Cómo se llama el año anterior al 1 d.C.?", "answer": "1 a.C.", "stat_boost": "Knowledge" },
+        { "date": "4/18", "question": "La palabra 'alfabeto' proviene de la palabra 'alfa' y ¿qué otra?", "answer": "Beta", "stat_boost": "Knowledge" },
+        { "date": "4/20", "question": "¿Cuántas partes hay en 'Murakami Kijo'?", "answer": "Tres", "stat_boost": "Yosuke + Expression" },
+        { "date": "4/23", "question": "¿Cuál fue la primera burbuja económica de la historia?", "answer": "Manía de los tulipanes (Tulip Mania)", "stat_boost": "Yosuke + Expression" },
+        { "date": "4/25", "question": "¿Cómo se llama cuando ganas más músculo después de lesionarte?", "answer": "Sobrecompensación", "stat_boost": "Knowledge" },
+        { "date": "4/26", "question": "¿Qué propiedad de los números enteros no se aplica a los números matrimoniales?", "answer": "Números de la suerte (Marriage numbers)", "stat_boost": "Chie + Expression" },
+        { "date": "4/30", "question": "¿Cuál es el cañón más grande del sistema solar?", "answer": "Valles Marineris", "stat_boost": "Knowledge" }
+      ]
+    },
+    {
+      "month": "Mayo",
+      "items": [
+        { "date": "5/7", "question": "¿Sabes cómo tradujo Soseki Natsume 'I love you'?", "answer": "La luna es hermosa, ¿verdad?", "stat_boost": "Knowledge" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Parciales (Midterms)", 
+          "answers": [
+            { "date": "5/9", "answer": "Sobrecompensación (Overcompensation)" },
+            { "date": "5/9", "answer": "1 a.C. (1 B.C.)" },
+            { "date": "5/10", "answer": "Números matrimoniales (Marriage numbers)" },
+            { "date": "5/10", "answer": "Soseki Natsume" },
+            { "date": "5/11", "answer": "Pitágoras (Pythagoras)" },
+            { "date": "5/11", "answer": "Monte Olimpo (Olympus Mons)" }
+          ]
+        },
+        { "date": "5/26", "question": "Dime cómo se explica la teoría de las pirámides del trabajo sagrado.", "answer": "Registros de asistencia (Attendance logs)", "stat_boost": "Yosuke + Expression" }
+      ]
+    },
+    {
+      "month": "Junio",
+      "items": [
+        { "date": "6/8", "question": "¿Qué instrumento usaba Edward Challenge?", "answer": "Viga de equilibrio (Balance Beam)", "stat_boost": "Yukiko + Expression" },
+        { "date": "6/15", "question": "¿De qué color es un 'He-He'?", "answer": "Alegría (Cheerfulness)", "stat_boost": "Knowledge" },
+        { "date": "6/17", "question": "¿De qué se alimentan los organismos unicelulares en el mar?", "answer": "200 mm", "stat_boost": "Knowledge" },
+        { "date": "6/20", "question": "Dime qué ejercicio libera más energía.", "answer": "Isoflavonas de soja (Soy)", "stat_boost": "Knowledge" },
+        { "date": "6/27", "question": "Dime la respuesta correcta.", "answer": "Odio (Hate)", "stat_boost": "Knowledge" }
+      ]
+    },
+    {
+      "month": "Julio",
+      "items": [
+        { "date": "7/13", "question": "¿Cuál es el hueso que conecta el cerebro con los ojos?", "answer": "Esfenoides (Sphenoid)", "stat_boost": "Knowledge" },
+        { "date": "7/14", "question": "¿Cuál es la montaña más alta del mundo?", "answer": "Ku", "stat_boost": "Knowledge" },
+        { "date": "7/15", "question": "¿Cómo se llama el poema más famoso de la antología 'Manyoshu'?", "answer": "Heian", "stat_boost": "Knowledge" },
+        { "date": "7/16", "question": "¿Qué significa 'hacer gárgaras'?", "answer": "Garganta (Throat)", "stat_boost": "Knowledge" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Finales (Finals)", 
+          "answers": [
+            { "date": "7/19", "answer": "Alegría (Cheerfulness)" },
+            { "date": "7/19", "answer": "Viga de equilibrio (Balance Beam)" },
+            { "date": "7/20", "answer": "Responder (Reply)" },
+            { "date": "7/20", "answer": "200 mm" },
+            { "date": "7/21", "answer": "Rey Eduardo III (King Edward III)" },
+            { "date": "7/21", "answer": "Meteorología (Meteorology)" },
+            { "date": "7/22", "answer": "Rey Lear (King Lear)" },
+            { "date": "7/22", "answer": "Rey Primo (Prime)" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Septiembre",
+      "items": [
+        { "date": "9/1", "question": "¿Qué significa 'venado'?", "answer": "Todas las anteriores (All of the above)", "stat_boost": "Knowledge" },
+        { "date": "9/5", "question": "¿Cuál de las siguientes es una palabra kigo para otoño?", "answer": "Vigoroso (Brisk)", "stat_boost": "Knowledge" },
+        { "date": "9/17", "question": "¿Cuán corta fue la guerra más corta de la historia?", "answer": "40 minutos", "stat_boost": "Knowledge" },
+        { "date": "9/20", "question": "¿Cómo llamas a alguien que tiene entre noventa y cien años?", "answer": "Un nonagenario", "stat_boost": "Knowledge" },
+        { "date": "9/28", "question": "¿Qué parte del cuerpo humano tiene la 'manzana'?", "answer": "Garganta (Throat)", "stat_boost": "Knowledge" }
+      ]
+    },
+    {
+      "month": "Octubre",
+      "items": [
+        { "date": "10/4", "question": "¿Qué deporte se inventó originalmente como una forma de castigo?", "answer": "Tira y afloja (Tug-of-war)", "stat_boost": "Yosuke + Expression" },
+        { "date": "10/5", "question": "¿Dónde se firma un documento legal?", "answer": "El borde derecho (The right edge)", "stat_boost": "Yosuke + Expression" },
+        { "date": "10/8", "question": "¿Qué pájaro es cobarde en inglés?", "answer": "Pollo (Chicken)", "stat_boost": "Knowledge" },
+        { "date": "10/11", "question": "¿Qué inventó Napoleón?", "answer": "Frascos de vidrio (Glass jars)", "stat_boost": "Knowledge" },
+        { "date": "10/12", "question": "¿Qué verdura se usó para hacer la primera Jack-o'-lantern?", "answer": "Nabos (Turnips)", "stat_boost": "Knowledge" },
+        { "date": "10/13", "question": "¿De qué tipo de pescado estoy hablando?", "answer": "Ojisan", "stat_boost": "Knowledge" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Parciales (Midterms)", 
+          "answers": [
+            { "date": "10/14", "answer": "Garganta (Throat)" },
+            { "date": "10/14", "answer": "El borde derecho (The right edge)" },
+            { "date": "10/15", "answer": "40 minutos" },
+            { "date": "10/15", "answer": "Todas las anteriores" },
+            { "date": "10/17", "answer": "Osos blancos y negros" },
+            { "date": "10/17", "answer": "Avestruz (Ostrich)" },
+            { "date": "10/18", "answer": "Chica de Matemáticas (Math Girl)" },
+            { "date": "10/18", "answer": "Frascos de vidrio (Glass jars)" },
+            { "date": "10/19", "answer": "Otoño (Fall)" },
+            { "date": "10/19", "answer": "Resina de planta (Plant resin)" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Noviembre",
+      "items": [
+        { "date": "11/1", "question": "¿Qué significa 'figura'?", "answer": "Formas geométricas", "stat_boost": "Knowledge" },
+        { "date": "11/4", "question": "¿Qué pájaro no construye su propio nido?", "answer": "Cuco (Cuckoo)", "stat_boost": "Yosuke + Expression" },
+        { "date": "11/7", "question": "¿A qué país pertenece el Polo Sur?", "answer": "A ningún país", "stat_boost": "Knowledge" },
+        { "date": "11/11", "question": "¿De dónde viene el desierto de Namib?", "answer": "Namibia", "stat_boost": "Knowledge" },
+        { "date": "11/17", "question": "¿De dónde viene la palabra 'novia'?", "answer": "Cerveza de la novia (Bride ale)", "stat_boost": "Yosuke + Expression" },
+        { "date": "11/22", "question": "¿Qué es un 'atlas'?", "answer": "Un libro de mapas", "stat_boost": "Knowledge" },
+        { "date": "11/24", "question": "0, 1, 1, 2, 3, 5, 8, 13... ¿Cómo se llama esta secuencia?", "answer": "Secuencia de Fibonacci", "stat_boost": "Knowledge" },
+        { "date": "11/25", "question": "¿Cuál de estas pirámides es la más grande?", "answer": "Keops (Khufu)", "stat_boost": "Knowledge" },
+        { "date": "11/26", "question": "¿De qué está hecho el mochi?", "answer": "Mochi", "stat_boost": "Knowledge" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes Finales (Finals)", 
+          "answers": [
+            { "date": "11/28", "answer": "Comida italiana" },
+            { "date": "11/28", "answer": "Formas geométricas" },
+            { "date": "11/29", "answer": "Keops (Khufu)" },
+            { "date": "11/29", "answer": "Atlas" },
+            { "date": "11/30", "answer": "Nupcial (Bridal)" },
+            { "date": "11/30", "answer": "Cuco (Cuckoo)" },
+            { "date": "12/1", "answer": "A ningún país" },
+            { "date": "12/1", "answer": "La secuencia de Fibonacci" },
+            { "date": "12/2", "answer": "Namib" },
+            { "date": "12/2", "answer": "Mochi" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Diciembre",
+      "items": [
+        { "date": "12/9", "question": "¿De qué color es el pelaje de un oso polar?", "answer": "Transparente", "stat_boost": "Knowledge" },
+        { "date": "12/10", "question": "¿Qué determina si el pelo crece rizado o liso?", "answer": "La sección transversal", "stat_boost": "Knowledge" },
+        { "date": "12/17", "question": "¿Qué significa 'compasión'?", "answer": "Compasión no es para otros", "stat_boost": "Naoto + Expression" },
+        { "date": "12/21", "question": "¿Cuál dijo Cleopatra que era el mejor?", "answer": "VII", "stat_boost": "Naoto + Expression" }
+      ]
+    },
+    {
+      "month": "Enero (Golden)",
+      "items": [
+        { "date": "1/10", "question": "¿Qué se supone que debes poner encima de un pastel de kagami mochi?", "answer": "Una naranja", "stat_boost": "Knowledge" },
+        { "date": "1/14", "question": "¿Qué significa 'Toso'?", "answer": "Enterrar a los demonios", "stat_boost": "Knowledge" },
+        { "date": "1/19", "question": "En Tailandia y Vietnam, ¿qué animal es el zodiaco en lugar del conejo?", "answer": "Gato", "stat_boost": "Knowledge" },
+        { "date": "1/25", "question": "¿De qué color es la nieve en primavera en Europa?", "answer": "Rojo", "stat_boost": "Knowledge" },
+        { "date": "1/30", "question": "¿Cuál es la siguiente unidad de medida?", "answer": "Petabyte", "stat_boost": "Knowledge" }
+      ]
+    },
+    {
+      "month": "Febrero (Golden)",
+      "items": [
+        { "date": "2/1", "question": "¿De qué color eran las pirámides originalmente?", "answer": "Blanco", "stat_boost": "Knowledge" },
+        { 
+          "type": "exam", 
+          "title": "Exámenes de Avance (Advancement Exams)", 
+          "answers": [
+            { "date": "2/6", "answer": "Beta" },
+            { "date": "2/6", "answer": "Registros de asistencia" },
+            { "date": "2/7", "answer": "Toso" },
+            { "date": "2/7", "answer": "Esfenoides (Sphenoid)" },
+            { "date": "2/8", "answer": "Verde" },
+            { "date": "2/8", "answer": "Geometría" },
+            { "date": "2/9", "answer": "El mar" },
+            { "date": "2/9", "answer": "Un anillo" }
+          ]
+        }
+      ]
+    }
+  ]
+}
