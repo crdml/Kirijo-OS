@@ -1,0 +1,106 @@
+{
+  "game_version": "Persona 4 Golden",
+  "special_spreads": [
+    {
+      "result": "Black Frost",
+      "arcana": "Loco (Fool)",
+      "level": 38,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Jack Frost", "Pyro Jack", "King Frost", "Pixie", "Ghoul"],
+      "note": "Un Jack Frost poderoso con afinidad a Oscuridad y Fuego."
+    },
+    {
+      "result": "Tam Lin",
+      "arcana": "Sol (Sun)",
+      "level": 53,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Phoenix", "Gdon", "Yatagarasu", "Narasimha"],
+      "note": "Héroe celta, excelente para mitad del juego."
+    },
+    {
+      "result": "Alice",
+      "arcana": "Muerte (Death)",
+      "level": 72,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Nebiros", "Belial"],
+      "note": "¡Die for me! (Solo requiere 2 en P4G, pero es fusión especial)."
+    },
+    {
+      "result": "Yoshitsune",
+      "arcana": "Torre (Tower)",
+      "level": 75,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Masakado", "Shiki-Ouji", "Oukuninushi", "Hachiman", "Hitokotonushi"],
+      "note": "¡EL MEJOR PERSONA FÍSICO! Su ataque 'Hassou Tobi' rompe el juego."
+    },
+    {
+      "result": "Trumpeter",
+      "arcana": "Juicio (Judgment)",
+      "level": 67,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Matador", "White Rider", "Daisoujou", "Tao Tie", "Pabilsag", "Taowu"],
+      "note": "El ángel del juicio. Aprende Debilitate."
+    },
+    {
+      "result": "Norn",
+      "arcana": "Fortuna (Fortune)",
+      "level": 72,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Atropos", "Lachesis", "Clotho"],
+      "req_item": "Requiere MAX S.Link Fortuna (Naoto)."
+    },
+    {
+      "result": "Kohryu",
+      "arcana": "Hierofante (Hierophant)",
+      "level": 76,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Genbu", "Seiryu", "Suzaku", "Byakko"],
+      "req_item": "Requiere MAX S.Link Hierofante (Dojima)."
+    },
+    {
+      "result": "Beelzebub",
+      "arcana": "Diablo (Devil)",
+      "level": 81,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Pazuzu", "Belphegor", "Belial", "Mot", "Seth", "Baal Zebul"],
+      "req_item": "Requiere MAX S.Link Diablo (Sayoko)."
+    },
+    {
+      "result": "Lucifer",
+      "arcana": "Juicio (Judgment)",
+      "level": 93,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Ananta", "Anubis", "Trumpeter", "Michael", "Satan", "Metatron"],
+      "req_item": "Requiere MAX S.Link Juicio (Seekers of Truth)."
+    },
+    {
+      "result": "Izanagi-no-Okami",
+      "arcana": "Mundo (World)",
+      "level": 91,
+      "type": "Dodecahedron Spread (12)",
+      "ingredients": ["Izanagi", "Sandman", "Nata Taishi", "Girimehkala", "Norn", "Okuninushi", "Orthrus", "Kartikeya", "Mithra", "Tzitzimitl", "Cu Chulainn", "Legion"],
+      "req_item": "SOLO EN NEW GAME+. Requiere haber obtenido el 'True Ending' en la partida anterior.",
+      "warning": "El Persona definitivo de la Verdad."
+    }
+  ],
+  "max_social_link_ultimates": [
+    { "arcana": "Mago", "persona": "Mada", "level": 78, "req_item": "Yosuke Rank 10" },
+    { "arcana": "Sacerdotisa", "persona": "Scathach", "level": 79, "req_item": "Yukiko Rank 10" },
+    { "arcana": "Empress", "persona": "Isis", "level": 79, "req_item": "Margaret Rank 10" },
+    { "arcana": "Emperador", "persona": "Odin", "level": 74, "req_item": "Kanji Rank 10" },
+    { "arcana": "Enamorados", "persona": "Ishtar", "level": 71, "req_item": "Rise Rank 10" },
+    { "arcana": "Carro", "persona": "Futsunushi", "level": 80, "req_item": "Chie Rank 10" },
+    { "arcana": "Justicia", "persona": "Sraosha", "level": 74, "req_item": "Nanako Rank 10" },
+    { "arcana": "Ermitaño", "persona": "Ongyo-Ki", "level": 82, "req_item": "Fox Rank 10" },
+    { "arcana": "Fuerza", "persona": "Zaou-Gongen", "level": 90, "req_item": "Kou/Daisuke Rank 10" },
+    { "arcana": "Colgado", "persona": "Attis", "level": 82, "req_item": "Naoki Rank 10" },
+    { "arcana": "Muerte", "persona": "Mahakala", "level": 78, "req_item": "Hisano Rank 10" },
+    { "arcana": "Templanza", "persona": "Vishnu", "level": 73, "req_item": "Eri Rank 10" },
+    { "arcana": "Torre", "persona": "Shiva", "level": 80, "req_item": "Shu Rank 10" },
+    { "arcana": "Estrella", "persona": "Helel", "level": 87, "req_item": "Teddie Rank 10" },
+    { "arcana": "Luna", "persona": "Sandalphon", "level": 84, "req_item": "Ai Rank 10" },
+    { "arcana": "Sol", "persona": "Asura", "level": 86, "req_item": "Yumi/Ayane Rank 10" },
+    { "arcana": "Eón", "persona": "Kaguya", "level": 74, "req_item": "Marie Rank 10" },
+    { "arcana": "Jester/Hunger", "persona": "Magatsu-Izanagi", "level": 77, "req_item": "Adachi Rank 10" }
+  ]
+}

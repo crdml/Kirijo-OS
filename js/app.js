@@ -1,6 +1,6 @@
 const app = {
     state: {
-        protagonist: 'male', // Por defecto: Makoto
+        protagonist: 'male', // Por defecto: Makoto (P3P) / Yu (P4G)
         user: "Artemis" // Nick fijo
     },
 
@@ -15,7 +15,7 @@ const app = {
         p4g: [
             { id: 'school', label: '🎓 Exámenes', colorClass: 'p4-btn-1' },     // Knowledge
             { id: 'social', label: '👓 Social Links', colorClass: 'p4-btn-2' }, // Investigation Team
-            { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },      // Cooking
+            { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },      // Cooking (NUEVO)
             { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },        // Midnight Channel
             { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },      // Funky Student
             { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }     // Margaret
@@ -40,7 +40,6 @@ const app = {
         setTimeout(() => log.innerHTML += "> Identity Confirmed: Artemis.<br>", 1600);
         
         setTimeout(() => {
-            // TU MENSAJE PERSONALIZADO
             log.innerHTML += "> Welcome Artemis from S.E.E.S.";
             
             // Actualizar el header del dashboard también
@@ -158,14 +157,7 @@ const app = {
         document.getElementById('btn-male').classList.toggle('active', gender === 'male');
         document.getElementById('btn-female').classList.toggle('active', gender === 'female');
         
-        // Si hay un módulo abierto, recargarlo para mostrar los datos del nuevo género
-        const currentModuleBtn = document.querySelector('.modules-nav button.active-mod');
-        if(currentModuleBtn) {
-            // Simulamos clic recargando el módulo actual
-            // Obtenemos el ID del módulo basado en el texto o índice (simplificado aquí)
-            // Para robustez, mejor reiniciar la vista o no hacer nada si no es crítico.
-            // En este caso, dejaremos que el usuario navegue.
-        }
+        // Recargar módulo si está abierto (opcional)
     },
 
     // --- CARGA DE DATOS ---
@@ -177,8 +169,7 @@ const app = {
         const navContainer = document.getElementById('modules-container');
         if(navContainer) {
             navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active-mod'));
-            // Intentamos marcar el botón actual (truco simple basado en el texto del botón o orden)
-            // Para simplificar, confiaremos en que el usuario ve el cambio de contenido.
+            // Aquí podríamos marcar el botón activo visualmente si quisiéramos
         }
 
         // Detectar Juego
@@ -200,14 +191,17 @@ const app = {
             if(type === 'social') filename = 'data/p3p_social_links_master.json';
             if(type === 'missing') filename = 'data/p3p_missing_persons.json';
             if(type === 'fusions') filename = 'data/p3p_special_fusions.json';
+            if(type === 'quiz') filename = 'data/p4g_tv_quiz.json';
         } else {
             // Archivos de P4G
             if(type === 'school') filename = 'data/p4g_school_answers.json';
             if(type === 'social') filename = 'data/p4g_social_links.json';
             if(type === 'riddle') filename = 'data/p4g_riddles.json';
+            if(type === 'lunch') filename = 'data/p4g_lunchbox.json';
+            if(type === 'fusions') filename = 'data/p4g_special_fusions.json';
             
             // Placeholder para los que aún no creamos
-            if(type === 'lunch' || type === 'quiz' || type === 'fusions') {
+            if(type === 'quiz' || type === 'fusions') {
                 display.innerHTML = '<div class="data-card"><h3>🚧 En construcción</h3><p>Este canal aún no emite señal.</p></div>';
                 return;
             }
@@ -215,28 +209,35 @@ const app = {
 
         try {
             const response = await fetch(filename);
-            if(!response.ok) throw new Error("No se encontró el archivo de datos.");
+            if(!response.ok) throw new Error("No se encontró el archivo de datos: " + filename);
             const data = await response.json();
             
-            // Renderizar usando las mismas funciones (Reutilización de código)
+            // --- RENDERIZADO ---
+            
+            // Comunes (Reutilización de código)
             if(type === 'school') this.renderSchool(data, display);
             if(type === 'social') this.renderSocial(data, display);
             
-            // Renderizadores específicos de P3P (solo si estamos en P3P)
+            // Específicos P3P
             if(!isP4) {
                 if(type === 'missing') this.renderMissing(data, display);
                 if(type === 'fusions') this.renderFusions(data, display);
             }
-            // Renderizadores específicos de P4G
+            
+            // Específicos P4G
             if(isP4) {
                 if(type === 'riddle') this.renderRiddles(data, display);
+                if(type === 'lunch') this.renderLunch(data, display);
+                if(type === 'quiz') this.renderQuiz(data, display);
+                if(type === 'fusions') this.renderP4GFusions(data, display);
             }
 
         } catch (error) {
+            console.error(error);
             display.innerHTML = `<div class="data-card" style="border-color:var(--alert-red)">
                 <h3 style="color:var(--alert-red)">ERROR DE SEÑAL</h3>
                 <p>${error.message}</p>
-                <small>Verifica que el archivo JSON esté en la carpeta /data y tenga el nombre correcto.</small>
+                <small>Verifica que el archivo JSON esté en la carpeta /data.</small>
             </div>`;
         }
     },
@@ -291,8 +292,7 @@ const app = {
             if(!routeData) return; // Si no existe ruta
 
             const isCritical = routeData.critical_warning ? true : false;
-            const isP4 = document.body.classList.contains('theme-p4');
-
+            
             html += `<div class="data-card social-card" style="${isCritical ? 'border-color:var(--alert-red)' : ''}">
                 
                 <div class="arcana-header">
@@ -333,7 +333,7 @@ const app = {
                         </div>`;
                     });
                 }
-                // Si hay notas (como en Margaret o el Zorro)
+                // Si hay notas (Misiones de Margaret/Zorro)
                 if (r.context && r.best_choice && !r.responses) {
                      html += `<div style="margin-top:5px;"><strong>Misión:</strong> ${r.context}<br>👉 ${r.best_choice}</div>`;
                 }
@@ -350,7 +350,7 @@ const app = {
         // Título de la sección
         let html = '<h3 style="color:var(--alert-red); text-align:center; text-transform:uppercase; letter-spacing:2px;">🚨 Personas Desaparecidas 🚨</h3>';
         
-        // ORDENAMIENTO CRONOLÓGICO (Enero va después de Diciembre)
+        // ORDENAMIENTO CRONOLÓGICO
         data.sort((a, b) => {
             const getWeight = (dateStr) => {
                 const [m, d] = dateStr.split('/').map(Number);
@@ -445,6 +445,109 @@ const app = {
                 </div>
             </div>`;
         });
+        container.innerHTML = html;
+    },
+
+    renderLunch: function(data, container) {
+        let html = '<h3 style="color:#fff; text-align:center; background:#ff8800; border:2px solid #000; padding:10px; transform:skew(-2deg); text-transform:uppercase;">🍱 Menú de Cocina (LunchBox)</h3>';
+        
+        data.forEach(item => {
+            let favsHtml = item.favorites.map(char => 
+                `<span style="background:#fff; color:#ff8800; padding:2px 8px; border-radius:10px; font-size:0.8em; margin-right:5px; border:1px solid #ff8800;">${char}</span>`
+            ).join('');
+
+            html += `<div class="data-card" style="border: 2px solid #ff8800; background: #fff; color:#000; margin-bottom: 20px; box-shadow: 5px 5px 0px rgba(255, 136, 0, 0.4);">
+                <div style="background:#ff8800; color:#fff; padding:5px 10px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-size:1.1em;">📅 ${item.date}</span>
+                    <span style="font-size:0.9em; opacity:0.9">🍽️ ${item.dish}</span>
+                </div>
+                <div style="padding:15px;">
+                    <div style="margin-bottom:15px;">
+                        <div style="font-size:0.85em; color:#666; margin-bottom:5px; text-transform:uppercase; font-weight:bold;">Clave del éxito:</div>
+                        <div style="font-size:1.2em; font-weight:bold; color:#d65c00; border-bottom: 2px dashed #ff8800; padding-bottom:5px;">
+                            👉 ${item.correct_choice}
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size:0.85em; color:#666; margin-bottom:5px;">A quién le gusta:</div>
+                        <div>${favsHtml}</div>
+                    </div>
+                </div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    renderQuiz: function(data, container) {
+        let html = '<h3 style="color:#fff; text-align:center; background:#9d00ff; border:2px solid #fff; padding:15px; text-transform:uppercase; box-shadow: 0 0 15px #9d00ff; text-shadow: 0 0 5px #fff;">📺 MIRACLE QUIZ SHOW</h3>';
+        
+        data.forEach(stage => {
+            html += `<div class="data-card" style="border: 2px solid #9d00ff; background: #220033; color:#fff; margin-bottom: 30px; box-shadow: 0 0 20px rgba(157, 0, 255, 0.4);">
+                <div style="background:linear-gradient(90deg, #9d00ff, #5e0099); color:#fff; padding:10px; font-weight:bold; display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #fff;">
+                    <span style="font-size:1.2em; text-transform:uppercase;">🏆 ${stage.stage}</span>
+                    <span style="font-size:0.8em; background:#000; padding:3px 8px; border-radius:4px;">${stage.unlock_condition}</span>
+                </div>
+                
+                <div style="padding:15px;">
+                    <div style="margin-bottom:15px; color:#dca3ff; font-style:italic;">
+                        🎁 Recompensa: ${stage.reward}
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr; gap:10px;">`;
+            
+            stage.questions.forEach((q, index) => {
+                html += `<div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:5px; border-left: 3px solid #dca3ff;">
+                    <div style="font-weight:bold; color:#fff; margin-bottom:5px;">Q${index+1}: ${q.q}</div>
+                    <div style="color:#9d00ff; background:#fff; display:inline-block; padding:2px 8px; border-radius:3px; font-weight:bold; font-size:0.9em;">A: ${q.a}</div>
+                </div>`;
+            });
+
+            html += `   </div>
+                </div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    },
+    
+    renderP4GFusions: function(data, container) {
+        let html = '<h3 style="color:#fff; text-align:center; background:#e60012; border:2px solid #000; padding:10px; transform:skew(-2deg); text-transform:uppercase;">🃏 FUSIONES ESPECIALES (Margaret\'s Request)</h3>';
+        
+        // Sección 1: Special Spreads
+        html += '<h4 style="color:#e60012; background:#fff; display:inline-block; padding:5px 10px; margin-top:20px; border:2px solid #e60012; transform:skew(-10deg);">HEXAGON & PENTAGON SPREADS</h4>';
+        
+        data.special_spreads.forEach(f => {
+            html += `<div class="data-card" style="border: 2px solid #e60012; background: #fff; color:#000; margin-bottom: 15px; box-shadow: 5px 5px 0px rgba(230, 0, 18, 0.2);">
+                <div style="background:#e60012; color:#fff; padding:8px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-size:1.1em;">${f.result} (Lv ${f.level})</span>
+                    <span style="font-size:0.8em; opacity:0.9; background:#000; padding:2px 6px; border-radius:4px;">${f.arcana}</span>
+                </div>
+                <div style="padding:15px;">
+                    <div style="color:#666; font-size:0.9em; margin-bottom:5px;">${f.type}</div>
+                    
+                    <div style="background:#f5f5f5; padding:10px; border-left:4px solid #333; font-family:monospace; margin-bottom:10px;">
+                        ${f.ingredients.join(' + ')}
+                    </div>
+                    
+                    ${f.req_item ? `<div style="color:#e60012; font-weight:bold; font-size:0.9em;">🔒 ${f.req_item}</div>` : ''}
+                    ${f.note ? `<div style="color:#555; font-style:italic; font-size:0.9em; margin-top:5px;">💡 ${f.note}</div>` : ''}
+                </div>
+            </div>`;
+        });
+
+        // Sección 2: Max S.Link Ultimates (Lista compacta)
+        html += '<h4 style="color:#000; background:#ffe600; display:inline-block; padding:5px 10px; margin-top:30px; border:2px solid #000; transform:skew(-10deg);">MAX SOCIAL LINK ULTIMATES</h4>';
+        
+        html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:10px; margin-top:15px;">';
+        data.max_social_link_ultimates.forEach(u => {
+             html += `<div style="background:#fff; border:1px solid #ccc; padding:10px; text-align:center;">
+                <strong style="color:#e60012; display:block;">${u.persona}</strong>
+                <span style="font-size:0.8em; color:#666;">Lv ${u.level} - ${u.arcana}</span>
+                <div style="font-size:0.75em; margin-top:5px; color:#000; font-weight:bold;">${u.req_item}</div>
+            </div>`;
+        });
+        html += '</div>';
+
         container.innerHTML = html;
     }
 };

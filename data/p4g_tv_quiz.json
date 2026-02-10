@@ -1,0 +1,53 @@
+[
+  {
+    "stage": "Clasificatorias (Preliminaries)",
+    "unlock_condition": "Disponible en el Canal de TV desde el inicio.",
+    "reward": "Cofres y objetos curativos básicos.",
+    "questions": [
+      { "q": "¿Cómo se llama el espacio en el que estamos ahora?", "a": "Estudio de Medianoche (Midnight Studio)" },
+      { "q": "¿Cómo se llama la posada de la familia de Yukiko?", "a": "Posada Amagi (Amagi Inn)" },
+      { "q": "¿Qué habilidad elemental posee el Persona de Yosuke, Jiraiya?", "a": "Viento (Wind)" },
+      { "q": "¿Cuál es el ataque característico de Chie que usa sus piernas?", "a": "Patada voladora (Galactic Punt)" },
+      { "q": "¿Qué objeto compra el protagonista al inicio del juego?", "a": "Bebida (Beverage)" },
+      { "q": "¿Cuál es el apellido del detective Ryotaro?", "a": "Dojima" },
+      { "q": "¿Cómo se llama el profesor que siempre lleva un chándal?", "a": "Kondo" },
+      { "q": "¿Qué asignatura enseña la profesora Sofue?", "a": "Historia" },
+      { "q": "¿Qué día de la semana es el especial de carne en el Aiya?", "a": "Día lluvioso" },
+      { "q": "¿Cuál es la debilidad de los enemigos tipo 'Shadow' en el primer castillo?", "a": "Fuego o Viento (varía)" }
+    ]
+  },
+  {
+    "stage": "Eliminatorias (Playoffs)",
+    "unlock_condition": "Gana las Clasificatorias.",
+    "reward": "Objetos de mejora de stats.",
+    "questions": [
+      { "q": "¿Cómo se llama la mascota de Junes?", "a": "Teddie" },
+      { "q": "¿Cuál es el nombre completo del protagonista en el manga?", "a": "Souji Seta" },
+      { "q": "¿Qué arcano representa a Nanako Dojima?", "a": "Justicia" },
+      { "q": "¿Cuál es el nombre de la banda de música de la escuela?", "a": "No tienen nombre oficial" },
+      { "q": "¿Qué animal aparece en el delantal de la guardería?", "a": "Un panda" },
+      { "q": "¿Qué objeto necesitas para entrar a la mazmorra de Kanji?", "a": "Nada específico (se desbloquea por historia)" },
+      { "q": "¿Cómo se llama el río que cruza Inaba?", "a": "Río Samegawa" },
+      { "q": "¿Quién es el autor del libro 'La melancolía del pescador'?", "a": "No se menciona" },
+      { "q": "¿Qué ingrediente falta en la tortilla de Nanako?", "a": "Huevo" },
+      { "q": "¿Cuál es el nivel máximo de un Social Link?", "a": "10" }
+    ]
+  },
+  {
+    "stage": "Finales (Finals)",
+    "unlock_condition": "Gana las Eliminatorias.",
+    "reward": "Armaduras y disfraces raros.",
+    "questions": [
+      { "q": "¿Cuál es el verdadero nombre de la entidad que crea la niebla?", "a": "Ameno-sagiri" },
+      { "q": "¿Qué significa el nombre 'Izanagi'?", "a": "El que invita" },
+      { "q": "¿Cuántos televisores hay en la entrada de Junes?", "a": "3 grandes" },
+      { "q": "¿Cuál es el efecto del objeto 'Bead Chain'?", "a": "Recupera todo el HP del grupo" },
+      { "q": "¿Qué Persona evoluciona a Yamato-Takeru?", "a": "Sukuna-Hikona (Naoto)" },
+      { "q": "¿Cuál es el nombre del perro que aparece en el santuario?", "a": "El zorro (no es un perro)" },
+      { "q": "¿Qué día se celebra el festival de verano?", "a": "20 de Agosto" },
+      { "q": "¿Quién es el asesino original en la leyenda urbana?", "a": "Nadie sabe" },
+      { "q": "¿Qué estadística sube al comer en el Aiya bajo la lluvia?", "a": "Tres estadísticas al azar" },
+      { "q": "¿Cuál es el color del aura de los enemigos raros (Manos)?", "a": "Dorado" }
+    ]
+  }
+]

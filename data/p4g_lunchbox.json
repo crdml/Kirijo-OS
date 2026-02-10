@@ -1,0 +1,128 @@
+[
+  {
+    "date": "25 de Abril",
+    "dish": "Cerdo Frito (Tonkatsu)",
+    "correct_choice": "Hacer cortes con el cuchillo",
+    "favorites": ["Chie", "Yosuke"]
+  },
+  {
+    "date": "12 de Mayo",
+    "dish": "Estofado de Carne con Patatas",
+    "correct_choice": "Cocer a fuego lento con tapa",
+    "favorites": ["Chie", "Yukiko"]
+  },
+  {
+    "date": "24 de Mayo",
+    "dish": "Ensalada de Patata",
+    "correct_choice": "Aplastar patatas mientras están calientes",
+    "favorites": ["Yosuke", "Nanako"]
+  },
+  {
+    "date": "31 de Mayo",
+    "dish": "Bento de Yakiniku",
+    "correct_choice": "Usar salsa de soja en lugar de sal",
+    "favorites": ["Chie", "Yosuke", "Kanji"]
+  },
+  {
+    "date": "6 de Junio",
+    "dish": "Pescado Hervido",
+    "correct_choice": "Quitar la espuma",
+    "favorites": ["Yosuke", "Chie", "Yukiko"]
+  },
+  {
+    "date": "12 de Junio",
+    "dish": "Daigaku Imo (Batatas)",
+    "correct_choice": "Freír en aceite abundante",
+    "favorites": ["Chie", "Yosuke", "Nanako"]
+  },
+  {
+    "date": "20 de Junio",
+    "dish": "Meunière",
+    "correct_choice": "Espolvorear harina",
+    "favorites": ["Yosuke", "Yukiko"]
+  },
+  {
+    "date": "27 de Junio",
+    "dish": "Cerdo al Jengibre",
+    "correct_choice": "Hacer cortes con el cuchillo",
+    "favorites": ["Chie", "Yosuke", "Kanji"]
+  },
+  {
+    "date": "4 de Julio",
+    "dish": "Pescado Marinado",
+    "correct_choice": "Freír en aceite abundante",
+    "favorites": ["Yosuke", "Chie", "Yukiko"]
+  },
+  {
+    "date": "11 de Julio",
+    "dish": "Pollo Frito",
+    "correct_choice": "Usar harina de patata",
+    "favorites": ["Chie", "Yosuke", "Kanji"]
+  },
+  {
+    "date": "17 de Julio",
+    "dish": "Fideos Fríos",
+    "correct_choice": "Enfriar con agua corriente",
+    "favorites": ["Chie", "Yosuke", "Rise"]
+  },
+  {
+    "date": "20 de Septiembre",
+    "dish": "Gyoza",
+    "correct_choice": "Usar aceite de oliva",
+    "favorites": ["Chie", "Yosuke"]
+  },
+  {
+    "date": "27 de Septiembre",
+    "dish": "Pudin",
+    "correct_choice": "Añadir extracto de vainilla",
+    "favorites": ["Yosuke", "Rise", "Nanako"]
+  },
+  {
+    "date": "4 de Octubre",
+    "dish": "Croquetas de Crema",
+    "correct_choice": "Fuego alto y luego bajo",
+    "favorites": ["Chie", "Yosuke", "Rise"]
+  },
+  {
+    "date": "11 de Octubre",
+    "dish": "Jo-P (Estofado)",
+    "correct_choice": "Cocer a fuego lento",
+    "favorites": ["Yosuke", "Yukiko", "Rise"]
+  },
+  {
+    "date": "18 de Octubre",
+    "dish": "Rollos California",
+    "correct_choice": "Mezclar vinagre mientras está caliente",
+    "favorites": ["Yosuke", "Chie", "Rise"]
+  },
+  {
+    "date": "25 de Octubre",
+    "dish": "Pescado a la Parrilla",
+    "correct_choice": "Cocinar a distancia (fuego fuerte lejos)",
+    "favorites": ["Chie", "Yosuke", "Yukiko"]
+  },
+  {
+    "date": "1 de Noviembre",
+    "dish": "Kakuni (Cerdo)",
+    "correct_choice": "Usar mirin, azúcar y sake",
+    "favorites": ["Chie", "Yosuke", "Yukiko"]
+  },
+  {
+    "date": "8 de Noviembre",
+    "dish": "Pescado Frito",
+    "correct_choice": "Cocinar a 180 grados",
+    "favorites": ["Yosuke", "Chie", "Rise"]
+  },
+  {
+    "date": "11 de Enero",
+    "dish": "Gyoza (Otra vez)",
+    "correct_choice": "Envolver bien",
+    "favorites": ["Chie", "Yosuke", "Rise"]
+  },
+  {
+    "date": "29 de Enero",
+    "dish": "Kani Tama (Cangrejo)",
+    "correct_choice": "Usar salsa de soja y vinagre",
+    "favorites": ["Chie", "Yosuke", "Rise", "Naoto"]
+  }
+]
