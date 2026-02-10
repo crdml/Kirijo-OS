@@ -1,68 +1,68 @@
 [
   {
     "id": 1,
-    "title": "Desafío Funky #1",
+    "title": "Misión 1: El Maestro de los Acertijos",
     "location": "Edificio Escolar 3F (Pasillo)",
     "unlock_condition": "Disponible desde el 18 de Abril.",
-    "question_a": "Caliente, Ácido, Salado, Amargo",
-    "question_b": "Dulce, Picante, Sabroso, Tarta",
-    "answer": "Tienen el mismo radical superior (Hierba)",
-    "reward": "Cofre Tesoro x3 (Consumible)",
-    "explanation": "En japonés, los kanjis del Grupo A comparten el radical de 'hierba' en la parte superior."
+    "question_a": "Rojo, Blanco, Verde, Azul",
+    "question_b": "Naranja, Rosa, Gris",
+    "answer": "Grupo A (Son los 6 colores de banderas más comunes)",
+    "reward": "Cofre Tesoro x3",
+    "explanation": "El negro (la pregunta del acertijo) va al Grupo A porque es uno de los colores más usados en banderas, a diferencia del rosa o gris."
   },
   {
     "id": 2,
-    "title": "Desafío Funky #2",
+    "title": "Misión 42: El retorno del Maestro (Parte 1)",
     "location": "Edificio Escolar 3F (Pasillo)",
-    "unlock_condition": "Debes completar el Desafío #1 y esperar unos días (aprox. 2 de Mayo).",
-    "question_a": "Enterrado, Brea, Cuervo",
-    "question_b": "Historia, Derecho, Paloma",
-    "answer": "Están enterrados en la brea (Tierra)",
-    "reward": "Snuff Soul x1 (Recupera 50 SP)",
-    "explanation": "Los kanjis del Grupo A contienen el radical de 'tierra' (Tsuchi)."
+    "unlock_condition": "Disponible desde el 2 de Septiembre (Nivel 30+).",
+    "question_a": "Correr, Saltar, Comer",
+    "question_b": "Un, Una, Unos",
+    "answer": "Movimientos humanos (Grupo A)",
+    "reward": "Snuff Soul x1",
+    "explanation": "El Grupo A son verbos de acción (movimiento), mientras que el Grupo B son artículos."
   },
   {
     "id": 3,
-    "title": "Desafío Funky #3",
+    "title": "Misión 42: El retorno del Maestro (Parte 2)",
     "location": "Edificio Escolar 3F (Pasillo)",
-    "unlock_condition": "Debes completar el Desafío #2 (aprox. 12 de Mayo).",
-    "question_a": "Intrigante, Malvado, Aspero",
-    "question_b": "Barato, Inteligente, Débil",
-    "answer": "Tienen un ratón (Nezumi)",
-    "reward": "Chewing Soul x1 (Recupera 100 SP)",
-    "explanation": "Es un juego de palabras visual con los kanjis."
+    "unlock_condition": "Inmediatamente después de la Parte 1.",
+    "question_a": "Correr, Saltar",
+    "question_b": "Un, Una",
+    "answer": "Artículos indefinidos (Grupo B)",
+    "reward": "Chewing Soul x1",
+    "explanation": "La pregunta pide identificar qué define al Grupo B: son artículos indefinidos."
   },
   {
     "id": 4,
-    "title": "Desafío Funky #4",
+    "title": "Misión 43: La venganza del Maestro (Parte 1)",
     "location": "Edificio Escolar 3F (Pasillo)",
-    "unlock_condition": "Debes completar el Desafío #3 (aprox. 1 de Septiembre).",
-    "question_a": "Gato, Comida, Compañeros",
-    "question_b": "Perro, Comer, Colegas",
-    "answer": "Es solo un gato (Kemono-hen)",
-    "reward": "Bead (Recupera todo el HP de un aliado)",
-    "explanation": "El Grupo A comparte el radical que se usa para animales (Kemono)."
+    "unlock_condition": "Disponible tras completar la Misión 42.",
+    "question_a": "A, E, F, H, I",
+    "question_b": "B, C, D, G, J",
+    "answer": "El modo en que se dibujan (Grupo B)",
+    "reward": "Bead (Cuenta)",
+    "explanation": "El Grupo A se dibuja solo con líneas rectas. El Grupo B (la respuesta correcta para curvas) tiene líneas curvas."
   },
   {
     "id": 5,
-    "title": "Desafío Funky #5",
+    "title": "Misión 43: La venganza del Maestro (Parte 2)",
     "location": "Edificio Escolar 3F (Pasillo)",
-    "unlock_condition": "Debes completar el Desafío #4 (aprox. 12 de Noviembre).",
-    "question_a": "Ventana, Parada de Autobús, Tienda",
-    "question_b": "Puerta, Estación de Tren, Hospital",
-    "answer": "Las líneas son realmente rectas",
-    "reward": "Soma (Recupera todo HP/SP de todos)",
-    "explanation": "Referencia a la forma de los trazos en los caracteres."
+    "unlock_condition": "Inmediatamente después de la Parte 1.",
+    "question_a": "Ratón, Gato",
+    "question_b": "Perro, Lobo",
+    "answer": "Prometio (Promethium)",
+    "reward": "Soma",
+    "explanation": "Es un juego de palabras complejo con símbolos químicos y números atómicos que suele requerir guía."
   },
   {
     "id": 6,
-    "title": "Desafío Final",
+    "title": "Misión 64: El bis del Maestro",
     "location": "Edificio Escolar 3F (Pasillo)",
-    "unlock_condition": "Debes completar el Desafío #5 (aprox. 10 de Enero - Solo Golden).",
-    "question_a": "Blanco, Negro",
-    "question_b": "Rojo, Azul",
-    "answer": "Son simplemente blanco y negro",
-    "reward": "Traje de Prueba (Costume)",
-    "explanation": "A veces la respuesta más obvia es la correcta."
+    "unlock_condition": "Disponible el 10 de Enero (Solo ruta Golden, si desbloqueaste la mazmorra extra).",
+    "question_a": "Perú, Paraguay",
+    "question_b": "Brasil, Bolivia",
+    "answer": "Uruguay",
+    "reward": "3x Medal (Medallas)",
+    "explanation": "Juego de palabras fonético con la letra 'U' (U-ruguay / You-ruguay)."
   }
 ]

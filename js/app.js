@@ -418,9 +418,9 @@ const app = {
         
         data.forEach(r => {
             html += `<div class="data-card" style="border: 2px solid #008fb3; background: #fff; color:#000; margin-bottom: 20px; box-shadow: 5px 5px 0px #008fb3;">
-                <div style="background:#008fb3; color:#fff; padding:5px 10px; font-weight:bold; display:flex; justify-content:space-between;">
-                    <span>${r.title}</span>
-                    <span style="font-size:0.8em; opacity:0.9">🎁 ${r.reward}</span>
+                <div style="background:#008fb3; color:#fff; padding:10px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-size:1.1em; text-transform:uppercase;">${r.title}</span>
+                    <span style="background:#fff; color:#008fb3; padding:2px 8px; border-radius:10px; font-size:0.8em; box-shadow: 2px 2px 0px rgba(0,0,0,0.2);">🎁 ${r.reward}</span>
                 </div>
                 <div style="padding:15px;">
                     <div style="font-size:0.9em; margin-bottom:10px; color:#555;">📍 ${r.unlock_condition}</div>
