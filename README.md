@@ -1,7 +1,7 @@
 # 💠 Kirijo OS - Persona Database System
 
 <p align="center">
-  <img src="assets/logo_kirijo.png" alt="Kirijo Group Logo" width="200"/>
+  <img src="assets/butterfly.png" alt="Kirijo Group Logo" width="200"/>
 </p>
 
 <p align="center">
