@@ -204,6 +204,8 @@ const app = {
             // Archivos de P4G
             if(type === 'school') filename = 'data/p4g_school_answers.json';
             if(type === 'social') filename = 'data/p4g_social_links.json';
+            if(type === 'riddle') filename = 'data/p4g_riddles.json';
+            if(type === 'lunch' || type === 'quiz' || type === 'fusions') {
             
             // Placeholder para los que aún no creamos
             if(type === 'lunch' || type === 'quiz' || type === 'riddle' || type === 'fusions') {

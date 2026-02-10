@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Desafío Funky #1",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Disponible desde el 18 de Abril.",
+    "question_a": "Caliente, Ácido, Salado, Amargo",
+    "question_b": "Dulce, Picante, Sabroso, Tarta",
+    "answer": "Tienen el mismo radical superior (Hierba)",
+    "reward": "Cofre Tesoro x3 (Consumible)",
+    "explanation": "En japonés, los kanjis del Grupo A comparten el radical de 'hierba' en la parte superior."
+  },
+  {
+    "id": 2,
+    "title": "Desafío Funky #2",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Debes completar el Desafío #1 y esperar unos días (aprox. 2 de Mayo).",
+    "question_a": "Enterrado, Brea, Cuervo",
+    "question_b": "Historia, Derecho, Paloma",
+    "answer": "Están enterrados en la brea (Tierra)",
+    "reward": "Snuff Soul x1 (Recupera 50 SP)",
+    "explanation": "Los kanjis del Grupo A contienen el radical de 'tierra' (Tsuchi)."
+  },
+  {
+    "id": 3,
+    "title": "Desafío Funky #3",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Debes completar el Desafío #2 (aprox. 12 de Mayo).",
+    "question_a": "Intrigante, Malvado, Aspero",
+    "question_b": "Barato, Inteligente, Débil",
+    "answer": "Tienen un ratón (Nezumi)",
+    "reward": "Chewing Soul x1 (Recupera 100 SP)",
+    "explanation": "Es un juego de palabras visual con los kanjis."
+  },
+  {
+    "id": 4,
+    "title": "Desafío Funky #4",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Debes completar el Desafío #3 (aprox. 1 de Septiembre).",
+    "question_a": "Gato, Comida, Compañeros",
+    "question_b": "Perro, Comer, Colegas",
+    "answer": "Es solo un gato (Kemono-hen)",
+    "reward": "Bead (Recupera todo el HP de un aliado)",
+    "explanation": "El Grupo A comparte el radical que se usa para animales (Kemono)."
+  },
+  {
+    "id": 5,
+    "title": "Desafío Funky #5",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Debes completar el Desafío #4 (aprox. 12 de Noviembre).",
+    "question_a": "Ventana, Parada de Autobús, Tienda",
+    "question_b": "Puerta, Estación de Tren, Hospital",
+    "answer": "Las líneas son realmente rectas",
+    "reward": "Soma (Recupera todo HP/SP de todos)",
+    "explanation": "Referencia a la forma de los trazos en los caracteres."
+  },
+  {
+    "id": 6,
+    "title": "Desafío Final",
+    "location": "Edificio Escolar 3F (Pasillo)",
+    "unlock_condition": "Debes completar el Desafío #5 (aprox. 10 de Enero - Solo Golden).",
+    "question_a": "Blanco, Negro",
+    "question_b": "Rojo, Azul",
+    "answer": "Son simplemente blanco y negro",
+    "reward": "Traje de Prueba (Costume)",
+    "explanation": "A veces la respuesta más obvia es la correcta."
+  }
+]
