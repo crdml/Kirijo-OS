@@ -402,3 +402,38 @@ body.theme-p4 .p4-btn-5:hover, body.theme-p4 .p4-btn-5.active-mod { background: 
 /* 6. Fusiones (Rojo Velvet) */
 body.theme-p4 .p4-btn-6 { border-color: #e60012; color: #b3000e; }
 body.theme-p4 .p4-btn-6:hover, body.theme-p4 .p4-btn-6.active-mod { background: #e60012; color: #fff; }
+
+/* --- OPTIMIZACIÓN PARA MÓVILES (Responsive) --- */
+@media (max-width: 768px) {
+    /* Ajustes del contenedor de navegación */
+    .modules-nav {
+        justify-content: flex-start; /* Alineación para permitir scroll */
+        padding: 10px 5px; /* Reducir padding externo */
+        gap: 8px; /* Reducir hueco entre botones */
+        
+        /* Scroll suave y ocultar barra de desplazamiento */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .modules-nav::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+
+    /* Ajustes de los botones */
+    .modules-nav button {
+        flex: 0 0 auto; /* Evita que se estiren o encojan, mantienen su tamaño natural */
+        min-width: auto; /* Quita el ancho mínimo forzado de 100px */
+        padding: 8px 12px; /* Más compactos */
+        font-size: 0.85rem; /* Texto un poco más pequeño */
+        white-space: nowrap; /* OBLIGATORIO: El texto nunca bajará de línea */
+    }
+
+    /* Ajuste específico para el tema P4 (si tienes la inclinación skew) */
+    body.theme-p4 .modules-nav button {
+        transform: skew(-5deg); /* Reducir inclinación en móvil para ahorrar espacio */
+        margin: 0 2px;
+        font-size: 0.8rem;
+    }
+}
