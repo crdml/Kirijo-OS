@@ -234,16 +234,35 @@ body {
 
 /* Foto del Personaje */
 .character-img {
-    width: 100px; /* Tamaño de la foto */
+    width: 100px;
     height: 100px;
-    object-fit: cover; /* Recorta la imagen para que sea cuadrada */
-    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    /* CAMBIO AQUÍ: */
+    border-radius: 12px; /* Antes era 50%. Ponemos 12px para un cuadrado con esquinas suaves. Pon 0px si lo quieres totalmente recto. */
     border: 3px solid var(--kirijo-blue);
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
-    flex-shrink: 0; /* Evita que la imagen se aplaste */
+    /* Truco para que la sombra también cambie de color entre azul/rosa */
+    box-shadow: 0 0 15px var(--kirijo-blue); 
+    opacity: 0.9; /* Un toque sutil para que se integre mejor con el fondo oscuro */
+    flex-shrink: 0;
 }
 
 /* Estilos específicos para texto */
 strong { color: #fff; }
 details { margin-top: 10px; }
 summary { outline: none; }
+
+/* --- CORRECCIÓN: PESTAÑA DESAPARECIDOS SIEMPRE ROJA --- */
+
+/* Cuando la pestaña de alerta está activa, forzamos el rojo
+   usando !important para sobrescribir el tema Rosa/Azul */
+.modules-nav button.alert-text.active-mod {
+    background-color: var(--alert-red) !important;
+    border-color: var(--alert-red) !important;
+    color: #fff !important; /* Texto blanco para contraste */
+    box-shadow: 0 0 15px var(--alert-red);
+}
+
+/* Efecto hover también en rojo */
+.modules-nav button.alert-text:hover {
+    background: rgba(255, 42, 42, 0.2) !important;
+}

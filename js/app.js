@@ -235,13 +235,10 @@ const app = {
     renderMissing: function(data, container) {
         let html = '<h3 style="color:var(--alert-red); text-align:center;">PERSONAS DESAPARECIDAS</h3>';
         
-        // ORDENAMIENTO CRONOLÓGICO (Lógica de Año Escolar)
+        // ORDENAMIENTO CRONOLÓGICO
         data.sort((a, b) => {
-            // Convertimos la fecha "6/18" en un valor numérico comparable
             const getWeight = (dateStr) => {
                 const [m, d] = dateStr.split('/').map(Number);
-                // TRUCO: Si el mes es 1, 2 o 3 (Enero-Marzo), sumamos 12.
-                // Así Enero (1) se convierte en 13, quedando DESPUÉS de Diciembre (12).
                 const month = m < 4 ? m + 12 : m; 
                 return (month * 100) + d; 
             };
@@ -251,18 +248,18 @@ const app = {
         data.forEach(p => {
             const isCritical = p.type === 'critical_social_link';
             
-            // Renderizado de la tarjeta
-            html += `<div class="data-card" style="${isCritical ? 'border: 2px solid var(--alert-red); box-shadow: 0 0 10px rgba(255,42,42,0.1);' : ''}">
+            html += `<div class="data-card" style="${isCritical ? 'border: 2px solid var(--alert-red); box-shadow: 0 0 15px rgba(255, 42, 42, 0.15);' : ''}">
                 <div class="data-title" style="display:flex; justify-content:space-between; ${isCritical ? 'color:var(--alert-red)' : ''}">
                     <span>📅 Disponible: ${p.available_date}</span>
                     <span style="font-size:0.9em; opacity:0.8">Límite: ${p.deadline}</span>
                 </div>
                 <div style="margin:10px 0;">
-                    <strong style="font-size:1.1em">${p.name}</strong> <br>
+                    <strong style="font-size:1.1em; color: #fff;">${p.name}</strong> <br>
                     📍 ${p.location} <br>
                     🎁 <span style="color:var(--kirijo-blue)">${p.reward}</span>
                 </div>
-                ${isCritical ? `<div class="data-highlight" style="background:rgba(255,42,42,0.1); padding:5px; border-radius:4px;">⚠️ ${p.warning_message}</div>` : ''}
+                
+                ${isCritical ? `<div class="data-highlight" style="background:rgba(60, 0, 0, 0.8); border: 1px solid var(--alert-red); color: #ffcccc; padding:8px; border-radius:4px; margin-top: 10px; font-size: 0.9em;">🚨 <strong>IMPORTANTE:</strong> ${p.warning_message}</div>` : ''}
             </div>`;
         });
         container.innerHTML = html;
