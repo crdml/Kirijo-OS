@@ -42,5 +42,15 @@ Para ejecutar una instancia local de este sistema:
 1. Clona este repositorio:
    ```bash
    git clone [https://github.com/tu-usuario/Kirijo-OS.git](https://github.com/tu-usuario/Kirijo-OS.git)
+2. Navega al directorio del proyecto:
+    ```bash
+    cd Kirijo-OS
+3. Abre index.html en tu navegador de preferencia.
+
+<p align="center">
+<em>"The arcana is the means by which all is revealed..."</em>
+<sub>© 2026 Kirijo Group Development Division</sub>
+</p>
+
 ---
 *“Executions are a last resort. Information is our primary weapon.”*
