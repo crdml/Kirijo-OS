@@ -168,7 +168,7 @@ const app = {
         }
     },
 
-    // --- CARGA DE DATOS (ACTUALIZADA PARA P4G) ---
+    // --- CARGA DE DATOS ---
 
     loadModule: async function(type) {
         const display = document.getElementById('data-display');
@@ -205,10 +205,9 @@ const app = {
             if(type === 'school') filename = 'data/p4g_school_answers.json';
             if(type === 'social') filename = 'data/p4g_social_links.json';
             if(type === 'riddle') filename = 'data/p4g_riddles.json';
-            if(type === 'lunch' || type === 'quiz' || type === 'fusions') {
             
             // Placeholder para los que aún no creamos
-            if(type === 'lunch' || type === 'quiz' || type === 'riddle' || type === 'fusions') {
+            if(type === 'lunch' || type === 'quiz' || type === 'fusions') {
                 display.innerHTML = '<div class="data-card"><h3>🚧 En construcción</h3><p>Este canal aún no emite señal.</p></div>';
                 return;
             }
@@ -227,6 +226,10 @@ const app = {
             if(!isP4) {
                 if(type === 'missing') this.renderMissing(data, display);
                 if(type === 'fusions') this.renderFusions(data, display);
+            }
+            // Renderizadores específicos de P4G
+            if(isP4) {
+                if(type === 'riddle') this.renderRiddles(data, display);
             }
 
         } catch (error) {
@@ -407,6 +410,41 @@ const app = {
             </div>`;
         });
 
+        container.innerHTML = html;
+    },
+
+    renderRiddles: function(data, container) {
+        let html = '<h3 style="color:#000; text-align:center; background:#ffe600; border:2px solid #000; padding:10px; transform:skew(-2deg);">🎩 DESAFÍOS DEL FUNKY STUDENT</h3>';
+        
+        data.forEach(r => {
+            html += `<div class="data-card" style="border: 2px solid #008fb3; background: #fff; color:#000; margin-bottom: 20px; box-shadow: 5px 5px 0px #008fb3;">
+                <div style="background:#008fb3; color:#fff; padding:5px 10px; font-weight:bold; display:flex; justify-content:space-between;">
+                    <span>${r.title}</span>
+                    <span style="font-size:0.8em; opacity:0.9">🎁 ${r.reward}</span>
+                </div>
+                <div style="padding:15px;">
+                    <div style="font-size:0.9em; margin-bottom:10px; color:#555;">📍 ${r.unlock_condition}</div>
+                    
+                    <div style="display:flex; gap:10px; margin-bottom:15px; font-family:monospace; font-size:1.1em;">
+                        <div style="flex:1; background:#f0f0f0; padding:10px; border-radius:5px;">
+                            <strong style="color:#e60012">Grupo A:</strong><br>
+                            ${r.question_a}
+                        </div>
+                        <div style="flex:1; background:#f0f0f0; padding:10px; border-radius:5px;">
+                            <strong style="color:#005f73">Grupo B:</strong><br>
+                            ${r.question_b}
+                        </div>
+                    </div>
+
+                    <div style="background:#ffe600; color:#000; padding:10px; border:2px dashed #000; text-align:center; font-weight:bold; font-size:1.1rem;">
+                        👉 Respuesta: ${r.answer}
+                    </div>
+                    <div style="margin-top:5px; font-size:0.85em; color:#666; font-style:italic;">
+                        💡 Por qué: ${r.explanation}
+                    </div>
+                </div>
+            </div>`;
+        });
         container.innerHTML = html;
     }
 };
