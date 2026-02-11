@@ -300,7 +300,7 @@ const app = {
             
             html += `<div class="data-card social-card" style="${isCritical ? 'border-color:var(--alert-red)' : ''}">
                 <div class="arcana-header">
-                    ${sl.arcana_image ? `<img src="assets/Tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
+                    ${sl.arcana_image ? `<img src="assets/tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
                     <div class="data-title no-border">${sl.id}. ${sl.arcana_name}</div>
                 </div>
                 <div class="social-info-container">
