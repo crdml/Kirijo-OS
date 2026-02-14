@@ -1,0 +1,83 @@
+[
+  {
+    "character": "Yukari Takeba",
+    "arcana": "Lovers",
+    "activities": "Cocina, Jardinería, DVD",
+    "buffs": [
+      { "level": 1, "name": "Experta en Curación", "effect": "Reduce significativamente el coste de SP de habilidades curativas." },
+      { "level": 2, "name": "Apoyo Anímico", "effect": "Aumenta la probabilidad de curar estados alterados de aliados." }
+    ]
+  },
+  {
+    "character": "Junpei Iori",
+    "arcana": "Magician",
+    "activities": "Cocina, Jardinería, Leer",
+    "buffs": [
+      { "level": 1, "name": "Golpe Crítico", "effect": "Aumenta la probabilidad de causar golpes críticos y su daño." },
+      { "level": 2, "name": "Espíritu de Lucha", "effect": "Aumenta el ataque físico cuando la salud es baja." }
+    ]
+  },
+  {
+    "character": "Akihiko Sanada",
+    "arcana": "Emperor",
+    "activities": "Cocina, DVD, Café",
+    "buffs": [
+      { "level": 1, "name": "Maestro de Mejoras", "effect": "Aumenta la duración de los efectos positivos (Buffs) en sí mismo." },
+      { "level": 2, "name": "Inicio Explosivo", "effect": "Comienza la batalla con Tarukaja (Ataque subido) automático." }
+    ]
+  },
+  {
+    "character": "Mitsuru Kirijo",
+    "arcana": "Empress",
+    "activities": "Cocina, Tomar Té, Leer",
+    "buffs": [
+      { "level": 1, "name": "Aflicción Segura", "effect": "Aumenta enormemente la probabilidad de infligir estados alterados." },
+      { "level": 2, "name": "Carga Espiritual", "effect": "Recupera un poco de SP cada turno en batalla." }
+    ]
+  },
+  {
+    "character": "Fuuka Yamagishi",
+    "arcana": "Priestess",
+    "activities": "Cocina, Jardinería, Leer",
+    "buffs": [
+      { "level": 1, "name": "Análisis Profundo", "effect": "Revela debilidades enemigas automáticamente al inicio del combate (probabilidad)." },
+      { "level": 2, "name": "Aura Curativa", "effect": "Aumenta la potencia de las curaciones fuera de batalla y reduce su coste." }
+    ]
+  },
+  {
+    "character": "Aigis",
+    "arcana": "Aeon",
+    "activities": "Jardinería, Leer, Mantenimiento",
+    "buffs": [
+      { "level": 1, "name": "Muro de Hierro", "effect": "Reduce el daño físico recibido de forma pasiva." },
+      { "level": 2, "name": "Modo Exterminio", "effect": "Aumenta el daño de todas las armas de fuego y habilidades físicas." }
+    ]
+  },
+  {
+    "character": "Ken Amada",
+    "arcana": "Justice",
+    "activities": "Cocina, DVD, Leer",
+    "buffs": [
+      { "level": 1, "name": "Recuperación Veloz", "effect": "Recupera HP automáticamente cada turno." },
+      { "level": 2, "name": "Reflejo Sagrado", "effect": "Otorga una probabilidad de reflejar ataques de Luz y Oscuridad." }
+    ]
+  },
+  {
+    "character": "Koromaru",
+    "arcana": "Strength",
+    "activities": "Cepillado, DVD, Jardinería",
+    "buffs": [
+      { "level": 1, "name": "Instinto Salvaje", "effect": "Aumenta la probabilidad de crítico del equipo si Koromaru está activo." },
+      { "level": 2, "name": "Auto-Sukukaja", "effect": "Comienza la batalla con Agilidad/Evasión aumentada." }
+    ]
+  },
+  {
+    "character": "Shinjiro Aragaki",
+    "arcana": "Moon",
+    "activities": "Cocina, Jardinería",
+    "buffs": [
+      { "level": 1, "name": "Alma Solitaria", "effect": "Regenera HP cuando tiene poca salud." },
+      { "level": 2, "name": "Poder Bruto", "effect": "Aumenta considerablemente el daño de ataques normales." }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "palace": "Castillo de Kamoshida",
+    "sin": "Lujuria (Lust)",
+    "seeds": [
+      "1. Cerca de la capilla, usa el gancho para subir al balcón superior.",
+      "2. En la torre central, rompe una pared con ventilación y trepa.",
+      "3. En la sala del trono (ascensor secreto), necesitas volver tras activar la estatua."
+    ],
+    "item": "Cristal de la Lujuria",
+    "ring": "Anillo de la Lujuria",
+    "effect": "Champion's Cup: Cura media (Diarama) + Sube ataque (Tarukaja) a un aliado. ¡Vital para el inicio!"
+  },
+  {
+    "palace": "Museo de Madarame",
+    "sin": "Vanidad (Vanity)",
+    "seeds": [
+      "1. Sala de exposiciones 2, tras los láseres.",
+      "2. En el almacén de tesoros, sube por los contenedores.",
+      "3. En el laberinto final, encuentra el interruptor secreto detrás del cuadro."
+    ],
+    "item": "Cristal de la Vanidad",
+    "ring": "Anillo de la Vanidad",
+    "effect": "Bleeding Dry Brush: Elimina las debilidades del usuario. (Pasiva excelente)."
+  },
+  {
+    "palace": "Banco de Kaneshiro",
+    "sin": "Gula (Gluttony)",
+    "seeds": [
+      "1. En el pasillo de los banqueros, usa el gancho en el techo.",
+      "2. En la lavandería de dinero, baja por la ventilación.",
+      "3. En la gran bóveda, necesitas resolver el puzzle del código numérico extra."
+    ],
+    "item": "Cristal de la Gula",
+    "ring": "Anillo de la Gula",
+    "effect": "Vault Guardian: Sube defensa de todo el grupo (Marakukaja) por 3 turnos."
+  },
+  {
+    "palace": "Pirámide de Futaba",
+    "sin": "Ira (Wrath)",
+    "seeds": [
+      "1. En la ciudad del desierto, rompe la pared endeble.",
+      "2. En la cámara subterránea, tras el puzzle de los sarcófagos.",
+      "3. En la cima, saltando por las plataformas de luz flotantes."
+    ],
+    "item": "Cristal de la Ira",
+    "ring": "Anillo de la Ira",
+    "effect": "Wings of Wisdom: Cura todos los estados alterados (Amrita) + Sube ataque levemente."
+  },
+  {
+    "palace": "Puerto Espacial de Okumura",
+    "sin": "Avaricia (Greed)",
+    "seeds": [
+      "1. En los barracones, usa el gancho para cruzar.",
+      "2. En la línea de producción, evita los brazos mecánicos.",
+      "3. En la zona de transferencia de aire, vuela con el gancho hacia la plataforma superior."
+    ],
+    "item": "Cristal de la Avaricia",
+    "ring": "Anillo de la Avaricia",
+    "effect": "President's Insight: Concentra el siguiente ataque mágico (x2.5 daño) de un aliado. ¡ROTO!"
+  },
+  {
+    "palace": "Casino de Sae",
+    "sin": "Envidia (Envy)",
+    "seeds": [
+      "1. Área de empleados, pasillo de seguridad.",
+      "2. Sala de máquinas tragaperras, busca el conducto.",
+      "3. En la arena de combate, antes de entrar al puente final."
+    ],
+    "item": "Cristal de la Envidia",
+    "ring": "Anillo de la Envidia",
+    "effect": "Gambler's Foresight: Auto-Concentrate. El primer ataque mágico hace x2.5 daño. (El mejor anillo del juego)."
+  },
+  {
+    "palace": "Crucero de Shido",
+    "sin": "Soberbia (Pride)",
+    "seeds": [
+      "1. Cubierta central, sube por el lateral del barco.",
+      "2. Zona de camarotes VIP, transformado en ratón.",
+      "3. Sala de máquinas, trepando por las tuberías."
+    ],
+    "item": "Cristal de la Soberbia",
+    "ring": "Anillo de la Soberbia",
+    "effect": "Tyrant's Will: Carga el siguiente ataque físico (x2.5 daño) de un aliado."
+  },
+  {
+    "palace": "Laboratorio de Maruki",
+    "sin": "Tristeza (Sorrow)",
+    "seeds": [
+      "1. Zona de cuestionarios, respuesta correcta abre puerta.",
+      "2. Zona de terapia cognitiva, puzzle de colores RGB.",
+      "3. Torre del Edén, camino oculto en las escaleras."
+    ],
+    "item": "Cristal de la Tristeza",
+    "ring": "Anillo de la Tristeza",
+    "effect": "Guiding Tentacle: Life Aid + Mana Aid. Recupera HP/SP tras cada batalla."
+  }
+]

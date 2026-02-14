@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Entrada Principal",
+    "detail": "Detrás de la segunda farola a la derecha, cerca de la entrada."
+  },
+  {
+    "id": 2,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Edificio Escolar 1F",
+    "detail": "Entre las dos estatuas grandes en el vestíbulo principal."
+  },
+  {
+    "id": 3,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Edificio Escolar 1F",
+    "detail": "Al final del pasillo de la oficina de la facultad, frente a la imprenta."
+  },
+  {
+    "id": 4,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Pasillo de Clubes",
+    "detail": "En el suelo frente a la puerta del Club de Arte."
+  },
+  {
+    "id": 5,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Patio Deportivo",
+    "detail": "En el extremo izquierdo, cerca de las taquillas."
+  },
+  {
+    "id": 6,
+    "area": "Escuela (Gekkoukan)",
+    "location": "Azotea",
+    "detail": "En uno de los bancos de piedra cerca de las jardineras."
+  },
+  {
+    "id": 7,
+    "area": "Dormitorio Iwatodai",
+    "location": "Entrada (4F)",
+    "detail": "En el pasillo del cuarto piso, cerca de las escaleras que suben (Disponible más adelante)."
+  },
+  {
+    "id": 8,
+    "area": "Dormitorio Iwatodai",
+    "location": "Azotea",
+    "detail": "En la esquina, cerca de las macetas (Disponible a partir del 5/25)."
+  },
+  {
+    "id": 9,
+    "area": "Estación de Port Island",
+    "location": "Explanada de la Estación",
+    "detail": "Cerca de la fuente, frente a la pantalla de cine grande."
+  },
+  {
+    "id": 10,
+    "area": "Estación de Port Island",
+    "location": "Afueras de la Estación",
+    "detail": "Cerca de la basura y las bolsas rojas, bajando las escaleras hacia el callejón."
+  },
+  {
+    "id": 11,
+    "area": "Estación de Iwatodai",
+    "location": "Centro Comercial (Strip Mall)",
+    "detail": "En el tercer piso, cerca de la barandilla derecha (Sube las escaleras mecánicas)."
+  },
+  {
+    "id": 12,
+    "area": "Estación de Iwatodai",
+    "location": "Frente a la Estación",
+    "detail": "Cerca de la tapa de alcantarilla roja en la zona de construcción."
+  },
+  {
+    "id": 13,
+    "area": "Santuario Naganaki",
+    "location": "Recinto del Santuario",
+    "detail": "En la esquina superior izquierda, cerca del Inari (los torii rojos)."
+  },
+  {
+    "id": 14,
+    "area": "Santuario Naganaki",
+    "location": "Parque Infantil",
+    "detail": "Al lado de los juegos infantiles (el tobogán de la selva)."
+  },
+  {
+    "id": 15,
+    "area": "Paulownia Mall",
+    "location": "Entrada",
+    "detail": "Frente a la fuente central, en el suelo."
+  },
+  {
+    "id": 16,
+    "area": "Paulownia Mall",
+    "location": "Club Escapade",
+    "detail": "Dentro del club, en el suelo frente al escenario (Necesitas Coraje Rango 2)."
+  },
+  {
+    "id": 17,
+    "area": "Tártaro",
+    "location": "Entrada (Lobby)",
+    "detail": "En el suelo a la derecha de la puerta de Terciopelo."
+  }
+]

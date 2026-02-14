@@ -1,7 +1,7 @@
 const app = {
     state: {
-        protagonist: 'male', // Por defecto: Makoto (P3P) / Yu (P4G)
-        user: "Artemis" // Nick fijo
+        protagonist: 'male', // Por defecto: Makoto (P3) / Yu (P4) / Ren (P5)
+        user: "Artemis"
     },
 
     // Configuración de los botones (módulos) para cada juego
@@ -10,18 +10,38 @@ const app = {
             { id: 'school', label: '📝 Escuela', colorClass: '' },
             { id: 'social', label: '🤝 Vínculos', colorClass: '' },
             { id: 'missing', label: '🕵️ Desaparecidos', colorClass: 'alert-text' },
-            { id: 'requests', label: '👠 Misiones', colorClass: '' }, // Elizabeth (Velvet Style)
-            { id: 'tartarus', label: '💀 Jefes', colorClass: 'alert-text' }, // Tartarus Bosses (Dark Red)
-            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }  // Velvet Style
+            { id: 'requests', label: '👠 Misiones', colorClass: '' },
+            { id: 'tartarus', label: '💀 Jefes', colorClass: 'alert-text' },
+            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }
+        ],
+        p3r: [
+            { id: 'school', label: '📝 Escuela', colorClass: '' },
+            { id: 'social', label: '🤝 Vínculos', colorClass: '' },
+            { id: 'linked', label: '🔗 Episodios', colorClass: '' },
+            { id: 'dorm', label: '🛏️ Dormitorio', colorClass: '' },
+            { id: 'fragments', label: '💎 Fragmentos', colorClass: '' },
+            { id: 'missing', label: '🕵️ Desaparecidos', colorClass: 'alert-text' },
+            { id: 'requests', label: '👠 Misiones', colorClass: '' },
+            { id: 'tartarus', label: '💀 Jefes', colorClass: 'alert-text' },
+            { id: 'fusions', label: '🔮 Fusiones', colorClass: '' }
         ],
         p4g: [
-            { id: 'school', label: '🎓 Exámenes', colorClass: 'p4-btn-1' },     // Knowledge
-            { id: 'social', label: '👓 Social Links', colorClass: 'p4-btn-2' }, // Investigation Team
-            { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },      // Cooking
-            { id: 'books', label: '📖 Libros', colorClass: 'p4-btn-4' },        // NEW: Bookworm Guide
-            { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },        // Midnight Channel
-            { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },      // Funky Student
-            { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }     // Margaret (Velvet Style)
+            { id: 'school', label: '🎓 Exámenes', colorClass: 'p4-btn-1' },
+            { id: 'social', label: '👓 Social Links', colorClass: 'p4-btn-2' },
+            { id: 'lunch', label: '🍱 LunchBox', colorClass: 'p4-btn-3' },
+            { id: 'books', label: '📖 Libros', colorClass: 'p4-btn-4' },
+            { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },
+            { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },
+            { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }
+        ],
+        p5r: [
+            { id: 'school', label: '🎓 Exámenes', colorClass: '' },
+            { id: 'social', label: '🎭 Confidants', colorClass: '' },
+            { id: 'seeds', label: '💀 Semillas', colorClass: '' },
+            { id: 'crossword', label: '🧩 Crucigramas', colorClass: '' },
+            { id: 'mementos', label: '🚗 Mementos', colorClass: '' },
+            { id: 'jazz', label: '🎷 Jazz Club', colorClass: '' },
+            { id: 'fusions', label: '⛓️ Fusiones', colorClass: '' }
         ]
     },
 
@@ -56,7 +76,6 @@ const app = {
             document.querySelectorAll('.view').forEach(v => {
                 if(v.id !== 'view-dashboard') v.classList.add('hidden');
             });
-            // Al volver al dashboard, aseguramos limpiar el modo Velvet
             this.resetAtmosphere();
         }
     },
@@ -74,24 +93,31 @@ const app = {
         const titleEl = document.querySelector('.current-module-title');
         const genderSwitch = document.querySelector('.gender-switch');
         
-        // Resetear atmósfera
+        document.getElementById('modules-container').setAttribute('data-game', gameId);
+        
         this.resetAtmosphere();
 
         if(gameId === 'p3p') {
-            document.body.classList.remove('theme-p4');
             titleEl.innerText = "P3P DATABASE";
             genderSwitch.style.display = 'flex';
             this.setGender('male'); 
         } 
+        else if(gameId === 'p3r') {
+            document.body.classList.add('theme-p3r');
+            titleEl.innerText = "P3 RELOAD SYSTEM";
+            genderSwitch.style.display = 'none';
+        }
         else if(gameId === 'p4g') {
             document.body.classList.add('theme-p4');
             titleEl.innerText = "TV WORLD NAV";
             genderSwitch.style.display = 'none';
-            document.getElementById('data-display').innerHTML = 
-                '<div class="empty-state" style="color:#000; font-weight:bold; font-style:italic;">Selecciona un canal...</div>';
+        }
+        else if(gameId === 'p5r') {
+            document.body.classList.add('theme-p5r');
+            titleEl.innerText = "PHANTOM THIEVES NAV";
+            genderSwitch.style.display = 'none';
         }
 
-        // Generar botones
         const navContainer = document.getElementById('modules-container');
         navContainer.innerHTML = ''; 
 
@@ -100,22 +126,20 @@ const app = {
                 const button = document.createElement('button');
                 button.innerHTML = btn.label;
                 button.className = btn.colorClass;
-                button.onclick = () => this.loadModule(btn.id);
-                // Marca botones de alerta en rojo para P3P
-                if(gameId === 'p3p' && (btn.id === 'missing' || btn.id === 'tartarus')) {
+                button.onclick = () => this.loadModule(btn.id, gameId);
+                
+                if((gameId === 'p3p' || gameId === 'p3r') && (btn.id === 'missing' || btn.id === 'tartarus')) {
                     button.classList.add('alert-text');
                 }
                 navContainer.appendChild(button);
             });
         }
+        
+        document.getElementById('data-display').innerHTML = '<div class="empty-state">Seleccione un módulo de datos.</div>';
     },
 
     goHome: function() {
         this.resetAtmosphere();
-        document.body.classList.remove('theme-p4');
-        const root = document.documentElement.style;
-        root.setProperty('--bg-dark', '#050505');
-        root.setProperty('--text-main', '#e0f7ff');
         this.changeView('view-dashboard');
         document.getElementById('data-display').innerHTML = '<div class="empty-state">Seleccione un módulo de datos.</div>';
     },
@@ -123,7 +147,11 @@ const app = {
     setGender: function(gender) {
         this.state.protagonist = gender;
         const root = document.documentElement.style;
-        
+        const isP3R = document.body.classList.contains('theme-p3r');
+        const isP5R = document.body.classList.contains('theme-p5r');
+
+        if(isP3R || isP5R) return;
+
         if (gender === 'female') {
             root.setProperty('--kirijo-blue', '#fe0067'); 
             root.setProperty('--kirijo-dim', '#6b002c');
@@ -136,30 +164,37 @@ const app = {
         document.getElementById('btn-female').classList.toggle('active', gender === 'female');
     },
 
-    // --- GESTIÓN DE AMBIENTE (VELVET ROOM) ---
+    // --- GESTIÓN DE AMBIENTE ---
     resetAtmosphere: function() {
         const root = document.documentElement.style;
         const bgGrid = document.querySelector('.bg-grid');
-        const isP4 = document.body.classList.contains('theme-p4');
+        
+        document.body.classList.remove('theme-p4');
+        document.body.classList.remove('theme-p3r');
+        document.body.classList.remove('theme-p5r');
 
         root.removeProperty('--bg-dark');
         root.removeProperty('--text-main');
+        root.removeProperty('--kirijo-blue');
+        root.removeProperty('--kirijo-dim');
+        
+        document.body.style.background = '';
+        document.body.style.backgroundImage = '';
+        
         if(bgGrid) {
-            bgGrid.style.background = ''; // Vuelve al CSS original
+            bgGrid.style.background = '';
+            bgGrid.style.backgroundImage = '';
+            bgGrid.style.opacity = '1';
         }
-
-        if (isP4) {
-            root.removeProperty('--kirijo-blue');
-        } else {
-            this.setGender(this.state.protagonist);
-        }
+        
+        this.setGender('male');
     },
 
     setVelvetAtmosphere: function() {
         const root = document.documentElement.style;
         const bgGrid = document.querySelector('.bg-grid');
-        const velvetBlue = '#0a0e29'; // Azul Noche
-        const velvetGold = '#d4af37'; // Dorado
+        const velvetBlue = '#0a0e29';
+        const velvetGold = '#d4af37';
 
         root.setProperty('--bg-dark', velvetBlue);
         root.setProperty('--text-main', velvetGold);
@@ -173,49 +208,68 @@ const app = {
 
     // --- CARGA DE DATOS ---
 
-    loadModule: async function(type) {
+    loadModule: async function(type, gameId) {
+        if (!gameId) gameId = document.getElementById('modules-container').getAttribute('data-game');
+
         const display = document.getElementById('data-display');
         const navContainer = document.getElementById('modules-container');
         if(navContainer) {
             navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active-mod'));
         }
 
-        // --- LÓGICA DE AMBIENTE ---
-        // Activamos Velvet Room para Fusiones y Misiones (Requests)
+        // Velvet Room check
         if (type === 'fusions' || type === 'requests') {
             this.setVelvetAtmosphere();
         } else {
             this.resetAtmosphere();
+            if(gameId === 'p3r') document.body.classList.add('theme-p3r');
+            if(gameId === 'p4g') document.body.classList.add('theme-p4');
+            if(gameId === 'p5r') document.body.classList.add('theme-p5r');
+            
+            if(gameId === 'p3p') this.setGender(this.state.protagonist);
         }
 
-        const isP4 = document.body.classList.contains('theme-p4');
-        const velvetMsg = '<div class="empty-state" style="color:#d4af37; font-family:serif; font-style:italic;">"Bienvenido a la Habitación de Terciopelo..."</div>';
-        
-        // Mensaje de carga
-        if (type === 'fusions' || type === 'requests') {
-             display.innerHTML = velvetMsg;
-        } else if (isP4) {
-             display.innerHTML = '<div class="empty-state" style="color:#000;">Sintonizando el Canal de Medianoche...</div>';
-        } else {
-             display.innerHTML = '<div class="empty-state" style="color:var(--kirijo-blue)">Desencriptando datos de Kirijo Group...</div>';
-        }
+        display.innerHTML = '<div class="empty-state">Cargando datos...</div>';
 
         let filename = '';
-        if (!isP4) {
+        
+        // MAPEO DE ARCHIVOS
+        if (gameId === 'p3p') {
             if(type === 'school') filename = 'data/p3p_school_answers.json';
             if(type === 'social') filename = 'data/p3p_social_links_master.json';
             if(type === 'missing') filename = 'data/p3p_missing_persons.json';
             if(type === 'requests') filename = 'data/p3p_elizabeth_requests.json';
             if(type === 'tartarus') filename = 'data/p3p_tartarus_bosses.json';
             if(type === 'fusions') filename = 'data/p3p_special_fusions.json';
-        } else {
+        } 
+        else if (gameId === 'p3r') {
+            if(type === 'school') filename = 'data/p3r_school_answers.json';
+            if(type === 'social') filename = 'data/p3r_social_links_master.json';
+            if(type === 'linked') filename = 'data/p3r_linked_episodes.json';
+            if(type === 'dorm') filename = 'data/p3r_dorm_hangouts.json';
+            if(type === 'fragments') filename = 'data/p3r_twilight_fragments.json';
+            if(type === 'missing') filename = 'data/p3r_missing_persons.json';
+            if(type === 'requests') filename = 'data/p3r_elizabeth_requests.json';
+            if(type === 'tartarus') filename = 'data/p3r_tartarus_bosses.json';
+            if(type === 'fusions') filename = 'data/p3r_special_fusions.json';
+        }
+        else if (gameId === 'p4g') {
             if(type === 'school') filename = 'data/p4g_school_answers.json';
             if(type === 'social') filename = 'data/p4g_social_links.json';
             if(type === 'riddle') filename = 'data/p4g_riddles.json';
             if(type === 'lunch') filename = 'data/p4g_lunchbox.json';
-            if(type === 'books') filename = 'data/p4g_books.json'; // New
+            if(type === 'books') filename = 'data/p4g_books.json';
             if(type === 'quiz') filename = 'data/p4g_tv_quiz.json';
             if(type === 'fusions') filename = 'data/p4g_special_fusions.json';
+        }
+        else if (gameId === 'p5r') {
+            if(type === 'school') filename = 'data/p5r_school_answers.json';
+            if(type === 'social') filename = 'data/p5r_social_links.json';
+            if(type === 'seeds') filename = 'data/p5r_will_seeds.json';
+            if(type === 'crossword') filename = 'data/p5r_crosswords.json';
+            if(type === 'mementos') filename = 'data/p5r_mementos_requests.json';
+            if(type === 'jazz') filename = 'data/p5r_jazz_club.json';
+            if(type === 'fusions') filename = 'data/p5r_special_fusions.json';
         }
 
         try {
@@ -225,39 +279,261 @@ const app = {
             
             // --- RENDERIZADO ---
             
-            // Universal (Velvet Room Style)
+            // UNIVERSAL / COMPARTIDO
             if(type === 'fusions') this.renderFusions(data, display);
-            if(type === 'requests') this.renderElizabethRequests(data, display);
+            else if(type === 'requests') this.renderElizabethRequests(data, display);
+            else if(type === 'school') this.renderSchool(data, display);
+            else if(type === 'social') this.renderSocial(data, display);
             
-            // Comunes
-            if(type === 'school') this.renderSchool(data, display);
-            if(type === 'social') this.renderSocial(data, display);
+            // P3 / P3R
+            else if(type === 'missing') this.renderMissing(data, display);
+            else if(type === 'tartarus') this.renderTartarusBosses(data, display);
+            else if(type === 'linked') this.renderLinkedEpisodes(data, display);
+            else if(type === 'dorm') this.renderDorm(data, display);
+            else if(type === 'fragments') this.renderTwilightFragments(data, display);
             
-            // Específicos P3P
-            if(!isP4) {
-                if(type === 'missing') this.renderMissing(data, display);
-                if(type === 'tartarus') this.renderTartarusBosses(data, display);
-            }
+            // P4G
+            else if(type === 'riddle') this.renderRiddles(data, display);
+            else if(type === 'lunch') this.renderLunch(data, display);
+            else if(type === 'books') this.renderBooks(data, display);
+            else if(type === 'quiz') this.renderQuiz(data, display);
             
-            // Específicos P4G
-            if(isP4) {
-                if(type === 'riddle') this.renderRiddles(data, display);
-                if(type === 'lunch') this.renderLunch(data, display);
-                if(type === 'books') this.renderBooks(data, display);
-                if(type === 'quiz') this.renderQuiz(data, display);
-            }
+            // P5R
+            else if(type === 'seeds') this.renderSeeds(data, display);
+            else if(type === 'crossword') this.renderCrosswords(data, display);
+            else if(type === 'jazz') this.renderJazz(data, display);
+            else if(type === 'mementos') this.renderMementos(data, display);
 
         } catch (error) {
             console.error(error);
             display.innerHTML = `<div class="data-card" style="border-color:var(--alert-red)">
-                <h3 style="color:var(--alert-red)">ERROR DE SEÑAL</h3>
+                <h3 style="color:var(--alert-red)">ERROR DE CARGA</h3>
                 <p>${error.message}</p>
-                <small>Verifica que has creado el archivo JSON en la carpeta /data.</small>
+                <small>Verifica el archivo JSON en /data.</small>
             </div>`;
         }
     },
 
-    // --- RENDERIZADORES ---
+    // --- RENDERIZADOR SOCIAL (UPDATED PARA P5R STYLE) ---
+    renderSocial: function(data, container) {
+        let html = '';
+        data.sort((a,b) => a.id - b.id).forEach(sl => {
+            let routeData = null;
+            if(sl.type === 'shared' || sl.type === 'shared_automatic') {
+                routeData = sl.routes.shared;
+            } else {
+                routeData = sl.routes[this.state.protagonist] || sl.routes.male; 
+            }
+
+            if(!routeData) return;
+            const isCritical = routeData.critical_warning ? true : false;
+            
+            html += `<div class="data-card social-card ${isCritical ? 'critical' : ''}">
+                <div class="arcana-header">
+                    ${sl.arcana_image ? `<img src="assets/tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
+                    <div class="data-title no-border">${sl.id}. ${sl.arcana_name}</div>
+                </div>
+                <div class="social-info-container">
+                    <div class="social-details">
+                        <div class="char-name">👤 <strong>${routeData.character}</strong></div>
+                        <div>📍 ${routeData.location}</div>
+                        <div>📅 ${routeData.availability || 'Eventos automáticos'}</div>
+                        ${routeData.warning_message ? `<div class="data-highlight mt-10">⚠️ ${routeData.warning_message}</div>` : ''}
+                        ${isCritical ? `<div class="data-highlight">⚠️ ${routeData.critical_warning}</div>` : ''}
+                    </div>
+                    ${routeData.image ? `<img src="assets/characters/${routeData.image}" alt="${routeData.character}" class="character-img">` : ''}
+                </div>
+                <details>
+                    <summary>ABRIR GUÍA DE RESPUESTAS</summary>
+                    <div class="ranks-container">`;
+            
+            routeData.ranks.forEach(r => {
+                html += `<div class="social-rank-box">
+                    <div class="rank-header">
+                        <span class="rank-num">RANGO ${r.rank}</span>
+                        ${r.date ? `<span class="rank-date">(${r.date})</span>` : ''}
+                    </div>`;
+                
+                if(r.type === 'automatic') {
+                    html += `<div class="rank-note">🎬 Evento Automático</div>`;
+                } else if (r.responses) {
+                    html += `<div class="responses-list">`;
+                    r.responses.forEach(resp => {
+                        html += `<div class="response-item">
+                             <div class="context">"${resp.context.substring(0,50)}${resp.context.length>50?'...':''}"</div>
+                             <div class="choice">👉 <strong>${resp.best_choice}</strong> ${resp.romance_flag ? '❤️' : ''}</div>
+                        </div>`;
+                    });
+                    html += `</div>`;
+                }
+                if (r.context && r.best_choice && !r.responses) {
+                    html += `<div class="response-item mission">
+                        <strong>Misión:</strong> ${r.context}<br>👉 ${r.best_choice}
+                    </div>`;
+                }
+                html += `</div>`;
+            });
+            html += `</div></details></div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    // --- NUEVOS RENDERIZADORES P3R/P5R ---
+
+    renderDorm: function(data, container) {
+        let html = '<h3 style="color:var(--p3r-cyan); border-bottom: 2px solid var(--p3r-cyan); padding-bottom:10px;">🛏️ Vida en el Dormitorio (Buffs de Combate)</h3>';
+        data.forEach(char => {
+            html += `<div class="data-card" style="border-left: 4px solid var(--p3r-cyan);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;">
+                    <strong style="font-size:1.2em; color:#fff;">${char.character}</strong>
+                    <span style="font-size:0.8em; color:var(--p3r-cyan);">${char.arcana}</span>
+                </div>
+                <div style="font-size:0.9em; margin-bottom:10px; color:#aaa;">❤️ Actividades: ${char.activities}</div>
+                <div style="display:grid; gap:8px;">`;
+            char.buffs.forEach(buff => {
+                html += `<div style="background:rgba(0, 46, 59, 0.6); padding:8px; border-radius:4px; border:1px solid rgba(79, 251, 252, 0.3);">
+                    <div style="color:var(--p3r-cyan); font-weight:bold;">Nv ${buff.level}: ${buff.name}</div>
+                    <div style="font-size:0.85em; color:#ddd;">${buff.effect}</div>
+                </div>`;
+            });
+            html += `</div></div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    renderSeeds: function(data, container) {
+        let html = '<div style="background:#000; color:#fff; padding:10px; text-align:center; font-family:\'Impact\', sans-serif; font-size:1.5em; border:2px solid #fff; margin-bottom:20px; transform:skew(-2deg);">💀 WILL SEEDS & RINGS</div>';
+        
+        data.forEach(palace => {
+            html += `<div class="data-card" style="background:#000; color:#fff; border:2px solid var(--p5r-red); margin-bottom:20px;">
+                <div style="background:var(--p5r-red); color:#fff; padding:5px 10px; font-weight:bold; font-family:'Impact', sans-serif; font-size:1.2em;">${palace.palace}</div>
+                <div style="padding:10px;">
+                     <div style="margin-bottom:10px; border-bottom:1px dashed #555; padding-bottom:10px;">
+                        <strong style="color:var(--p5r-gold);">💍 ${palace.ring}</strong>
+                        <div style="font-size:0.9em; color:#ccc; margin-top:5px;">${palace.effect}</div>
+                     </div>
+                     <div style="font-size:0.85em;">
+                        <div style="color:#aaa; margin-bottom:3px;">📍 Ubicaciones:</div>`;
+            palace.seeds.forEach(seed => {
+                html += `<div style="margin-left:10px; color:#fff; margin-bottom:2px;">• ${seed}</div>`;
+            });
+            html += `</div></div></div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    renderLinkedEpisodes: function(data, container) {
+        let html = '<h3 style="color:var(--p3r-cyan); border-bottom: 2px solid var(--p3r-cyan); padding-bottom:10px; text-transform:uppercase;">🔗 Episodios de Vínculo</h3>';
+        
+        data.forEach(char => {
+            const isWarning = char.warning ? true : false;
+            html += `<div class="data-card" style="border-left: 4px solid ${isWarning ? 'var(--alert-red)' : 'var(--p3r-cyan)'};">
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #333; padding-bottom:10px; margin-bottom:10px;">
+                    <div>
+                        <strong style="font-size:1.2em; color:#fff;">${char.character}</strong>
+                        <span style="background:rgba(255,255,255,0.1); padding:2px 8px; border-radius:4px; font-size:0.8em; margin-left:10px;">${char.arcana}</span>
+                    </div>
+                    <div style="font-size:0.8em; color:var(--p3r-cyan);">🎁 ${char.unlocks}</div>
+                </div>
+                ${isWarning ? `<div class="data-highlight" style="margin-bottom:15px;">⚠️ ${char.warning}</div>` : ''}
+                
+                <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:10px;">`;
+            
+            char.events.forEach(ev => {
+                html += `<div style="background:rgba(0,0,0,0.3); padding:10px; border-radius:5px; border:1px solid #333;">
+                    <div style="color:var(--p3r-cyan); font-weight:bold;">Episodio ${ev.episode}</div>
+                    <div style="font-size:0.9em; margin:5px 0;">📅 ${ev.date} - ${ev.availability}</div>
+                    <div style="font-size:0.85em; color:#aaa; font-style:italic;">"${ev.note}"</div>
+                </div>`;
+            });
+
+            html += `</div></div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    renderTwilightFragments: function(data, container) {
+        let html = '<h3 style="color:var(--p3r-cyan); border-bottom: 2px solid var(--p3r-cyan); padding-bottom:10px; text-transform:uppercase; text-shadow: 0 0 10px rgba(79, 251, 252, 0.5);">💎 Fragmentos Crepusculares</h3>';
+        html += '<p style="font-size:0.9em; color:#aaa; margin-bottom:20px;">Ubicaciones en la ciudad (Town Map). Vitales para cofres y el reloj del Tártaro.</p>';
+        
+        html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:15px;">';
+        
+        data.forEach(f => {
+            html += `<div class="data-card" style="border-left: 4px solid var(--p3r-cyan); background: linear-gradient(135deg, rgba(0, 50, 70, 0.8) 0%, rgba(0, 20, 30, 0.9) 100%);">
+                <div style="color:var(--p3r-cyan); font-weight:bold; font-size:1.1em; margin-bottom:5px;">${f.area}</div>
+                <div style="color:#fff; font-weight:bold; margin-bottom:5px;">📍 ${f.location}</div>
+                <div style="font-size:0.9em; color:#ccc; border-top:1px solid rgba(79, 251, 252, 0.2); padding-top:5px; margin-top:5px;">
+                    ${f.detail}
+                </div>
+            </div>`;
+        });
+        
+        html += '</div>';
+        container.innerHTML = html;
+    },
+
+    renderCrosswords: function(data, container) {
+        let html = '<div style="text-align:center; background:#000; color:#fff; padding:15px; margin-bottom:20px; font-family:\'Impact\', sans-serif; font-size:1.5em; border:2px solid #fff; transform:rotate(-1deg);">🧩 CRUCIGRAMAS LEBLANC</div>';
+        html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap:15px;">';
+        
+        data.forEach(cw => {
+            html += `<div class="data-card" style="background:#fff; color:#000; border:2px solid #000; padding:10px;">
+                <div style="font-size:0.9em; font-weight:bold; color:#cc0000; margin-bottom:5px;">#${cw.id}</div>
+                <div style="font-style:italic; margin-bottom:10px;">"${cw.question}"</div>
+                <div style="background:#000; color:#fcc200; padding:5px 10px; font-weight:bold; text-align:center; transform:skew(-5deg); border:1px solid #fcc200;">
+                    ${cw.answer}
+                </div>
+            </div>`;
+        });
+        html += '</div>';
+        container.innerHTML = html;
+    },
+
+    renderJazz: function(data, container) {
+        let html = `<div style="background:#220033; color:#fff; padding:20px; border:2px solid #fcc200;">
+            <h2 style="color:#fcc200; text-align:center; font-family:'Georgia', serif; letter-spacing:3px;">🎷 JAZZ JIN</h2>
+            <p style="text-align:center; font-style:italic;">Kichijoji - Noches</p>
+            <div style="margin-top:20px;">
+                <h4 style="color:#fcc200; border-bottom:1px solid #555;">Habilidades de Domingo (Exclusivas)</h4>
+                <div style="display:grid; grid-template-columns: 1fr; gap:10px;">`;
+        
+        data.sunday_skills.forEach(skill => {
+            html += `<div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.05); padding:10px; border-bottom:1px solid #444;">
+                <div style="font-weight:bold; color:#fff;">${skill.date}</div>
+                <div style="color:#fcc200; font-weight:bold;">${skill.skill}</div>
+                <div style="font-size:0.85em; color:#aaa; text-align:right;">${skill.effect}</div>
+            </div>`;
+        });
+        
+        html += `</div></div></div>`;
+        container.innerHTML = html;
+    },
+
+    renderMementos: function(data, container) {
+        let html = '<div style="background:#000; color:#fff; padding:10px; text-align:center; font-family:\'Impact\', sans-serif; font-size:2em; color:#cc0000; text-shadow:2px 2px 0 #fff; margin-bottom:20px;">MEMENTOS REQUESTS</div>';
+        
+        data.forEach(req => {
+            const isRankS = req.rank === 'S';
+            html += `<div class="data-card" style="background:${isRankS ? '#300' : '#111'}; border:1px solid #333; margin-bottom:15px; border-left:5px solid #cc0000;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:10px; border-bottom:1px solid #444; padding-bottom:5px;">
+                    <strong style="color:#cc0000; font-size:1.2em;">${req.name}</strong>
+                    <span style="background:#cc0000; color:#fff; padding:2px 8px; font-weight:bold;">Rank ${req.rank}</span>
+                </div>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; font-size:0.9em;">
+                    <div>📅 <strong>Disponible:</strong> ${req.available}</div>
+                    <div>📍 <strong>Lugar:</strong> ${req.location}</div>
+                    <div>🎯 <strong>Objetivo:</strong> ${req.target}</div>
+                    <div>🎁 <strong>Premio:</strong> ${req.reward}</div>
+                </div>
+                <div style="margin-top:10px; background:#222; padding:5px; font-size:0.85em; color:#aaa;">
+                    💡 <strong>Condición:</strong> ${req.condition}
+                </div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    },
+
+    // --- RENDERIZADORES CLÁSICOS ---
 
     renderSchool: function(data, container) {
         let html = '';
@@ -280,60 +556,6 @@ const app = {
                 }
             });
             html += `</div>`;
-        });
-        container.innerHTML = html;
-    },
-
-    renderSocial: function(data, container) {
-        let html = '';
-        data.sort((a,b) => a.id - b.id).forEach(sl => {
-            let routeData = null;
-            if(sl.type === 'shared' || sl.type === 'shared_automatic') {
-                routeData = sl.routes.shared;
-            } else {
-                routeData = sl.routes[this.state.protagonist]; 
-            }
-            if (!routeData && sl.routes && sl.routes.male) routeData = sl.routes.male;
-
-            if(!routeData) return;
-            const isCritical = routeData.critical_warning ? true : false;
-            
-            html += `<div class="data-card social-card" style="${isCritical ? 'border-color:var(--alert-red)' : ''}">
-                <div class="arcana-header">
-                    ${sl.arcana_image ? `<img src="assets/tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
-                    <div class="data-title no-border">${sl.id}. ${sl.arcana_name}</div>
-                </div>
-                <div class="social-info-container">
-                    <div class="social-details">
-                        <div style="font-size:1.1em; margin-bottom: 5px;">👤 <strong>${routeData.character}</strong></div>
-                        <div>📍 ${routeData.location}</div>
-                        <div>📅 ${routeData.availability || 'Eventos automáticos'}</div>
-                        ${routeData.warning_message ? `<div class="data-highlight" style="margin-top:10px;">⚠️ ${routeData.warning_message}</div>` : ''}
-                        ${isCritical ? `<div class="data-highlight">⚠️ ${routeData.critical_warning}</div>` : ''}
-                    </div>
-                    ${routeData.image ? `<img src="assets/characters/${routeData.image}" alt="${routeData.character}" class="character-img">` : ''}
-                </div>
-                <details>
-                    <summary style="cursor:pointer; color:var(--kirijo-blue); font-weight:bold; margin-top: 15px;">ABRIR GUÍA DE RESPUESTAS</summary>
-                    <div style="margin-top:15px;">`;
-            routeData.ranks.forEach(r => {
-                html += `<div style="margin-bottom:12px; background:rgba(0,0,0,0.1); padding:8px; border-radius:4px; border: 1px solid #444;">
-                    <strong style="color:var(--kirijo-blue)">Rango ${r.rank}</strong> 
-                    ${r.date ? `<span style="font-size:0.8em">(${r.date})</span>` : ''}`;
-                if(r.type === 'automatic') html += `<div style="opacity:0.7; font-style:italic;">Evento Automático</div>`;
-                else if (r.responses) {
-                    r.responses.forEach(resp => {
-                        html += `<div style="margin-top:5px; padding-left:10px; border-left:2px solid #666;">
-                             "${resp.context.substring(0,40)}..." <br>
-                             👉 <span style="font-weight:bold;">${resp.best_choice}</span>
-                             ${resp.romance_flag ? '❤️' : ''}
-                        </div>`;
-                    });
-                }
-                if (r.context && r.best_choice && !r.responses) html += `<div style="margin-top:5px;"><strong>Misión:</strong> ${r.context}<br>👉 ${r.best_choice}</div>`;
-                html += `</div>`;
-            });
-            html += `</div></details></div>`;
         });
         container.innerHTML = html;
     },
@@ -381,34 +603,38 @@ const app = {
         
         // Special Spreads
         html += `<h4 style="color:${velvetGold}; border-bottom: 1px solid ${velvetBlue}; margin-top:20px; font-family: serif; text-transform: uppercase;">Special Spreads</h4>`;
-        data.special_spreads.forEach(f => {
-            html += `<div class="data-card" style="border: 1px solid ${velvetGold}; background: rgba(10, 14, 41, 0.95); color:${velvetText}; margin-bottom: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.8);">
-                <div style="border-bottom: 1px solid ${velvetGold}; padding:8px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
-                    <span style="font-size:1.1em; color:${velvetGold}; font-family: serif;">${f.result} (Lv ${f.level})</span>
-                    <span style="font-size:0.8em; opacity:0.9; background:#000; padding:2px 6px; border-radius:2px; border:1px solid #444;">${f.arcana}</span>
-                </div>
-                <div style="padding:15px;">
-                    <div style="color:#aaa; font-size:0.9em; margin-bottom:5px; font-style:italic;">${f.type || 'Fusion'}</div>
-                    <div style="background:rgba(0,0,0,0.5); padding:10px; border:1px solid #333; font-family:monospace; margin-bottom:10px; color:#fff;">
-                        ${f.ingredients.join(' + ')}
+        if(data.special_spreads) {
+            data.special_spreads.forEach(f => {
+                html += `<div class="data-card" style="border: 1px solid ${velvetGold}; background: rgba(10, 14, 41, 0.95); color:${velvetText}; margin-bottom: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.8);">
+                    <div style="border-bottom: 1px solid ${velvetGold}; padding:8px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:1.1em; color:${velvetGold}; font-family: serif;">${f.result} (Lv ${f.level})</span>
+                        <span style="font-size:0.8em; opacity:0.9; background:#000; padding:2px 6px; border-radius:2px; border:1px solid #444;">${f.arcana}</span>
                     </div>
-                    ${f.req_item ? `<div style="color:#ff6b6b; font-size:0.9em;">🔒 ${f.req_item}</div>` : ''}
-                    ${f.note ? `<div style="color:#888; font-style:italic; font-size:0.9em; margin-top:5px;">💡 ${f.note}</div>` : ''}
-                </div>
-            </div>`;
-        });
+                    <div style="padding:15px;">
+                        <div style="color:#aaa; font-size:0.9em; margin-bottom:5px; font-style:italic;">${f.type || 'Fusion'}</div>
+                        <div style="background:rgba(0,0,0,0.5); padding:10px; border:1px solid #333; font-family:monospace; margin-bottom:10px; color:#fff;">
+                            ${f.ingredients.join(' + ')}
+                        </div>
+                        ${f.req_item ? `<div style="color:#ff6b6b; font-size:0.9em;">🔒 ${f.req_item}</div>` : ''}
+                        ${f.note ? `<div style="color:#888; font-style:italic; font-size:0.9em; margin-top:5px;">💡 ${f.note}</div>` : ''}
+                    </div>
+                </div>`;
+            });
+        }
 
         // Max S.Link Ultimates
-        html += `<h4 style="color:${velvetGold}; border-bottom: 1px solid ${velvetBlue}; margin-top:40px; font-family: serif; text-transform: uppercase;">Ultimate Social Link Personas</h4>`;
-        html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:10px; margin-top:15px;">';
-        data.max_social_link_ultimates.forEach(u => {
-             html += `<div style="background:rgba(10, 14, 41, 0.8); border:1px solid #444; padding:10px; text-align:center;">
-                <strong style="color:${velvetGold}; display:block; font-family: serif; font-size: 1.1em;">${u.persona}</strong>
-                <span style="font-size:0.8em; color:#aaa;">Lv ${u.level} - ${u.arcana}</span>
-                <div style="font-size:0.75em; margin-top:5px; color:#fff;">${u.req_item}</div>
-            </div>`;
-        });
-        html += '</div>';
+        if(data.max_social_link_ultimates) {
+            html += `<h4 style="color:${velvetGold}; border-bottom: 1px solid ${velvetBlue}; margin-top:40px; font-family: serif; text-transform: uppercase;">Ultimate Social Link Personas</h4>`;
+            html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:10px; margin-top:15px;">';
+            data.max_social_link_ultimates.forEach(u => {
+                 html += `<div style="background:rgba(10, 14, 41, 0.8); border:1px solid #444; padding:10px; text-align:center;">
+                    <strong style="color:${velvetGold}; display:block; font-family: serif; font-size: 1.1em;">${u.persona}</strong>
+                    <span style="font-size:0.8em; color:#aaa;">Lv ${u.level} - ${u.arcana}</span>
+                    <div style="font-size:0.75em; margin-top:5px; color:#fff;">${u.req_item}</div>
+                </div>`;
+            });
+            html += '</div>';
+        }
         
         container.innerHTML = html;
     },
