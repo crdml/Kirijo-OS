@@ -1,0 +1,307 @@
+{
+  "game_version": "Persona 3 Reload",
+  "school_year_answers": [
+    {
+      "month": "Abril",
+      "items": [
+        {
+          "date": "4/8",
+          "question": "Entre 'una lluvia de flores', 'espejismo místico' y 'vivas serpentinas de carpas', ¿cuál simboliza el verano?",
+          "answer": "Vivas serpentinas de carpas",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "4/18",
+          "question": "Los lugares donde la gente arrojaba sus residuos en el periodo Jomon, ¿cómo se llaman hoy en día?",
+          "answer": "Muladares (Middens)",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "4/27",
+          "question": "¿Cuál de las siguientes no es una espiral algebraica?",
+          "answer": "A",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Mayo",
+      "items": [
+        {
+          "date": "5/6",
+          "question": "¿Cómo se llama el dispositivo que ayuda a generar energía eléctrica para el tren?",
+          "answer": "Un pantógrafo",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "5/13",
+          "question": "¿Qué herramienta usó Leon Foucault en sus experimentos sobre la rotación de la Tierra?",
+          "answer": "El péndulo",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "5/15",
+          "question": "¿Qué otro nombre, más informal, se le da al mal de mayo?",
+          "answer": "Enfermedad de mayo (May Blues)",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Parciales (1er Semestre)",
+          "answers": [
+            { "date": "5/19", "answer": "Enfermedad de mayo (May Blues)" },
+            { "date": "5/20", "answer": "Un péndulo" },
+            { "date": "5/21", "answer": "Electricidad" },
+            { "date": "5/22", "answer": "Jomon" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Junio",
+      "items": [
+        {
+          "date": "6/15",
+          "question": "¿Qué frase significa 'capaz de ver las cosas como realmente son'?",
+          "answer": "Buen ojo (Keen eye)",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "6/17",
+          "question": "¿Qué práctica religiosa temprana fue el origen de la magia?",
+          "answer": "Chamanismo",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "6/22",
+          "question": "¿Qué otro nombre recibe esta curva?",
+          "answer": "Bruja de Agnesi",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "6/25",
+          "question": "¿Cómo se llama cuando las burbujas de aire en una bañera de hidromasaje te golpean y vibran?",
+          "answer": "El efecto flutter",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "6/29",
+          "question": "¿Qué forma de magia natural se utiliza para encontrar fuentes de agua?",
+          "answer": "Radiestesia (Dowsing)",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Julio",
+      "items": [
+        {
+          "date": "7/3",
+          "question": "...¿De qué tipo de relato está hablando?",
+          "answer": "Romance",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "7/8",
+          "question": "¿Dónde se encuentra la coma de yuxtaposición en la siguiente frase?",
+          "answer": "Entre 'tiempo' y 'es'",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "7/9",
+          "question": "Al mismo tiempo, surgió un grave problema para los agricultores. ¿Recuerdas cuál fue?",
+          "answer": "Disparidad social",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "7/10",
+          "question": "¿Cuál es el estudio esotérico de los textos judíos?",
+          "answer": "Cábala (Kabbalah)",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "7/11",
+          "question": "¿Qué objeto crees que era? ¡Es algo que todo samurái necesita!",
+          "answer": "La katana",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Finales (1er Semestre)",
+          "answers": [
+            { "date": "7/14", "answer": "Radiestesia (Dowsing)" },
+            { "date": "7/15", "answer": "Un error de traducción" },
+            { "date": "7/16", "answer": "Taira No Masakado" },
+            { "date": "7/17", "answer": "Coma de yuxtaposición" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Septiembre",
+      "items": [
+        {
+          "date": "9/1",
+          "question": "¿Qué propiedad de la electricidad es relevante para la superconductividad?",
+          "answer": "Resistencia",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "9/10",
+          "question": "¿Sabes qué significa 'soltar la sopa' (spill the beans)?",
+          "answer": "Revelar un secreto",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "9/11",
+          "question": "¿Qué libro ayudó a promover el arte de la magia durante el Renacimiento?",
+          "answer": "La Hermética",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "9/14",
+          "question": "¿A quién se refiere uno cuando habla de su 'media naranja'?",
+          "answer": "Su alma gemela",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "9/26",
+          "question": "¿Cuál es el nombre colectivo de los cuatro números sagrados en numerología?",
+          "answer": "Tetraktys",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Octubre",
+      "items": [
+        {
+          "date": "10/7",
+          "question": "¿Qué hormona es responsable de enviar una sensación de logro al cerebro?",
+          "answer": "Dopamina",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "10/10",
+          "question": "¿Quién fundó la Teosofía?",
+          "answer": "Helena Blavatsky",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Parciales (2do Semestre)",
+          "answers": [
+            { "date": "10/13", "answer": "Adicción" },
+            { "date": "10/14", "answer": "Pitágoras" },
+            { "date": "10/15", "answer": "Superconductividad" },
+            { "date": "10/16", "answer": "Revelar un secreto" }
+          ]
+        },
+        {
+          "date": "10/19",
+          "question": "¿De dónde proviene el número cero?",
+          "answer": "India",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "10/22",
+          "question": "¿Qué diosa romana se teoriza que da nombre al mes de abril?",
+          "answer": "Venus",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "10/26",
+          "question": "¿En qué región de Japón se celebra el mes de los dioses (Kamiarizuki)?",
+          "answer": "Izumo",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "10/30",
+          "question": "¿Qué enzima en los boniatos reacciona al calor para producir maltosa?",
+          "answer": "Beta-amilasa",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Noviembre",
+      "items": [
+        {
+          "date": "11/7",
+          "question": "¿Cuál es el antiguo texto mágico indio que mencioné hoy?",
+          "answer": "Los Upanishads",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "11/12",
+          "question": "¿Qué estaba describiendo con una línea tan escasa?",
+          "answer": "Su época favorita del invierno",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "11/30",
+          "question": "En el poema que Genji le envía, ¿con qué la compara?",
+          "answer": "La flor del cerezo",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Diciembre",
+      "items": [
+        {
+          "date": "12/7",
+          "question": "¿Cuál es el nombre de la capa estratosférica compuesta por tres átomos de oxígeno?",
+          "answer": "La capa de ozono",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "12/9",
+          "question": "¿Qué hechicería se dice que usó Himiko?",
+          "answer": "Kido",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "12/11",
+          "question": "¿Cuál de los siguientes es un sustantivo plural irregular?",
+          "answer": "Vidas (Lives)",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Finales (2do Semestre)",
+          "answers": [
+            { "date": "12/14", "answer": "El número cero" },
+            { "date": "12/15", "answer": "Maltosa" },
+            { "date": "12/16", "answer": "Venus" },
+            { "date": "12/17", "answer": "Murasaki-no-Ue" },
+            { "date": "12/18", "answer": "Geeses" }
+          ]
+        },
+        {
+          "date": "12/22",
+          "question": "¿Cómo llamamos al sentimiento de alegría tras una experiencia cercana a la muerte?",
+          "answer": "Euforia",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    },
+    {
+      "month": "Enero",
+      "items": [
+        {
+          "date": "1/8",
+          "question": "¿Qué lugar se menciona en el tema del año nuevo?",
+          "answer": "El inframundo",
+          "stat_boost": "Charm +1"
+        },
+        {
+          "date": "1/18",
+          "question": "Mencioné dos hechiceras griegas. Medea era una, ¿quién era la otra?",
+          "answer": "Circe",
+          "stat_boost": "Charm +1"
+        }
+      ]
+    }
+  ]
+}

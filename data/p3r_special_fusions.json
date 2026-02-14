@@ -1,0 +1,131 @@
+{
+  "game_version": "Persona 3 Reload",
+  "special_spreads": [
+    {
+      "result": "Alice",
+      "arcana": "Muerte (Death)",
+      "level": 56,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Lilim", "Pixie", "Nata Taishi", "Narcissus"],
+      "note": "Aprende 'Die for Me!'."
+    },
+    {
+      "result": "Black Frost",
+      "arcana": "Loco (Fool)",
+      "level": 37,
+      "type": "Cross Spread (4)",
+      "ingredients": ["King Frost", "Jack Frost", "Pyro Jack", "Queen Mab"],
+      "note": "Excelente para mediados del juego."
+    },
+    {
+      "result": "Daisoujou",
+      "arcana": "Hierofante (Hierophant)",
+      "level": 59,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Mithra", "Ara Mitama", "Kusi Mitama", "Saki Mitama", "Nigi Mitama"],
+      "note": "Usuario de Samsara (Muerte de Luz)."
+    },
+    {
+      "result": "Hell Biker",
+      "arcana": "Colgado (Hanged)",
+      "level": 65,
+      "type": "Special (2)",
+      "ingredients": ["Bronte", "Archangel"],
+      "req_item": "Completa la solicitud de Elizabeth para desbloquearlo."
+    },
+    {
+      "result": "Mara",
+      "arcana": "Torre (Tower)",
+      "level": 75,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Incubus", "Mot", "Pazuzu", "Kumbhanda", "Attis"],
+      "req_item": "Maximiza el S.Link Torre (Mutatsu)."
+    },
+    {
+      "result": "Masakado",
+      "arcana": "Torre (Tower)",
+      "level": 79,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Bishamonten", "Jikokuten", "Komokuten", "Zouchouten"],
+      "req_item": "Completa la solicitud de Elizabeth #75."
+    },
+    {
+      "result": "Metatron",
+      "arcana": "Eón (Aeon)",
+      "level": 87,
+      "type": "Cross Spread (4)",
+      "ingredients": ["Michael", "Uriel", "Raphael", "Gabriel"],
+      "req_item": "Maximiza el S.Link Eón (Aigis)."
+    },
+    {
+      "result": "Susano-o",
+      "arcana": "Loco (Fool)",
+      "level": 77,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Orpheus", "Legion", "Ose", "Black Frost", "Decarabia", "Loki"],
+      "req_item": "Maximiza el S.Link Loco (SEES)."
+    },
+    {
+      "result": "Thanatos",
+      "arcana": "Muerte (Death)",
+      "level": 64,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Ghoul", "Pale Rider", "Loa", "Samael", "Mot", "Alice"],
+      "req_item": "Maximiza el S.Link Muerte (Pharos)."
+    },
+    {
+      "result": "Lucifer",
+      "arcana": "Estrella (Star)",
+      "level": 89,
+      "type": "Pentagon Spread (5)",
+      "ingredients": ["Helel", "Satan", "Michael", "Metatron", "Trumpeter"],
+      "note": "Diferente receta a P3P. Ahora requiere Helel."
+    },
+    {
+      "result": "Messiah",
+      "arcana": "Juicio (Judgment)",
+      "level": 91,
+      "type": "Normal (2)",
+      "ingredients": ["Orpheus", "Thanatos"],
+      "req_item": "Maximiza el S.Link Juicio (Nyx Annihilation Team)."
+    },
+    {
+      "result": "Orpheus Telos",
+      "arcana": "Loco (Fool)",
+      "level": 91,
+      "type": "Hexagon Spread (6)",
+      "ingredients": ["Thanatos", "Asura", "Chi You", "Metatron", "Helel", "Messiah"],
+      "req_item": "Maximiza TODOS los Social Links (Objeto: Colorless Mask).",
+      "warning": "El Persona definitivo. Resistente a todo."
+    },
+    {
+      "result": "Satanael (DLC)",
+      "arcana": "Loco (Fool)",
+      "level": 95,
+      "type": "Special DLC",
+      "ingredients": ["Lucifer", "Satan", "Michael", "Anza", "Baal Zebul"],
+      "note": "Requiere comprar el DLC de Persona 5 Royal."
+    }
+  ],
+  "max_social_link_ultimates": [
+    { "arcana": "Mago", "persona": "Surt", "level": 52, "req_item": "Kenji Rank 10" },
+    { "arcana": "Sacerdotisa", "persona": "Scathach", "level": 64, "req_item": "Fuuka Rank 10" },
+    { "arcana": "Emperatriz", "persona": "Alilat", "level": 84, "req_item": "Mitsuru Rank 10" },
+    { "arcana": "Emperador", "persona": "Odin", "level": 57, "req_item": "Hidetoshi Rank 10" },
+    { "arcana": "Hierofante", "persona": "Kohryu", "level": 66, "req_item": "Bunkichi Rank 10" },
+    { "arcana": "Enamorados", "persona": "Cybele", "level": 68, "req_item": "Yukari Rank 10" },
+    { "arcana": "Carro", "persona": "Thor", "level": 53, "req_item": "Kazushi Rank 10" },
+    { "arcana": "Justicia", "persona": "Melchizedek", "level": 59, "req_item": "Chihiro Rank 10" },
+    { "arcana": "Ermitaño", "persona": "Arahabaki", "level": 60, "req_item": "Maya Rank 10" },
+    { "arcana": "Fortuna", "persona": "Lakshmi", "level": 69, "req_item": "Keisuke Rank 10" },
+    { "arcana": "Fuerza", "persona": "Siegfried", "level": 59, "req_item": "Yuko Rank 10" },
+    { "arcana": "Colgado", "persona": "Attis", "level": 67, "req_item": "Maiko Rank 10" },
+    { "arcana": "Templanza", "persona": "Yurlungur", "level": 64, "req_item": "Bebe Rank 10" },
+    { "arcana": "Diablo", "persona": "Beelzebub", "level": 81, "req_item": "Tanaka Rank 10" },
+    { "arcana": "Torre", "persona": "Chi You", "level": 86, "req_item": "Mutatsu Rank 10" },
+    { "arcana": "Estrella", "persona": "Helel", "level": 88, "req_item": "Mamoru Rank 10" },
+    { "arcana": "Luna", "persona": "Sandalphon", "level": 74, "req_item": "Nozomi Rank 10" },
+    { "arcana": "Sol", "persona": "Asura", "level": 85, "req_item": "Akinari Rank 10" },
+    { "arcana": "Eón", "persona": "Metatron", "level": 87, "req_item": "Aigis Rank 10" }
+  ]
+}

@@ -1,0 +1,576 @@
+[
+  {
+    "id": 0,
+    "arcana_name": "Loco (Fool)",
+    "arcana_image": "tarot_p5_fool.png",
+    "type": "shared_automatic",
+    "routes": {
+      "shared": {
+        "character": "Igor (Yaldabaoth)",
+        "location": "Velvet Room",
+        "availability": "Automático por historia.",
+        "image": "igor_p5.jpg",
+        "ranks": [
+          { "rank": 1, "date": "4/12", "type": "automatic", "context": "Desbloquea: Wild Talk (Negociación)." },
+          { "rank": 2, "date": "Auto", "type": "automatic", "context": "Desbloquea: Third Eye." },
+          { "rank": 6, "date": "Auto", "type": "automatic", "context": "Desbloquea: High Pixie fusion." },
+          { "rank": 10, "date": "12/24", "type": "automatic", "context": "Desbloquea: Satanael (NG+)." }
+        ]
+      }
+    }
+  },
+  {
+    "id": 1,
+    "arcana_name": "Mago (Magician)",
+    "arcana_image": "tarot_p5_magician.png",
+    "type": "shared_automatic",
+    "routes": {
+      "shared": {
+        "character": "Morgana",
+        "location": "Leblanc / Metaverse",
+        "availability": "Automático por historia.",
+        "image": "morgana.jpg",
+        "ranks": [
+          { "rank": 1, "date": "4/15", "type": "automatic" },
+          { "rank": 5, "date": "6/20", "type": "automatic", "context": "Habilidad: Pickpocket (Robar objetos)." },
+          { "rank": 10, "date": "12/23", "type": "automatic", "context": "Desbloquea: Futsunushi." }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "arcana_name": "Sacerdotisa (Priestess)",
+    "arcana_image": "tarot_p5_priestess.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Makoto Niijima",
+        "location": "Puerta del Colegio / Sala del Consejo",
+        "availability": "Mar, Jue, Sáb, Dom (Día). Requiere Conocimiento 3 (Erudite).",
+        "image": "makoto.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/24" },
+          { "rank": 2, "responses": [{ "context": "Lugar...", "best_choice": "Estás muy bien informada." }, { "context": "Peligro...", "best_choice": "Deberías tener cuidado." }] },
+          { "rank": 3, "responses": [{ "context": "Entendido...", "best_choice": "Tienes mi atención." }, { "context": "Molestia...", "best_choice": "No eres nada de eso." }] },
+          { "rank": 4, "responses": [{ "context": "Objetivo...", "best_choice": "Ese es el espíritu." }, { "context": "Duda...", "best_choice": "¿Por qué lo usaría?" }] },
+          { "rank": 5, "responses": [{ "context": "Sospecha...", "best_choice": "Da un poco de miedo." }] },
+          { "rank": 6, "responses": [{ "context": "Amor...", "best_choice": "El amor tiene muchas formas." }] },
+          { "rank": 7, "responses": [{ "context": "Padre...", "best_choice": "Fue un hombre increíble." }] },
+          { "rank": 8, "responses": [{ "context": "Chica...", "best_choice": "Dice que le da igual." }] },
+          { "rank": 9, "responses": [{ "context": "Pelea...", "best_choice": "¡Corre!" }, { "context": "Romance...", "best_choice": "Yo seré tu compañero de estudios (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Eso es lo que hacen los amigos (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "arcana_name": "Emperatriz (Empress)",
+    "arcana_image": "tarot_p5_empress.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Haru Okumura",
+        "location": "Azotea del Colegio",
+        "availability": "Lun, Mar, Mie, Vie, Sáb (Día). Requiere Destreza 5 (Proficient).",
+        "image": "haru.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "10/30" },
+          { "rank": 2, "responses": [{ "context": "Café...", "best_choice": "¿Abrieron una cafetería?" }, { "context": "Dinero...", "best_choice": "Es sospechoso." }] },
+          { "rank": 3, "responses": [{ "context": "Problema...", "best_choice": "No quiero ir contigo." }, { "context": "Respuesta...", "best_choice": "No es tu culpa, Haru." }] },
+          { "rank": 4, "responses": [{ "context": "Coste...", "best_choice": "Es caro." }, { "context": "Sabor...", "best_choice": "Vamos a pedir otro café." }] },
+          { "rank": 5, "responses": [{ "context": "Ayuda...", "best_choice": "Alguien a quien proteger." }] },
+          { "rank": 6, "responses": [{ "context": "Extraño...", "best_choice": "¿Puedo hacer algo?" }] },
+          { "rank": 7, "responses": [{ "context": "Dolor...", "best_choice": "¿Qué quieres hacer?" }] },
+          { "rank": 8, "responses": [{ "context": "Tierra...", "best_choice": "La tierra." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Me gustas mucho, Haru (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Somos amigos (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "arcana_name": "Emperador (Emperor)",
+    "arcana_image": "tarot_p5_emperor.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Yusuke Kitagawa",
+        "location": "Pasaje Subterráneo de Shibuya",
+        "availability": "Cualquier día (Día). Requiere Destreza 4 para rangos altos.",
+        "image": "yusuke.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/18" },
+          { "rank": 2, "responses": [{ "context": "Arte...", "best_choice": "Es novedoso." }] },
+          { "rank": 3, "responses": [{ "context": "Crítica...", "best_choice": "No dejes que te afecte." }] },
+          { "rank": 4, "responses": [{ "context": "Slump...", "best_choice": "¿Por qué estamos en un barco?" }] },
+          { "rank": 5, "responses": [{ "context": "Mujer...", "best_choice": "¿Quieres que me desnude?" }] },
+          { "rank": 6, "responses": [{ "context": "Nostalgia...", "best_choice": "Se siente nostálgico." }] },
+          { "rank": 7, "responses": [{ "context": "Sushi...", "best_choice": "¿Qué significa eso?" }] },
+          { "rank": 8, "responses": [{ "context": "Madre...", "best_choice": "Tiene que ser Sayuri." }] },
+          { "rank": 9, "responses": [{ "context": "Amor...", "best_choice": "El amor de una madre." }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "arcana_name": "Hierofante (Hierophant)",
+    "arcana_image": "tarot_p5_hierophant.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Sojiro Sakura",
+        "location": "Café Leblanc",
+        "availability": "Noches (Lluvia preferible). Se bloquea hasta avanzar la historia.",
+        "image": "sojiro.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "4/20" },
+          { "rank": 2, "responses": [{ "context": "Café...", "best_choice": "Hacer café." }, { "context": "Sospecha...", "best_choice": "Ese tipo es sospechoso." }] },
+          { "rank": 3, "responses": [{ "context": "Grano...", "best_choice": "Grano medio-fino." }] },
+          { "rank": 4, "responses": [{ "context": "Sabor...", "best_choice": "Dime más." }, { "context": "Llamada...", "best_choice": "Llama al teléfono de Sojiro." }] },
+          { "rank": 5, "responses": [{ "context": "Curry...", "best_choice": "Creo que soy adicto." }] },
+          { "rank": 6, "responses": [{ "context": "Boca...", "best_choice": "Cierra la boca." }] },
+          { "rank": 7, "responses": [{ "context": "Disculpa...", "best_choice": "Podrías haberlo dicho." }] },
+          { "rank": 8, "responses": [{ "context": "Curry perfecto...", "best_choice": "Algo con curry." }] },
+          { "rank": 9, "responses": [{ "context": "Hija...", "best_choice": "Es genial." }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "arcana_name": "Enamorados (Lovers)",
+    "arcana_image": "tarot_p5_lovers.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Ann Takamaki",
+        "location": "Centro Comercial Subterráneo de Shibuya",
+        "availability": "Mar, Mie, Vie, Dom (Día). Requiere Amabilidad 2 (Considerate).",
+        "image": "ann.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "4/15" },
+          { "rank": 2, "responses": [{ "context": "Shiho...", "best_choice": "Ella es muy fuerte." }] },
+          { "rank": 3, "responses": [{ "context": "Tiendas...", "best_choice": "¿Podemos parar?" }] },
+          { "rank": 4, "responses": [{ "context": "Carrera...", "best_choice": "Sé que puedes hacerlo." }] },
+          { "rank": 5, "responses": [{ "context": "Falso...", "best_choice": "Ríndete." }] },
+          { "rank": 6, "responses": [{ "context": "Corazón...", "best_choice": "Consuélala." }] },
+          { "rank": 7, "responses": [{ "context": "Actriz...", "best_choice": "Te admira." }] },
+          { "rank": 8, "responses": [{ "context": "Entrenamiento...", "best_choice": "Tienes agallas." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Tú me tienes a mí (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Tienes a los demás (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "arcana_name": "Carro (Chariot)",
+    "arcana_image": "tarot_p5_chariot.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Ryuji Sakamoto",
+        "location": "Pasillo 2F (Escuela) / Arcade Shibuya",
+        "availability": "Cualquier día (Día).",
+        "image": "ryuji.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "4/12" },
+          { "rank": 2, "responses": [{ "context": "Pelea...", "best_choice": "Cuento contigo." }] },
+          { "rank": 3, "responses": [{ "context": "Pelea...", "best_choice": "No te pelees." }] },
+          { "rank": 4, "responses": [{ "context": "Nakaoka...", "best_choice": "¿Estás preocupado por él?" }] },
+          { "rank": 5, "responses": [{ "context": "Deportes...", "best_choice": "Proteína en polvo." }] },
+          { "rank": 6, "responses": [{ "context": "Violencia...", "best_choice": "Podemos entrenar en mi casa." }] },
+          { "rank": 7, "responses": [{ "context": "Hablar...", "best_choice": "Vamos a hablar con Takeishi." }] },
+          { "rank": 8, "responses": [{ "context": "Culpa...", "best_choice": "No te culpo." }] },
+          { "rank": 9, "responses": [{ "context": "Alivio...", "best_choice": "Me alegro." }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "arcana_name": "Justicia (Justice)",
+    "arcana_image": "tarot_p5_justice.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Goro Akechi",
+        "location": "Kichijoji (Frente al Club de Dardos)",
+        "availability": "Mié, Sáb (Noche). MANUAL hasta Rank 8. Rank 9 y 10 automáticos.",
+        "image": "akechi.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/10" },
+          { "rank": 2, "responses": [{ "context": "Tiempo...", "best_choice": "Siempre tienes tiempo." }] },
+          { "rank": 3, "responses": [{ "context": "Detective...", "best_choice": "¿No te gusta?" }] },
+          { "rank": 4, "responses": [{ "context": "Jazz...", "best_choice": "Es un buen sitio." }] },
+          { "rank": 5, "responses": [{ "context": "Tiro...", "best_choice": "¿Estás acostumbrado a disparar?" }] },
+          { "rank": 6, "responses": [{ "context": "Baño...", "best_choice": "Es agradable." }] },
+          { "rank": 7, "responses": [{ "context": "Rival...", "best_choice": "Esa es la razón." }] },
+          { "rank": 8, "responses": [{ "context": "Duelo...", "best_choice": "Acepto el desafío." }] },
+          { "rank": 9, "type": "automatic", "date": "Historia" },
+          { "rank": 10, "type": "automatic", "date": "Historia" }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "arcana_name": "Ermitaño (Hermit)",
+    "arcana_image": "tarot_p5_hermit.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Futaba Sakura",
+        "location": "Fuera de Leblanc",
+        "availability": "Mie, Jue, Sáb, Dom (Día). Requiere Amabilidad 4 (Selfless).",
+        "image": "futaba.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "8/31" },
+          { "rank": 2, "responses": [{ "context": "Reto...", "best_choice": "¡Vamos a hacerlo!" }] },
+          { "rank": 3, "responses": [{ "context": "Búsqueda...", "best_choice": "Te iba a buscar." }] },
+          { "rank": 4, "responses": [{ "context": "Robot...", "best_choice": "Hagámoslo juntos." }] },
+          { "rank": 5, "responses": [{ "context": "Amiga...", "best_choice": "¿Seguro que no es una NPC?" }] },
+          { "rank": 6, "responses": [{ "context": "Felicidad...", "best_choice": "¿Estás feliz?" }] },
+          { "rank": 7, "responses": [{ "context": "Kana...", "best_choice": "¿Qué pasa con Kana?" }] },
+          { "rank": 8, "responses": [{ "context": "Promesa...", "best_choice": "Eres genial." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Porque te quiero (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Porque somos compañeros (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "arcana_name": "Fortuna (Fortune)",
+    "arcana_image": "tarot_p5_fortune.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Chihaya Mifune",
+        "location": "Shinjuku (Noche)",
+        "availability": "Mar, Jue, Sáb, Dom (Noche). Paga 100,000 yenes para empezar.",
+        "image": "chihaya.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/22" },
+          { "rank": 2, "responses": [{ "context": "Sueño...", "best_choice": "Abre tu mente." }] },
+          { "rank": 3, "responses": [{ "context": "Cambio...", "best_choice": "Cambia tu destino." }] },
+          { "rank": 4, "responses": [{ "context": "Confianza...", "best_choice": "Confía en ti misma." }] },
+          { "rank": 5, "responses": [{ "context": "Esfuerzo...", "best_choice": "Eres muy trabajadora." }] },
+          { "rank": 6, "responses": [{ "context": "Poder...", "best_choice": "Tú eres tú." }] },
+          { "rank": 7, "responses": [{ "context": "Mentira...", "best_choice": "No creo en eso." }] },
+          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Chihaya Mifune." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero estar contigo (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Me gusta tu predicción (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "arcana_name": "Fuerza (Strength)",
+    "arcana_image": "tarot_p5_strength.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Justine & Caroline",
+        "location": "Velvet Room",
+        "availability": "Cualquier momento. Misiones de Fusión.",
+        "image": "twins.jpg",
+        "ranks": [
+          { "rank": 1, "context": "Jack Frost con Mabufu." },
+          { "rank": 2, "context": "Ame-no-Uzume con Frei." },
+          { "rank": 3, "context": "Flauros con Tarukaja." },
+          { "rank": 4, "context": "Phoenix con Counter." },
+          { "rank": 5, "context": "Setanta con Rakukaja." },
+          { "rank": 6, "context": "Neko Shogun con Dekaja." },
+          { "rank": 7, "context": "Lachesis con Tetraja." },
+          { "rank": 8, "context": "Hecatoncheires con Masukunda." },
+          { "rank": 9, "context": "Bugs con Samarecarm." },
+          { "rank": 10, "context": "Seth con High Counter." }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "arcana_name": "Colgado (Hanged)",
+    "arcana_image": "tarot_p5_hanged.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Munehisa Iwai",
+        "location": "Tienda de Airsoft (Shibuya)",
+        "availability": "Sáb, Dom (Noche). Requiere Agallas 4 (Dauntless).",
+        "image": "iwai.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          { "rank": 2, "responses": [{ "context": "Enfermedad...", "best_choice": "¿Qué debería hacer?" }] },
+          { "rank": 3, "responses": [{ "context": "Imaginación...", "best_choice": "Siempre imaginé que eras un matón." }] },
+          { "rank": 4, "responses": [{ "context": "Información...", "best_choice": "¿Dónde está la recompensa?" }] },
+          { "rank": 5, "responses": [{ "context": "Compasión...", "best_choice": "Eres patético." }] },
+          { "rank": 6, "responses": [{ "context": "Hijo...", "best_choice": "Por Kaoru." }] },
+          { "rank": 7, "responses": [{ "context": "Inteligencia...", "best_choice": "Es un tipo listo." }] },
+          { "rank": 8, "responses": [{ "context": "Verdad...", "best_choice": "Deberías decírselo." }] },
+          { "rank": 9, "responses": [{ "context": "Kaoru...", "best_choice": "Kaoru es muy fuerte." }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "arcana_name": "Muerte (Death)",
+    "arcana_image": "tarot_p5_death.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Tae Takemi",
+        "location": "Clínica Yongen-Jaya",
+        "availability": "Cualquier día (Día). Requiere Agallas 2 (Bold).",
+        "image": "takemi.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "4/18" },
+          { "rank": 2, "responses": [{ "context": "Plaga...", "best_choice": "Tengo mal corazón." }] },
+          { "rank": 3, "responses": [{ "context": "Medicina...", "best_choice": "Necesito la medicina." }] },
+          { "rank": 4, "responses": [{ "context": "Dr. Takemi...", "best_choice": "El Dr. Takemi te ayudará." }] },
+          { "rank": 5, "responses": [{ "context": "Miya...", "best_choice": "Es bueno verte." }] },
+          { "rank": 6, "responses": [{ "context": "Idoneidad...", "best_choice": "Me parece bien." }] },
+          { "rank": 7, "responses": [{ "context": "Pasado...", "best_choice": "Solo descansa." }] },
+          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Es por Miya." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quería verte (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Fue por mi examen (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "arcana_name": "Templanza (Temperance)",
+    "arcana_image": "tarot_p5_temperance.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Sadayo Kawakami",
+        "location": "Teléfono Amarillo (Leblanc)",
+        "availability": "Vie, Sáb (Noche). Requiere Agallas 3 (Staunch).",
+        "image": "kawakami.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "5/24" },
+          { "rank": 2, "responses": [{ "context": "Gato...", "best_choice": "Miau." }] },
+          { "rank": 3, "responses": [{ "context": "Cocina...", "best_choice": "Sí, lo harán." }] },
+          { "rank": 4, "responses": [{ "context": "Rudeza...", "best_choice": "¿Qué grosería?" }] },
+          { "rank": 5, "responses": [{ "context": "Maestra...", "best_choice": "Es divertido." }] },
+          { "rank": 6, "responses": [{ "context": "Descanso...", "best_choice": "Descansa un poco." }] },
+          { "rank": 7, "responses": [{ "context": "Dinero...", "best_choice": "No pagues." }] },
+          { "rank": 8, "responses": [{ "context": "Deseo...", "best_choice": "¿Es eso lo que quieres?" }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero que nos sigamos viendo (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Eres una gran maestra (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "¡Masaje Especial desbloqueado!" }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "arcana_name": "Diablo (Devil)",
+    "arcana_image": "tarot_p5_devil.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Ichiko Ohya",
+        "location": "Bar Crossroads (Shinjuku)",
+        "availability": "Cualquier noche. Desbloquea: 6/23.",
+        "image": "ohya.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/23" },
+          { "rank": 2, "responses": [{ "context": "Artículo...", "best_choice": "Mishimima." }] },
+          { "rank": 3, "responses": [{ "context": "Mentira...", "best_choice": "No debes mentir." }] },
+          { "rank": 4, "responses": [{ "context": "Foto...", "best_choice": "Déjame ver." }] },
+          { "rank": 5, "responses": [{ "context": "Jefe...", "best_choice": "Es imperdonable." }] },
+          { "rank": 6, "responses": [{ "context": "Edad...", "best_choice": "Deberías pensar en tu edad." }] },
+          { "rank": 7, "responses": [{ "context": "Cansancio...", "best_choice": "No trabajes demasiado." }] },
+          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Tomar el nombre." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Me lo tomo en serio (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Solo somos amigos (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "arcana_name": "Torre (Tower)",
+    "arcana_image": "tarot_p5_tower.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Shinya Oda",
+        "location": "Arcade de Akihabara",
+        "availability": "Jue, Sáb (Día). Desbloquea misión 'Winners Don't Use Cheats'.",
+        "image": "shinya.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "9/4" },
+          { "rank": 2, "responses": [{ "context": "Comparación...", "best_choice": "No te compares." }] },
+          { "rank": 3, "responses": [{ "context": "Genial...", "best_choice": "¡Eso es genial!" }] },
+          { "rank": 4, "responses": [{ "context": "Trampas...", "best_choice": "¿Quieres ganar haciendo trampas?" }] },
+          { "rank": 5, "responses": [{ "context": "Estrategia...", "best_choice": "Es una buena estrategia." }] },
+          { "rank": 6, "responses": [{ "context": "Respeto...", "best_choice": "Te respeto." }] },
+          { "rank": 7, "responses": [{ "context": "Madre...", "best_choice": "Deberías hablar con ella." }] },
+          { "rank": 8, "responses": [{ "context": "Culpable...", "best_choice": "No, ella no lo es." }] },
+          { "rank": 9, "responses": [{ "context": "Victoria...", "best_choice": "Me alegro de que ganaras." }] },
+          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Gun Controller desbloqueado." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "arcana_name": "Estrella (Star)",
+    "arcana_image": "tarot_p5_star.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Hifumi Togo",
+        "location": "Iglesia de Kanda",
+        "availability": "Mon, Mie, Sáb (Noche). Requiere Encanto 3 (Suave).",
+        "image": "hifumi.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "6/25" },
+          { "rank": 2, "responses": [{ "context": "Shogi...", "best_choice": "Es interesante." }] },
+          { "rank": 3, "responses": [{ "context": "Disgusto...", "best_choice": "Te ves frustrada." }] },
+          { "rank": 4, "responses": [{ "context": "Pasión...", "best_choice": "Debes amar el Shogi." }] },
+          { "rank": 5, "responses": [{ "context": "Miedo...", "best_choice": "Da miedo." }] },
+          { "rank": 6, "responses": [{ "context": "Frustración...", "best_choice": "¿Es eso lo que quieres?" }] },
+          { "rank": 7, "responses": [{ "context": "Suerte...", "best_choice": "La suerte es parte de la estrategia." }] },
+          { "rank": 8, "responses": [{ "context": "Madre...", "best_choice": "Hablemos con tu madre." }] },
+          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero estar contigo para siempre (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Seremos buenos amigos (AMISTAD)" }] },
+          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Hifumi Togo System." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "arcana_name": "Luna (Moon)",
+    "arcana_image": "tarot_p5_moon.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Yuuki Mishima",
+        "location": "Shinjuku / Akihabara",
+        "availability": "Cualquier noche. ¡Completa misiones de Mementos!",
+        "image": "mishima.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "5/6" },
+          { "rank": 2, "responses": [{ "context": "Famoso...", "best_choice": "Suenas emocionado." }] },
+          { "rank": 3, "responses": [{ "context": "Genial...", "best_choice": "¡Genial!" }] },
+          { "rank": 4, "responses": [{ "context": "Dinero...", "best_choice": "Es una buena idea." }] },
+          { "rank": 5, "responses": [{ "context": "Justicia...", "best_choice": "¿Es por la justicia?" }] },
+          { "rank": 6, "responses": [{ "context": "Rumores...", "best_choice": "Eres muy popular." }] },
+          { "rank": 7, "responses": [{ "context": "Cambio...", "best_choice": "Has cambiado." }] },
+          { "rank": 8, "responses": [{ "context": "Sombra...", "best_choice": "Espera." }] },
+          { "rank": 9, "responses": [{ "context": "Coraje...", "best_choice": "Fuiste valiente." }] },
+          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "EXP Share definitivo." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "arcana_name": "Sol (Sun)",
+    "arcana_image": "tarot_p5_sun.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Toranosuke Yoshida",
+        "location": "Estación de Shibuya (Plaza)",
+        "availability": "Domingos (Noche). ¡TIENE FECHA LÍMITE (Noviembre)!",
+        "image": "yoshida.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic" },
+          { "rank": 2, "responses": [{ "context": "Discurso...", "best_choice": "Quiero mejorar mi discurso." }] },
+          { "rank": 3, "responses": [{ "context": "Argumento...", "best_choice": "Tienes razón." }] },
+          { "rank": 4, "responses": [{ "context": "Pasado...", "best_choice": "Eso ya pasó." }] },
+          { "rank": 5, "responses": [{ "context": "Medios...", "best_choice": "Los medios no importan." }] },
+          { "rank": 6, "responses": [{ "context": "Apoyo...", "best_choice": "Estoy contigo." }] },
+          { "rank": 7, "responses": [{ "context": "Negativa...", "best_choice": "Deberías negarte." }] },
+          { "rank": 8, "responses": [{ "context": "Convicción...", "best_choice": "Esa es una decisión difícil." }] },
+          { "rank": 9, "responses": [{ "context": "Popularidad...", "best_choice": "Tu popularidad ha subido." }] },
+          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Negociación legendaria." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "arcana_name": "Juicio (Judgment)",
+    "arcana_image": "tarot_p5_judgment.png",
+    "type": "shared_automatic",
+    "routes": {
+      "shared": {
+        "character": "Sae Niijima",
+        "location": "Sala de Interrogatorios",
+        "availability": "Automático por historia.",
+        "image": "sae.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "7/9" },
+          { "rank": 6, "type": "automatic", "date": "10/29" },
+          { "rank": 10, "type": "automatic", "date": "11/20", "context": "Desbloquea: Satan." }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "arcana_name": "Fe (Faith)",
+    "arcana_image": "tarot_p5_faith.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Kasumi Yoshizawa",
+        "location": "Kichijoji",
+        "availability": "Cualquier día (Día). ¡MAX RANK 5 hasta el Tercer Semestre!",
+        "image": "kasumi.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "5/30" },
+          { "rank": 2, "responses": [{ "context": "Almuerzo...", "best_choice": "Hacemos un buen trato." }] },
+          { "rank": 3, "responses": [{ "context": "Bento...", "best_choice": "Hacer bento." }] },
+          { "rank": 4, "responses": [{ "context": "Compra...", "best_choice": "Es una buena elección." }] },
+          { "rank": 5, "responses": [{ "context": "Gimnasia...", "best_choice": "¡Fue increíble!" }] },
+          { "rank": 6, "responses": [{ "context": "Nota...", "best_choice": "Enero (Tercer Semestre)." }] }
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "arcana_name": "Consejero (Councillor)",
+    "arcana_image": "tarot_p5_councillor.png",
+    "type": "standard",
+    "routes": {
+      "male": {
+        "character": "Takuto Maruki",
+        "location": "Enfermería (Edificio de Prácticas)",
+        "availability": "Lun, Vie (Día). ¡OBLIGATORIO LLEGAR A RANK 9 ANTES DEL 11/18!",
+        "image": "maruki.jpg",
+        "ranks": [
+          { "rank": 1, "type": "automatic", "date": "5/13" },
+          { "rank": 2, "responses": [{ "context": "Trato...", "best_choice": "Hicimos un trato." }] },
+          { "rank": 3, "responses": [{ "context": "Dolor...", "best_choice": "El dolor es necesario." }] },
+          { "rank": 4, "responses": [{ "context": "Galletas...", "best_choice": "Sé que saben bien." }] },
+          { "rank": 5, "responses": [{ "context": "Verdad...", "best_choice": "Es cierto." }] },
+          { "rank": 6, "responses": [{ "context": "Sueño...", "best_choice": "Un sueño, ¿eh?" }] },
+          { "rank": 7, "responses": [{ "context": "Cambio...", "best_choice": "Eres un buen hombre." }] },
+          { "rank": 8, "responses": [{ "context": "Comida...", "best_choice": "¡Qué buena comida!" }] },
+          { "rank": 9, "responses": [{ "context": "Adiós...", "best_choice": "Es una pena." }] },
+          { "rank": 10, "type": "automatic", "date": "11/18" }
+        ]
+      }
+    }
+  }
+]

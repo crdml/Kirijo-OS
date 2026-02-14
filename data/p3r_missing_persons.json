@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Ayumi Murakami",
+    "available_date": "6/18",
+    "deadline": "7/6",
+    "location": "Arqa, Piso 50",
+    "reward": "Recarm (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 2,
+    "name": "Yasuko Murabayashi",
+    "available_date": "6/26",
+    "deadline": "7/6",
+    "location": "Arqa, Piso 56",
+    "reward": "40,000 Yenes",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 3,
+    "name": "Shuichi Niimura",
+    "available_date": "8/3",
+    "deadline": "8/5",
+    "location": "Yabbashah, Piso 79",
+    "reward": "Emerald x10",
+    "type": "normal",
+    "warning_message": "¡Plazo muy corto! Solo tienes 2 días."
+  },
+  {
+    "id": 4,
+    "name": "Satsuki Ono",
+    "available_date": "8/19",
+    "deadline": "9/5",
+    "location": "Yabbashah, Piso 84",
+    "reward": "Divine Grace (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 5,
+    "name": "Hirotaka Tanigami",
+    "available_date": "8/29",
+    "deadline": "9/5",
+    "location": "Yabbashah, Piso 101",
+    "reward": "Malachite x20",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 6,
+    "name": "Reiko Makita",
+    "available_date": "9/3",
+    "deadline": "9/5",
+    "location": "Yabbashah, Piso 109",
+    "reward": "Mediarama (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 7,
+    "name": "Bunkichi Kitamura",
+    "available_date": "9/12",
+    "deadline": "10/3",
+    "location": "Tziah, Piso 120",
+    "reward": "Endure (Skill Card)",
+    "type": "critical_social_link",
+    "warning_message": "¡CRÍTICO! Si no lo rescatas, el Social Link del Hierofante desaparecerá para siempre."
+  },
+  {
+    "id": 8,
+    "name": "Akihiro Kawamata",
+    "available_date": "9/22",
+    "deadline": "10/3",
+    "location": "Tziah, Piso 135",
+    "reward": "Magic Mirror x2",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 9,
+    "name": "Yasunobu Shimono",
+    "available_date": "9/22",
+    "deadline": "10/3",
+    "location": "Tziah, Piso 143",
+    "reward": "100,000 Yenes",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 10,
+    "name": "Maiko Oohashi",
+    "available_date": "10/21",
+    "deadline": "11/2",
+    "location": "Tziah, Piso 146",
+    "reward": "Felt Doll (Objeto Clave)",
+    "type": "critical_social_link",
+    "warning_message": "¡CRÍTICO! Si no la rescatas, el Social Link del Colgado desaparecerá para siempre."
+  },
+  {
+    "id": 11,
+    "name": "Ryohei Nakatsugawa",
+    "available_date": "10/21",
+    "deadline": "11/2",
+    "location": "Tziah, Piso 159",
+    "reward": "High Counter (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 12,
+    "name": "Takeko Hiraoka",
+    "available_date": "10/30",
+    "deadline": "11/2",
+    "location": "Tziah, Piso 165",
+    "reward": "Enduring Soul (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 13,
+    "name": "Tomoyuki Itami",
+    "available_date": "11/27",
+    "deadline": "12/1",
+    "location": "Harabah, Piso 177",
+    "reward": "Omega Drive",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 14,
+    "name": "Katsue Sugi",
+    "available_date": "11/28",
+    "deadline": "12/1",
+    "location": "Harabah, Piso 196",
+    "reward": "Diamond x5",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 15,
+    "name": "Yumiko Sasamaki",
+    "available_date": "12/22",
+    "deadline": "12/30",
+    "location": "Harabah, Piso 209",
+    "reward": "Ruby x5",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 16,
+    "name": "Nobuko Fukuchi",
+    "available_date": "12/22",
+    "deadline": "12/30",
+    "location": "Harabah, Piso 221",
+    "reward": "Pearl x5",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 17,
+    "name": "Fumika Terimoto",
+    "available_date": "1/15",
+    "deadline": "1/30",
+    "location": "Adamah, Piso 232",
+    "reward": "Soma",
+    "type": "normal",
+    "warning_message": null
+  },
+  {
+    "id": 18,
+    "name": "Mitsutoshi Okimoto",
+    "available_date": "1/15",
+    "deadline": "1/30",
+    "location": "Adamah, Piso 250",
+    "reward": "Salvation (Skill Card)",
+    "type": "normal",
+    "warning_message": null
+  }
+]

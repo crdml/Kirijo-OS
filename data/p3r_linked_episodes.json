@@ -1,0 +1,75 @@
+[
+  {
+    "character": "Junpei Iori",
+    "arcana": "Mago",
+    "unlocks": "Persona: Surt (Si completas todos)",
+    "events": [
+      { "episode": 1, "date": "5/12", "availability": "Día (Clase)", "note": "Junpei te invita a salir. Acepta." },
+      { "episode": 2, "date": "8/18", "availability": "Noche (Dormitorio)", "note": "Te da una flor seca. Importante." },
+      { "episode": 3, "date": "9/25", "availability": "Noche (Dormitorio)", "note": "Habla sobre Chidori." },
+      { "episode": 4, "date": "11/7", "availability": "Día (Clase)", "note": "Visita al hospital." },
+      { "episode": 5, "date": "12/19", "availability": "Día (Clase)", "note": "Resolución final." }
+    ]
+  },
+  {
+    "character": "Akihiko Sanada",
+    "arcana": "Emperador",
+    "unlocks": "Persona: Horus",
+    "events": [
+      { "episode": 1, "date": "5/24", "availability": "Noche (Dormitorio)", "note": "Te pide ir al Paulownia Mall." },
+      { "episode": 2, "date": "7/10", "availability": "Noche (Dormitorio)", "note": "Entrenamiento ocular." },
+      { "episode": 3, "date": "8/7", "availability": "Noche (Dormitorio)", "note": "Habla sobre Shinjiro." },
+      { "episode": 4, "date": "10/7", "availability": "Noche (Dormitorio)", "note": "Recuerdos del orfanato." },
+      { "episode": 5, "date": "12/11", "availability": "Noche (Dormitorio)", "note": "Su nueva determinación." }
+    ]
+  },
+  {
+    "character": "Koromaru",
+    "arcana": "Fuerza",
+    "unlocks": "Persona: Byakko",
+    "events": [
+      { "episode": 1, "date": "8/22", "availability": "Noche (Dormitorio)", "note": "Cepillar a Koromaru." },
+      { "episode": 2, "date": "9/4", "availability": "Noche (Dormitorio)", "note": "Paseo nocturno." },
+      { "episode": 3, "date": "9/23", "availability": "Noche (Dormitorio)", "note": "Jugar con el frisbee." },
+      { "episode": 4, "date": "10/16", "availability": "Día (Dormitorio)", "note": "Visita al santuario." },
+      { "episode": 5, "date": "1/5", "availability": "Día (Dormitorio)", "note": "Promesa final." }
+    ]
+  },
+  {
+    "character": "Ken Amada",
+    "arcana": "Justicia",
+    "unlocks": "Persona: Michael",
+    "events": [
+      { "episode": 1, "date": "9/8", "availability": "Noche (Dormitorio)", "note": "Te pide ayuda con la tarea." },
+      { "episode": 2, "date": "9/15", "availability": "Noche (Dormitorio)", "note": "Cenando juntos." },
+      { "episode": 3, "date": "10/28", "availability": "Noche (Dormitorio)", "note": "Hablando de café." },
+      { "episode": 4, "date": "11/10", "availability": "Noche (Dormitorio)", "note": "Recuerdos de su madre." },
+      { "episode": 5, "date": "12/22", "availability": "Noche (Dormitorio)", "note": "Su crecimiento." }
+    ]
+  },
+  {
+    "character": "Shinjiro Aragaki",
+    "arcana": "Luna",
+    "unlocks": "Persona: Hell Biker",
+    "warning": "¡EXTREMADAMENTE PERDIBLE! Tienes menos de un mes.",
+    "events": [
+      { "episode": 1, "date": "9/4", "availability": "Noche (Dormitorio)", "note": "Conversación casual." },
+      { "episode": 2, "date": "9/11", "availability": "Noche (Dormitorio)", "note": "Cocinando juntos." },
+      { "episode": 3, "date": "9/13", "availability": "Noche (Dormitorio)", "note": "Hablamos de Koro-chan." },
+      { "episode": 4, "date": "9/14", "availability": "Noche (Dormitorio)", "note": "Sus arrepentimientos." },
+      { "episode": 5, "date": "10/4", "availability": "Automático", "note": "Si viste todos los anteriores, esto ocurre en la historia." }
+    ]
+  },
+  {
+    "character": "Ryoji Mochizuki",
+    "arcana": "Fortuna",
+    "unlocks": "Posible Romance (Solo FeMC P3P) / Escenas Clave",
+    "events": [
+      { "episode": 1, "date": "11/9", "availability": "Día (Escuela)", "note": "Presentación." },
+      { "episode": 2, "date": "11/12", "availability": "Día (Escuela)", "note": "Saliendo juntos." },
+      { "episode": 3, "date": "11/29", "availability": "Día (Viaje escolar)", "note": "Conversación importante." },
+      { "episode": 4, "date": "12/1", "availability": "Día (Escuela)", "note": "Su confesión." },
+      { "episode": 5, "date": "12/31", "availability": "Automático", "note": "Decisión final." }
+    ]
+  }
+]

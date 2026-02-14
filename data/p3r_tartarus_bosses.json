@@ -1,0 +1,170 @@
+[
+  {
+    "floor": "Piso 11",
+    "boss": "Barbaric Beast Wheel",
+    "weakness": "Viento (Garu)",
+    "nullify": "Fuego/Hielo (Resiste), Luz/Oscuridad (Null)",
+    "strategy": "Usa a Yukari. Si tienes a Junpei, que use ataques físicos, no Agi."
+  },
+  {
+    "floor": "Piso 17",
+    "boss": "Swift Axle",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Viento (Resiste), Strike (Null)",
+    "strategy": "Akihiko o un Persona con Zio (como Pixie/Omoikane) son clave."
+  },
+  {
+    "floor": "Piso 28",
+    "boss": "Will O' Wisp Raven",
+    "weakness": "Fuego (Agi)",
+    "nullify": "Viento (Drena), Elec (Null)",
+    "strategy": "Junpei es tu mejor amigo aquí. Cuidado con sus ataques de viento a Junpei."
+  },
+  {
+    "floor": "Piso 35",
+    "boss": "Disturbing Dice",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Fuego (Resiste)",
+    "strategy": "Usa Zio para derribarlos y All-Out Attack. Cuidado con sus debuffs."
+  },
+  {
+    "floor": "Piso 42",
+    "boss": "Clairvoyant Relic",
+    "weakness": "Oscuridad (Eiha/Mudo)",
+    "nullify": "Luz (Null), Viento (Resiste)",
+    "strategy": "Usa objetos de maldición o Personas con habilidades oscuras."
+  },
+  {
+    "floor": "Piso 47",
+    "boss": "Servant Tower",
+    "weakness": "Oscuridad (Eiha)",
+    "nullify": "Fuego/Elec (Resiste)",
+    "strategy": "Similar al anterior. Cuidado con sus ataques físicos fuertes."
+  },
+  {
+    "floor": "Piso 54",
+    "boss": "Fleet-footed Cavalry",
+    "weakness": "Viento (Garu)",
+    "nullify": "Strike/Pierce (Resiste)",
+    "strategy": "Yukari es esencial. Usa Magaru para controlar a los adds."
+  },
+  {
+    "floor": "Piso 60",
+    "boss": "Loveless Abomination",
+    "weakness": "Ninguna",
+    "nullify": "Hielo/Oscuridad (Null), Fuego (Resiste)",
+    "strategy": "Usa ataques físicos críticos o Electricidad/Viento."
+  },
+  {
+    "floor": "Piso 77",
+    "boss": "Converging Bonds",
+    "weakness": "Ninguna",
+    "nullify": "Luz/Oscuridad (Null), Magia (Resiste)",
+    "strategy": "Dale con todo lo físico. Usa Theurgia para romper defensas."
+  },
+  {
+    "floor": "Piso 82",
+    "boss": "Arachne of Calamity",
+    "weakness": "Hielo (Bufu)",
+    "nullify": "Fuego (Drena), Elec (Resiste)",
+    "strategy": "Mitsuru es MVP. Evita llevar a Junpei o Akihiko si están bajos de vida."
+  },
+  {
+    "floor": "Piso 99",
+    "boss": "Restless Sands",
+    "weakness": "Strike (Golpear)",
+    "nullify": "Viento/Luz (Null), Hielo (Resiste)",
+    "strategy": "Akihiko y sus puños. Usa Tarunda para bajar su ataque."
+  },
+  {
+    "floor": "Piso 112",
+    "boss": "Priestess of Void",
+    "weakness": "Fuego (Agi)",
+    "nullify": "Hielo (Drena), Luz/Oscuridad (Null)",
+    "strategy": "Junpei y Koromaru. Mitsuru debe quedarse en defensa o curar."
+  },
+  {
+    "floor": "Piso 125",
+    "boss": "Hollow Tower",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Fuego (Repel), Viento (Resiste)",
+    "strategy": "Akihiko y Ken (si tiene Zio). No uses Agi bajo ninguna circunstancia."
+  },
+  {
+    "floor": "Piso 136",
+    "boss": "Amenti Raven",
+    "weakness": "Hielo (Bufu)",
+    "nullify": "Fuego (Repel), Viento (Drena)",
+    "strategy": "Mitsuru al ataque. Yukari y Junpei son un riesgo aquí."
+  },
+  {
+    "floor": "Piso 143",
+    "boss": "Gusty Mayas",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Viento (Drena), Strike (Null)",
+    "strategy": "Akihiko es vital. Cuidado con Magarudyne."
+  },
+  {
+    "floor": "Piso 155",
+    "boss": "Jotun of Authority",
+    "weakness": "Viento (Garu)",
+    "nullify": "Físico (Resiste), Elec (Null)",
+    "strategy": "Yukari debe usar sus ataques más fuertes. Aigis puede buffear."
+  },
+  {
+    "floor": "Piso 171",
+    "boss": "Code Breaker",
+    "weakness": "Ninguna",
+    "nullify": "Luz/Oscuridad (Repel), Todo lo demás (Resiste)",
+    "strategy": "Usa ataques Almighty o Theurgia. Es muy resistente."
+  },
+  {
+    "floor": "Piso 179",
+    "boss": "Immoral Snake",
+    "weakness": "Hielo (Bufu)",
+    "nullify": "Fuego (Repel), Viento (Drena)",
+    "strategy": "Mitsuru. Evita Fuego y Viento a toda costa."
+  },
+  {
+    "floor": "Piso 193",
+    "boss": "Raging Turret",
+    "weakness": "Oscuridad (Eiha)",
+    "nullify": "Físico (Repel), Luz (Null)",
+    "strategy": "Koromaru es la clave. No uses ataques físicos o te matarás."
+  },
+  {
+    "floor": "Piso 206",
+    "boss": "Dominating Machine",
+    "weakness": "Electricidad (Zio)",
+    "nullify": "Físico (Resiste), Viento (Repel)",
+    "strategy": "Akihiko. Cuidado con Yukari."
+  },
+  {
+    "floor": "Piso 225",
+    "boss": "Chaos Cyclops",
+    "weakness": "Luz (Hama/Kouha)",
+    "nullify": "Fuego/Hielo/Elec (Resiste), Oscuridad (Repel)",
+    "strategy": "Ken es obligatorio aquí. Usa Kougaon."
+  },
+  {
+    "floor": "Piso 246",
+    "boss": "Shadow of the Void",
+    "weakness": "Ninguna",
+    "nullify": "Resiste/Anula casi todo",
+    "strategy": "Usa Debilitate y Heat Riser. Theurgia es tu mejor opción."
+  },
+  {
+    "floor": "Piso 255",
+    "boss": "Elizabeth (Opcional)",
+    "weakness": "Ninguna",
+    "nullify": "Reglas estrictas",
+    "strategy": "No uses Null/Repel/Drain pasivos. Solo Orpheus Telos o Personas calculados al milímetro. <span style='color:#ff2a2a'>¡Combate más difícil del juego!</span>"
+  },
+  {
+    "floor": "31 de Enero",
+    "boss": "Nyx Avatar (Reloaded)",
+    "weakness": "CAMBIA SEGÚN EL ARCANO",
+    "nullify": "Resistencias dinámicas",
+    "strategy": "La batalla es similar a la original pero con nuevas animaciones y Theurgia. <br><strong>Fases clave:</strong><br>1. <strong>Loco:</strong> Neutral.<br>2. <strong>Mago:</strong> Drena Fuego / <span style='color:#00d2ff'>Débil Hielo</span>.<br>3. <strong>Sacerdotisa:</strong> Drena Hielo / <span style='color:#ff2a2a'>Débil Fuego</span>.<br>4. <strong>Emperatriz:</strong> Resiste Viento / <span style='color:#e6e600'>Débil Elec</span>.<br>5. <strong>Emperador:</strong> Resiste Elec / <span style='color:#00ff00'>Débil Viento</span>.<br>6. <strong>Hierofante:</strong> Repel Strike. Neutral resto.<br>7. <strong>Enamorados:</strong> Bloquea Viento. Usa Charm.<br>8. <strong>Carro:</strong> Bloquea Físico. Usa Magia.<br>9. <strong>Justicia:</strong> Bloquea Fuego/Hielo.<br>10. <strong>Ermitaño:</strong> Bloquea Viento/Elec. Estados alterados.<br>11. <strong>Fortuna:</strong> Bloquea Magia. <span style='color:#ff9999'>Usa Físico</span>.<br>12. <strong>Fuerza:</strong> Bloquea Físico. <span style='color:#99ccff'>Usa Magia</span>.<br>13. <strong>Colgado:</strong> Resiste Todo. Mucha vida.<br>14. <strong>Muerte (Final):</strong> Prepara tus mejores Theurgias para el final. ¡No le ataques si levanta escudo!"
+  }
+]

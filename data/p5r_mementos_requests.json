@@ -1,0 +1,200 @@
+[
+  {
+    "rank": "D",
+    "name": "¡Cuidado con el exnovio pegajoso!",
+    "target": "Sombra Natsuhiko (Oberon)",
+    "location": "Qimranut: Área 1",
+    "available": "5/7",
+    "condition": "Automático (Historia de Mishima).",
+    "reward": "Mild Sticky Hairball"
+  },
+  {
+    "rank": "D",
+    "name": "El acoso es de perdedores",
+    "target": "Sombra Takanashi (Jack Frost)",
+    "location": "Aiyatsbus: Área 2",
+    "available": "5/9",
+    "condition": "Automático (Mishima).",
+    "reward": "Evil Snow Crystal"
+  },
+  {
+    "rank": "D",
+    "name": "Lección para el matón",
+    "target": "Sombra Shimizu (Archangel)",
+    "location": "Aiyatsbus: Área 5",
+    "available": "6/6",
+    "condition": "Escuchar conversación frente a la puerta del colegio.",
+    "reward": "Protein"
+  },
+  {
+    "rank": "D",
+    "name": "Sadismo desalmado",
+    "target": "Sombra Mogami (Oni)",
+    "location": "Aiyatsbus: Área 6",
+    "available": "6/6",
+    "condition": "Mishima (Rank 3).",
+    "reward": "Blindfold"
+  },
+  {
+    "rank": "C",
+    "name": "El anciano y la estafa",
+    "target": "Sombra Makigami (Ippon-Datara)",
+    "location": "Chemdah: Área 4",
+    "available": "6/18",
+    "condition": "Automático (Mishima).",
+    "reward": "Remedy (Skill Card)"
+  },
+  {
+    "rank": "C",
+    "name": "El amor no se compra",
+    "target": "Sombra Tsukahara (Onmoraki)",
+    "location": "Chemdah: Área 6",
+    "available": "6/18",
+    "condition": "Mishima (Rank 4).",
+    "reward": "Comer Cloth"
+  },
+  {
+    "rank": "C",
+    "name": "Contra los estafadores",
+    "target": "Sombra Kaneshiro (Baphomet)",
+    "location": "Kaitul: Área 1",
+    "available": "7/10",
+    "condition": "Petición de Ángel de la Justicia (Tienda de Conveniencia 777 - Trabajar 2 veces).",
+    "reward": "30,000 Yenes"
+  },
+  {
+    "rank": "C",
+    "name": "El asesino que ríe",
+    "target": "Sombra Odo (Orthrus)",
+    "location": "Chemdah: Área 8",
+    "available": "7/10",
+    "condition": "Escuchar conversación en Shinjuku (Bar Crossroads).",
+    "reward": "High-Cut Armor"
+  },
+  {
+    "rank": "B",
+    "name": "Acoso en el trabajo",
+    "target": "Sombra Oyamada (Thoth)",
+    "location": "Chemdah: Área 8",
+    "available": "8/2",
+    "condition": "Mishima (Rank 5).",
+    "reward": "Job Satisfaction"
+  },
+  {
+    "rank": "B",
+    "name": "¡Hemos sido estafados!",
+    "target": "Sombra Naguri (Pisaca)",
+    "location": "Kaitul: Área 5",
+    "available": "8/2",
+    "condition": "Escuchar conversación en Shibuya (Tienda de Airsoft).",
+    "reward": "Expulsion Necklace"
+  },
+  {
+    "rank": "B",
+    "name": "El que mete mano",
+    "target": "Sombra Takase (Set)",
+    "location": "Kaitul: Área 10",
+    "available": "8/4",
+    "condition": "Petición de Ángel de la Justicia (Tienda de Flores - Trabajar 2 veces).",
+    "reward": "Charge (Skill Card)"
+  },
+  {
+    "rank": "B",
+    "name": "Llamando a la justicia para los gatos",
+    "target": "Sombra Tsuboi (Choronzon)",
+    "location": "Kaitul: Área 1",
+    "available": "8/11",
+    "condition": "Petición de Ángel de la Justicia (Tienda de Conveniencia - Trabajar 3 veces seguidas).",
+    "reward": "Blood Scimitar"
+  },
+  {
+    "rank": "A",
+    "name": "Denuncia al profesor abusón",
+    "target": "Sombra Karasu (Nebiros)",
+    "location": "Kaitul: Área 13",
+    "available": "8/30",
+    "condition": "Mishima (Rank 6).",
+    "reward": "Limbo (Skill Card)"
+  },
+  {
+    "rank": "A",
+    "name": "Un negocio redondo",
+    "target": "Sombra Hirutan (Lilim)",
+    "location": "Akzeriyyuth: Área 3",
+    "available": "8/30",
+    "condition": "Mishima (Rank 8).",
+    "reward": "Mediarama (Skill Card)"
+  },
+  {
+    "rank": "A",
+    "name": "Los ganadores no hacen trampas",
+    "target": "Sombra Nejima (Norn)",
+    "location": "Akzeriyyuth: Área 5",
+    "available": "9/4",
+    "condition": "Misión de Shinya Oda (Tower Confidant).",
+    "reward": "Gun Controller"
+  },
+  {
+    "rank": "S",
+    "name": "El asesino de la basura",
+    "target": "Sombra Kurono (Chernobog)",
+    "location": "Akzeriyyuth: Área 12",
+    "available": "10/14",
+    "condition": "Mishima (Rank 9).",
+    "reward": "Stagnant Air (Skill Card)"
+  },
+  {
+    "rank": "S",
+    "name": "La madre egoísta",
+    "target": "Sombra Oda (Dakini)",
+    "location": "Sheriruth: Área 3",
+    "available": "10/30",
+    "condition": "Misión de Shinya Oda (Tower Rank 8).",
+    "reward": "Soma"
+  },
+  {
+    "rank": "S",
+    "name": "El carisma de la estafa",
+    "target": "Sombra Wakasa (Dionysus)",
+    "location": "Sheriruth: Área 14",
+    "available": "10/30",
+    "condition": "Mishima (Rank 10).",
+    "reward": "Victory Cry (Skill Card)"
+  },
+  {
+    "rank": "S",
+    "name": "La niebla de la mentira",
+    "target": "Sombra Aida (Sarasvati)",
+    "location": "Sheriruth: Área 14",
+    "available": "11/25",
+    "condition": "Misión de Ichiko Ohya (Devil Rank 8).",
+    "reward": "Legendary Scoop"
+  },
+  {
+    "rank": "?",
+    "name": "La petición final",
+    "target": "The Reaper",
+    "location": "Cualquier área",
+    "available": "Cualquier momento",
+    "condition": "Quédate quieto en el Mementos durante 5 minutos.",
+    "reward": "Divine Pillar (Accesorio)"
+  },
+  {
+    "rank": "?",
+    "name": "Jose's Request (Flores)",
+    "target": "Jose",
+    "location": "Mementos (Aleatorio)",
+    "available": "5/7",
+    "condition": "Recoge flores en Mementos.",
+    "reward": "Objetos y mejoras de experiencia."
+  },
+  {
+    "rank": "?",
+    "name": "Jose's Request (Sellos)",
+    "target": "Estaciones de Sellos",
+    "location": "Final de cada área",
+    "available": "5/7",
+    "condition": "Encuentra la estación de sellos al final de cada plataforma.",
+    "reward": "Cambios en la cognición de Mementos."
+  }
+]

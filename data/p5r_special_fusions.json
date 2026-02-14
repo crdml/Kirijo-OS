@@ -1,0 +1,95 @@
+{
+  "game_version": "Persona 5 Royal",
+  "special_spreads": [
+    {
+      "result": "Alice",
+      "arcana": "Muerte (Death)",
+      "level": 83,
+      "type": "Guillotina Avanzada (2)",
+      "ingredients": ["Nebiros", "Belial"],
+      "note": "Especialista en Insta-kill de Oscuridad."
+    },
+    {
+      "result": "Shiva",
+      "arcana": "Juicio (Judgment)",
+      "level": 82,
+      "type": "Guillotina Avanzada (2)",
+      "ingredients": ["Rangda", "Barong"],
+      "note": "Necesario para fusionar a Ardha."
+    },
+    {
+      "result": "Seth",
+      "arcana": "Torre (Tower)",
+      "level": 51,
+      "type": "Guillotina Avanzada (4)",
+      "ingredients": ["Isis", "Thoth", "Anubis", "Horus"],
+      "req_item": "Misión de las Gemelas (Fuerza Rank 10)."
+    },
+    {
+      "result": "Kohryu",
+      "arcana": "Hierofante (Hierophant)",
+      "level": 76,
+      "type": "Guillotina Avanzada (4)",
+      "ingredients": ["Genbu", "Seiryu", "Suzaku", "Byakko"],
+      "req_item": "Sojiro Sakura (Hierofante) Rank 10."
+    },
+    {
+      "result": "Yoshitsune",
+      "arcana": "Torre (Tower)",
+      "level": 87,
+      "type": "Guillotina Avanzada (5)",
+      "ingredients": ["Okuninushi", "Yatagarasu", "Futsunushi", "Yatagarasu", "Arahabaki"],
+      "note": "Usuario de 'Hassou Tobi', el ataque físico más fuerte."
+    },
+    {
+      "result": "Metatron",
+      "arcana": "Justicia (Justice)",
+      "level": 89,
+      "type": "Guillotina Avanzada (6)",
+      "ingredients": ["Dominion", "Melchizedek", "Chernobog", "Seere", "Cassiel", "Thor"],
+      "req_item": "Goro Akechi (Justicia) Rank 10."
+    },
+    {
+      "result": "Lucifer",
+      "arcana": "Estrella (Star)",
+      "level": 93,
+      "type": "Guillotina Avanzada (6)",
+      "ingredients": ["Anubis", "Ananta", "Trumpeter", "Michael", "Metatron", "Satan"],
+      "req_item": "Hifumi Togo (Estrella) Rank 10."
+    },
+    {
+      "result": "Satanael",
+      "arcana": "Loco (Fool)",
+      "level": 95,
+      "type": "Guillotina Avanzada (6)",
+      "ingredients": ["Arsene", "Anzu", "Ishtar", "Satan", "Lucifer", "Michael"],
+      "req_item": "Solo en New Game+.",
+      "warning": "El Persona definitivo de Joker."
+    }
+  ],
+  "max_social_link_ultimates": [
+    { "arcana": "Loco", "persona": "Vishnu", "level": 83, "req_item": "Igor Rank 10" },
+    { "arcana": "Mago", "persona": "Futsunushi", "level": 86, "req_item": "Morgana Rank 10" },
+    { "arcana": "Sacerdotisa", "persona": "Cybele", "level": 83, "req_item": "Makoto Rank 10" },
+    { "arcana": "Emperatriz", "persona": "Mother Harlot", "level": 85, "req_item": "Haru Rank 10" },
+    { "arcana": "Emperador", "persona": "Odin", "level": 84, "req_item": "Yusuke Rank 10" },
+    { "arcana": "Hierofante", "persona": "Kohryu", "level": 76, "req_item": "Sojiro Rank 10" },
+    { "arcana": "Enamorados", "persona": "Ishtar", "level": 85, "req_item": "Ann Rank 10" },
+    { "arcana": "Carro", "persona": "Chi You", "level": 88, "req_item": "Ryuji Rank 10" },
+    { "arcana": "Justicia", "persona": "Metatron", "level": 89, "req_item": "Akechi Rank 10" },
+    { "arcana": "Ermitaño", "persona": "Ongyo-Ki", "level": 82, "req_item": "Futaba Rank 10" },
+    { "arcana": "Fortuna", "persona": "Lakshmi", "level": 69, "req_item": "Chihaya Rank 10" },
+    { "arcana": "Fuerza", "persona": "Zaou-Gongen", "level": 80, "req_item": "Twins Rank 10" },
+    { "arcana": "Colgado", "persona": "Attis", "level": 82, "req_item": "Iwai Rank 10" },
+    { "arcana": "Muerte", "persona": "Alice", "level": 83, "req_item": "Takemi Rank 10" },
+    { "arcana": "Templanza", "persona": "Ardha", "level": 84, "req_item": "Kawakami Rank 10" },
+    { "arcana": "Diablo", "persona": "Beelzebub", "level": 87, "req_item": "Ohya Rank 10" },
+    { "arcana": "Torre", "persona": "Mada", "level": 85, "req_item": "Shinya Rank 10" },
+    { "arcana": "Estrella", "persona": "Lucifer", "level": 93, "req_item": "Hifumi Rank 10" },
+    { "arcana": "Luna", "persona": "Sandalphon", "level": 75, "req_item": "Mishima Rank 10" },
+    { "arcana": "Sol", "persona": "Asura", "level": 76, "req_item": "Yoshida Rank 10" },
+    { "arcana": "Juicio", "persona": "Satan", "level": 92, "req_item": "Sae Rank 10" },
+    { "arcana": "Fe", "persona": "Maria", "level": 93, "req_item": "Kasumi Rank 10" },
+    { "arcana": "Consejero", "persona": "Vohu Manah", "level": 80, "req_item": "Maruki Rank 10" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "game_version": "Persona 5 Royal",
+  "location": "Kichijoji (Noche)",
+  "general_effects": {
+    "lunes": "Mejora de Estadísticas (Fuerza, Magia, etc.)",
+    "martes": "Mejora de Estadísticas (Fuerza, Magia, etc.)",
+    "miercoles": "Mejora de Estadísticas (Fuerza, Magia, etc.)",
+    "jueves": "Mejora de Estadísticas (Fuerza, Magia, etc.)",
+    "viernes": "Mejora de Estadísticas (Fuerza, Magia, etc.)",
+    "sabado": "Cóctel aleatorio (Efectos variados)",
+    "domingo": "APRENDIZAJE DE HABILIDADES EXCLUSIVAS"
+  },
+  "sunday_skills": [
+    { "date": "7/3", "skill": "Matarukaja", "effect": "Sube el ataque de todo el grupo." },
+    { "date": "7/10", "skill": "Marakukaja", "effect": "Sube la defensa de todo el grupo." },
+    { "date": "7/17", "skill": "Masukukaja", "effect": "Sube agilidad/evasión de todo el grupo." },
+    { "date": "7/31", "skill": "Carga (Charge)", "effect": "Próximo ataque físico x2.5. ¡VITAL para Ryuji/Yusuke!" },
+    { "date": "8/7", "skill": "Concentrar (Concentrate)", "effect": "Próxima magia x2.5. ¡VITAL para Ann/Makoto!" },
+    { "date": "8/14", "skill": "Matarunda", "effect": "Baja el ataque de todos los enemigos." },
+    { "date": "8/21", "skill": "Marakunda", "effect": "Baja la defensa de todos los enemigos." },
+    { "date": "8/28", "skill": "Masukunda", "effect": "Baja la agilidad de todos los enemigos." },
+    { "date": "9/4", "skill": "Carga (Charge)", "effect": "Segunda oportunidad para obtenerlo." },
+    { "date": "9/25", "skill": "Concentrar (Concentrate)", "effect": "Segunda oportunidad para obtenerlo." },
+    { "date": "10/2", "skill": "Matarukaja", "effect": "Sube el ataque de todo el grupo." },
+    { "date": "10/9", "skill": "Marakukaja", "effect": "Sube la defensa de todo el grupo." },
+    { "date": "10/16", "skill": "Masukukaja", "effect": "Sube agilidad de todo el grupo." },
+    { "date": "10/23", "skill": "Tetrakarn", "effect": "Refleja 1 ataque físico a un aliado." },
+    { "date": "10/30", "skill": "Makarakarn", "effect": "Refleja 1 ataque mágico a un aliado." },
+    { "date": "11/27", "skill": "Muro de Energía (Heat Riser)", "effect": "Sube todos los stats a un aliado." },
+    { "date": "12/4", "skill": "Debilitar (Debilitate)", "effect": "Baja todos los stats a un enemigo. ¡EL MEJOR MOVE!" },
+    { "date": "12/11", "skill": "Debilitar (Debilitate)", "effect": "Segunda oportunidad para obtenerlo." },
+    { "date": "1/15", "skill": "Baile de Ali (Ali Dance)", "effect": "Reduce a la mitad la precisión del atacante." },
+    { "date": "1/22", "skill": "Maestro de Armas (Arms Master)", "effect": "Reduce a la mitad el coste de HP de ataques físicos." },
+    { "date": "1/29", "skill": "Maestro de Hechizos (Spell Master)", "effect": "Reduce a la mitad el coste de SP de magias." }
+  ],
+  "pro_tips": [
+    "Llevar a un compañero al Jazz Club aumenta tu afinidad con ellos.",
+    "Si un compañero ya tiene la habilidad del domingo, obtendrá un aumento masivo de estadísticas.",
+    "Las habilidades aprendidas en el Jazz Club se pueden recuperar en el confesionario de Kanda en un New Game+."
+  ]
+}

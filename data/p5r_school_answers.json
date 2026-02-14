@@ -1,0 +1,422 @@
+{
+  "game_version": "Persona 5 Royal",
+  "school_year_answers": [
+    {
+      "month": "Abril",
+      "items": [
+        {
+          "date": "4/12",
+          "question": "Dime qué tienen los Diccionarios del Diablo que no tengan los otros.",
+          "answer": "Villanos",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "4/19",
+          "question": "Entre A y B, ¿qué línea parece más larga?",
+          "answer": "Son lo mismo",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "4/23",
+          "question": "Entre música, teatro y carreras de cuadrigas, ¿en qué deporte ganó Nerón como atleta olímpico?",
+          "answer": "Todos",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "4/25",
+          "question": "¿Qué significa la frase 'mi país, con razón o sin ella'?",
+          "answer": "Lo apoyas sin duda alguna / Tienes la obligación de corregirlo (2 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "4/27",
+          "question": "¿Conoces el nombre del teorema que se basa en este número?",
+          "answer": "Teorema de los cuatro colores",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "4/30",
+          "question": "Primero, la parte de 'wunder' probablemente signifique...",
+          "answer": "Maravilla / Niño / Un prodigio (3 partes)",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Mayo",
+      "items": [
+        {
+          "date": "5/7",
+          "question": "¿Cuál es la traducción literal de la expresión 'femme fatale'?",
+          "answer": "Mujer fatal",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/10",
+          "question": "¿Sabes en qué época vivió Yoshitsune?",
+          "answer": "El periodo Heian",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Parciales (1er Semestre)",
+          "answers": [
+            { "date": "5/11", "answer": "Minamoto no Yoshitsune / Minamoto no Yoritomo / Ganó Yoritomo / El débil" },
+            { "date": "5/12", "answer": "Cognición / Ambos" },
+            { "date": "5/13", "answer": "El Diccionario del Diablo / Femme Fatale" }
+          ]
+        },
+        {
+          "date": "5/16",
+          "question": "¿Cómo llamamos al fenómeno por el que creer en el poder de un tratamiento basta para mejorar?",
+          "answer": "El efecto placebo",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/19",
+          "question": "¿Qué famoso artista ukiyo-e del periodo Edo se dice que se mudó más de 100 veces?",
+          "answer": "Katsushika Hokusai",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/21",
+          "question": "La proporción áurea es 1:1.618, pero ¿conoces la proporción de plata?",
+          "answer": "1:1.414",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/23",
+          "question": "Si pensamos en lo que tienen en común, ¿qué significa 'sinestesia'?",
+          "answer": "Juntos / Sentidos / La unión de los sentidos (3 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/26",
+          "question": "¿Sabes de qué autor tomó prestado Leblanc sus raíces?",
+          "answer": "Arthur Conan Doyle",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "5/31",
+          "question": "¿Sabes qué figura histórica de pata de palo y loro al hombro se convirtió en un arquetipo visual?",
+          "answer": "John Silver el Largo",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Junio",
+      "items": [
+        {
+          "date": "6/4",
+          "question": "¿Cómo llamamos al fenómeno por el cual creemos que algo tiene mejores rasgos solo porque destaca?",
+          "answer": "El efecto halo",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/7",
+          "question": "El cangrejo real se relaciona con el ermitaño. ¿En qué se diferencia del cangrejo?",
+          "answer": "El número de patas",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/8",
+          "question": "¿Dónde entra el totalitarismo en todo esto?",
+          "answer": "El siglo XX",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/13",
+          "question": "¿De qué color te crees que se vuelve?",
+          "answer": "Verde",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/15",
+          "question": "¿Qué se usa, aparte de billetes de papel?",
+          "answer": "Monedas",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/20",
+          "question": "¿Qué crees que tiene?",
+          "answer": "Smartphone",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/23",
+          "question": "Una de estas cartas es 'La Papisa'. ¿Qué es lo otro?",
+          "answer": "Un papa",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/27",
+          "question": "¿Cuál de estos animales está presente en un modismo sobre el tiempo?",
+          "answer": "Perros",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "6/29",
+          "question": "¿Qué crees que dice la parte de atrás de esta pieza?",
+          "answer": "Oro",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Julio",
+      "items": [
+        {
+          "date": "7/1",
+          "question": "¿Cuál es el significado de la frase original china?",
+          "answer": "Barbacoa",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "7/4",
+          "question": "¿Quiénes fueron?",
+          "answer": "Julio y Augusto",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "7/7",
+          "question": "Entonces, ¿qué es el Tanabata en realidad?",
+          "answer": "La Vía Láctea / Somen (2 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "7/9",
+          "question": "La suma de los ángulos a a e es igual a la suma de los ángulos internos de cierta figura.",
+          "answer": "Un triángulo",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "7/11",
+          "question": "¿Cuánto tiempo crees que se debe conservar la memoria a largo plazo?",
+          "answer": "Recuerdos que duran mucho tiempo / Infinito / Para siempre (3 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "7/12",
+          "question": "¿Qué hizo?",
+          "answer": "Robo",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Finales (1er Semestre)",
+          "answers": [
+            { "date": "7/13", "answer": "64 grados / Zhuge Liang / Cabezas de bárbaros / Para ofrecerlas en lugar de cabezas" },
+            { "date": "7/14", "answer": "Cangrejo real rojo (Paralithodes) / Causó confusión en la economía" },
+            { "date": "7/15", "answer": "Llover gatos y perros / Tripas de demonio" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Septiembre",
+      "items": [
+        {
+          "date": "9/3",
+          "question": "En esta estatua famosa, tiene algo en la mano derecha. ¿Qué es?",
+          "answer": "Prosperidad",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/6",
+          "question": "¿Cómo se llama el fenómeno por el que parece que el segundero deja de moverse?",
+          "answer": "Cronostasis",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/14",
+          "question": "¿Qué ofrece una tienda de segunda mano que no ofrece una de empeños?",
+          "answer": "Préstamos en especie para garantía",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/17",
+          "question": "¿Cuál es uno de los orígenes de la frase 'te ha comido la lengua el gato'?",
+          "answer": "Gatos comiendo lenguas",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/21",
+          "question": "Robot viene de la palabra checa 'robota'. ¿Dónde está la República Checa?",
+          "answer": "Europa Central",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/24",
+          "question": "¿Cuántas formas blancas y negras hay en un balón de fútbol?",
+          "answer": "20 blancos, 12 negros",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/28",
+          "question": "¿Cómo se llama cuando crees que tu móvil vibra, pero no es así?",
+          "answer": "Phantom / Vibration / Syndrome (3 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "9/29",
+          "question": "Pero los pescadores del río Nagaragawa también son funcionarios. ¿A qué sector pertenecen?",
+          "answer": "Agencia de la Casa Imperial",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Octubre",
+      "items": [
+        {
+          "date": "10/3",
+          "question": "Si imaginamos el universo entero como tres sandías, ¿cuánto sería el sol?",
+          "answer": "Estrellas",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "10/6",
+          "question": "¿Sabías quién inventó este instrumento?",
+          "answer": "Joseph-Ignace Guillotin",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "10/11",
+          "question": "¿Qué nombre se asoció más a la forma B?",
+          "answer": "Bouba",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "type": "exam",
+          "title": "Exámenes Parciales (2do Semestre)",
+          "answers": [
+            { "date": "10/17", "answer": "32 caras / Originalmente era de un solo color / Fotografía en blanco y negro" },
+            { "date": "10/18", "answer": "Charles-Henri Sanson / Es una profesión hereditaria" },
+            { "date": "10/19", "answer": "Trabajo esclavo / 3 abejas en toda Europa" }
+          ]
+        },
+        {
+          "date": "10/22",
+          "question": "¿Cuánto suman las columnas de un cuadrado mágico?",
+          "answer": "15",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "10/24",
+          "question": "Desde un punto de vista psicológico, ¿cuál es el motivo de que nuestros recuerdos difieran de la realidad?",
+          "answer": "Sesgo de memoria",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Noviembre",
+      "items": [
+        {
+          "date": "11/2",
+          "question": "¿Qué significa la palabra 'wack' en la 'Ley de los Ladrones'?",
+          "answer": "Una parte de los bienes robados",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/4",
+          "question": "Tréboles es un garrote. Diamantes es una joya. ¿Qué representa Picas?",
+          "answer": "Una espada",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/8",
+          "question": "Dime, ¿cuántos años tienes que tener para escuchar en un juicio?",
+          "answer": "Cualquier edad",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/10",
+          "question": "¿Sabes por qué no aparece el carácter de 'cuervo'?",
+          "answer": "Sus ojos son difíciles de ver",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/12",
+          "question": "¿Por qué crees que la voz suena tan diferente?",
+          "answer": "Porque la voz es sintética",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/14",
+          "question": "¿Por qué se hizo al amanecer?",
+          "answer": "Porque era elevada",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/15",
+          "question": "Sabes cómo lo castigaron y lo obligaron a desfilar por la ciudad, ¿no?",
+          "answer": "Su cabeza fue exhibida",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "11/17",
+          "question": "¿Sabes el nombre de este gráfico?",
+          "answer": "Cóclea",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    },
+    {
+      "month": "Diciembre",
+      "items": [
+        {
+          "type": "exam",
+          "title": "Exámenes Finales (2do Semestre)",
+          "answers": [
+            { "date": "12/20", "answer": "D / Más de mil millones de yenes / Tuvieron su cabeza exhibida / Actuación pública" },
+            { "date": "12/21", "answer": "Corazones / Asistir" },
+            { "date": "12/22", "answer": "Japón / Dreadnought" }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "Enero (Semestre Real)",
+      "items": [
+        {
+          "date": "1/11",
+          "question": "¿Qué frase se supone que ilustra lo que los dioses sintoístas son?",
+          "answer": "Ocho millones / Yaoyorozu (2 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "1/14",
+          "question": "¿En qué se inspiró la tierra de fantasía de 'Ihatov'?",
+          "answer": "Iwate",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "1/18",
+          "question": "¿Qué significaba originalmente 'awful'?",
+          "answer": "Impresionante",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "1/20",
+          "question": "¿Sabes en qué pisa?",
+          "answer": "Una serpiente",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "1/24",
+          "question": "¿Qué significa 'salado' en la jerga de los jugadores?",
+          "answer": "Amable / Negativo / Pasivo (3 partes)",
+          "stat_boost": "Knowledge +1"
+        },
+        {
+          "date": "1/27",
+          "question": "¿Hasta dónde llega este estudio?",
+          "answer": "A los amigos de los amigos de los amigos",
+          "stat_boost": "Knowledge +1"
+        }
+      ]
+    }
+  ]
+}
