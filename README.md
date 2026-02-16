@@ -5,54 +5,99 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/System-Kirijo%20OS-blue?style=for-the-badge" alt="System Badge">
+  <img src="https://img.shields.io/badge/Status-Operational-success?style=for-the-badge" alt="Status Badge">
+  <img src="https://img.shields.io/badge/Access-Confidential-red?style=for-the-badge" alt="Access Badge">
+</p>
+
+<p align="center">
   <strong>PROYECTO:</strong> Protocolo de Recopilación de Información de Personas (P.R.I.P.)<br>
-  <strong>ESTADO:</strong> Operativo / En Desarrollo<br>
-  <strong>CLASIFICACIÓN:</strong> Confidencial - Uso Exclusivo de S.E.E.S.
+  <strong>DIVISIÓN:</strong> Shadow Ops / Departamento de Desarrollo<br>
+  <strong>CLASIFICACIÓN:</strong> S.E.E.S. Eyes Only
 </p>
 
 ---
 
-## 📝 Descripción
-**Kirijo OS** es una aplicación web progresiva (PWA) diseñada para centralizar toda la información crítica necesaria para los usuarios de Personas. Este sistema permite gestionar datos estratégicos de la saga *Persona*, optimizando la toma de decisiones durante la exploración de Tartarus y la vida cotidiana.
+## 📝 Descripción del Sistema
+
+**Kirijo OS** es una interfaz de base de datos avanzada y una Aplicación Web Progresiva (PWA) diseñada para operar como el centro neurálgico de información para usuarios de *Persona*. 
+
+Este sistema centraliza datos tácticos y sociales de múltiples líneas temporales (**Persona 3 Portable, Reload, Persona 4 Golden y Persona 5 Royal**), permitiendo a los operativos maximizar su eficiencia tanto en la exploración del Metaverso como en la gestión de la vida diaria.
+
+## 💾 Módulos Operativos
+
+El sistema cuenta con módulos dedicados para cada registro del compendio:
+
+| Módulo | Nombre Clave | Estado | Funcionalidades |
+| :--- | :--- | :--- | :--- |
+| **Persona 3 Portable** | `S.E.E.S. DB` | 🟢 Online | Social Links (M/F), Missing Persons, Vision Quest. |
+| **Persona 3 Reload** | `Dark Hour` | 🟡 Parcial | Link Episodes, Dorm Hangouts, Twilight Fragments. |
+| **Persona 4 Golden** | `TV World` | 🟢 Online | Exámenes, Social Links, Libros. |
+| **Persona 5 Royal** | `Mementos` | 🟡 Parcial | Confidants, Jazz Club, Crucigramas, Will Seeds. |
 
 ## 🚀 Funcionalidades Principales
-* 📊 **Social Link Master:** Guía detallada de respuestas óptimas para maximizar vínculos.
-* 🏫 **Academic Database:** Repositorio de respuestas para exámenes y preguntas de clase.
-* 🎭 **Fusion Guide:** Registro de fusiones especiales y requerimientos de Personas.
-* 🔍 **Missing Persons:** Protocolo de búsqueda y rescate de personas desaparecidas en Tartarus.
-* 📱 **PWA Ready:** Instalable en dispositivos móviles para acceso rápido durante el juego.
 
-## 📂 Estructura del Sistema
-El sistema está organizado modularmente para facilitar la expansión de datos:
+* 📊 **Social Link Master:** Algoritmo de optimización de relaciones. Incluye respuestas para *Reverse/Broken links*.
+* 🏫 **Academic Database:** Repositorio completo de respuestas para exámenes, preguntas de clase y licencias.
+* 🎭 **Fusion Calculator:** Datos sobre fusiones especiales y recetas de Personas avanzadas.
+* 📱 **PWA & Offline Mode:** Sistema instalable en dispositivos móviles con capacidad de funcionamiento sin red (ideal para zonas sin cobertura como Tartarus).
+* 🔄 **Cross-Timeline Support:** Interfaz unificada para gestionar datos de P3P, P3R, P4G y P5R.
 
-* `/data`: Archivos JSON con la lógica de eventos y estadísticas.
-* `/assets`: Recursos visuales, incluyendo cartas del Tarot y perfiles de personajes.
-* `/js`: Núcleo lógico de la aplicación (`app.js`).
-* `/css`: Interfaz de usuario inspirada en la estética de la Corporación Kirijo.
+## 📂 Arquitectura del Sistema
 
-## 🛠️ Tecnologías Utilizadas
-- **HTML5 & CSS3:** Estructura y diseño responsivo.
-- **JavaScript (Vanilla):** Lógica de filtrado y manipulación dinámica de datos.
-- **JSON:** Almacenamiento de base de datos local.
-- **GitHub Pages:** Hosting del sistema.
+La estructura de archivos sigue los protocolos de organización de *Kirijo Group*:
 
-## 🖥️ Instalación Local
-Para ejecutar una instancia local de este sistema:
+```text
+Kirijo-OS/
+├── assets/          # Recursos visuales (Arcana, Personajes, Iconos)
+├── css/             # Estilos (Kirijo Corporate UI Theme)
+├── data/            # Bases de datos en formato JSON (Lógica del sistema)
+│   ├── p3p_*.json   # Archivos de datos P3 Portable
+│   ├── p3r_*.json   # Archivos de datos P3 Reload
+│   └── ...          # Otros módulos
+├── js/              # Núcleo lógico (app.js)
+├── index.html       # Punto de entrada del sistema
+└── manifest.json    # Configuración PWA
 
-1. Clona este repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/Kirijo-OS.git](https://github.com/tu-usuario/Kirijo-OS.git)
-2. Navega al directorio del proyecto:
-    ```bash
-    cd Kirijo-OS
-3. Abre index.html en tu navegador de preferencia.
+```
+
+## 🛠️ Stack Tecnológico
+
+* **Core:** HTML5 Semántico, CSS3 (Grid/Flexbox).
+* **Scripting:** JavaScript (Vanilla ES6+) - Sin dependencias externas pesadas para máxima velocidad.
+* **Data:** JSON asíncrono para carga dinámica de módulos.
+* **Deployment:** Optimizado para GitHub Pages.
+
+## 🖥️ Inicialización de Protocolo (Instalación)
+
+Para desplegar una instancia local de **Kirijo OS**:
+
+1. **Clonar el repositorio:**
+```bash
+git clone [https://github.com/tu-usuario/Kirijo-OS.git](https://github.com/tu-usuario/Kirijo-OS.git)
+
+```
+
+
+2. **Acceder al directorio:**
+```bash
+cd Kirijo-OS
+
+```
+
+
+3. **Ejecutar:**
+* Abre `index.html` en tu navegador de confianza.
+* *Opcional:* Instala la PWA desde la barra de dirección del navegador para una experiencia nativa.
+
+
 
 ---
 
 <p align="center">
-<em>"The arcana is the means by which all is revealed..."</em>
+  <em>"The arcana is the means by which all is revealed..."</em>
   <br>
-<em>“Executions are a last resort. Information is our primary weapon.”</em>
-<br>
+  <em>“Executions are a last resort. Information is our primary weapon.”</em>
+  <br>
   <sub>© 2026 Kirijo Group Development Division</sub>
 </p>
