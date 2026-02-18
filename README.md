@@ -30,10 +30,10 @@ El sistema cuenta con módulos dedicados para cada registro del compendio:
 
 | Módulo | Nombre Clave | Estado | Funcionalidades |
 | :--- | :--- | :--- | :--- |
-| **Persona 3 Portable** | `S.E.E.S. DB` | 🟢 Online | Social Links (M/F), Missing Persons, Vision Quest. |
-| **Persona 3 Reload** | `Dark Hour` | 🟡 Parcial | Link Episodes, Dorm Hangouts, Twilight Fragments. |
+| **Persona 3 Portable** | `S.E.E.S. DB` | 🔴 Offline | Social Links (M/F), Missing Persons, Vision Quest. |
+| **Persona 3 Reload** | `Dark Hour` | 🟢 Online | Link Episodes, Dorm Hangouts, Twilight Fragments. |
 | **Persona 4 Golden** | `TV World` | 🟢 Online | Exámenes, Social Links, Libros. |
-| **Persona 5 Royal** | `Mementos` | 🟡 Parcial | Confidants, Jazz Club, Crucigramas, Will Seeds. |
+| **Persona 5 Royal** | `Mementos` | 🟢 Online | Confidants, Jazz Club, Crucigramas, Will Seeds. |
 
 ## 🚀 Funcionalidades Principales
 
