@@ -1,106 +1,193 @@
 [
   {
     "id": 0,
-    "arcana_name": "El Loco (The Fool)",
+    "arcana_name": "El Loco (Fool)",
     "arcana_image": "fool.jpg",
-    "type": "split_character",
-    "description": "Representa el inicio del viaje y el equipo de investigación.",
+    "type": "shared_automatic",
     "routes": {
-      "male": {
-        "character": "Investigation Team",
+      "shared": {
+        "character": "Equipo de Investigación",
+        "location": "Junes / Cuartel General",
+        "availability": "Automático (Avanza con la historia)",
         "image": "investigation_team.jpg",
-        "location": "Eventos de Historia",
-        "availability": "Automático",
-        "unlock_condition": "Se desbloquea automáticamente el 16 de Abril.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "4/16" },
-          { "rank": 2, "type": "automatic", "date": "4/18" },
-          { "rank": 3, "type": "automatic", "date": "5/17" },
-          { "rank": 4, "type": "automatic", "date": "6/6" },
-          { "rank": 5, "type": "automatic", "date": "7/10" },
-          { "rank": 6, "type": "automatic", "date": "7/10" },
-          { "rank": 7, "type": "automatic", "date": "7/27" },
-          { "rank": 8, "type": "automatic", "date": "10/6" },
-          { "rank": 9, "type": "automatic", "date": "10/29" },
-          { "rank": 10, "type": "automatic", "date": "12/3 (Normal) / 3/20 (True)" }
+          { "rank": 1, "type": "automatic", "date": "4/16", "interactions": [{"context": "Se desbloquea automáticamente.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 2, "type": "automatic", "date": "4/30", "interactions": [{"context": "Tras infiltrarse en el castillo.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 3, "type": "automatic", "date": "5/18", "interactions": [{"context": "Tras salvar a Kanji.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 4, "type": "automatic", "date": "6/06", "interactions": [{"context": "Concierto de Junes.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 5, "type": "automatic", "date": "7/10", "interactions": [{"context": "Tras salvar a Rise.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 6, "type": "automatic", "date": "7/10", "interactions": [{"context": "Tras atrapar a Mitsuo.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 7, "type": "automatic", "date": "10/06", "interactions": [{"context": "Tras salvar a Naoto.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 8, "type": "automatic", "date": "11/06", "interactions": [{"context": "Tras salvar a Nanako.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 9, "type": "automatic", "date": "12/03", "interactions": [{"context": "Si decides no tirar a Namatame a la TV.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 10, "type": "automatic", "date": "12/03", "interactions": [{"context": "Al identificar al verdadero culpable. Desbloquea: Loki.", "options": [{"text": "-", "points": 0}]}] }
         ]
       }
     }
   },
   {
     "id": 1,
-    "arcana_name": "El Mago (The Magician)",
+    "arcana_name": "El Mago (Magician)",
     "arcana_image": "magician.jpg",
-    "type": "split_character",
-    "description": "Representa la acción, la iniciativa y la inmadurez.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Yosuke Hanamura",
-        "image": "yosuke.jpg",
-        "location": "Pasillo Aula 2F / Junes",
-        "availability": "Lunes, Jueves, Sábado, Domingo (Día)",
+        "location": "Pasillo Aula 2-2 / Junes",
+        "availability": "Lun, Jue, Sáb, Dom. (No disponible si llueve)",
         "unlock_condition": "Automático el 16 de Abril.",
-        "romance": false,
+        "image": "yosuke.jpg",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Yosuke pregunta...", "best_choice": "Debe ser duro (+3)" },
-              { "context": "Sobre el pueblo...", "best_choice": "¡Eres todo un príncipe! (+3)" }
+            "interactions": [
+              {
+                "context": "Sobre el trabajo...",
+                "options": [
+                  {"text": "Debe ser duro.", "points": 3},
+                  {"text": "Es el destino.", "points": 2}
+                ]
+              },
+              {
+                "context": "Popularidad...",
+                "options": [
+                  {"text": "¡Tienes razón!", "points": 3},
+                  {"text": "Eres un idiota.", "points": 1}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Sobre las chicas...", "best_choice": "¡No te preocupes! (+3)" },
-              { "context": "Yosuke se queja...", "best_choice": "¡Tú también molas! (+3)" }
+            "interactions": [
+              {
+                "context": "Yosuke y las chicas...",
+                "options": [
+                  {"text": "¡No te preocupes!", "points": 3},
+                  {"text": "Qué mala suerte.", "points": 1}
+                ]
+              },
+              {
+                "context": "Perro...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Yosuke deprimido...", "best_choice": "¡Tienes que animarte! (+3)" },
-              { "context": "Trabajo...", "best_choice": "¡Eso es genial! (+3)" }
+            "interactions": [
+              {
+                "context": "Queja...",
+                "options": [
+                  {"text": "¡Eso es genial!", "points": 3},
+                  {"text": "Increíble.", "points": 2}
+                ]
+              },
+              {
+                "context": "Enfermeras...",
+                "options": [
+                  {"text": "¡Y que lo digas!", "points": 3},
+                  {"text": "Cállate.", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Ayuda...", "best_choice": "Por supuesto (+3)" },
-              { "context": "Sobre el caso...", "best_choice": "Ya me lo contarás (+3)" }
+            "interactions": [
+              {
+                "context": "Ayuda...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 3},
+                  {"text": "Si me pagas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Coche...",
+                "options": [
+                  {"text": "Pronto tendrás una moto.", "points": 3},
+                  {"text": "Dime cuando tengas coche.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Problema...", "best_choice": "Es un gran problema (+3)" },
-              { "context": "Consuelo...", "best_choice": "Tú importas (+3)" }
+            "interactions": [
+              {
+                "context": "Problema...",
+                "options": [
+                  {"text": "Es un problema difícil.", "points": 3},
+                  {"text": "Eres un adulto.", "points": 3}
+                ]
+              },
+              {
+                "context": "Ánimo...",
+                "options": [
+                  {"text": "¡Tú cállala!", "points": 3},
+                  {"text": "¡No te rindas!", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Quejas...", "best_choice": "¡Cállate ya! (+3)" }
+            "interactions": [
+              {
+                "context": "Llamada...",
+                "options": [
+                  {"text": "Calla y supéralo.", "points": 3},
+                  {"text": "¿Qué vas a hacer?", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Historia triste...", "best_choice": "Ella murió por algo (+3)" }
+            "interactions": [
+              {
+                "context": "Muerte...",
+                "options": [
+                  {"text": "Ella murió por una razón.", "points": 3},
+                  {"text": "Simplemente murió.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Pelea...", "best_choice": "Pégame tú también (+3)" },
-              { "context": "Tras la pelea...", "best_choice": "Me encantan los golpes (+3)" }
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "Sé fuerte, hombre.", "points": 3},
+                  {"text": "Golpéame a mí también.", "points": 3}
+                ]
+              },
+              {
+                "context": "Amistad...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 3},
+                  {"text": "No sé.", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Mada.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -108,78 +195,193 @@
   },
   {
     "id": 2,
-    "arcana_name": "La Sacerdotisa (The Priestess)",
+    "arcana_name": "La Sacerdotisa (Priestess)",
     "arcana_image": "priestess.jpg",
-    "type": "split_character",
-    "description": "Representa la intuición, el misterio y la sabiduría interior.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Yukiko Amagi",
+        "location": "Pasillo Planta 1 / Amagi Inn",
+        "availability": "Lun, Mar, Mie, Jue. (No si llueve)",
+        "unlock_condition": "Disponible desde el 17 de Mayo.",
         "image": "yukiko.jpg",
-        "location": "Tablón de anuncios 1F",
-        "availability": "Lunes, Martes, Miércoles, Jueves (Día)",
-        "unlock_condition": "Disponible desde el 17 de Mayo (tras rescatarla). Requiere Coraje nivel 3.",
-        "romance": true,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Sensei...", "best_choice": "Está bien (+3)" },
-              { "context": "Cocina...", "best_choice": "Tiene sentido del humor (+3)" }
+            "interactions": [
+              {
+                "context": "Cocina...",
+                "options": [
+                  {"text": "Cuenta conmigo.", "points": 3},
+                  {"text": "Me gusta cocinar.", "points": 2}
+                ]
+              },
+              {
+                "context": "Manual...",
+                "options": [
+                  {"text": "El manual está bien.", "points": 2},
+                  {"text": "Creo que es la tinta.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Huevos...", "best_choice": "¡Buena suerte! (+3)" },
-              { "context": "Posada...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Huevos...",
+                "options": [
+                  {"text": "Haciendo huevos.", "points": 2},
+                  {"text": "Buena suerte.", "points": 3}
+                ]
+              },
+              {
+                "context": "Posada...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Servicio...",
+                "options": [
+                  {"text": "Cuenta conmigo.", "points": 3},
+                  {"text": "¡Venimos a por ti!", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Cocina mejorada...", "best_choice": "Tiene buena pinta (+3)" },
-              { "context": "Comer...", "best_choice": "Está bueno (+3)" }
+            "interactions": [
+              {
+                "context": "Sabor...",
+                "options": [
+                  {"text": "¡Huele bien!", "points": 3},
+                  {"text": "Nada mal.", "points": 2}
+                ]
+              },
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "¡Está rico!", "points": 3},
+                  {"text": "Está bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Invitación...",
+                "options": [
+                  {"text": "Vale.", "points": 3},
+                  {"text": "La próxima vez.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Preocupación...", "best_choice": "¿Qué pasa? (+3)" },
-              { "context": "Gente...", "best_choice": "No es egoísta (+3)" }
+            "interactions": [
+              {
+                "context": "Muebles...",
+                "options": [
+                  {"text": "¿Qué pasa?", "points": 3},
+                  {"text": "¿Un cojín?", "points": 2}
+                ]
+              },
+              {
+                "context": "Futuro...",
+                "options": [
+                  {"text": "Depende de ti.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Cocinar...", "best_choice": "¿Crees que lo lograrás? (+3)" },
-              { "context": "Futuro...", "best_choice": "¡Te apoyaré! (+3)" }
+            "interactions": [
+              {
+                "context": "Habilidad...",
+                "options": [
+                  {"text": "¿Crees que puedes hacerlo?", "points": 3},
+                  {"text": "Necesitas practicar.", "points": 2}
+                ]
+              },
+              {
+                "context": "Esfuerzo...",
+                "options": [
+                  {"text": "No te desanimes.", "points": 3},
+                  {"text": "¿Lo quieres dejar?", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Reporteros...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Respuesta...", "best_choice": "Estuvo genial (+3)" }
+            "interactions": [
+              {
+                "context": "Identidad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Risas...",
+                "options": [
+                  {"text": "Están equivocados.", "points": 3},
+                  {"text": "No les hagas caso.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Llorando...", "best_choice": "Das miedo (+3)" }
+            "interactions": [
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Terror...",
+                "options": [
+                  {"text": "Das miedo.", "points": 3},
+                  {"text": "Eres muy guapa.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Sentimientos...", "best_choice": "Para mí eres Yukiko (+3)" },
-              { "context": "Confesión...", "best_choice": "Sé mi novia (+3)", "romance_flag": true }
+            "interactions": [
+              {
+                "context": "Deseo...",
+                "options": [
+                  {"text": "Por todos.", "points": 3},
+                  {"text": "Por ti.", "points": 3}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Tú eres mi chica. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Eres una buena amiga. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Scathach.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -187,74 +389,66 @@
   },
   {
     "id": 3,
-    "arcana_name": "La Emperatriz (The Empress)",
+    "arcana_name": "La Emperatriz (Empress)",
     "arcana_image": "empress.jpg",
-    "type": "split_character",
-    "description": "Representa la fertilidad, la creatividad y la abundancia.",
+    "type": "standard",
     "routes": {
-      "male": {
+      "shared": {
         "character": "Margaret",
+        "location": "Velvet Room",
+        "availability": "Siempre. Requiere Conocimiento 3 para iniciar.",
+        "unlock_condition": "Disponible desde el 19 de Mayo. Debes traerle Personas con habilidades específicas.",
         "image": "margaret.jpg",
-        "location": "Habitación de Terciopelo (Velvet Room)",
-        "availability": "Cualquier día (Si tienes el Persona requerido)",
-        "unlock_condition": "Disponible desde el 19 de Mayo. Requiere Conocimiento nivel 3 (Expert).",
-        "romance": false,
-        "notes": "Este vínculo NO avanza hablando. Avanza mostrándole los Personas con habilidades específicas que pide.",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio (Requiere Conocimiento 3 'Experto')", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Ippon-Datara con Sukukaja (Nv 17)", "notes": "Fusión sugerida: Sylph + Archangel" }
-            ]
+            "unlock_condition": "Ippon-Datara con Sukukaja. Fusión: Sylph + Archangel.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Matador con Mahama (Nv 24)", "notes": "Fusión sugerida: Anzu + Berith" }
-            ]
+            "unlock_condition": "Matador con Mahama. Fusión: Anzu + Berith.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Gdon con Rampage (Nv 31)", "notes": "Fusión sugerida: Ares (Nv 28) + Shiisaa" }
-            ]
+            "unlock_condition": "Gdon con Rampage. Fusión: Ares + Shiisaa (Ares aprende Rampage nvl 28).",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Neko-shogun con Bufula (Nv 32)", "notes": "Fusión Cross (4): King Frost (Bufula) + Hua Po + Saki Mitama + High Pixie" }
-            ]
+            "unlock_condition": "Neko-shogun con Bufula. Fusión (Cruzada): King Frost + Hua Po. (Heredar Bufula).",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Black Frost con Auto-Sukukaja (Nv 38)", "notes": "Fusión Cross (5): Jack Frost + Pyro Jack + King Frost + Pixie + Ghoul. (Heredar Auto-Sukukaja de alguien)" }
-            ]
+            "unlock_condition": "Black Frost con Auto-Sukukaja. Fusión (Cruzada): Anzu (Aprende Auto-Sukukaja nvl 20) + Apsaras + otros ingredientes.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Yatagarasu con Megido (Nv 45)", "notes": "Fusión sugerida: Samael (Megido Nv 39) + Oberon" }
-            ]
+            "unlock_condition": "Yatagarasu con Megido. Fusión: Samael (Aprende Megido nvl 39) + Oberon.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Yatsufusa con Mediarama (Nv 49)", "notes": "Fusión Cross (5). Thoth aprende Mediarama al 47." }
-            ]
+            "unlock_condition": "Yatsufusa con Mediarama. Fusión (Cruzada): Thoth (Aprende Mediarama nvl 47) + Ortus + Makami + Narasimha + Mothman.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Ganesha con Tetrakarn (Nv 50)", "notes": "Fusión sugerida: Decarabia + Cu Chulainn" }
-            ]
+            "unlock_condition": "Ganesha con Tetrakarn. Fusión: Decarabia (Aprende Tetrakarn nvl 50) + Cu Chulainn.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           },
           {
             "rank": 10,
-            "responses": [
-              { "context": "Misión Fusión", "best_choice": "Crear Trumpeter con Mind Charge (Nv 67)", "notes": "Fusión Hexagon (6). Taotie aprende Mind Charge al 38." }
-            ]
+            "unlock_condition": "Trumpeter con Mind Charge. Fusión (Cruzada): Taotie (Aprende Mind Charge nvl 38) + otros. Desbloquea: Isis.",
+            "interactions": [{"context": "Entrega la Persona.", "options": [{"text": "Cualquiera", "points": 0}]}]
           }
         ]
       }
@@ -262,75 +456,171 @@
   },
   {
     "id": 4,
-    "arcana_name": "El Emperador (The Emperor)",
+    "arcana_name": "El Emperador (Emperor)",
     "arcana_image": "emperor.jpg",
-    "type": "split_character",
-    "description": "Representa la autoridad, la estructura y la masculinidad.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Kanji Tatsumi",
+        "location": "Edificio de Prácticas 2F / Norte Distrito Comercial",
+        "availability": "Mie, Jue, Sáb, Dom. (No si llueve)",
+        "unlock_condition": "Disponible desde el 9 de Junio. Habla con la chica en las escaleras del 2F, luego con él.",
         "image": "kanji.jpg",
-        "location": "Edificio de Prácticas 1F (Escuela) / Norte Distrito Comercial (Festivos)",
-        "availability": "Miércoles, Jueves, Sábado, Domingo (Día)",
-        "unlock_condition": "Disponible desde el 9 de Junio. Debes hablar con una chica en el 2F (cerca escaleras) que menciona a Kanji, luego ve al Edificio de Prácticas 1F y habla con él.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Disculpas...", "best_choice": "Tú eres tú (+3)" }
+            "interactions": [
+              {
+                "context": "Disculpa...",
+                "options": [
+                  {"text": "Tú eres el que manda.", "points": 3},
+                  {"text": "¿Tienes una deuda?", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Kanji se enfada...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Muñeco...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Amabilidad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Regalo...",
+                "options": [
+                  {"text": "Seguro que le gusta.", "points": 3},
+                  {"text": "Lo apreciará.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Regalo...", "best_choice": "Tengo ganas de ver qué recibo (+3)" },
-              { "context": "Gafas...", "best_choice": "Cómprate unas nuevas (+3)" }
+            "interactions": [
+              {
+                "context": "Gafas...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Tienda...",
+                "options": [
+                  {"text": "Compraré una.", "points": 3},
+                  {"text": "Mucho ánimo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Policía...",
+                "options": [
+                  {"text": "Vamos dentro.", "points": 3},
+                  {"text": "Dile la verdad.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Padre...", "best_choice": "Era un buen hombre (+3)" }
+            "interactions": [
+              {
+                "context": "Padre...",
+                "options": [
+                  {"text": "Fue un gran hombre.", "points": 3},
+                  {"text": "Qué tío tan guay.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Policía...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Búsqueda...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "Está feliz.", "points": 3},
+                  {"text": "Quiere que seas fuerte.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Incomprendido...", "best_choice": "Quiero aprender a coser (+3)" },
-              { "context": "Sentimiento...", "best_choice": "Lo de antes fue increíble (+3)" }
+            "interactions": [
+              {
+                "context": "Queja...",
+                "options": [
+                  {"text": "Quiero aprender a coser.", "points": 3},
+                  {"text": "Tienes que perdonarle.", "points": 2}
+                ]
+              },
+              {
+                "context": "Actuación...",
+                "options": [
+                  {"text": "Lo de antes.", "points": 3},
+                  {"text": "Actúa normal.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Policía vuelve...", "best_choice": "Tú mismo le has pillado (+3)" },
-              { "context": "Gracias...", "best_choice": "Buen trabajo (+3)" }
+            "interactions": [
+              {
+                "context": "Policía...",
+                "options": [
+                  {"text": "Te has ganado la carta.", "points": 3},
+                  {"text": "Eres todo un delincuente.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Concurso...", "best_choice": "¿Cómo ha ido? (+3)" },
-              { "context": "Cambio...", "best_choice": "Has encontrado algo precioso (+3)" }
+            "interactions": [
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "¿Qué vas a hacer?", "points": 3},
+                  {"text": "No cambies.", "points": 3}
+                ]
+              },
+              {
+                "context": "Búsqueda...",
+                "options": [
+                  {"text": "Encontraste uno.", "points": 3},
+                  {"text": "Buena suerte.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Odin.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -338,78 +628,196 @@
   },
   {
     "id": 5,
-    "arcana_name": "El Hierofante (The Hierophant)",
+    "arcana_name": "El Hierofante (Hierophant)",
     "arcana_image": "hierophant.jpg",
-    "type": "split_character",
-    "description": "Representa la tradición, las instituciones y la figura paterna.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Ryotaro Dojima",
+        "location": "Residencia Dojima",
+        "availability": "Noches. Requiere Expresión para avanzar.",
+        "unlock_condition": "Disponible desde el 6 de Mayo.",
         "image": "dojima.jpg",
-        "location": "Residencia Dojima (Salón)",
-        "availability": "Cualquier día (Noche), si no está trabajando.",
-        "unlock_condition": "Disponible desde el 6 de Mayo. Requiere Expresión (Expression) variable según el rango.",
-        "warning_message": "¡BLOQUEO IMPORTANTE! No podrás avanzar este vínculo en Noviembre/Diciembre debido a eventos de la historia. Intenta terminarlo antes de Octubre.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Dojima trabaja...", "best_choice": "Trabajar es duro (+3)" },
-              { "context": "Nanako...", "best_choice": "Cualquiera (+3)" }
+            "interactions": [
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "Trabajar.", "points": 3},
+                  {"text": "Jugar.", "points": 2}
+                ]
+              },
+              {
+                "context": "Nanako...",
+                "options": [
+                  {"text": "Cuéntamelo.", "points": 3},
+                  {"text": "No tiene nada que ver conmigo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Relación...",
+                "options": [
+                  {"text": "Es culpa tuya.", "points": 3},
+                  {"text": "Es una niña.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Dojima cansado...", "best_choice": "No deberías forzarte (+3)" },
-              { "context": "Nanako preocupada...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 2.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Café...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Familia...",
+                "options": [
+                  {"text": "No es verdad.", "points": 3},
+                  {"text": "Haces lo que puedes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Café...", "best_choice": "Con leche, por favor (+3)" },
-              { "context": "Esposa...", "best_choice": "¿Cuándo pasó? (+3)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 3.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Leche...",
+                "options": [
+                  {"text": "Coge mucha leche.", "points": 3},
+                  {"text": "Con leche basta.", "points": 3}
+                ]
+              },
+              {
+                "context": "Familia...",
+                "options": [
+                  {"text": "Esta es mi familia.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Nanako...", "best_choice": "Es difícil para ella (+3)" },
-              { "context": "Búsqueda...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 3.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Compra...",
+                "options": [
+                  {"text": "Nanako.", "points": 3},
+                  {"text": "Tu vida privada.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Supermercado...", "best_choice": "Entonces salgamos fuera (+3)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 4.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Verdura...",
+                "options": [
+                  {"text": "Entonces salgamos fuera.", "points": 3},
+                  {"text": "Cómpralo tú.", "points": 2}
+                ]
+              },
+              {
+                "context": "Preocupación...",
+                "options": [
+                  {"text": "Estás preocupado.", "points": 3},
+                  {"text": "No necesitas hablar.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Chisato...", "best_choice": "Esto es más importante (+3)" }
+            "interactions": [
+              {
+                "context": "Chisato...",
+                "options": [
+                  {"text": "Esto es más importante.", "points": 3},
+                  {"text": "Está bien.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Dojima enfermo...", "best_choice": "¿Quieres un poco de café? (+3)" },
-              { "context": "Miedo...", "best_choice": "Porque eres un cobarde (+3)" }
+            "interactions": [
+              {
+                "context": "Culpable...",
+                "options": [
+                  {"text": "¿Quieres café?", "points": 3},
+                  {"text": "A lavar los platos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Cobarde...",
+                "options": [
+                  {"text": "Es porque eras un cobarde.", "points": 3},
+                  {"text": "Intentabas protegerla.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Pasado...", "best_choice": "Ha sido divertido (+3)" },
-              { "context": "Duro...", "best_choice": "Fue duro, ¿verdad? (+3)" }
+            "interactions": [
+              {
+                "context": "Carta...",
+                "options": [
+                  {"text": "Diviértete.", "points": 3},
+                  {"text": "Ha sido duro.", "points": 3}
+                ]
+              },
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Fue duro.", "points": 3},
+                  {"text": "Lo estás haciendo bien.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 5. Desbloquea: Kohryu.",
+                "options": [{"text": "Gracias.", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -417,75 +825,202 @@
   },
   {
     "id": 6,
-    "arcana_name": "Los Enamorados (The Lovers)",
+    "arcana_name": "Los Enamorados (Lovers)",
     "arcana_image": "lovers.jpg",
-    "type": "split_character",
-    "description": "Representa las relaciones, la pasión y las decisiones del corazón.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Rise Kujikawa",
-        "image": "rise.jpg",
-        "location": "Edificio Escolar 1F / Tienda de Tofu (Festivos)",
-        "availability": "Viernes, Sábado, Domingo (Día)",
+        "location": "Pasillo 1F (Escuela) / Distrito Comercial Sur",
+        "availability": "Vie, Sáb, Dom. (No si llueve)",
         "unlock_condition": "Disponible desde el 23 de Julio.",
-        "romance": true,
+        "image": "rise.jpg",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Comida...", "best_choice": "¿Haces dieta? (+3)" }
+            "interactions": [
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Dieta...",
+                "options": [
+                  {"text": "¿Tienes hambre?", "points": 3},
+                  {"text": "Solo pide.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Inaba...", "best_choice": "Vendré las veces que quieras (+3)" }
+            "interactions": [
+              {
+                "context": "Venganza...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Razón...",
+                "options": [
+                  {"text": "Viniste a ver a Senpai.", "points": 3},
+                  {"text": "No tienes agallas.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Acosador...", "best_choice": "Llama a la policía (+3)" },
-              { "context": "Miedo...", "best_choice": "Agarra mi mano (+3)" }
+            "interactions": [
+              {
+                "context": "Preocupación...",
+                "options": [
+                  {"text": "Llama a la policía.", "points": 3},
+                  {"text": "Agarra mi mano.", "points": 3}
+                ]
+              },
+              {
+                "context": "Mánager...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Mentira...",
+                "options": [
+                  {"text": "Te acompaño.", "points": 3},
+                  {"text": "Ten cuidado.", "points": 1}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Agencia...", "best_choice": "Lo has pensado mucho (+3)" }
+            "interactions": [
+              {
+                "context": "Fan...",
+                "options": [
+                  {"text": "Lo ha hecho todo él.", "points": 3},
+                  {"text": "No le hagas caso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Identidad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Ánimo...",
+                "options": [
+                  {"text": "No te rindas.", "points": 3},
+                  {"text": "Es cuestión de tiempo.", "points": 1}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Fan...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Preocupación...", "best_choice": "Si te arrepientes, lo dejo (+3)" }
+            "interactions": [
+              {
+                "context": "Inseguridad...",
+                "options": [
+                  {"text": "Si te arrepientes, ve.", "points": 3},
+                  {"text": "Preocúpate por ti.", "points": 3}
+                ]
+              },
+              {
+                "context": "Fan...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Risette...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Yo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Inoue...", "best_choice": "Ella estaba feliz (+3)" },
-              { "context": "Risa...", "best_choice": "Ríete todo lo que quieras (+3)" }
+            "interactions": [
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "Ella estaba feliz.", "points": 3},
+                  {"text": "Tiene buen aspecto.", "points": 3}
+                ]
+              },
+              {
+                "context": "Encanto...",
+                "options": [
+                  {"text": "Las dos cosas.", "points": 3},
+                  {"text": "Tu personalidad.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Sentimientos...", "best_choice": "Ambos me gustan (+3)" }
+            "interactions": [
+              {
+                "context": "Inoue...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Lloro...",
+                "options": [
+                  {"text": "Llora todo lo que quieras.", "points": 3},
+                  {"text": "Apóyate en mí.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Risette...", "best_choice": "¡Risette es Risette! (+3)" },
-              { "context": "Confesión...", "best_choice": "Quédate a mi lado (+3)", "romance_flag": true }
+            "interactions": [
+              {
+                "context": "Regreso...",
+                "options": [
+                  {"text": "Risette es Risette.", "points": 3},
+                  {"text": "Te has hecho fuerte.", "points": 3}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Quédate a mi lado. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Algún día encontrarás el amor. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Kanzeon.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -493,75 +1028,160 @@
   },
   {
     "id": 7,
-    "arcana_name": "El Carro (The Chariot)",
+    "arcana_name": "El Carro (Chariot)",
     "arcana_image": "chariot.jpg",
-    "type": "split_character",
-    "description": "Representa la victoria, la determinación y la superación de obstáculos.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Chie Satonaka",
+        "location": "Azotea Escuela / Distrito Comercial Sur",
+        "availability": "Lun, Mar, Jue, Sáb. (No si llueve)",
+        "unlock_condition": "Disponible desde el 18 de Abril.",
         "image": "chie.jpg",
-        "location": "Edificio Escolar 2F / Azotea",
-        "availability": "Lunes, Martes, Jueves, Sábado (Día)",
-        "unlock_condition": "Automático el 18 de Abril.",
-        "romance": true,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Entrenamiento...", "best_choice": "Claro (+3)" },
-              { "context": "Comer...", "best_choice": "Déjame que pague yo (+3)" }
+            "interactions": [
+              {
+                "context": "Entrenamiento...",
+                "options": [
+                  {"text": "Claro.", "points": 3},
+                  {"text": "¿Va a ser duro?", "points": 2}
+                ]
+              },
+              {
+                "context": "Explicación...",
+                "options": [
+                  {"text": "Me gusta.", "points": 3},
+                  {"text": "No sé.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Perro...", "best_choice": "Es muy mono (+3)" }
+            "interactions": [
+              {
+                "context": "Perro...",
+                "options": [
+                  {"text": "Es muy mono.", "points": 3},
+                  {"text": "Parece delicioso.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Insultos...", "best_choice": "No le hagas caso (+3)" },
-              { "context": "Valentía...", "best_choice": "¡Vamos a cogerles! (+3)" }
+            "interactions": [
+              {
+                "context": "Insulto...",
+                "options": [
+                  {"text": "No, para nada.", "points": 3},
+                  {"text": "Un poco.", "points": 2}
+                ]
+              },
+              {
+                "context": "Autoestima...",
+                "options": [
+                  {"text": "Sostén mi mano.", "points": 3},
+                  {"text": "Cállate.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Comida...", "best_choice": "Parece muy rica (+3)" },
-              { "context": "Futuro...", "best_choice": "Yo seré tu compañero (+3)" }
+            "interactions": [
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "Pareces feliz.", "points": 3},
+                  {"text": "Tienes hambre.", "points": 2}
+                ]
+              },
+              {
+                "context": "Deseo...",
+                "options": [
+                  {"text": "Yo te protegeré.", "points": 3},
+                  {"text": "Cuida de ti misma.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Problemas...", "best_choice": "Claro que sí (+3)" }
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 3},
+                  {"text": "No te metas en líos.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Malentendido...", "best_choice": "No es culpa tuya (+3)" }
+            "interactions": [
+              {
+                "context": "Disculpa...",
+                "options": [
+                  {"text": "No es culpa tuya.", "points": 3},
+                  {"text": "No lo pienses más.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Protección...", "best_choice": "Es lo que tenía que hacer (+3)" }
+            "interactions": [
+              {
+                "context": "Huida...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Protección...",
+                "options": [
+                  {"text": "Yo te cubro.", "points": 3},
+                  {"text": "Ten cuidado.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Pasado...", "best_choice": "¿Nos protegiste? (+3)" },
-              { "context": "Confesión...", "best_choice": "¿Quieres ser mi novia? (+3)", "romance_flag": true }
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "¿Los protegiste?", "points": 3},
+                  {"text": "¿Luchaste?", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Te quiero. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Cuento contigo. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Suzuka Gongen.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -571,77 +1191,181 @@
     "id": 8,
     "arcana_name": "La Justicia (Justice)",
     "arcana_image": "justice.jpg",
-    "type": "split_character",
-    "description": "Representa la inocencia, la verdad y la imparcialidad.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Nanako Dojima",
+        "location": "Residencia Dojima",
+        "availability": "Noches. Requiere Expresión para avanzar.",
+        "unlock_condition": "Disponible desde el 3 de Mayo.",
         "image": "nanako.jpg",
-        "location": "Residencia Dojima (Salón)",
-        "availability": "Cualquier noche (Si Dojima no está)",
-        "unlock_condition": "Automático el 3 de Mayo.",
-        "warning_message": "¡FECHA LÍMITE CRÍTICA! Debes maximizar este vínculo antes del 31 de Octubre. En Noviembre se bloqueará por eventos de la historia.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Nanako pregunta...", "best_choice": "Adelante (+3)" },
-              { "context": "Padre...", "best_choice": "Tengo suerte de tenerte (+3)" }
+            "interactions": [
+              {
+                "context": "Dojima...",
+                "options": [
+                  {"text": "Adelante.", "points": 3},
+                  {"text": "Tengo cosas que hacer.", "points": 2}
+                ]
+              },
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "Tienes razón.", "points": 3},
+                  {"text": "Seguro que sí.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Comprar...", "best_choice": "Vayamos a comprar algo (+3)" }
+            "interactions": [
+              {
+                "context": "Compra...",
+                "options": [
+                  {"text": "Iré contigo.", "points": 3},
+                  {"text": "Ve con cuidado.", "points": 2}
+                ]
+              },
+              {
+                "context": "Regalo...",
+                "options": [
+                  {"text": "Yo quiero uno.", "points": 3},
+                  {"text": "A tu padre le gustará.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Pregunta...", "best_choice": "Hay otras preguntas (+3)" },
-              { "context": "Cielo...", "best_choice": "Se han ido al cielo (+3)" },
-              { "context": "Dojima...", "best_choice": "No lo sabe (+3)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 3.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Pregunta...",
+                "options": [
+                  {"text": "¿Pasa algo?", "points": 3},
+                  {"text": "¿Qué haces?", "points": 2}
+                ]
+              },
+              {
+                "context": "Cielo...",
+                "options": [
+                  {"text": "Están en el cielo.", "points": 3},
+                  {"text": "No sé.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Nanako habla...", "best_choice": "Es una persona que me importa (+3)" },
-              { "context": "Dojima...", "best_choice": "¿Hablaste con papá? (+3)" }
+            "interactions": [
+              {
+                "context": "Hombre...",
+                "options": [
+                  {"text": "Es una gran persona.", "points": 3},
+                  {"text": "Me da lástima.", "points": 2}
+                ]
+              },
+              {
+                "context": "Papá...",
+                "options": [
+                  {"text": "Háblale.", "points": 3},
+                  {"text": "¿Estás sola?", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Diario...", "best_choice": "Seguro (+3)" },
-              { "context": "Palabras...", "best_choice": "Quédate con ella (+3)" }
+            "interactions": [
+              {
+                "context": "Requiere Expresión nivel 5.",
+                "options": [{"text": "Cualquiera", "points": 0}]
+              },
+              {
+                "context": "Regalo...",
+                "options": [
+                  {"text": "Seguro que sí.", "points": 3},
+                  {"text": "No sé.", "points": 2}
+                ]
+              },
+              {
+                "context": "Rezo...",
+                "options": [
+                  {"text": "Que siempre estemos juntos.", "points": 3},
+                  {"text": "Que seas feliz.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Enfado...", "best_choice": "Vamos a buscarle (+3)" },
-              { "context": "Dojima llega...", "best_choice": "Escucha lo que tiene que decir (+3)" }
+            "interactions": [
+              {
+                "context": "Desaparición...",
+                "options": [
+                  {"text": "Vamos a buscarla.", "points": 3},
+                  {"text": "Volverá.", "points": 2}
+                ]
+              },
+              {
+                "context": "Hogar...",
+                "options": [
+                  {"text": "Vamos a casa.", "points": 3},
+                  {"text": "Tu padre se preocupará.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Tristeza...", "best_choice": "Yo te ayudaré (+3)" }
+            "interactions": [
+              {
+                "context": "Soledad...",
+                "options": [
+                  {"text": "Yo estaré contigo.", "points": 3},
+                  {"text": "No estés triste.", "points": 2}
+                ]
+              },
+              {
+                "context": "Muerte...",
+                "options": [
+                  {"text": "No se ha ido porque tú no la olvidas.", "points": 3},
+                  {"text": "Te está cuidando.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Soledad...", "best_choice": "Él me quiere mucho (+3)" },
-              { "context": "Jugar...", "best_choice": "Juguemos (+3)" }
+            "interactions": [
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "Yo también te quiero.", "points": 3},
+                  {"text": "Ella también te quiere.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Sraosha.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -649,65 +1373,66 @@
   },
   {
     "id": 9,
-    "arcana_name": "El Ermitaño (The Hermit)",
+    "arcana_name": "El Ermitaño (Hermit)",
     "arcana_image": "hermit.jpg",
-    "type": "split_character",
-    "description": "Representa la guía espiritual y la ayuda desinteresada.",
+    "type": "standard",
     "routes": {
-      "male": {
+      "shared": {
         "character": "El Zorro (Fox)",
-        "image": "fox.jpg",
         "location": "Santuario Tatsuhime",
-        "availability": "Cualquier día (Día)",
+        "availability": "Día. Requiere completar misiones Ema.",
         "unlock_condition": "Disponible desde el 5 de Mayo.",
-        "notes": "Este vínculo NO sube hablando. Debes aceptar 'Emas' (misiones) del santuario, cumplirlas y volver a informar al zorro.",
-        "romance": false,
+        "image": "fox.jpg",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "context": "Misión 01",
-            "best_choice": "Encuentra la pegatina perdida (Habla con chico en la entrada del colegio)."
+            "unlock_condition": "Completa Misión 07: 'Deseo que el demonio se cure'. (Consigue un 'Snack' en el Castillo).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 3,
-            "context": "Misión 02",
-            "best_choice": "Chica con hambre (Dale un 'Super Croqueta' o comida)."
+            "unlock_condition": "Completa Misión 08: 'Deseo que no le guste'. (Habla con la chica en el Sur y dale un Chicle).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 4,
-            "context": "Misión 03",
-            "best_choice": "Perro perdido (Busca al perro en la ribera, luego norte, luego ribera)."
+            "unlock_condition": "Completa Misión 09: 'Deseo que mi perro vuelva'. (Habla con el perro en la ribera).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 5,
-            "context": "Misión 04",
-            "best_choice": "Niño que quiere ser inteligente (Dale 3 pegatinas de premios)."
+            "unlock_condition": "Completa Misión 10: 'Deseo tener amigos'. (Dale una pegatina al niño de la ribera).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 6,
-            "context": "Misión 05",
-            "best_choice": "Hombre solitario (Habla con el hombre en la ribera y hazle maquetas)."
+            "unlock_condition": "Completa Misión 11: 'Deseo que mi vida vuelva'. (Haz tres maquetas para el hombre del Norte).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 7,
-            "context": "Misión 06",
-            "best_choice": "Chica tímida (Ayúdala a hablar en la azotea del colegio)."
+            "unlock_condition": "Completa Misión 12: 'Deseo hablar mejor'. (Habla con la chica en la azotea, requiere Comprensión 3).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 8,
-            "context": "Misión 07",
-            "best_choice": "Monstruo del río (Pesca al 'Guardián del Río' y enséñaselo al anciano)."
+            "unlock_condition": "Completa Misión 13: 'Deseo acostumbrarme a los gatos'. (Habla con el hombre en Dojima, dales peces a los gatos).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 9,
-            "context": "Misión 08",
-            "best_choice": "El camino del mar (Pesca al 'Guardián del Mar')."
+            "unlock_condition": "Completa Misión 14: 'Deseo que mi cartera vuelva'. (Busca la cartera en la ribera y el arbusto del santuario).",
+            "interactions": [{"context": "Reporta la misión cumplida.", "options": [{"text": "Cualquiera", "points": 3}]}]
           },
           {
             "rank": 10,
-            "context": "Final",
-            "best_choice": "El Zorro se despide y el santuario se restaura."
+            "unlock_condition": "Completa Misión 15: 'Deseo ver el Shichiri'. (Habla con el viejo en la ribera y consigue el anzuelo del guardián).",
+            "interactions": [{"context": "Final. Desbloquea: Ongyo-Ki.", "options": [{"text": "Cualquiera", "points": 3}]}]
           }
         ]
       }
@@ -715,81 +1440,166 @@
   },
   {
     "id": 10,
-    "arcana_name": "La Fortuna (Fortune)",
+    "arcana_name": "La Rueda de la Fortuna (Fortune)",
     "arcana_image": "fortune.jpg",
-    "type": "split_character",
-    "description": "Representa el destino, el cambio y las oportunidades.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Naoto Shirogane",
+        "location": "Pasillo 1F (Escuela) / Llanura Aluvial",
+        "availability": "Lun, Mar, Mie, Sáb, Dom. (No si llueve)",
+        "unlock_condition": "Disponible desde el 21 de Octubre. Requiere Coraje 5 y Conocimiento 5.",
         "image": "naoto.jpg",
-        "location": "Edificio Escolar 1F",
-        "availability": "Lunes, Martes, Miércoles, Sábado, Domingo (Día)",
-        "unlock_condition": "Disponible el 21 de Octubre. Requiere Conocimiento 5 (Sage) y Coraje 5 (Risky). Habla con el hombre de negro en el Distrito Comercial Norte para obtener la 'Tarjeta Blanca' y dásela a Naoto.",
-        "romance": true,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Habla con el hombre de negro en el distrito comercial, luego con Naoto.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Recuerdos...", "best_choice": "Eso no es cierto (+3)" },
-              { "context": "Objetos...", "best_choice": "No hay nada que pueda hacer (+3)" }
+            "interactions": [
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "Es un poco triste.", "points": 3},
+                  {"text": "Deberías apreciarlo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Propiedad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Desafío...", "best_choice": "Un desafío a duelo (+3)" },
-              { "context": "Nota...", "best_choice": "Vamos a atraparle (+3)" }
+            "interactions": [
+              {
+                "context": "Desafío...",
+                "options": [
+                  {"text": "Un desafío.", "points": 3},
+                  {"text": "Un duelo.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Tarjeta...", "best_choice": "Es una carta de desafío (+3)" }
+            "interactions": [
+              {
+                "context": "Tarjeta...",
+                "options": [
+                  {"text": "Es una tarjeta de desafío.", "points": 3},
+                  {"text": "Es una carta de amor.", "points": 1}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Ladrón...", "best_choice": "¡Vamos a recuperarla! (+3)" },
-              { "context": "Relación...", "best_choice": "Vamos a quemarla juntos (+3)" },
-              { "context": "Buzón...", "best_choice": "Un buzón (+3)" }
+            "interactions": [
+              {
+                "context": "Ladrón...",
+                "options": [
+                  {"text": "Quemémosla juntos.", "points": 3},
+                  {"text": "Que acepte el desafío.", "points": 2}
+                ]
+              },
+              {
+                "context": "Correo...",
+                "options": [
+                  {"text": "Una caja de correos.", "points": 3},
+                  {"text": "Tu buzón.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Naoto piensa...", "best_choice": "Porque parecía importante (+3)" },
-              { "context": "Cambio...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Utilidad...",
+                "options": [
+                  {"text": "Porque parecía divertido.", "points": 3},
+                  {"text": "Estaba preocupado.", "points": 2}
+                ]
+              },
+              {
+                "context": "IMPORTANTE ROMANCE...",
+                "options": [
+                  {"text": "Me alegro de que seas chica. (FLAG ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Tu género no importa.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Miedo...", "best_choice": "Restar importancia (+3)" }
+            "interactions": [
+              {
+                "context": "Miedo...",
+                "options": [
+                  {"text": "No tengas miedo.", "points": 3},
+                  {"text": "Podemos hacerlo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Peligro...", "best_choice": "Siento haberte preocupado (+3)" },
-              { "context": "Luchar...", "best_choice": "No huyas (+3)" }
+            "interactions": [
+              {
+                "context": "Amenaza...",
+                "options": [
+                  {"text": "Me siento un poco triste.", "points": 3},
+                  {"text": "No huyas.", "points": 2}
+                ]
+              },
+              {
+                "context": "IMPORTANTE ROMANCE...",
+                "options": [
+                  {"text": "Protegerte. (FLAG ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Entrenar contigo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Altura...", "best_choice": "Más alto... (+3)" },
-              { "context": "Gusto...", "best_choice": "Me gusta cómo eres (+3)" },
-              { "context": "Confesión...", "best_choice": "Me gustas (+3)", "romance_flag": true }
+            "interactions": [
+              {
+                "context": "Lugar...",
+                "options": [
+                  {"text": "Un sitio alto.", "points": 3},
+                  {"text": "En algún lugar tranquilo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Acción...",
+                "options": [
+                  {"text": "Tirar cosas.", "points": 3},
+                  {"text": "Golpear cosas.", "points": 3}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Me gustas. (ROMANCE - Requiere Flags)", "points": 3, "romance": true},
+                  {"text": "Somos compañeros. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic",
-            "responses": [
-               { "context": "Vestido (Solo Romance)", "best_choice": "Póntelo para mí (Desbloquea traje especial)", "notes": "Elegir la segunda opción te da el traje de chica escolar." }
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Norn.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
             ]
           }
         ]
@@ -800,71 +1610,168 @@
     "id": 11,
     "arcana_name": "La Fuerza (Strength)",
     "arcana_image": "strength.jpg",
-    "type": "split_character",
-    "description": "Representa el coraje físico y moral, y el control de las emociones.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Kou Ichijo / Daisuke Nagase",
+        "location": "Gimnasio / Aula 2-2",
+        "availability": "Mar, Jue, Sáb. (No si llueve)",
+        "unlock_condition": "Disponible desde el 19 de Abril. Únete al club de Baloncesto o Fútbol.",
         "image": "kou_daisuke.jpg",
-        "location": "Aula 2F / Club Deportivo",
-        "availability": "Martes, Jueves, Sábado (Día)",
-        "unlock_condition": "Disponible el 19 de Abril. Únete al club de Baloncesto (Kou) o Fútbol (Daisuke).",
-        "romance": false,
-        "notes": "Las respuestas cambian ligeramente según el club, pero el vínculo es compartido.",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Kou/Daisuke...", "best_choice": "(Baloncesto) Buen trabajo / (Fútbol) Cualquiera (+3)" },
-              { "context": "Ayuda...", "best_choice": "Hago lo que puedo (+3)" }
+            "interactions": [
+              {
+                "context": "Práctica...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Número...",
+                "options": [
+                  {"text": "Ya tengo los números.", "points": 3},
+                  {"text": "Cuento contigo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Charla...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Gracias (+3)" }
+            "interactions": [
+              {
+                "context": "Salida...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Chicas...",
+                "options": [
+                  {"text": "Gracias.", "points": 3},
+                  {"text": "No pasa nada.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Limpieza...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Buen trabajo (+3)" }
+            "interactions": [
+              {
+                "context": "Limpieza...",
+                "options": [
+                  {"text": "Buen trabajo.", "points": 3},
+                  {"text": "Te ayudo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Kou...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) Te animaré (+3)" }
+            "interactions": [
+              {
+                "context": "Familia...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Adopción...",
+                "options": [
+                  {"text": "Deberías haberlo dicho.", "points": 3},
+                  {"text": "Está bien.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Entreno...", "best_choice": "(Ambos) Cualquiera sirve (+3)" }
+            "interactions": [
+              {
+                "context": "Entrenador...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Motivo...",
+                "options": [
+                  {"text": "Es una buena razón.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Crisis...", "best_choice": "(Baloncesto) Tienes que animarte / (Fútbol) Cualquiera (+3)" }
+            "interactions": [
+              {
+                "context": "Abuela...",
+                "options": [
+                  {"text": "Anímate.", "points": 3},
+                  {"text": "Ella se pondrá bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Ha cambiado.", "points": 3},
+                  {"text": "No ha cambiado.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Duda...", "best_choice": "(Baloncesto) Cualquiera / (Fútbol) No lo harás (+3)" }
+            "interactions": [
+              {
+                "context": "Carta...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Respuesta...",
+                "options": [
+                  {"text": "Vamos a verle.", "points": 3},
+                  {"text": "Habla con él.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Resolución...", "best_choice": "(Baloncesto) Tienes mi ayuda / (Fútbol) Te veo feliz (+3)" }
+            "interactions": [
+              {
+                "context": "Libertad...",
+                "options": [
+                  {"text": "Es cosa tuya.", "points": 3},
+                  {"text": "Está bien.", "points": 3}
+                ]
+              },
+              {
+                "context": "Futuro...",
+                "options": [
+                  {"text": "Encuentra tu propio camino.", "points": 3},
+                  {"text": "Seguro que puedes.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Zaou-Gongen.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -872,75 +1779,161 @@
   },
   {
     "id": 12,
-    "arcana_name": "El Colgado (The Hanged Man)",
+    "arcana_name": "El Colgado (Hanged Man)",
     "arcana_image": "hangedman.jpg",
-    "type": "split_character",
-    "description": "Representa el sacrificio, la paciencia y ver las cosas desde otra perspectiva.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Naoki Konishi",
+        "location": "Pasillo 1F (Escuela) / Licorería Konishi",
+        "availability": "Lun, Mar, Mie, Jue. (No si llueve)",
+        "unlock_condition": "Disponible desde el 8 de Junio. Requiere Comprensión 3. Habla con él 3 veces.",
         "image": "naoki.jpg",
-        "location": "Distrito Comercial Norte (Frente a la licorería Konishi)",
-        "availability": "Lunes, Martes, Miércoles, Jueves (Día)",
-        "unlock_condition": "Disponible desde el 8 de Junio. Debes hablar con él 3 veces en días distintos ('Me odian', 'No me odian', etc.) antes de que acepte salir contigo.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Incomprensión...", "best_choice": "Te lo estás pensando demasiado (+3)" },
-              { "context": "Secretaria...", "best_choice": "Tienes mucha labia (+3)" }
+            "interactions": [
+              {
+                "context": "Tienda...",
+                "options": [
+                  {"text": "Estoy harto.", "points": 3},
+                  {"text": "Es fácil.", "points": 3}
+                ]
+              },
+              {
+                "context": "Trato...",
+                "options": [
+                  {"text": "No saben nada.", "points": 3},
+                  {"text": "Ignóralos.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Odio...", "best_choice": "A mí no me caes mal (+3)" },
-              { "context": "Culpas...", "best_choice": "Nadie te culpa (+3)" }
+            "interactions": [
+              {
+                "context": "Coche...",
+                "options": [
+                  {"text": "Yo iré.", "points": 3},
+                  {"text": "Deberías ir tú.", "points": 3}
+                ]
+              },
+              {
+                "context": "Odio...",
+                "options": [
+                  {"text": "Vuelve pronto.", "points": 3},
+                  {"text": "No digas eso.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Chismorreos...", "best_choice": "Qué mala es la gente (+3)" }
+            "interactions": [
+              {
+                "context": "Hermana...",
+                "options": [
+                  {"text": "No es verdad.", "points": 3},
+                  {"text": "Eres tonto.", "points": 3}
+                ]
+              },
+              {
+                "context": "Lamento...",
+                "options": [
+                  {"text": "Relájate.", "points": 2},
+                  {"text": "No te culpes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Saki...", "best_choice": "Fue una buena persona (+3)" }
+            "interactions": [
+              {
+                "context": "Ayuda...",
+                "options": [
+                  {"text": "Es una buena idea.", "points": 3},
+                  {"text": "Seguro que sí.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Leche...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Leche...",
+                "options": [
+                  {"text": "No me importa.", "points": 3},
+                  {"text": "No te preocupes.", "points": 3}
+                ]
+              },
+              {
+                "context": "Cotilleo...",
+                "options": [
+                  {"text": "No eres el único.", "points": 3},
+                  {"text": "Es duro.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Culpa...", "best_choice": "No tienes la culpa (+3)" },
-              { "context": "Acción...", "best_choice": "Deberíamos hacer algo (+3)" }
+            "interactions": [
+              {
+                "context": "Disculpa...",
+                "options": [
+                  {"text": "No me importa.", "points": 3},
+                  {"text": "Está bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Sentimiento...",
+                "options": [
+                  {"text": "Las acciones hablan más.", "points": 3},
+                  {"text": "No te rindas.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Llorar...", "best_choice": "Llora todo lo que quieras (+3)" }
+            "interactions": [
+              {
+                "context": "Lloro...",
+                "options": [
+                  {"text": "Llora todo lo que quieras.", "points": 3},
+                  {"text": "Desahógate.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Gente...", "best_choice": "La gente es así (+3)" },
-              { "context": "Tú...", "best_choice": "Solo puedes ser tú mismo (+3)" }
+            "interactions": [
+              {
+                "context": "Vivir...",
+                "options": [
+                  {"text": "Así se habla.", "points": 3},
+                  {"text": "La gente es gente.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Attis.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -950,74 +1943,191 @@
     "id": 13,
     "arcana_name": "La Muerte (Death)",
     "arcana_image": "death.jpg",
-    "type": "split_character",
-    "description": "Representa el fin de un ciclo, el cambio profundo y la transición.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Hisano Kuroda",
+        "location": "Llanura Aluvial (Riverbank)",
+        "availability": "Dom, Festivos. (No si llueve)",
+        "unlock_condition": "Disponible tras subir Diablo al Rango 4. Habla con ella en la ribera.",
         "image": "hisano.jpg",
-        "location": "Ribera del Río (Riverbank)",
-        "availability": "Domingos y Festivos (Día)",
-        "unlock_condition": "Debes alcanzar el Rango 4 del Arcano Diablo (Sayoko). Después, habla con ella en la ribera.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Muerte...", "best_choice": "Me da miedo la muerte (+3)" },
-              { "context": "Hijos...", "best_choice": "Seguro que son buenas personas (+3)" }
+            "interactions": [
+              {
+                "context": "Tiempo...",
+                "options": [
+                  {"text": "Sí, lo es.", "points": 3},
+                  {"text": "Claro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Marido...",
+                "options": [
+                  {"text": "Que envidia.", "points": 3},
+                  {"text": "Es maravilloso.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Hablar...", "best_choice": "No es ninguna molestia (+3)" },
-              { "context": "Marido...", "best_choice": "Teníais mucha confianza (+3)" }
+            "interactions": [
+              {
+                "context": "Culpa...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Soledad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Primer amor...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Marido...", "best_choice": "Sí (+3)" },
-              { "context": "Cielo...", "best_choice": "El cielo (+3)" }
+            "interactions": [
+              {
+                "context": "Muerte...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Pena...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Arrepentimiento...", "best_choice": "Es complicado (+3)" },
-              { "context": "Tiempo...", "best_choice": "El tiempo lo cura todo (+3)" }
+            "interactions": [
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Cartas...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Deseo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Cartas...", "best_choice": "¿Quieres que las lea? (+3)" },
-              { "context": "Contenido...", "best_choice": "No tiene importancia (+3)" }
+            "interactions": [
+              {
+                "context": "Viuda...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Castigo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Enfermedad...", "best_choice": "Así es (+3)" }
+            "interactions": [
+              {
+                "context": "Enfermedad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Destino...",
+                "options": [
+                  {"text": "Eso es ridículo.", "points": 3},
+                  {"text": "No es verdad.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Marido...", "best_choice": "Todavía le quieres (+3)" }
+            "interactions": [
+              {
+                "context": "Esposo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Llamada...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Recuerdos...", "best_choice": "Cualquiera sirve (+3)" }
+            "interactions": [
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Cielo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Mahakala.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -1027,76 +2137,180 @@
     "id": 14,
     "arcana_name": "La Templanza (Temperance)",
     "arcana_image": "temperance.jpg",
-    "type": "split_character",
-    "description": "Representa el equilibrio, la moderación y la paciencia.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Eri Minami",
+        "location": "Guardería (Autobús)",
+        "availability": "Lun, Vie, Sáb. (No si llueve)",
+        "unlock_condition": "Disponible desde el 23 de Abril. Acepta el trabajo en la guardería.",
         "image": "eri.jpg",
-        "location": "Parada de Autobús (Sur) -> Guardería",
-        "availability": "Lunes, Viernes, Sábado (Día, sin lluvia)",
-        "unlock_condition": "Disponible desde el 23 de Abril. Acepta el trabajo de 'Asistente de Guardería' en el tablón.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Niños...", "best_choice": "A los niños les gusta (+3)" },
-              { "context": "Problemas...", "best_choice": "Eres muy joven (+3)" }
+            "interactions": [
+              {
+                "context": "Niños...",
+                "options": [
+                  {"text": "Odio a los niños.", "points": 3},
+                  {"text": "No me gustan mucho.", "points": 2}
+                ]
+              },
+              {
+                "context": "Yuuta...",
+                "options": [
+                  {"text": "Tienes mucho mérito.", "points": 3},
+                  {"text": "Es admirable.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Eri...", "best_choice": "Odio estar solo (+3)" }
+            "interactions": [
+              {
+                "context": "Regalo...",
+                "options": [
+                  {"text": "No tengo ninguno.", "points": 3},
+                  {"text": "No.", "points": 3}
+                ]
+              },
+              {
+                "context": "Yuuta...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Educación...", "best_choice": "Tienen muchas cosas que aprender (+3)" }
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "Tienes razón.", "points": 3},
+                  {"text": "Cierto.", "points": 2}
+                ]
+              },
+              {
+                "context": "Disculpa...",
+                "options": [
+                  {"text": "Déjalo estar.", "points": 3},
+                  {"text": "Eres un buen chico.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Cansancio...", "best_choice": "Descansa un poco (+3)" },
-              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Padre...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Tiempo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Pasado...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Fe...", "best_choice": "Si tienes fe, lo entenderá (+3)" }
+            "interactions": [
+              {
+                "context": "Feigirl...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Televisión...",
+                "options": [
+                  {"text": "Feigirl mola.", "points": 3},
+                  {"text": "Es bastante popular.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Yu-kun...", "best_choice": "Le tienes mucho cariño (+3)" },
-              { "context": "Relación...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Maestra...",
+                "options": [
+                  {"text": "Es culpa tuya.", "points": 3},
+                  {"text": "Deberías pedir perdón.", "points": 3}
+                ]
+              },
+              {
+                "context": "Yuuta...",
+                "options": [
+                  {"text": "Está asustado.", "points": 3},
+                  {"text": "Te quiere.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Miedo...",
+                "options": [
+                  {"text": "No es cierto.", "points": 3},
+                  {"text": "No tengas miedo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Padre...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Yu-kun...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Cumpleaños...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Relación...",
+                "options": [
+                  {"text": "Seguro que sí.", "points": 3},
+                  {"text": "Ten fe.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Vishnu.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -1104,75 +2318,145 @@
   },
   {
     "id": 15,
-    "arcana_name": "El Diablo (The Devil)",
+    "arcana_name": "El Diablo (Devil)",
     "arcana_image": "devil.jpg",
-    "type": "split_character",
-    "description": "Representa la tentación, el materialismo y las ataduras.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Sayoko Uehara",
+        "location": "Hospital (Autobús)",
+        "availability": "Mie, Jue, Vie. (Noche)",
+        "unlock_condition": "Disponible desde el 25 de Mayo. Acepta el trabajo de conserje en el hospital.",
         "image": "sayoko.jpg",
-        "location": "Parada de Autobús (Sur) -> Hospital",
-        "availability": "Miércoles, Jueves, Viernes (Noche)",
-        "unlock_condition": "Disponible desde el 25 de Mayo. Acepta el trabajo de 'Limpiador de Hospital' en el tablón.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Trabajo...", "best_choice": "¿Qué insinúas? (+3)" }
+            "interactions": [
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "¿Qué quieres decir?", "points": 2},
+                  {"text": "¿Hice algo mal?", "points": 1}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Motivo...", "best_choice": "Por el dinero (+3)" },
-              { "context": "Seducción...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "Por ti, Sayoko.", "points": 3},
+                  {"text": "Para hablar.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Cansancio...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Manos...", "best_choice": "Parecen manos trabajadoras (+3)" }
+            "interactions": [
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "No hay nadie como tú.", "points": 3},
+                  {"text": "¿Eso dicen los médicos?", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Broma...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Preocupación...", "best_choice": "Ánimo (+3)" }
+            "interactions": [
+              {
+                "context": "Petición...",
+                "options": [
+                  {"text": "Es como un culebrón.", "points": 3},
+                  {"text": "Suena interesante.", "points": 2}
+                ]
+              },
+              {
+                "context": "Motivo...",
+                "options": [
+                  {"text": "Consuélate conmigo.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Vivir...", "best_choice": "Ha sido divertido (+3)" }
+            "interactions": [
+              {
+                "context": "Cansancio...",
+                "options": [
+                  {"text": "Sigue así.", "points": 3},
+                  {"text": "No trabajes tanto.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Paciente...", "best_choice": "Anímate (+3)" }
+            "interactions": [
+              {
+                "context": "Llamada...",
+                "options": [
+                  {"text": "Ánimo.", "points": 3},
+                  {"text": "Deberías descansar.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Decisión...", "best_choice": "¿Vas a dejarlo? (+3)" }
+            "interactions": [
+              {
+                "context": "Decisión...",
+                "options": [
+                  {"text": "Es su decisión.", "points": 3},
+                  {"text": "Mejor así.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Hospital...", "best_choice": "Cualquiera (+3)" },
-              { "context": "Enfermera...", "best_choice": "Es vocacional (+3)" }
+            "interactions": [
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Paciente...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Despedida...",
+                "options": [
+                  {"text": "Bienvenida.", "points": 3},
+                  {"text": "Espero con ansias.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Beelzebub.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -1180,76 +2464,174 @@
   },
   {
     "id": 16,
-    "arcana_name": "La Torre (The Tower)",
+    "arcana_name": "La Torre (Tower)",
     "arcana_image": "tower.jpg",
-    "type": "split_character",
-    "description": "Representa el orgullo, la caída del ego y la revelación.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Shu Nakajima",
+        "location": "Residencia Nakajima (Autobús)",
+        "availability": "Mar, Jue, Sáb. (Noche)",
+        "unlock_condition": "Disponible desde el 25 de Mayo. Requiere Comprensión 5 (Santo). Acepta el trabajo de Tutor.",
         "image": "shu.jpg",
-        "location": "Parada de Autobús (Sur) -> Tutoría",
-        "availability": "Martes, Jueves, Sábado (Noche)",
-        "unlock_condition": "Disponible desde el 25 de Mayo. Acepta el trabajo de 'Tutor' en el tablón. Requiere Comprensión 5 (Saintly).",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Estudio...", "best_choice": "Seguro (+3)" },
-              { "context": "Asignaturas...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Asignaturas...",
+                "options": [
+                  {"text": "Claro.", "points": 3},
+                  {"text": "Yo te enseñaré.", "points": 2}
+                ]
+              },
+              {
+                "context": "Universidad...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Aburrido...", "best_choice": "Es aburrido (+3)" },
-              { "context": "Recreo...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Instituto...",
+                "options": [
+                  {"text": "No es aburrido.", "points": 3},
+                  {"text": "Es divertido.", "points": 2}
+                ]
+              },
+              {
+                "context": "Motivo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Chicas...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Ánimo...", "best_choice": "Tú puedes hacerlo (+3)" }
+            "interactions": [
+              {
+                "context": "Transferido...",
+                "options": [
+                  {"text": "Sí.", "points": 3},
+                  {"text": "Claro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Lloriqueo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Culpable...", "best_choice": "No es culpa tuya (+3)" }
+            "interactions": [
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "No, no lo es.", "points": 3},
+                  {"text": "Tienes razón.", "points": 2}
+                ]
+              },
+              {
+                "context": "Estudio...",
+                "options": [
+                  {"text": "Lo prometo.", "points": 3},
+                  {"text": "Si estudias.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Transferido...", "best_choice": "¿Tienes algún amigo? (+2)" },
-              { "context": "Cumpleaños...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Cumpleaños...",
+                "options": [
+                  {"text": "¿Quieres que vayamos?", "points": 2},
+                  {"text": "Déjalo estar.", "points": 1}
+                ]
+              },
+              {
+                "context": "Regalo...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Madre...", "best_choice": "Dale un respiro a tu madre (+3)" }
+            "interactions": [
+              {
+                "context": "Transferido...",
+                "options": [
+                  {"text": "Anímate.", "points": 3},
+                  {"text": "Piénsalo bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Llorar...", "best_choice": "Llora todo lo que quieras (+3)" }
+            "interactions": [
+              {
+                "context": "Chica...",
+                "options": [
+                  {"text": "¿Es la que te gusta?", "points": 3},
+                  {"text": "¿Quién es?", "points": 2}
+                ]
+              },
+              {
+                "context": "Examen...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Cumpleaños...", "best_choice": "¿Lo de tu cumple? (+3)" },
-              { "context": "Pasado...", "best_choice": "Me alegro por ti (+3)" }
+            "interactions": [
+              {
+                "context": "Secreto...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Envidia...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Shiva.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -1257,106 +2639,193 @@
   },
   {
     "id": 17,
-    "arcana_name": "La Estrella (The Star)",
+    "arcana_name": "La Estrella (Star)",
     "arcana_image": "star.jpg",
-    "type": "split_character",
-    "description": "Representa la esperanza, la inspiración y la serenidad.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Teddie",
+        "location": "Junes",
+        "availability": "Automático (Avanza con la historia)",
         "image": "teddie.jpg",
-        "location": "Eventos de Historia",
-        "availability": "Automático",
-        "unlock_condition": "Se desbloquea automáticamente el 24 de Junio.",
-        "romance": false,
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/24" },
-          { "rank": 2, "type": "automatic", "date": "8/2" },
-          { "rank": 3, "type": "automatic", "date": "9/8" },
-          { "rank": 4, "type": "automatic", "date": "10/7" },
-          { "rank": 5, "type": "automatic", "date": "10/11" },
-          { "rank": 6, "type": "automatic", "date": "10/30" },
-          { "rank": 7, "type": "automatic", "date": "11/22" },
-          { "rank": 8, "type": "automatic", "date": "12/3" },
-          { "rank": 9, "type": "automatic", "date": "12/5" },
-          { "rank": 10, "type": "automatic", "date": "12/5 (Evoluciona)" }
+          { "rank": 1, "type": "automatic", "date": "6/24", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 2, "type": "automatic", "date": "8/02", "interactions": [{"context": "Tras completar la mazmorra de Mitsuo.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 3, "type": "automatic", "date": "9/08", "interactions": [{"context": "Durante el viaje escolar.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 4, "type": "automatic", "date": "10/07", "interactions": [{"context": "Tras la visita del detective.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 5, "type": "automatic", "date": "10/11", "interactions": [{"context": "Automático.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 6, "type": "automatic", "date": "10/30", "interactions": [{"context": "Festival Cultural.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 7, "type": "automatic", "date": "11/22", "interactions": [{"context": "Tras el evento en el hospital.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 8, "type": "automatic", "date": "12/03", "interactions": [{"context": "Tras el evento de Namatame.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 9, "type": "automatic", "date": "12/05", "interactions": [{"context": "Tras deducir al culpable.", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 10, "type": "automatic", "date": "12/05", "interactions": [{"context": "Evoluciona a Kamui. Desbloquea: Helel.", "options": [{"text": "-", "points": 0}]}] }
         ]
       }
     }
   },
   {
     "id": 18,
-    "arcana_name": "La Luna (The Moon)",
+    "arcana_name": "La Luna (Moon)",
     "arcana_image": "moon.jpg",
-    "type": "split_character",
-    "description": "Representa la ilusión, el miedo y el subconsciente.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Ai Ebihara",
+        "location": "Pasillo 1F (Escuela)",
+        "availability": "Mie, Jue, Vie. (No si llueve)",
+        "unlock_condition": "Disponible desde el 19 de Mayo. Requiere Valentía 3 y Fuerza Rango 4. Habla con ella tras subir Fuerza.",
         "image": "ai.jpg",
-        "location": "Edificio Escolar 1F (Cerca de la entrada)",
-        "availability": "Miércoles, Jueves, Viernes (Día)",
-        "unlock_condition": "Disponible desde el 19 de Abril. Sube el vínculo de Fuerza (Deportes) al rango 4. Ai aparecerá y te pedirá que te saltes clase. Acepta.",
-        "romance": true,
-        "warning_message": "¡PELIGRO DE ROMANCE FALSO! En el rango 6, si aceptas salir con ella temporalmente, entrarás en una ruta falsa que bloqueará el romance verdadero y podría revertir el vínculo.",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Acepta faltar a clase con ella.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Compras...", "best_choice": "Vamos a comprar cosas (+3)" },
-              { "context": "Queja...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Compras...",
+                "options": [
+                  {"text": "Tendremos que volver.", "points": 3},
+                  {"text": "Compra tú sola.", "points": 2}
+                ]
+              },
+              {
+                "context": "Café...",
+                "options": [
+                  {"text": "¿Por qué no?", "points": 3},
+                  {"text": "Paso.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Ropa...", "best_choice": "Vamos a comprar ropa (+3)" },
-              { "context": "Pregunta...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Ropa...",
+                "options": [
+                  {"text": "Quedamos en ir.", "points": 3},
+                  {"text": "No quiero.", "points": 2}
+                ]
+              },
+              {
+                "context": "Conversación...",
+                "options": [
+                  {"text": "Fue divertido.", "points": 3},
+                  {"text": "Estuvo bien.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Charla...", "best_choice": "¡Ven con nosotros! (+3)" }
+            "interactions": [
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "¡Para, Ai!", "points": 3},
+                  {"text": "No hagas eso.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Amor...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Ánimo...", "best_choice": "Ten un poco de confianza (+3)" }
+            "interactions": [
+              {
+                "context": "Daisuke...",
+                "options": [
+                  {"text": "Ten un poco de confianza.", "points": 3},
+                  {"text": "No digas eso.", "points": 2}
+                ]
+              },
+              {
+                "context": "Pareja...",
+                "options": [
+                  {"text": "¡Yo te querré! (ROMANCE FALSO)", "points": 3, "romance": true},
+                  {"text": "No te precipites. (AMISTAD/ROMANCE REAL)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Propuesta...", "best_choice": "CRÍTICO: Elige 'Aceptaré encantado' para RUTA FALSA (Romance temporal). Elige 'Solo somos amigos' para RUTA NORMAL (Amistad/Romance verdadero)." }
+            "interactions": [
+              {
+                "context": "SI ERES NOVIO FALSO: ¡No elijas 'Rompamos' o se revertirá el link!",
+                "options": [
+                  {"text": "Te escucharé.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              },
+              {
+                "context": "SI ERES AMIGO: Transformación...",
+                "options": [
+                  {"text": "Seguro que sí.", "points": 3},
+                  {"text": "Depende de ti.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Ruta Normal (Amigos)...", "best_choice": "Es adorable (+3)" },
-              { "context": "Ruta Falsa...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Belleza...",
+                "options": [
+                  {"text": "Eres muy guapa.", "points": 3},
+                  {"text": "No lo sé.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Ruta Normal...", "best_choice": "Pasa de ellos (+3)" }
+            "interactions": [
+              {
+                "context": "Rechazo...",
+                "options": [
+                  {"text": "Pasa de él.", "points": 3},
+                  {"text": "Ánimo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Final...", "best_choice": "Gracias (+3)" },
-              { "context": "Confesión...", "best_choice": "(Si elegiste Ruta Normal) Sí (+3) -> Romance Verdadero" }
+            "interactions": [
+              {
+                "context": "Final...",
+                "options": [
+                  {"text": "Gracias.", "points": 3},
+                  {"text": "Me alegro.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE (Si no elegiste el falso en Rango 5)",
+                "options": [
+                  {"text": "Acepto. (ROMANCE REAL)", "points": 3, "romance": true},
+                  {"text": "Necesitamos tiempo. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic"
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Sandalphon.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
@@ -1364,82 +2833,172 @@
   },
   {
     "id": 19,
-    "arcana_name": "El Sol (The Sun)",
+    "arcana_name": "El Sol (Sun)",
     "arcana_image": "sun.jpg",
-    "type": "split_character",
-    "description": "Representa el éxito, la vitalidad y la alegría.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Yumi Ozawa / Ayane Matsunaga",
-        "image": "yumi_ayane.jpg",
-        "location": "Aula 2F / Sala de Música o Teatro",
-        "availability": "Lunes, Martes, Jueves (Día)",
+        "location": "Sala del Club (Drama/Música)",
+        "availability": "Lun, Mar, Jue. (No si llueve)",
         "unlock_condition": "Disponible desde el 25 de Abril. Únete al club de Teatro (Yumi) o Música (Ayane).",
-        "romance": true,
-        "notes": "Las respuestas varían según el club. Yumi es Drama, Ayane es Música.",
+        "image": "yumi_ayane.jpg",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Lo haré lo mejor que pueda (+3)" },
-              { "context": "Ayane...", "best_choice": "Haces mucho esfuerzo (+3)" }
+            "interactions": [
+              {
+                "context": "Esfuerzo...",
+                "options": [
+                  {"text": "Claro.", "points": 3},
+                  {"text": "Te ayudaré.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
-              { "context": "Ayane...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "YUMI: Padres...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Práctica...",
+                "options": [
+                  {"text": "Está bien.", "points": 3},
+                  {"text": "Sigue así.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "No puedes ignorarlo (+3)" },
-              { "context": "Ayane...", "best_choice": "Déjalo ya (+3)" }
+            "interactions": [
+              {
+                "context": "YUMI: Hospital...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Abandono...",
+                "options": [
+                  {"text": "No te rindas.", "points": 3},
+                  {"text": "Puedes hacerlo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Solo un poco (+3)" },
-              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "YUMI: Discusión...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Concierto...",
+                "options": [
+                  {"text": "Hazlo tú.", "points": 3},
+                  {"text": "Apóyales.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
-              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "YUMI: Pasado...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Elección...",
+                "options": [
+                  {"text": "Tú puedes.", "points": 3},
+                  {"text": "Demuestra lo que vales.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Actúa como si nada (+3)" },
-              { "context": "Ayane...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "YUMI: Madre...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Solo...",
+                "options": [
+                  {"text": "Ha estado genial.", "points": 3},
+                  {"text": "Me ha emocionado.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
-              { "context": "Ayane...", "best_choice": "Enfréntate a él (+3)" }
+            "interactions": [
+              {
+                "context": "YUMI: Adiós...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Confesión...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Yumi...", "best_choice": "Cualquiera sirve (+0)" },
-              { "context": "Ayane...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "YUMI: Final...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "AYANE: Futuro...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Te quiero. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Seamos amigos. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic",
-            "responses": [
-                { "context": "Confesión", "best_choice": "Abrázala (Romance) / Espera (Amistad)" }
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Asura.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
             ]
           }
         ]
@@ -1448,172 +3007,316 @@
   },
   {
     "id": 20,
-    "arcana_name": "El Juicio (Judgment)",
-    "arcana_image": "judgment.jpg",
-    "type": "split_character",
-    "description": "Representa el despertar, la renovación y el juicio final.",
-    "routes": {
-      "male": {
-        "character": "Seekers of Truth",
-        "image": "investigation_team.jpg",
-        "location": "Eventos de Historia (Final del juego)",
-        "availability": "Automático",
-        "unlock_condition": "Se desbloquea el 3 de Diciembre si evitas el 'Bad Ending'. Reemplaza al Arcano del Loco.",
-        "romance": false,
-        "ranks": [
-          { "rank": 1, "type": "automatic", "date": "12/3" },
-          { "rank": "2-10", "type": "automatic", "date": "Progresa automáticamente mientras avanzas en la mazmorra final." }
-        ]
-      }
-    }
-  },
-  {
-    "id": 21,
-    "arcana_name": "El Eón (The Aeon)",
+    "arcana_name": "El Eón (Aeon)",
     "arcana_image": "aeon.jpg",
-    "type": "split_character",
-    "description": "Representa el tiempo eterno y el ciclo de la vida. EXCLUSIVO DE P4 GOLDEN.",
+    "type": "standard",
     "routes": {
-      "male": {
+      "shared": {
         "character": "Marie",
+        "location": "Frente Velvet Room (Distrito Comercial)",
+        "availability": "Mié, Sáb, Dom. Diariamente en Diciembre.",
+        "unlock_condition": "Disponible desde el 18 de Abril. LÍMITE: Debes maximizarlo antes de terminar la mazmorra de Diciembre.",
+        "critical_warning": "CRÍTICO PARA EL FINAL GOLDEN (HOLLOW FOREST).",
         "image": "marie.jpg",
-        "location": "Habitación de Terciopelo / Fuera (Miércoles/Sábado/Domingo)",
-        "availability": "Cualquier día (Día)",
-        "unlock_condition": "Disponible desde el 18 de Abril. Entra en la Velvet Room.",
-        "warning_message": "¡VITAL! Debes alcanzar el Rango 10 antes del 23 de Diciembre para desbloquear la mazmorra extra y el Final Golden (Epílogo). Si no lo haces, perderás contenido.",
-        "romance": true,
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Compras...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Televisión...", "best_choice": "Es una tienda de electrónica (+3)" }
+            "interactions": [
+              {
+                "context": "Interés...",
+                "options": [
+                  {"text": "Tengo muchas cosas.", "points": 3},
+                  {"text": "No es de tu incumbencia.", "points": 1}
+                ]
+              },
+              {
+                "context": "Junes...",
+                "options": [
+                  {"text": "Es una tienda.", "points": 3},
+                  {"text": "Es mi casa.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Jugar...", "best_choice": "Vamos, juguemos (+3)" },
-              { "context": "Ropa...", "best_choice": "Rápido, vayamos (+3)" }
+            "interactions": [
+              {
+                "context": "Ropa...",
+                "options": [
+                  {"text": "Juguemos.", "points": 3},
+                  {"text": "Paseemos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Gente...",
+                "options": [
+                  {"text": "Date prisa.", "points": 3},
+                  {"text": "Vamos.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Duda...", "best_choice": "Es divertido (+3)" }
+            "interactions": [
+              {
+                "context": "Ciudad...",
+                "options": [
+                  {"text": "Es divertido.", "points": 3},
+                  {"text": "No está mal.", "points": 2}
+                ]
+              },
+              {
+                "context": "Gente...",
+                "options": [
+                  {"text": "Vamos.", "points": 3},
+                  {"text": "Sigamos.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Memoria...", "best_choice": "Cualquiera sirve (+0)" }
+            "interactions": [
+              {
+                "context": "Memoria...",
+                "options": [
+                  {"text": "No tiene que ver contigo.", "points": 3},
+                  {"text": "No lo pienses.", "points": 2}
+                ]
+              },
+              {
+                "context": "Ayuda...",
+                "options": [
+                  {"text": "Si te ayudo, ¿qué gano?", "points": 3},
+                  {"text": "Te ayudaré.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Tienda...", "best_choice": "Es de buena calidad (+3)" },
-              { "context": "Pasado...", "best_choice": "Yo te ayudaré (+3)" }
+            "interactions": [
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "Es de bambú.", "points": 3},
+                  {"text": "Es verde.", "points": 3}
+                ]
+              },
+              {
+                "context": "Tienda...",
+                "options": [
+                  {"text": "Ven conmigo.", "points": 3},
+                  {"text": "Vamos.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 7,
-            "responses": [
-              { "context": "Peine...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Anciano...",
+                "options": [
+                  {"text": "No es un viejo.", "points": 3},
+                  {"text": "Es un artesano.", "points": 3}
+                ]
+              },
+              {
+                "context": "Peine...",
+                "options": [
+                  {"text": "Inténtalo.", "points": 3},
+                  {"text": "Puedes hacerlo.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 8,
-            "responses": [
-              { "context": "Búsqueda...", "best_choice": "Lo encontraremos (+3)" }
+            "interactions": [
+              {
+                "context": "Búsqueda...",
+                "options": [
+                  {"text": "Lo encontraremos.", "points": 3},
+                  {"text": "Yo te ayudaré.", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 9,
-            "responses": [
-              { "context": "Recuerdos...", "best_choice": "No lo olvidarás (+3)" },
-              { "context": "Confesión...", "best_choice": "Te quiero (Romance) (+3)" }
+            "interactions": [
+              {
+                "context": "Memoria...",
+                "options": [
+                  {"text": "Lo aceptarás.", "points": 3},
+                  {"text": "No lo olvides.", "points": 3}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Te quiero. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Eres mi amiga. (AMISTAD)", "points": 3}
+                ]
+              }
             ]
           },
           {
             "rank": 10,
-            "type": "automatic",
-            "notes": "Una vez al máximo, habla con Margaret en Año Nuevo para iniciar su búsqueda."
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Kaguya.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
           }
         ]
       }
     }
   },
   {
-    "id": 22,
-    "arcana_name": "El Bufón (The Jester) / Hambre",
+    "id": 21,
+    "arcana_name": "El Bufón / Hambre (Jester / Hunger)",
     "arcana_image": "jester.jpg",
-    "type": "split_character",
-    "description": "Representa el caos, la imprevisibilidad y el potencial oculto. EXCLUSIVO DE P4 GOLDEN.",
+    "type": "standard",
     "routes": {
       "male": {
         "character": "Tohru Adachi",
-        "image": "adachi.jpg",
         "location": "Junes (Día) / Gasolinera (Noche)",
-        "availability": "Fechas fijas (Ver calendario).",
-        "unlock_condition": "Disponible desde el 13 de Mayo. Habla con él en Junes.",
-        "warning_message": "¡ATENCIÓN! Solo puedes subir hasta Rango 6 manualmente antes del 1 de Noviembre. Los rangos 7-10 son automáticos por historia SI has alcanzado el 6 a tiempo.",
-        "romance": false,
+        "availability": "Aleatorio. Busca el icono. Límite Rango 6: 1 de Noviembre.",
+        "unlock_condition": "Disponible desde el 13 de Mayo. DEBES llegar al Rango 6 antes de Noviembre para continuarlo.",
+        "image": "adachi.jpg",
         "ranks": [
-          { "rank": 1, "type": "automatic" },
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
           {
             "rank": 2,
-            "responses": [
-              { "context": "Trabajo...", "best_choice": "¿Te molesto? (+2)" },
-              { "context": "Cena...", "best_choice": "Eso es verdad (+2)" }
+            "interactions": [
+              {
+                "context": "Dojima...",
+                "options": [
+                  {"text": "¿Te molesta Dojima?", "points": 3},
+                  {"text": "Es duro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "¡Me apunto!", "points": 3},
+                  {"text": "Vale.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 3,
-            "responses": [
-              { "context": "Cena...", "best_choice": "¿Por qué no vienes a cenar? (+2)" },
-              { "context": "Cocina...", "best_choice": "Soy buen cocinero (+3)" }
+            "interactions": [
+              {
+                "context": "Cena...",
+                "options": [
+                  {"text": "¿Por qué no vienes a cenar?", "points": 3},
+                  {"text": "Nanako cocina bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Cocina...",
+                "options": [
+                  {"text": "Puedo cocinar.", "points": 3},
+                  {"text": "Lo intento.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 4,
-            "responses": [
-              { "context": "Sorpresa...", "best_choice": "Cualquiera (+0)" },
-              { "context": "Truco...", "best_choice": "¡Ha sido genial! (+3)" }
+            "interactions": [
+              {
+                "context": "Sorpresa...",
+                "options": [
+                  {"text": "¡Sorpresa!", "points": 3},
+                  {"text": "Hola.", "points": 2}
+                ]
+              },
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "Sí.", "points": 3},
+                  {"text": "No.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 5,
-            "responses": [
-              { "context": "Magia...", "best_choice": "Cualquiera (+0)" }
+            "interactions": [
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "Seguro que sí.", "points": 3},
+                  {"text": "Anímate.", "points": 2}
+                ]
+              }
             ]
           },
           {
             "rank": 6,
-            "responses": [
-              { "context": "Investigación...", "best_choice": "Cualquiera (+0)" }
-            ],
-            "notes": "¡Límite! Debes alcanzar este rango antes del 1 de Noviembre."
+            "interactions": [
+              {
+                "context": "Investigación...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "Molestia...",
+                "options": [
+                  {"text": "Cualquiera", "points": 0}
+                ]
+              },
+              {
+                "context": "IMPORTANTE: Tras este rango, se vuelve automático hasta el final.",
+                "options": [
+                  {"text": "Sí.", "points": 3}
+                ]
+              }
+            ]
           },
           {
             "rank": 7,
             "type": "automatic",
-            "notes": "Se desbloquea por historia si tienes el Rango 6."
+            "date": "Automático",
+            "interactions": [{"context": "Avanza con la historia si tienes Rango 6.", "options": [{"text": "-", "points": 0}]}]
           },
           {
             "rank": 8,
             "type": "automatic",
-            "notes": "Automático. El arcana cambia de 'Bufón' a 'Hambre' (Hunger)."
+            "date": "Automático",
+            "interactions": [{"context": "Avanza con la historia.", "options": [{"text": "-", "points": 0}]}]
           },
           {
             "rank": 9,
-            "type": "automatic"
+            "type": "automatic",
+            "interactions": [{"context": "Depende del final elegido.", "options": [{"text": "-", "points": 0}]}]
           },
           {
             "rank": 10,
-            "type": "automatic",
-            "notes": "Se consigue en el Final Verdadero."
+            "interactions": [
+              {
+                "context": "Final. Desbloquea: Magatsu-Izanagi.",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              } 
+            ]
           }
         ]
       }

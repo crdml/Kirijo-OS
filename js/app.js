@@ -54,24 +54,32 @@ const app = {
     // 1. Secuencia de Arranque
     bootSequence: function() {
         const log = document.getElementById('boot-text');
+        if(!log) return;
+        
         log.innerHTML = "> Initializing system...<br>";
         setTimeout(() => log.innerHTML += "> Authenticating biometrics...<br>", 800);
         setTimeout(() => log.innerHTML += "> Identity Confirmed: Artemis.<br>", 1600);
         
         setTimeout(() => {
             log.innerHTML += "> Welcome Artemis from S.E.E.S.";
-            document.getElementById('user-nick').innerText = "Artemis (S.E.E.S)";
+            const userNick = document.getElementById('user-nick');
+            if(userNick) userNick.innerText = "Artemis (S.E.E.S)";
+            
             const btn = document.getElementById('btn-login');
-            btn.classList.remove('hidden');
-            btn.onclick = () => {
-                this.changeView('view-dashboard');
-            };
+            if(btn) {
+                btn.classList.remove('hidden');
+                btn.onclick = () => {
+                    this.changeView('view-dashboard');
+                };
+            }
         }, 2500);
     },
 
     changeView: function(viewId) {
         document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-        document.getElementById(viewId).classList.add('active');
+        const target = document.getElementById(viewId);
+        if(target) target.classList.add('active');
+        
         if(viewId === 'view-dashboard') {
             document.querySelectorAll('.view').forEach(v => {
                 if(v.id !== 'view-dashboard') v.classList.add('hidden');
@@ -82,8 +90,10 @@ const app = {
 
     updateClock: function() {
         const now = new Date();
-        document.getElementById('clock').innerText = 
-            now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        const clock = document.getElementById('clock');
+        if(clock) {
+            clock.innerText = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
     },
 
     // --- NAVEGACIÓN ENTRE JUEGOS ---
@@ -92,15 +102,17 @@ const app = {
         this.changeView('view-game-interface');
         const titleEl = document.querySelector('.current-module-title');
         const genderSwitch = document.querySelector('.gender-switch');
+        const navContainer = document.getElementById('modules-container');
         
-        document.getElementById('modules-container').setAttribute('data-game', gameId);
+        navContainer.setAttribute('data-game', gameId);
         
         this.resetAtmosphere();
 
+        // Configuración específica por juego
         if(gameId === 'p3p') {
             titleEl.innerText = "P3P DATABASE";
             genderSwitch.style.display = 'flex';
-            this.setGender('male'); 
+            this.setGender('male'); // Reset a MC por defecto
         } 
         else if(gameId === 'p3r') {
             document.body.classList.add('theme-p3r');
@@ -118,15 +130,20 @@ const app = {
             genderSwitch.style.display = 'none';
         }
 
-        const navContainer = document.getElementById('modules-container');
+        // Generar botones de módulos
         navContainer.innerHTML = ''; 
-
         if (this.gameConfig[gameId]) {
             this.gameConfig[gameId].forEach(btn => {
                 const button = document.createElement('button');
                 button.innerHTML = btn.label;
                 button.className = btn.colorClass;
-                button.onclick = () => this.loadModule(btn.id, gameId);
+                button.setAttribute('data-type', btn.id); // Marcador para recarga
+                button.onclick = () => {
+                    // Gestionar clase activa
+                    navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active-mod'));
+                    button.classList.add('active-mod');
+                    this.loadModule(btn.id, gameId);
+                };
                 
                 if((gameId === 'p3p' || gameId === 'p3r') && (btn.id === 'missing' || btn.id === 'tartarus')) {
                     button.classList.add('alert-text');
@@ -145,23 +162,45 @@ const app = {
     },
 
     setGender: function(gender) {
+        // 1. Cambiar estado
         this.state.protagonist = gender;
+        
+        // 2. Cambiar Colores (CSS) - Solo afecta si NO es P3R/P5R (que tienen temas propios)
         const root = document.documentElement.style;
         const isP3R = document.body.classList.contains('theme-p3r');
         const isP5R = document.body.classList.contains('theme-p5r');
 
-        if(isP3R || isP5R) return;
-
-        if (gender === 'female') {
-            root.setProperty('--kirijo-blue', '#fe0067'); 
-            root.setProperty('--kirijo-dim', '#6b002c');
-        } else {
-            root.setProperty('--kirijo-blue', '#00d2ff');
-            root.setProperty('--kirijo-dim', '#005f73');
+        if (!isP3R && !isP5R) { 
+            if (gender === 'female') {
+                root.setProperty('--kirijo-blue', '#fe0067'); 
+                root.setProperty('--kirijo-dim', '#6b002c');
+            } else {
+                root.setProperty('--kirijo-blue', '#00d2ff');
+                root.setProperty('--kirijo-dim', '#005f73');
+            }
         }
 
-        document.getElementById('btn-male').classList.toggle('active', gender === 'male');
-        document.getElementById('btn-female').classList.toggle('active', gender === 'female');
+        // 3. Actualizar botones visualmente
+        const btnMale = document.getElementById('btn-male');
+        const btnFemale = document.getElementById('btn-female');
+        if(btnMale && btnFemale) {
+            btnMale.classList.toggle('active', gender === 'male');
+            btnFemale.classList.toggle('active', gender === 'female');
+        }
+
+        // 4. ¡REFRESCAR LA VISTA ACTUAL!
+        // Si estamos en P3P y tenemos un módulo abierto, hay que recargarlo para que se aplique el cambio de MC/FeMC
+        const navContainer = document.getElementById('modules-container');
+        const activeGame = navContainer ? navContainer.getAttribute('data-game') : null;
+        
+        if (activeGame === 'p3p') {
+            const activeBtn = navContainer.querySelector('button.active-mod');
+            if (activeBtn) {
+                // Obtenemos el tipo de módulo del botón activo y recargamos
+                const moduleType = activeBtn.getAttribute('data-type');
+                if(moduleType) this.loadModule(moduleType, 'p3p');
+            }
+        }
     },
 
     // --- GESTIÓN DE AMBIENTE ---
@@ -187,7 +226,8 @@ const app = {
             bgGrid.style.opacity = '1';
         }
         
-        this.setGender('male');
+        // Reset a Male por defecto para limpiar estado interno, salvo que estemos en P3P
+        // (Pero openGame('p3p') ya llama a setGender('male') explícitamente)
     },
 
     setVelvetAtmosphere: function() {
@@ -212,21 +252,25 @@ const app = {
         if (!gameId) gameId = document.getElementById('modules-container').getAttribute('data-game');
 
         const display = document.getElementById('data-display');
-        const navContainer = document.getElementById('modules-container');
-        if(navContainer) {
-            navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active-mod'));
-        }
-
+        
         // Velvet Room check
         if (type === 'fusions' || type === 'requests') {
             this.setVelvetAtmosphere();
         } else {
-            this.resetAtmosphere();
-            if(gameId === 'p3r') document.body.classList.add('theme-p3r');
-            if(gameId === 'p4g') document.body.classList.add('theme-p4');
-            if(gameId === 'p5r') document.body.classList.add('theme-p5r');
-            
-            if(gameId === 'p3p') this.setGender(this.state.protagonist);
+            // Si no es Velvet, asegurarnos de que el tema del juego se mantiene
+            // (setVelvetAtmosphere lo rompe, así que lo restauramos si es necesario)
+            if(!document.body.style.background.includes('radial') && (gameId === 'p3r' || gameId === 'p4g' || gameId === 'p5r')) {
+               // Ya está el tema aplicado, no hacemos nada
+            } else {
+               // Si venimos de Velvet Room, reseteamos al tema base
+               if(document.documentElement.style.getPropertyValue('--bg-dark') === '#0a0e29') {
+                   this.resetAtmosphere();
+                   if(gameId === 'p3r') document.body.classList.add('theme-p3r');
+                   if(gameId === 'p4g') document.body.classList.add('theme-p4');
+                   if(gameId === 'p5r') document.body.classList.add('theme-p5r');
+                   if(gameId === 'p3p') this.setGender(this.state.protagonist); // Restaurar color P3P
+               }
+            }
         }
 
         display.innerHTML = '<div class="empty-state">Cargando datos...</div>';
@@ -283,6 +327,8 @@ const app = {
             if(type === 'fusions') this.renderFusions(data, display);
             else if(type === 'requests') this.renderElizabethRequests(data, display);
             else if(type === 'school') this.renderSchool(data, display);
+            
+            // SOCIAL LINKS ESTÁNDAR (P3P, P3R, P4G, P5R)
             else if(type === 'social') this.renderSocial(data, display);
             
             // P3 / P3R
@@ -314,71 +360,140 @@ const app = {
         }
     },
 
-    // --- RENDERIZADOR SOCIAL (UPDATED PARA P5R STYLE) ---
+    // --- NUEVO RENDERIZADOR SOCIAL ESTÁNDAR (P3, P4, P5) ---
     renderSocial: function(data, container) {
         let html = '';
-        data.sort((a,b) => a.id - b.id).forEach(sl => {
+        
+        // Ordenar por ID de Arcano
+        data.sort((a, b) => a.id - b.id).forEach(sl => {
+            
+            // 1. Lógica de Selección de Ruta (Male/Female/Shared)
             let routeData = null;
-            if(sl.type === 'shared' || sl.type === 'shared_automatic') {
-                routeData = sl.routes.shared;
-            } else {
-                routeData = sl.routes[this.state.protagonist] || sl.routes.male; 
+            
+            // Caso especial P3P: split_character significa que cambia el personaje según el género
+            if (sl.type === 'split_character') {
+                routeData = sl.routes[this.state.protagonist];
+            }
+            // Casos compartidos o automáticos
+            else if (sl.type === 'shared' || sl.type === 'shared_automatic') {
+                if (sl.routes.shared) {
+                    routeData = sl.routes.shared;
+                } else {
+                    // Fallback si por error está en shared pero no tiene clave 'shared'
+                    routeData = sl.routes[this.state.protagonist] || sl.routes.male;
+                }
+            } 
+            // Estándar (puede tener rutas separadas por género, ej. respuestas distintas para la misma persona)
+            else {
+                routeData = sl.routes[this.state.protagonist] || sl.routes.male;
             }
 
-            if(!routeData) return;
-            const isCritical = routeData.critical_warning ? true : false;
-            
-            html += `<div class="data-card social-card ${isCritical ? 'critical' : ''}">
+            if (!routeData) return;
+
+            // Detectar advertencias (Romances trampas, fechas límite, etc.)
+            const warningText = routeData.warning_message || routeData.critical_warning;
+            const isCritical = !!routeData.critical_warning;
+
+            // --- CONSTRUCCIÓN DE LA TARJETA ---
+            html += `<div class="data-card social-card ${isCritical ? 'critical-border' : ''}">
                 <div class="arcana-header">
                     ${sl.arcana_image ? `<img src="assets/tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
                     <div class="data-title no-border">${sl.id}. ${sl.arcana_name}</div>
                 </div>
+                
                 <div class="social-info-container">
                     <div class="social-details">
                         <div class="char-name">👤 <strong>${routeData.character}</strong></div>
-                        <div>📍 ${routeData.location}</div>
-                        <div>📅 ${routeData.availability || 'Eventos automáticos'}</div>
-                        ${routeData.warning_message ? `<div class="data-highlight mt-10">⚠️ ${routeData.warning_message}</div>` : ''}
-                        ${isCritical ? `<div class="data-highlight">⚠️ ${routeData.critical_warning}</div>` : ''}
+                        <div class="char-meta">📍 ${routeData.location}</div>
+                        <div class="char-meta">📅 ${routeData.availability || 'Eventos automáticos'}</div>
+                        
+                        ${routeData.unlock_condition ? `<div class="unlock-note">🔓 ${routeData.unlock_condition}</div>` : ''}
+                        ${warningText ? `<div class="data-highlight alert-box">⚠️ ${warningText}</div>` : ''}
                     </div>
                     ${routeData.image ? `<img src="assets/characters/${routeData.image}" alt="${routeData.character}" class="character-img">` : ''}
                 </div>
+
                 <details>
-                    <summary>ABRIR GUÍA DE RESPUESTAS</summary>
+                    <summary>VER GUÍA DE RESPUESTAS</summary>
                     <div class="ranks-container">`;
             
-            routeData.ranks.forEach(r => {
-                html += `<div class="social-rank-box">
-                    <div class="rank-header">
-                        <span class="rank-num">RANGO ${r.rank}</span>
-                        ${r.date ? `<span class="rank-date">(${r.date})</span>` : ''}
-                    </div>`;
-                
-                if(r.type === 'automatic') {
-                    html += `<div class="rank-note">🎬 Evento Automático</div>`;
-                } else if (r.responses) {
-                    html += `<div class="responses-list">`;
-                    r.responses.forEach(resp => {
-                        html += `<div class="response-item">
-                             <div class="context">"${resp.context.substring(0,50)}${resp.context.length>50?'...':''}"</div>
-                             <div class="choice">👉 <strong>${resp.best_choice}</strong> ${resp.romance_flag ? '❤️' : ''}</div>
-                        </div>`;
-                    });
-                    html += `</div>`;
-                }
-                if (r.context && r.best_choice && !r.responses) {
-                    html += `<div class="response-item mission">
-                        <strong>Misión:</strong> ${r.context}<br>👉 ${r.best_choice}
-                    </div>`;
-                }
-                html += `</div>`;
-            });
-            html += `</div></details></div>`;
+            // --- HABILIDADES (P5R) ---
+            if (routeData.abilities) {
+                html += `<div class="social-rank-box" style="border-left: 2px solid #ffd700;">
+                    <div class="rank-header"><span class="rank-num">HABILIDADES DE CONFIDENTE</span></div>
+                    <div class="responses-list">`;
+                routeData.abilities.forEach(ab => {
+                    html += `<div class="interaction-block" style="font-size:0.9em; padding:5px;">${ab}</div>`;
+                });
+                html += `</div></div>`;
+            }
+
+            // --- ITERACIÓN DE RANGOS ---
+            if (routeData.ranks) {
+                routeData.ranks.forEach(r => {
+                    html += `<div class="social-rank-box">
+                        <div class="rank-header">
+                            <span class="rank-num">RANGO ${r.rank}</span>
+                            ${r.type === 'automatic' ? '<span class="badge-auto">Automático</span>' : ''}
+                            ${r.date ? `<span class="rank-date">📅 ${r.date}</span>` : ''}
+                        </div>
+                        
+                        ${r.unlock_condition ? `<div class="context-text" style="color:var(--kirijo-blue); margin-bottom:5px;">🔓 Requisito: ${r.unlock_condition}</div>` : ''}
+
+                        <div class="responses-list">`;
+
+                    // Renderizado estricto del nuevo formato
+                    if (r.interactions && r.interactions.length > 0) {
+                        r.interactions.forEach(inter => {
+                            html += `<div class="interaction-block">`;
+                            
+                            // Contexto (Pregunta o Situación)
+                            if (inter.context) {
+                                html += `<div class="context-text">${inter.context}</div>`;
+                            }
+
+                            // Opciones de respuesta
+                            if (inter.options && inter.options.length > 0) {
+                                html += `<ul class="options-ul">`;
+                                inter.options.forEach(opt => {
+                                    // Lógica de estilo según puntos
+                                    let pointsClass = 'points-neutral';
+                                    let icon = '';
+                                    
+                                    if (opt.points >= 3) { pointsClass = 'points-max'; icon = '♪'; }
+                                    else if (opt.points === 2) { pointsClass = 'points-mid'; icon = '♪'; }
+                                    else if (opt.points === 1) { pointsClass = 'points-low'; }
+                                    
+                                    // Flags especiales
+                                    if (opt.romance) { icon = '❤️ ' + icon; pointsClass = 'points-romance'; }
+                                    
+                                    // Mostrar +X o icono
+                                    const pointsDisplay = opt.points > 0 ? `+${opt.points} ${icon}` : (opt.isNote ? 'ℹ️' : '');
+
+                                    html += `<li class="option-li">
+                                        <span class="opt-text">${opt.text}</span>
+                                        ${pointsDisplay ? `<span class="opt-points ${pointsClass}">${pointsDisplay}</span>` : ''}
+                                    </li>`;
+                                });
+                                html += `</ul>`;
+                            }
+                            html += `</div>`; // fin interaction-block
+                        });
+                    } else if (r.type === 'automatic') {
+                        html += `<div class="interaction-block auto-note">La historia avanza automáticamente.</div>`;
+                    }
+
+                    html += `</div></div>`; // fin responses-list y social-rank-box
+                });
+            }
+            
+            html += `</div></details></div>`; // fin ranks-container y data-card
         });
+        
         container.innerHTML = html;
     },
 
-    // --- NUEVOS RENDERIZADORES P3R/P5R ---
+    // --- RENDERIZADORES ESPECÍFICOS (P3R/P5R/P4G) ---
 
     renderDorm: function(data, container) {
         let html = '<h3 style="color:var(--p3r-cyan); border-bottom: 2px solid var(--p3r-cyan); padding-bottom:10px;">🛏️ Vida en el Dormitorio (Buffs de Combate)</h3>';
@@ -762,16 +877,16 @@ const app = {
     renderBooks: function(data, container) {
         let html = '<h3 style="color:#2e7d32; background:#e8f5e9; text-align:center; text-transform:uppercase; border: 2px solid #2e7d32; padding:10px; transform:skew(-2deg);">📖 GUÍA DE LECTURA (YOMENAIDO)</h3>';
         data.forEach(book => {
-            let borderStyle = 'border-left: 5px solid #2e7d32;'; // Verde normal
+            let borderStyle = 'border-left: 5px solid #2e7d32;'; 
             let bgStyle = 'background: #fff; color:#000;';
             let badge = '';
 
             if (book.type === 'missable') {
-                borderStyle = 'border: 2px solid #d32f2f; border-left-width: 8px;'; // Rojo Alerta
+                borderStyle = 'border: 2px solid #d32f2f; border-left-width: 8px;';
                 bgStyle = 'background: #ffebee; color:#b71c1c;';
                 badge = '<span style="background:#d32f2f; color:white; padding:2px 6px; font-size:0.7em; border-radius:4px; text-transform:uppercase; margin-left:5px;">⚠️ PERDIBLE</span>';
             } else if (book.type === 'vital') {
-                borderStyle = 'border: 2px solid #fbc02d; border-left-width: 8px;'; // Dorado
+                borderStyle = 'border: 2px solid #fbc02d; border-left-width: 8px;';
                 bgStyle = 'background: #fffde7; color:#f57f17;';
                 badge = '<span style="background:#fbc02d; color:black; padding:2px 6px; font-size:0.7em; border-radius:4px; text-transform:uppercase; margin-left:5px;">⭐ ESENCIAL</span>';
             }

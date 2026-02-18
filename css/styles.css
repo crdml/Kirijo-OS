@@ -265,39 +265,6 @@ details { margin-top: 10px; }
 summary { outline: none; cursor: pointer; }
 
 
-/* ==========================================================================
-   ESTILOS SOCIAL LINKS (NUEVO SISTEMA DE CLASES)
-   ========================================================================== */
-
-/* --- BASE (P3P / P3R / P4G) --- */
-.social-rank-box {
-    margin-bottom: 12px;
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil */
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.rank-header {
-    margin-bottom: 8px;
-    color: var(--kirijo-blue);
-    font-weight: bold;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 4px;
-}
-
-.response-item {
-    margin-top: 6px;
-    padding-left: 10px;
-    border-left: 2px solid var(--text-dim);
-    font-size: 0.95em;
-    margin-bottom: 8px;
-}
-
-.response-item .context { color: #aaa; font-style: italic; margin-bottom: 2px; }
-.response-item .choice { color: #fff; }
-
-
 /* ######################################################################
    TEMA: PERSONA 3 RELOAD (Ocean Blue / Cyan / Glass)
    ###################################################################### */
@@ -305,6 +272,11 @@ body.theme-p3r {
     --bg-dark: #001a2c;
     --kirijo-blue: var(--p3r-cyan);
     --kirijo-dim: #004d55;
+    
+    /* Variables para el Nuevo Estándar Social */
+    --theme-color: var(--p3r-cyan);
+    --theme-bg: rgba(79, 251, 252, 0.1);
+    
     background: radial-gradient(circle at center, #003847 0%, #00121f 100%);
 }
 
@@ -360,6 +332,10 @@ body.theme-p4 {
     --bg-dark: #ffe600; --bg-panel: #fff; 
     --text-main: #000; --text-dim: #333; 
     --kirijo-blue: #e60012; --kirijo-dim: #000; --alert-red: #d32f2f;
+
+    /* Variables para el Nuevo Estándar Social */
+    --theme-color: #e60012; 
+    --theme-bg: rgba(255, 230, 0, 0.2);
 }
 
 body.theme-p4 .bg-grid {
@@ -420,6 +396,10 @@ body.theme-p5r {
     --kirijo-dim: #333;
     --text-main: #fff;
     --text-dim: #000;
+    
+    /* Variables para el Nuevo Estándar Social */
+    --theme-color: #fcc200; /* Dorado para destacar sobre negro */
+    --theme-bg: #000;
     
     background-color: #db0000;
     /* Patrón de estrellas/puntos estilo P5 */
@@ -519,90 +499,167 @@ body.theme-p5r .arcana-img {
     border: 2px solid #fff; border-radius: 0;
 }
 
-/* ESTILOS COMIC PARA CONFIDANTS P5R */
-body.theme-p5r .ranks-container {
-    padding: 10px;
-    /* Fondo con patrón sutil de líneas diagonales si se desea, o simple */
+/* ==========================================================================
+   ESTILOS UNIFICADOS (V2.0) - SOPORTE PARA NUEVO FORMATO SOCIAL
+   ==========================================================================
+   Estos estilos utilizan las variables --theme-color y --theme-bg definidas 
+   en las clases .theme-p3r, .theme-p4, y .theme-p5r para adaptarse.
+*/
+
+/* 1. Cabecera Arcano */
+.social-card .arcana-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--theme-color, var(--kirijo-blue));
+    padding-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Caja de Rango: Estilo "Recorte de Papel Negro" */
-body.theme-p5r .social-rank-box {
-    background: #000;
-    border: 2px solid #fff;
-    border-radius: 0;
-    transform: rotate(-1deg);
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.5);
-    padding: 0; /* Quitamos padding para manejarlo dentro */
-    /* overflow: hidden;  <-- ELIMINADO para evitar cortes en el título */
-}
-body.theme-p5r .social-rank-box:nth-child(even) { transform: rotate(1deg); }
-
-/* Cabecera del Rango: Roja y angular */
-body.theme-p5r .rank-header {
-    background: var(--p5r-red);
-    color: #fff;
-    padding: 5px 10px;
-    font-family: 'Impact', sans-serif;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #fff;
-    transform: skewX(-5deg); /* <-- ELIMINADO scale(1.05) para evitar cortes */
-    margin: 0 0 10px 0;
+.arcana-img {
+    width: 35px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-body.theme-p5r .rank-date {
-    font-family: var(--font-tech);
-    font-size: 0.7em;
-    background: #000;
-    padding: 1px 5px;
-    border: 1px solid #fff;
-    margin-left: 10px;
-    vertical-align: middle;
+/* 2. Información del Personaje */
+.social-info-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: rgba(0,0,0,0.3);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Respuestas: Estilo "Burbuja de Cómic Blanca" */
-body.theme-p5r .response-item {
-    background: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-left: 2px solid #000; /* Reset del base */
-    padding: 8px;
-    margin: 5px 10px 10px 10px;
-    transform: skew(-2deg);
-    box-shadow: 3px 3px 0 #888;
-}
+.social-details { flex: 1; font-size: 0.9em; }
+.char-name { font-size: 1.2em; margin-bottom: 6px; color: var(--text-main); }
+.char-meta { color: #ccc; margin-bottom: 3px; font-size: 0.9em; }
 
-body.theme-p5r .response-item .context {
-    color: #444;
+.unlock-note {
+    font-size: 0.85em;
+    color: var(--theme-color, var(--kirijo-blue));
+    margin-top: 8px;
     font-weight: bold;
-    border-bottom: 1px dashed #000;
-    padding-bottom: 3px;
-    margin-bottom: 3px;
 }
 
-body.theme-p5r .response-item .choice {
-    color: #cc0000; /* Texto de respuesta en rojo oscuro */
-    font-weight: 900;
+/* Alertas y Bordes Críticos */
+.alert-box {
+    background: rgba(255, 68, 68, 0.2);
+    border: 1px solid #ff4444;
+    color: #ffcccc;
+    padding: 6px;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.critical-border {
+    border: 1px solid #ff4444 !important;
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.15);
+}
+
+/* 3. Rangos e Interacciones */
+
+.social-rank-box {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+    border-left: 2px solid rgba(255,255,255,0.1);
+}
+
+.rank-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rank-num {
+    font-weight: 800;
+    color: var(--theme-color, #fff);
+    margin-right: 12px;
     font-size: 1.1em;
+    text-transform: uppercase;
 }
 
-/* Botón "Abrir Guía" P5R */
-body.theme-p5r details summary {
-    background: #000;
-    color: var(--p5r-gold) !important; /* Dorado */
-    border: 2px solid var(--p5r-gold);
-    padding: 10px;
-    margin-top: 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    list-style: none;
-    text-align: center;
-    box-shadow: 0 0 10px var(--p5r-gold);
-    transition: 0.2s;
-    cursor: pointer;
+.badge-auto {
+    background: #444;
+    color: #eee;
+    font-size: 0.75em;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: normal;
 }
-body.theme-p5r details summary:hover {
-    background: var(--p5r-gold);
-    color: #000 !important;
-    box-shadow: 0 0 20px var(--p5r-gold);
-}   
+
+.rank-date {
+    font-size: 0.85em;
+    color: #888;
+    margin-left: auto;
+    font-family: monospace;
+}
+
+/* Bloque de Pregunta/Respuesta */
+.interaction-block {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.context-text {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+    padding-bottom: 5px;
+}
+
+.options-ul { list-style: none; padding: 0; margin: 0; }
+.option-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+.option-li:last-child { border-bottom: none; }
+
+.opt-text { color: #e0e0e0; font-size: 0.95em; line-height: 1.4; flex: 1; margin-right: 10px; }
+
+/* PUNTOS Y BADGES */
+.opt-points {
+    font-size: 0.85em;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 15px;
+    min-width: 45px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Clase MÁGICA: Se adapta al color del tema automáticamente */
+.points-max {
+    background: var(--theme-bg, rgba(255,255,255,0.1));
+    color: var(--theme-color, #fff);
+    border: 1px solid var(--theme-color, #fff);
+    box-shadow: 0 0 8px var(--theme-bg, rgba(0,0,0,0));
+}
+
+.points-mid { background: rgba(255, 255, 255, 0.1); color: #ddd; }
+.points-low { color: #888; font-size: 0.8em; }
+.points-neutral { color: #666; }
+
+.points-romance {
+    background: rgba(255, 105, 180, 0.15);
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+}
+
+.auto-note { color: #666; font-style: italic; font-size: 0.9em; text-align: center; }

@@ -1,574 +1,4766 @@
 [
   {
     "id": 0,
-    "arcana_name": "Loco (Fool)",
+    "arcana_name": "El Loco (Fool)",
     "arcana_image": "tarot_p5_fool.png",
     "type": "shared_automatic",
     "routes": {
       "shared": {
-        "character": "Igor (Yaldabaoth)",
+        "character": "Igor",
         "location": "Velvet Room",
-        "availability": "Automático por historia.",
+        "availability": "Automático (Avanza con la historia)",
         "image": "igor_p5.jpg",
+        "abilities": [
+          "Rango 1: Wild Talk (Negociación)",
+          "Rango 2: Arcana Burst",
+          "Rango 6: Super Stock (Más espacios de Persona)",
+          "Rango 10: Arcana Burst MAX"
+        ],
         "ranks": [
-          { "rank": 1, "date": "4/12", "type": "automatic", "context": "Desbloquea: Wild Talk (Negociación)." },
-          { "rank": 2, "date": "Auto", "type": "automatic", "context": "Desbloquea: Third Eye." },
-          { "rank": 6, "date": "Auto", "type": "automatic", "context": "Desbloquea: High Pixie fusion." },
-          { "rank": 10, "date": "12/24", "type": "automatic", "context": "Desbloquea: Satanael (NG+)." }
+          { "rank": 1, "type": "automatic", "date": "4/12", "interactions": [{"context": "Desbloqueo automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 2, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 3, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 4, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 5, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 6, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 7, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 8, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 9, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 10, "type": "automatic", "date": "12/24", "interactions": [{"context": "Desbloquea: Satanael", "options": [{"text": "-", "points": 0}]}] }
         ]
       }
     }
   },
   {
     "id": 1,
-    "arcana_name": "Mago (Magician)",
+    "arcana_name": "El Mago (Magician)",
     "arcana_image": "tarot_p5_magician.png",
     "type": "shared_automatic",
     "routes": {
       "shared": {
         "character": "Morgana",
-        "location": "Leblanc / Metaverse",
-        "availability": "Automático por historia.",
+        "location": "LeBlanc / Metaverse",
+        "availability": "Automático (Avanza con la historia)",
         "image": "morgana.jpg",
+        "abilities": [
+          "Rango 1: Infiltration Tools (Fabricar herramientas)",
+          "Rango 6: Ace Tools (Más tipos de herramientas)",
+          "Rango 10: Pickpocket (Robar objetos raros)"
+        ],
         "ranks": [
-          { "rank": 1, "date": "4/15", "type": "automatic" },
-          { "rank": 5, "date": "6/20", "type": "automatic", "context": "Habilidad: Pickpocket (Robar objetos)." },
-          { "rank": 10, "date": "12/23", "type": "automatic", "context": "Desbloquea: Futsunushi." }
+          { "rank": 1, "type": "automatic", "date": "4/15", "interactions": [{"context": "Desbloqueo automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 2, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 3, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 4, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 5, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 6, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 7, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 8, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 9, "type": "automatic", "interactions": [{"context": "Avanza con la historia", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 10, "type": "automatic", "date": "12/23", "interactions": [{"context": "Desbloquea: Futsunushi", "options": [{"text": "-", "points": 0}]}] }
         ]
       }
     }
   },
   {
     "id": 2,
-    "arcana_name": "Sacerdotisa (Priestess)",
+    "arcana_name": "La Sacerdotisa (Priestess)",
     "arcana_image": "tarot_p5_priestess.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Makoto Niijima",
-        "location": "Puerta del Colegio / Sala del Consejo",
-        "availability": "Mar, Jue, Sáb, Dom (Día). Requiere Conocimiento 3 (Erudite).",
+        "location": "Puerta de la Escuela / Estación",
+        "availability": "Mar, Jue, Sáb, Dom (Día). Requiere Conocimiento 3 (Erudito).",
+        "unlock_condition": "Disponible desde el 24 de Junio tras completar el banco de Kaneshiro.",
         "image": "makoto.jpg",
+        "abilities": [
+          "Rango 1: Shadow Calculus (Ver skills y drops enemigos)",
+          "Rango 7: Shadow Factorization (Ver debilidades completas)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/24" },
-          { "rank": 2, "responses": [{ "context": "Lugar...", "best_choice": "Estás muy bien informada." }, { "context": "Peligro...", "best_choice": "Deberías tener cuidado." }] },
-          { "rank": 3, "responses": [{ "context": "Entendido...", "best_choice": "Tienes mi atención." }, { "context": "Molestia...", "best_choice": "No eres nada de eso." }] },
-          { "rank": 4, "responses": [{ "context": "Objetivo...", "best_choice": "Ese es el espíritu." }, { "context": "Duda...", "best_choice": "¿Por qué lo usaría?" }] },
-          { "rank": 5, "responses": [{ "context": "Sospecha...", "best_choice": "Da un poco de miedo." }] },
-          { "rank": 6, "responses": [{ "context": "Amor...", "best_choice": "El amor tiene muchas formas." }] },
-          { "rank": 7, "responses": [{ "context": "Padre...", "best_choice": "Fue un hombre increíble." }] },
-          { "rank": 8, "responses": [{ "context": "Chica...", "best_choice": "Dice que le da igual." }] },
-          { "rank": 9, "responses": [{ "context": "Pelea...", "best_choice": "¡Corre!" }, { "context": "Romance...", "best_choice": "Yo seré tu compañero de estudios (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Eso es lo que hacen los amigos (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Salón recreativo...",
+                "options": [
+                  {"text": "Estás muy informada.", "points": 2},
+                  {"text": "Deberías haber venido antes.", "points": 1}
+                ]
+              },
+              {
+                "context": "Peligro...",
+                "options": [
+                  {"text": "Era peligroso.", "points": 3},
+                  {"text": "Hay que tener cuidado.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No podía dejarte sola.", "points": 2},
+                  {"text": "Me alegra que estés bien.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Malentendido...",
+                "options": [
+                  {"text": "Tienes la idea equivocada.", "points": 2},
+                  {"text": "Somos amigos.", "points": 1}
+                ]
+              },
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Puedes cambiar.", "points": 3},
+                  {"text": "No te fuerces.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Suenas feliz.", "points": 2},
+                  {"text": "Me alegro.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Estudio...",
+                "options": [
+                  {"text": "Eso es diferente a ti.", "points": 2},
+                  {"text": "Sorprendente.", "points": 1}
+                ]
+              },
+              {
+                "context": "Objetivo...",
+                "options": [
+                  {"text": "¿Por qué lo usas?", "points": 3},
+                  {"text": "¿Tienes una meta?", "points": 2}
+                ]
+              },
+              {
+                "context": "Pasión...",
+                "options": [
+                  {"text": "Es una meta increíble.", "points": 3},
+                  {"text": "Suena divertido.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Yo también puedo usar tu ayuda.", "points": 2},
+                  {"text": "Cuento contigo.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Sospecha...",
+                "options": [
+                  {"text": "Es sospechoso.", "points": 3},
+                  {"text": "Me preocupa.", "points": 2}
+                ]
+              },
+              {
+                "context": "Ayuda...",
+                "options": [
+                  {"text": "Haz lo que puedas.", "points": 3},
+                  {"text": "No te excedas.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Invítame la próxima vez.", "points": 2},
+                  {"text": "Suena divertido.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Estrategia...",
+                "options": [
+                  {"text": "Es el espíritu.", "points": 3},
+                  {"text": "Hablaremos con ella.", "points": 2}
+                ]
+              },
+              {
+                "context": "Comprensión...",
+                "options": [
+                  {"text": "Lo acepto.", "points": 3},
+                  {"text": "No estoy seguro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Dile que estás en una cita.", "points": 2},
+                  {"text": "Dile que haces ejercicio.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Padre...",
+                "options": [
+                  {"text": "Es un padre horrible.", "points": 3},
+                  {"text": "No se parece a ti.", "points": 2}
+                ]
+              },
+              {
+                "context": "Reflexión...",
+                "options": [
+                  {"text": "Ya lo has descifrado.", "points": 3},
+                  {"text": "Piénsalo bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Estoy dispuesto.", "points": 2},
+                  {"text": "Vamos allá.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Enfrentamiento...",
+                "options": [
+                  {"text": "De ninguna manera.", "points": 3},
+                  {"text": "A por él.", "points": 3}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "¡Cuidado!", "points": 3},
+                  {"text": "Esquiva.", "points": 2}
+                ]
+              },
+              {
+                "context": "Victoria...",
+                "options": [
+                  {"text": "Fue lo correcto.", "points": 3},
+                  {"text": "Eres increíble.", "points": 2}
+                ]
+              },
+              {
+                "context": "Estudios...",
+                "options": [
+                  {"text": "Seguro que encuentras a alguien.", "points": 3},
+                  {"text": "Lo harás genial.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Seré tu compañero de estudio. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Eso es admirable. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Lo digo en serio.", "points": 3},
+                  {"text": "Te quiero.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si eres Amigo)",
+                "options": [
+                  {"text": "Puedes preguntarme.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 3,
-    "arcana_name": "Emperatriz (Empress)",
+    "arcana_name": "La Emperatriz (Empress)",
     "arcana_image": "tarot_p5_empress.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Haru Okumura",
-        "location": "Azotea del Colegio",
-        "availability": "Lun, Mar, Mie, Vie, Sáb (Día). Requiere Destreza 5 (Proficient).",
+        "location": "Azotea del Instituto",
+        "availability": "Lun, Mie, Vie, Sáb (Día). Requiere Destreza 5 (Maestro).",
+        "unlock_condition": "Disponible desde el 30 de Octubre.",
         "image": "haru.jpg",
+        "abilities": [
+          "Rango 1: Cultivation (Cultivar verduras SP)",
+          "Rango 5: Selective Breeding (Mejores cosechas)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "10/30" },
-          { "rank": 2, "responses": [{ "context": "Café...", "best_choice": "¿Abrieron una cafetería?" }, { "context": "Dinero...", "best_choice": "Es sospechoso." }] },
-          { "rank": 3, "responses": [{ "context": "Problema...", "best_choice": "No quiero ir contigo." }, { "context": "Respuesta...", "best_choice": "No es tu culpa, Haru." }] },
-          { "rank": 4, "responses": [{ "context": "Coste...", "best_choice": "Es caro." }, { "context": "Sabor...", "best_choice": "Vamos a pedir otro café." }] },
-          { "rank": 5, "responses": [{ "context": "Ayuda...", "best_choice": "Alguien a quien proteger." }] },
-          { "rank": 6, "responses": [{ "context": "Extraño...", "best_choice": "¿Puedo hacer algo?" }] },
-          { "rank": 7, "responses": [{ "context": "Dolor...", "best_choice": "¿Qué quieres hacer?" }] },
-          { "rank": 8, "responses": [{ "context": "Tierra...", "best_choice": "La tierra." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Me gustas mucho, Haru (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Somos amigos (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Semillas...",
+                "options": [
+                  {"text": "¿Es para abrir una cafetería?", "points": 3},
+                  {"text": "¿Es una granja?", "points": 2}
+                ]
+              },
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "Es sospechoso.", "points": 3},
+                  {"text": "Es complicado.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Entiendo cómo te sientes.", "points": 2},
+                  {"text": "Deberías ignorarlo.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Matrimonio...",
+                "options": [
+                  {"text": "Deberían consultaros.", "points": 3},
+                  {"text": "Es un problema difícil.", "points": 2}
+                ]
+              },
+              {
+                "context": "Rechazo...",
+                "options": [
+                  {"text": "¿No vas a ir?", "points": 3},
+                  {"text": "Qué pena.", "points": 2}
+                ]
+              },
+              {
+                "context": "Café...",
+                "options": [
+                  {"text": "No es ningún problema.", "points": 3},
+                  {"text": "Tengo mucho tiempo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Alguien amable.", "points": 2},
+                  {"text": "Alguien como tú.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Sabor...",
+                "options": [
+                  {"text": "Es caro.", "points": 3},
+                  {"text": "Sabe fatal.", "points": 3}
+                ]
+              },
+              {
+                "context": "Situación...",
+                "options": [
+                  {"text": "Animémonos de nuevo.", "points": 3},
+                  {"text": "Puedo preguntar al Jefe.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No me importa.", "points": 2},
+                  {"text": "Huelo a café.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Prometido...",
+                "options": [
+                  {"text": "Es horrible.", "points": 3},
+                  {"text": "Alguien tiene que pararlo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "Hay más posibilidades.", "points": 3},
+                  {"text": "No te rindas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Vamos a probarlo.", "points": 2},
+                  {"text": "Buena suerte.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Takakura...",
+                "options": [
+                  {"text": "Eso es fascinante.", "points": 3},
+                  {"text": "¿Puedes confiar en él?", "points": 3}
+                ]
+              },
+              {
+                "context": "Objetivo...",
+                "options": [
+                  {"text": "No tenía ni idea.", "points": 3},
+                  {"text": "Podría ser.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Sé fuerte.", "points": 2},
+                  {"text": "Presta atención.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Enfermedad...",
+                "options": [
+                  {"text": "Dile que pare.", "points": 3},
+                  {"text": "¿Qué quieres hacer?", "points": 3}
+                ]
+              },
+              {
+                "context": "Fuerza...",
+                "options": [
+                  {"text": "Puedes hacerlo, Haru.", "points": 3},
+                  {"text": "Eres fuerte.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Estaré ahí contigo.", "points": 2},
+                  {"text": "Estás temblando.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Verdad...",
+                "options": [
+                  {"text": "El suelo.", "points": 3},
+                  {"text": "Los bichos.", "points": 3}
+                ]
+              },
+              {
+                "context": "Confianza...",
+                "options": [
+                  {"text": "Te ayudará.", "points": 3},
+                  {"text": "Seguro que está feliz.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo has hecho muy bien.", "points": 2},
+                  {"text": "Eres increíble.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Recuerdo...",
+                "options": [
+                  {"text": "No te menosprecies.", "points": 3},
+                  {"text": "Dale una oportunidad.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Me gustas tú, Haru. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Hacéis buena pareja. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Quería oír tu voz.", "points": 2},
+                  {"text": "Te echaba de menos.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 4,
-    "arcana_name": "Emperador (Emperor)",
+    "arcana_name": "El Emperador (Emperor)",
     "arcana_image": "tarot_p5_emperor.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Yusuke Kitagawa",
-        "location": "Pasaje Subterráneo de Shibuya",
-        "availability": "Cualquier día (Día). Requiere Destreza 4 para rangos altos.",
+        "location": "Paso subterráneo de Shibuya",
+        "availability": "Todos los días (Tarde). Requiere Destreza 4 para el Rango 6.",
+        "unlock_condition": "Disponible desde el 18 de Junio.",
         "image": "yusuke.jpg",
+        "abilities": [
+          "Rango 1: Card Duplication (Duplicar cartas)",
+          "Rango 5: Scintillating Intuition (Duplicar cartas de alto nivel)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/18" },
-          { "rank": 2, "responses": [{ "context": "Arte...", "best_choice": "Es novedoso." }] },
-          { "rank": 3, "responses": [{ "context": "Crítica...", "best_choice": "No dejes que te afecte." }] },
-          { "rank": 4, "responses": [{ "context": "Slump...", "best_choice": "¿Por qué estamos en un barco?" }] },
-          { "rank": 5, "responses": [{ "context": "Mujer...", "best_choice": "¿Quieres que me desnude?" }] },
-          { "rank": 6, "responses": [{ "context": "Nostalgia...", "best_choice": "Se siente nostálgico." }] },
-          { "rank": 7, "responses": [{ "context": "Sushi...", "best_choice": "¿Qué significa eso?" }] },
-          { "rank": 8, "responses": [{ "context": "Madre...", "best_choice": "Tiene que ser Sayuri." }] },
-          { "rank": 9, "responses": [{ "context": "Amor...", "best_choice": "El amor de una madre." }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Inspiración...",
+                "options": [
+                  {"text": "Es novedoso.", "points": 2},
+                  {"text": "Es enigmático.", "points": 2}
+                ]
+              },
+              {
+                "context": "Expectativa...",
+                "options": [
+                  {"text": "Estoy impaciente.", "points": 3},
+                  {"text": "Espero que tengas razón.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Ya tienes suficiente.", "points": 2},
+                  {"text": "Es provocativo.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Crítica...",
+                "options": [
+                  {"text": "No dejes que te afecte.", "points": 2},
+                  {"text": "No te desanimes.", "points": 1}
+                ]
+              },
+              {
+                "context": "Arte...",
+                "options": [
+                  {"text": "Justo lo que esperaba.", "points": 3},
+                  {"text": "Esa es la actitud.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Así se habla.", "points": 2},
+                  {"text": "Es una idea genial.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Slump...",
+                "options": [
+                  {"text": "¿Por qué estamos en un bote?", "points": 2},
+                  {"text": "Debería haber traído a una chica.", "points": 2}
+                ]
+              },
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "El amor viene en muchas formas.", "points": 3},
+                  {"text": "No te desanimes.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No te rindas.", "points": 2},
+                  {"text": "Necesitas entrenar.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Modelo...",
+                "options": [
+                  {"text": "¿Quieres que me desnude?", "points": 3},
+                  {"text": "Sé que lo conseguirás.", "points": 2}
+                ]
+              },
+              {
+                "context": "Dibujo...",
+                "options": [
+                  {"text": "Claro.", "points": 2},
+                  {"text": "Espera, no puedo dibujar.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Aún hay esperanza.", "points": 2},
+                  {"text": "No le des vueltas.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Lugar...",
+                "options": [
+                  {"text": "Se siente nostálgico.", "points": 2},
+                  {"text": "Es un sitio tranquilo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Poder...",
+                "options": [
+                  {"text": "No sé.", "points": 2},
+                  {"text": "Quizás tuvo compasión.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tenía cierta dignidad.", "points": 2},
+                  {"text": "No lo parece.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Verdad...",
+                "options": [
+                  {"text": "¿Qué quieres decir?", "points": 2},
+                  {"text": "Es una gran pieza.", "points": 1}
+                ]
+              },
+              {
+                "context": "Autenticidad...",
+                "options": [
+                  {"text": "El verdadero Yusuke.", "points": 3},
+                  {"text": "Es un look distintivo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Sayuri...",
+                "options": [
+                  {"text": "Tiene que ser Ann.", "points": 2},
+                  {"text": "Solo has de dibujar.", "points": 2}
+                ]
+              },
+              {
+                "context": "Madarame...",
+                "options": [
+                  {"text": "Has madurado.", "points": 3},
+                  {"text": "¿Qué vas a hacer?", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Protección...",
+                "options": [
+                  {"text": "Su amor por su hijo.", "points": 3},
+                  {"text": "El dolor de la separación.", "points": 3}
+                ]
+              },
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Realmente has cambiado.", "points": 3},
+                  {"text": "Has mejorado.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 5,
-    "arcana_name": "Hierofante (Hierophant)",
+    "arcana_name": "El Hierofante (Hierophant)",
     "arcana_image": "tarot_p5_hierophant.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Sojiro Sakura",
-        "location": "Café Leblanc",
-        "availability": "Noches (Lluvia preferible). Se bloquea hasta avanzar la historia.",
+        "location": "Café LeBlanc",
+        "availability": "Noches. Requiere amabilidad para rangos altos.",
+        "unlock_condition": "Disponible desde finales de Abril.",
         "image": "sojiro.jpg",
+        "abilities": [
+          "Rango 2: Coffee Mastery (Hacer café SP)",
+          "Rango 4: Leblanc Curry (Hacer curry SP)",
+          "Rango 10: Master Curry"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "4/20" },
-          { "rank": 2, "responses": [{ "context": "Café...", "best_choice": "Hacer café." }, { "context": "Sospecha...", "best_choice": "Ese tipo es sospechoso." }] },
-          { "rank": 3, "responses": [{ "context": "Grano...", "best_choice": "Grano medio-fino." }] },
-          { "rank": 4, "responses": [{ "context": "Sabor...", "best_choice": "Dime más." }, { "context": "Llamada...", "best_choice": "Llama al teléfono de Sojiro." }] },
-          { "rank": 5, "responses": [{ "context": "Curry...", "best_choice": "Creo que soy adicto." }] },
-          { "rank": 6, "responses": [{ "context": "Boca...", "best_choice": "Cierra la boca." }] },
-          { "rank": 7, "responses": [{ "context": "Disculpa...", "best_choice": "Podrías haberlo dicho." }] },
-          { "rank": 8, "responses": [{ "context": "Curry perfecto...", "best_choice": "Algo con curry." }] },
-          { "rank": 9, "responses": [{ "context": "Hija...", "best_choice": "Es genial." }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Café...",
+                "options": [
+                  {"text": "Hacer café.", "points": 2},
+                  {"text": "Me gustan las cafeterías.", "points": 1}
+                ]
+              },
+              {
+                "context": "Interés...",
+                "options": [
+                  {"text": "Ese tío es sospechoso.", "points": 2},
+                  {"text": "¿Quién era?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Quiero aprender.", "points": 2},
+                  {"text": "Quiero ser popular.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Grano...",
+                "options": [
+                  {"text": "Grano medio-fino.", "points": 2},
+                  {"text": "Grano grueso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Problema...",
+                "options": [
+                  {"text": "¿Estás en problemas?", "points": 2},
+                  {"text": "¿Debo llamar a la policía?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Gracias de antemano.", "points": 2},
+                  {"text": "Lo intentaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Sabor...",
+                "options": [
+                  {"text": "Dímelo con más detalle.", "points": 3},
+                  {"text": "Sabe genial.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada...",
+                "options": [
+                  {"text": "Llámale.", "points": 3},
+                  {"text": "Déjalo estar.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Entendido.", "points": 2},
+                  {"text": "Lo miraré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Curry...",
+                "options": [
+                  {"text": "Creo que soy adicto.", "points": 3},
+                  {"text": "No está mal.", "points": 2}
+                ]
+              },
+              {
+                "context": "Futaba...",
+                "options": [
+                  {"text": "No era normal.", "points": 2},
+                  {"text": "¿Hice algo mal?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Mereció la pena.", "points": 2},
+                  {"text": "Me alegra que te guste.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Admiro eso.", "points": 2},
+                  {"text": "¿A cada una de ellas?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Cierra la boca.", "points": 3},
+                  {"text": "Te equivocas.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Disculpa...",
+                "options": [
+                  {"text": "Podrías haberlo dicho.", "points": 2},
+                  {"text": "Qué mala suerte.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Siéntete como un padre.", "points": 2},
+                  {"text": "Ella era tímida.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Defensa...",
+                "options": [
+                  {"text": "¿Algo con el curry?", "points": 3},
+                  {"text": "Solo quería protegerla.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tiene un gran sabor.", "points": 2},
+                  {"text": "Tú lo hiciste genial.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Futaba...",
+                "options": [
+                  {"text": "No es ningún problema.", "points": 3},
+                  {"text": "Es una gran hija.", "points": 3}
+                ]
+              },
+              {
+                "context": "Relación...",
+                "options": [
+                  {"text": "Tienes un gran vínculo.", "points": 3},
+                  {"text": "Sois parecidos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Gracias, padre.", "points": 2},
+                  {"text": "De nada.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 6,
-    "arcana_name": "Enamorados (Lovers)",
+    "arcana_name": "Los Enamorados (Lovers)",
     "arcana_image": "tarot_p5_lovers.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Ann Takamaki",
-        "location": "Centro Comercial Subterráneo de Shibuya",
-        "availability": "Mar, Mie, Vie, Dom (Día). Requiere Amabilidad 2 (Considerate).",
+        "location": "Centro Comercial Subterráneo Shibuya",
+        "availability": "Mar, Mie, Vie, Dom (Día). Requiere Amabilidad 2.",
+        "unlock_condition": "Disponible desde el 15 de Abril.",
         "image": "ann.jpg",
+        "abilities": [
+          "Rango 2: Girl Talk (Negociación)",
+          "Rango 4: Crocodile Tears (Negociación)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "4/15" },
-          { "rank": 2, "responses": [{ "context": "Shiho...", "best_choice": "Ella es muy fuerte." }] },
-          { "rank": 3, "responses": [{ "context": "Tiendas...", "best_choice": "¿Podemos parar?" }] },
-          { "rank": 4, "responses": [{ "context": "Carrera...", "best_choice": "Sé que puedes hacerlo." }] },
-          { "rank": 5, "responses": [{ "context": "Falso...", "best_choice": "Ríndete." }] },
-          { "rank": 6, "responses": [{ "context": "Corazón...", "best_choice": "Consuélala." }] },
-          { "rank": 7, "responses": [{ "context": "Actriz...", "best_choice": "Te admira." }] },
-          { "rank": 8, "responses": [{ "context": "Entrenamiento...", "best_choice": "Tienes agallas." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Tú me tienes a mí (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Tienes a los demás (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Shiho...",
+                "options": [
+                  {"text": "Ella es muy fuerte.", "points": 3},
+                  {"text": "Estará bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Amistad...",
+                "options": [
+                  {"text": "Puede que tengas razón.", "points": 3},
+                  {"text": "Ya no podéis volver.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Déjamelo a mí.", "points": 2},
+                  {"text": "Lo investigaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Restaurante...",
+                "options": [
+                  {"text": "¿Podemos parar?", "points": 3},
+                  {"text": "Me encanta este sitio.", "points": 2}
+                ]
+              },
+              {
+                "context": "Mika...",
+                "options": [
+                  {"text": "¿Ha pasado algo?", "points": 3},
+                  {"text": "¿Quién?", "points": 1}
+                ]
+              },
+              {
+                "context": "Libertad...",
+                "options": [
+                  {"text": "Esa libertad suena bien.", "points": 3},
+                  {"text": "No te rindas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Si te parece bien.", "points": 2},
+                  {"text": "Podría acompañarte.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Entrenamiento...",
+                "options": [
+                  {"text": "Sé que puedes hacerlo.", "points": 3},
+                  {"text": "Es duro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Idea...",
+                "options": [
+                  {"text": "Es divertido.", "points": 3},
+                  {"text": "Esa es la actitud.", "points": 2}
+                ]
+              },
+              {
+                "context": "Método...",
+                "options": [
+                  {"text": "¿Con quién?", "points": 3},
+                  {"text": "Cuéntamelo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Yo entreno cada día.", "points": 2},
+                  {"text": "Lo haré lo mejor que pueda.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Planes...",
+                "options": [
+                  {"text": "Déjalo.", "points": 3},
+                  {"text": "No es buena idea.", "points": 2}
+                ]
+              },
+              {
+                "context": "Actuación...",
+                "options": [
+                  {"text": "Era falsa.", "points": 3},
+                  {"text": "Realmente es impresionante.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Sin duda.", "points": 2},
+                  {"text": "La próxima vez.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Shiho...",
+                "options": [
+                  {"text": "Parece que sí.", "points": 3},
+                  {"text": "No es culpa tuya.", "points": 2}
+                ]
+              },
+              {
+                "context": "Fuerza...",
+                "options": [
+                  {"text": "Muéstrale tu propia fuerza.", "points": 3},
+                  {"text": "Escucha lo que tenga que decir.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Alguien te escuchará.", "points": 2},
+                  {"text": "Ánimo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Actriz...",
+                "options": [
+                  {"text": "Ella te admira.", "points": 3},
+                  {"text": "Eres una gran influencia.", "points": 2}
+                ]
+              },
+              {
+                "context": "Películas...",
+                "options": [
+                  {"text": "A por ellas.", "points": 3},
+                  {"text": "Lo siento.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Buena suerte.", "points": 2},
+                  {"text": "Esfuérzate.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Motivación...",
+                "options": [
+                  {"text": "Tienes mucho agallas.", "points": 3},
+                  {"text": "Eres muy dura.", "points": 2}
+                ]
+              },
+              {
+                "context": "Puesto...",
+                "options": [
+                  {"text": "Sin duda.", "points": 3},
+                  {"text": "Seguro que sí.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Contaré contigo.", "points": 2},
+                  {"text": "Estarás bien.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Shiho...",
+                "options": [
+                  {"text": "Cuento contigo.", "points": 3},
+                  {"text": "Puedes hacerlo.", "points": 3}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Me tienes a mí. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Tienes a los demás. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Digo que te quiero.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Claro que sí. (Romance)", "points": 2},
+                  {"text": "Si te sientes sola, llámame. (Amistad)", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 7,
-    "arcana_name": "Carro (Chariot)",
+    "arcana_name": "El Carro (Chariot)",
     "arcana_image": "tarot_p5_chariot.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Ryuji Sakamoto",
         "location": "Pasillo 2F (Escuela) / Arcade Shibuya",
-        "availability": "Cualquier día (Día).",
+        "availability": "Todos los días (Día).",
+        "unlock_condition": "Disponible desde el 12 de Abril.",
         "image": "ryuji.jpg",
+        "abilities": [
+          "Rango 2: Punk Talk (Negociación)",
+          "Rango 7: Insta-Kill (Matar enemigos débiles al instante)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "4/12" },
-          { "rank": 2, "responses": [{ "context": "Pelea...", "best_choice": "Cuento contigo." }] },
-          { "rank": 3, "responses": [{ "context": "Pelea...", "best_choice": "No te pelees." }] },
-          { "rank": 4, "responses": [{ "context": "Nakaoka...", "best_choice": "¿Estás preocupado por él?" }] },
-          { "rank": 5, "responses": [{ "context": "Deportes...", "best_choice": "Proteína en polvo." }] },
-          { "rank": 6, "responses": [{ "context": "Violencia...", "best_choice": "Podemos entrenar en mi casa." }] },
-          { "rank": 7, "responses": [{ "context": "Hablar...", "best_choice": "Vamos a hablar con Takeishi." }] },
-          { "rank": 8, "responses": [{ "context": "Culpa...", "best_choice": "No te culpo." }] },
-          { "rank": 9, "responses": [{ "context": "Alivio...", "best_choice": "Me alegro." }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Kamoshida...",
+                "options": [
+                  {"text": "Cuento contigo.", "points": 3},
+                  {"text": "Pareces emocionado.", "points": 3}
+                ]
+              },
+              {
+                "context": "Lucha...",
+                "options": [
+                  {"text": "¿Quieres volver?", "points": 2},
+                  {"text": "¿Te arrepientes?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Son nuestros compañeros.", "points": 2},
+                  {"text": "Es una guerra.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Reunión...",
+                "options": [
+                  {"text": "No peleemos.", "points": 3},
+                  {"text": "Cálmate.", "points": 2}
+                ]
+              },
+              {
+                "context": "Club...",
+                "options": [
+                  {"text": "Me molestaré.", "points": 2},
+                  {"text": "No puedo culparte.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Depende de cómo me pidas.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Nakaoka...",
+                "options": [
+                  {"text": "¿Estás preocupado por él?", "points": 2},
+                  {"text": "¿Quién era?", "points": 1}
+                ]
+              },
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Pero lo estás haciendo genial.", "points": 3},
+                  {"text": "Lo sé.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Gimnasio...",
+                "options": [
+                  {"text": "¿Proteína en polvo?", "points": 3},
+                  {"text": "Parece asqueroso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "¿Te preocupa que te odien?", "points": 2},
+                  {"text": "¿Te gustaría volver?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Así se habla.", "points": 2},
+                  {"text": "Entrena duro.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Takeishi...",
+                "options": [
+                  {"text": "Volvamos.", "points": 3},
+                  {"text": "No te metas en líos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Problema...",
+                "options": [
+                  {"text": "¿Tienes alguna idea?", "points": 2},
+                  {"text": "¿Cómplices?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Estoy de acuerdo.", "points": 2},
+                  {"text": "Más te vale.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Charla...",
+                "options": [
+                  {"text": "Hablemos con Takeishi.", "points": 3},
+                  {"text": "Creo que es buena idea.", "points": 3}
+                ]
+              },
+              {
+                "context": "Confrontación...",
+                "options": [
+                  {"text": "Creo que mola.", "points": 3},
+                  {"text": "No sé.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Menos mal.", "points": 2},
+                  {"text": "No te fíes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "Todo salió bien.", "points": 3},
+                  {"text": "Buen trabajo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Agradecimiento...",
+                "options": [
+                  {"text": "Todo gracias a ti.", "points": 3},
+                  {"text": "Hiciste un buen trabajo.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Te debía una.", "points": 2},
+                  {"text": "De nada.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Club de atletismo...",
+                "options": [
+                  {"text": "¿Estás satisfecho?", "points": 3},
+                  {"text": "¿Estás seguro?", "points": 2}
+                ]
+              },
+              {
+                "context": "Padre...",
+                "options": [
+                  {"text": "Felicidades.", "points": 3},
+                  {"text": "Qué alivio.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Yo opino lo mismo.", "points": 2},
+                  {"text": "Cuídate.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 8,
-    "arcana_name": "Justicia (Justice)",
+    "arcana_name": "La Justicia (Justice)",
     "arcana_image": "tarot_p5_justice.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Goro Akechi",
-        "location": "Kichijoji (Frente al Club de Dardos)",
-        "availability": "Mié, Sáb (Noche). MANUAL hasta Rank 8. Rank 9 y 10 automáticos.",
+        "location": "Kichijoji (Dardos/Billar)",
+        "availability": "Miércoles y Sábado (Noche).",
+        "unlock_condition": "Disponible desde el 10 de Junio. Rango 8 LÍMITE: 17 de Noviembre.",
+        "critical_warning": "OBLIGATORIO RANGO 8 ANTES DEL 17/11 PARA EL FINAL VERDADERO.",
         "image": "akechi.jpg",
+        "abilities": [
+          "Rango 2: Sleuthing Instinct (Revelar afinidades)",
+          "Rango 4: Sleuthing Mastery (Revelar todo al inicio)",
+          "Rango 10: Second Awakening (Solo si se completó el requisito)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/10" },
-          { "rank": 2, "responses": [{ "context": "Tiempo...", "best_choice": "Siempre tienes tiempo." }] },
-          { "rank": 3, "responses": [{ "context": "Detective...", "best_choice": "¿No te gusta?" }] },
-          { "rank": 4, "responses": [{ "context": "Jazz...", "best_choice": "Es un buen sitio." }] },
-          { "rank": 5, "responses": [{ "context": "Tiro...", "best_choice": "¿Estás acostumbrado a disparar?" }] },
-          { "rank": 6, "responses": [{ "context": "Baño...", "best_choice": "Es agradable." }] },
-          { "rank": 7, "responses": [{ "context": "Rival...", "best_choice": "Esa es la razón." }] },
-          { "rank": 8, "responses": [{ "context": "Duelo...", "best_choice": "Acepto el desafío." }] },
-          { "rank": 9, "type": "automatic", "date": "Historia" },
-          { "rank": 10, "type": "automatic", "date": "Historia" }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Opinión...",
+                "options": [
+                  {"text": "Siempre tienes mucho lío.", "points": 2},
+                  {"text": "Debes de estar muy ocupado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Dardos...",
+                "options": [
+                  {"text": "Mírame bien.", "points": 3},
+                  {"text": "Juguemos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Habilidad...",
+                "options": [
+                  {"text": "Tengo buena vista.", "points": 3},
+                  {"text": "Es gracias al café.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Como rivales.", "points": 2},
+                  {"text": "Como compañeros.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Fama...",
+                "options": [
+                  {"text": "Tiene que ser duro.", "points": 2},
+                  {"text": "Deberías haberte escondido.", "points": 2}
+                ]
+              },
+              {
+                "context": "Público...",
+                "options": [
+                  {"text": "¿No habrán sido amigos?", "points": 1},
+                  {"text": "Qué pesados.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Vaya ánimos.", "points": 2},
+                  {"text": "Lo pensaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Jazz...",
+                "options": [
+                  {"text": "¿Sueles venir mucho?", "points": 3},
+                  {"text": "Buen sitio.", "points": 2}
+                ]
+              },
+              {
+                "context": "Relato...",
+                "options": [
+                  {"text": "Tengo un microondas.", "points": 3},
+                  {"text": "Sabe cocinar un poco.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo entiendo.", "points": 2},
+                  {"text": "Es una sensación agradable.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Juego...",
+                "options": [
+                  {"text": "¿Estás acostumbrado?", "points": 2},
+                  {"text": "Eres muy bueno.", "points": 1}
+                ]
+              },
+              {
+                "context": "Tiro...",
+                "options": [
+                  {"text": "De verdad que sí.", "points": 2},
+                  {"text": "Ha sido pura suerte.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo hiciste genial.", "points": 2},
+                  {"text": "¿Te has divertido?", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Leblanc...",
+                "options": [
+                  {"text": "Un rato.", "points": 3},
+                  {"text": "Ni me acuerdo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Relajación...",
+                "options": [
+                  {"text": "A veces.", "points": 2},
+                  {"text": "No demasiado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Baño...",
+                "options": [
+                  {"text": "Lo mismo digo.", "points": 3},
+                  {"text": "Si insistes.", "points": 2}
+                ]
+              },
+              {
+                "context": "Agua...",
+                "options": [
+                  {"text": "Por mi culpa.", "points": 3},
+                  {"text": "Por el agua.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo mismo digo.", "points": 2},
+                  {"text": "Si con eso te basta.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Billar...",
+                "options": [
+                  {"text": "Es gracias a ti.", "points": 3},
+                  {"text": "Me acostumbre.", "points": 2}
+                ]
+              },
+              {
+                "context": "Derrota...",
+                "options": [
+                  {"text": "No voy a perder.", "points": 3},
+                  {"text": "Claro que sí.", "points": 2}
+                ]
+              },
+              {
+                "context": "Rival...",
+                "options": [
+                  {"text": "Eres mi rival.", "points": 3},
+                  {"text": "Eres un buen competidor.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No podríamos haber ganado de otra forma.", "points": 2},
+                  {"text": "Estuviste increíble.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Duelo...",
+                "options": [
+                  {"text": "Por qué no.", "points": 2},
+                  {"text": "Veamos.", "points": 1}
+                ]
+              },
+              {
+                "context": "Pelea...",
+                "options": [
+                  {"text": "Seguro que no pierdo.", "points": 3},
+                  {"text": "Si gano me comprarás algo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Resultado...",
+                "options": [
+                  {"text": "Era inevitable.", "points": 2},
+                  {"text": "Eres muy fuerte.", "points": 2}
+                ]
+              },
+              {
+                "context": "Guante...",
+                "options": [
+                  {"text": "Acepto.", "points": 3},
+                  {"text": "Lo pensaré.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "type": "automatic",
+            "date": "Automático (Crucero Shido)",
+            "interactions": [{"context": "Debes elegir: 'Quiero mantener mi promesa'.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "date": "Automático",
+            "interactions": [{"context": "Desbloquea: Hereward", "options": [{"text": "Cualquiera", "points": 0}]}]
+          }
         ]
       }
     }
   },
   {
     "id": 9,
-    "arcana_name": "Ermitaño (Hermit)",
+    "arcana_name": "El Ermitaño (Hermit)",
     "arcana_image": "tarot_p5_hermit.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Futaba Sakura",
-        "location": "Fuera de Leblanc",
-        "availability": "Mie, Jue, Sáb, Dom (Día). Requiere Amabilidad 4 (Selfless).",
+        "location": "Fuera de LeBlanc",
+        "availability": "Mie, Jue, Sáb, Dom (Día). Requiere Amabilidad 4.",
+        "unlock_condition": "Disponible desde el 31 de Agosto.",
         "image": "futaba.jpg",
+        "abilities": [
+          "Rango 1: Moral Support (Buffs aleatorios)",
+          "Rango 2: Mementos Scan (Mapeado completo)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "8/31" },
-          { "rank": 2, "responses": [{ "context": "Reto...", "best_choice": "¡Vamos a hacerlo!" }] },
-          { "rank": 3, "responses": [{ "context": "Búsqueda...", "best_choice": "Te iba a buscar." }] },
-          { "rank": 4, "responses": [{ "context": "Robot...", "best_choice": "Hagámoslo juntos." }] },
-          { "rank": 5, "responses": [{ "context": "Amiga...", "best_choice": "¿Seguro que no es una NPC?" }] },
-          { "rank": 6, "responses": [{ "context": "Felicidad...", "best_choice": "¿Estás feliz?" }] },
-          { "rank": 7, "responses": [{ "context": "Kana...", "best_choice": "¿Qué pasa con Kana?" }] },
-          { "rank": 8, "responses": [{ "context": "Promesa...", "best_choice": "Eres genial." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Porque te quiero (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Porque somos compañeros (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Desafío...",
+                "options": [
+                  {"text": "Ha sido muy fácil.", "points": 3},
+                  {"text": "Tú puedes hacerlo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Fatiga...",
+                "options": [
+                  {"text": "Descansarás.", "points": 2},
+                  {"text": "Te acostumbrarás.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Te lo aseguro.", "points": 2},
+                  {"text": "Porque somos compañeros.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Compra...",
+                "options": [
+                  {"text": "Iba a buscarte.", "points": 3},
+                  {"text": "Nos hemos encontrado.", "points": 2}
+                ]
+              },
+              {
+                "context": "Reunión...",
+                "options": [
+                  {"text": "Me alegro de verte.", "points": 3},
+                  {"text": "¿Quieres venir?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Nos esforzaremos.", "points": 2},
+                  {"text": "Claro.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Impresión...",
+                "options": [
+                  {"text": "Hagámoslo juntos.", "points": 3},
+                  {"text": "Qué adorable.", "points": 2}
+                ]
+              },
+              {
+                "context": "Elección...",
+                "options": [
+                  {"text": "Nadie te lo impide.", "points": 2},
+                  {"text": "Deberías ir.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Creo que tienes razón.", "points": 2},
+                  {"text": "Estás madurando.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Amiga...",
+                "options": [
+                  {"text": "¿No estás contenta?", "points": 2},
+                  {"text": "Menos mal.", "points": 1}
+                ]
+              },
+              {
+                "context": "Kana...",
+                "options": [
+                  {"text": "¿Crees que lo conseguirás?", "points": 2},
+                  {"text": "Háblame de ella.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es una gran amiga.", "points": 2},
+                  {"text": "Lo ha hecho ella.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Miedo...",
+                "options": [
+                  {"text": "Eso debe haber sido un shock.", "points": 3},
+                  {"text": "Qué miedo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Malentendido...",
+                "options": [
+                  {"text": "Lo has malinterpretado.", "points": 2},
+                  {"text": "Cálmate.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Huyes?", "points": 2},
+                  {"text": "Enfréntate a ello.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Padres...",
+                "options": [
+                  {"text": "¿Qué clase de padres?", "points": 2},
+                  {"text": "Son horribles.", "points": 1}
+                ]
+              },
+              {
+                "context": "Acción...",
+                "options": [
+                  {"text": "Debo hacer algo por ella.", "points": 3},
+                  {"text": "No podemos culparla.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Estás bien?", "points": 2},
+                  {"text": "Eres increíble.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Logro...",
+                "options": [
+                  {"text": "Es increíble.", "points": 3},
+                  {"text": "Buen trabajo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Esfuerzo...",
+                "options": [
+                  {"text": "Te has esforzado mucho.", "points": 3},
+                  {"text": "Todo ha salido bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Felicidades.", "points": 2},
+                  {"text": "¿Quieres una palmadita?", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Sentimiento...",
+                "options": [
+                  {"text": "Has madurado.", "points": 3},
+                  {"text": "Me alegro por ti.", "points": 2}
+                ]
+              },
+              {
+                "context": "Compañeros...",
+                "options": [
+                  {"text": "¿Estás bien?", "points": 3},
+                  {"text": "No pasa nada.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Porque te quiero. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Porque somos compañeros. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Lo siento.", "points": 2},
+                  {"text": "Quería verte.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 10,
-    "arcana_name": "Fortuna (Fortune)",
+    "arcana_name": "La Rueda de la Fortuna (Fortune)",
     "arcana_image": "tarot_p5_fortune.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Chihaya Mifune",
         "location": "Shinjuku (Noche)",
-        "availability": "Mar, Jue, Sáb, Dom (Noche). Paga 100,000 yenes para empezar.",
+        "availability": "Mar, Jue, Sáb, Dom. Requiere comprar la 'Holy Stone' (100k yenes).",
+        "unlock_condition": "Disponible desde el 22 de Junio.",
         "image": "chihaya.jpg",
+        "abilities": [
+          "Rango 1: Luck Reading (Aumentar ganancia de stat social)",
+          "Rango 5: Affinity Reading (Subir puntos con un confidente)",
+          "Rango 10: Special Fate Reading"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/22" },
-          { "rank": 2, "responses": [{ "context": "Sueño...", "best_choice": "Abre tu mente." }] },
-          { "rank": 3, "responses": [{ "context": "Cambio...", "best_choice": "Cambia tu destino." }] },
-          { "rank": 4, "responses": [{ "context": "Confianza...", "best_choice": "Confía en ti misma." }] },
-          { "rank": 5, "responses": [{ "context": "Esfuerzo...", "best_choice": "Eres muy trabajadora." }] },
-          { "rank": 6, "responses": [{ "context": "Poder...", "best_choice": "Tú eres tú." }] },
-          { "rank": 7, "responses": [{ "context": "Mentira...", "best_choice": "No creo en eso." }] },
-          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Chihaya Mifune." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero estar contigo (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Me gusta tu predicción (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Lectura...",
+                "options": [
+                  {"text": "Anímala.", "points": 3},
+                  {"text": "Lee su corazón.", "points": 1}
+                ]
+              },
+              {
+                "context": "Destino...",
+                "options": [
+                  {"text": "Dale la vuelta.", "points": 3},
+                  {"text": "No es verdad.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Depende de ti.", "points": 2},
+                  {"text": "Claro que lo soy.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "Síguenle el juego.", "points": 2},
+                  {"text": "No seas violenta.", "points": 1}
+                ]
+              },
+              {
+                "context": "Vínculo...",
+                "options": [
+                  {"text": "No te preocupes.", "points": 3},
+                  {"text": "Tengo mucho dinero.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Prueba...",
+                "options": [
+                  {"text": "Confía en ti misma.", "points": 3},
+                  {"text": "Refuérzate.", "points": 2}
+                ]
+              },
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Has salvado a alguien.", "points": 2},
+                  {"text": "No ha sido nada.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo digo en serio.", "points": 2},
+                  {"text": "No me importa.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Esfuerzo...",
+                "options": [
+                  {"text": "Eres muy trabajadora.", "points": 3},
+                  {"text": "Vas a ser una gran adivina.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No te preocupes.", "points": 2},
+                  {"text": "Solo hemos empezado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Maiden...",
+                "options": [
+                  {"text": "Eres una de ellas.", "points": 2},
+                  {"text": "¿Deberíamos probar?", "points": 2}
+                ]
+              },
+              {
+                "context": "Apodo...",
+                "options": [
+                  {"text": "Seas quien seas.", "points": 3},
+                  {"text": "Eres Chihaya.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Se honesta contigo misma.", "points": 2},
+                  {"text": "¿Te arrepientes?", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "No creo que lo hagas.", "points": 3},
+                  {"text": "Ten cuidado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Vas a probarlo?", "points": 2},
+                  {"text": "No es el destino.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Lo sé.", "points": 3},
+                  {"text": "¿A qué te refieres?", "points": 2}
+                ]
+              },
+              {
+                "context": "Valor...",
+                "options": [
+                  {"text": "Es mi culpa.", "points": 3},
+                  {"text": "Tuviste suerte.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Felicidades.", "points": 2},
+                  {"text": "Lo sabía.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Pueblo...",
+                "options": [
+                  {"text": "El destino ha cambiado.", "points": 3},
+                  {"text": "Has sido tú.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Para ver a Chihaya. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Para escuchar tus lecturas. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Quería oír tu voz.", "points": 2},
+                  {"text": "Es el destino.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 11,
-    "arcana_name": "Fuerza (Strength)",
+    "arcana_name": "La Fuerza (Strength)",
     "arcana_image": "tarot_p5_strength.png",
     "type": "standard",
     "routes": {
-      "male": {
+      "shared": {
         "character": "Justine & Caroline",
         "location": "Velvet Room",
-        "availability": "Cualquier momento. Misiones de Fusión.",
+        "availability": "Siempre. Requiere fusionar Personas específicas.",
         "image": "twins.jpg",
+        "abilities": [
+          "Rango 1: Group Guillotine (Fusión de 3)",
+          "Rango 3: Lockdown (Entrenar resistencias)",
+          "Rango 5: Special Treatment (Pagar para fusionar niveles altos)",
+          "Rango 8: Guillotine Booster (Fusión de más Personas)",
+          "Rango 10: VIP Treatment (Descuento en fusiones)"
+        ],
         "ranks": [
-          { "rank": 1, "context": "Jack Frost con Mabufu." },
-          { "rank": 2, "context": "Ame-no-Uzume con Frei." },
-          { "rank": 3, "context": "Flauros con Tarukaja." },
-          { "rank": 4, "context": "Phoenix con Counter." },
-          { "rank": 5, "context": "Setanta con Rakukaja." },
-          { "rank": 6, "context": "Neko Shogun con Dekaja." },
-          { "rank": 7, "context": "Lachesis con Tetraja." },
-          { "rank": 8, "context": "Hecatoncheires con Masukunda." },
-          { "rank": 9, "context": "Bugs con Samarecarm." },
-          { "rank": 10, "context": "Seth con High Counter." }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "unlock_condition": "Jack Frost con Mabufu. (Nivel 12, aprende al 12). Fusión: Berith + Apsaras / Silky + Mandrake.",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "unlock_condition": "Ame-no-Uzume con Frei. Fusión: Suzaku + Berith (Heredar Frei). O usa Carta de Habilidad Frei.",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 3,
+            "unlock_condition": "Flauros con Tarukaja. Fusión (Guillotina Grupo): Berith + Andras + Eligor. (Eligor aprende Tarukaja nvl 16).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 4,
+            "unlock_condition": "Phoenix con Counter. Fusión: Yaksini + Kelpie (Heredar Counter).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 5,
+            "unlock_condition": "Setanta con Rakukaja. Fusión: Lamia + Silky (Heredar Rakukaja).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 6,
+            "unlock_condition": "Neko Shogun con Dekaja. Fusión (Guillotina Grupo): Anzu + Sudama + Kodama. (Anzu aprende Dekaja nvl 28).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 7,
+            "unlock_condition": "Lachesis con Tetraja. Fusión: Principality + Sandman (Heredar Tetraja). O Clotho + Regent.",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 8,
+            "unlock_condition": "Hecatoncheires con Masukunda. Fusión: Lilim + Unicorn (Heredar Masukunda).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 9,
+            "unlock_condition": "Bugs con Samarecarm. Fusión (Guillotina Grupo): Pixie + Pisaca + Hariti. (Hariti aprende Samarecarm nvl 41).",
+            "interactions": [{"context": "Entrega la Persona solicitada.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 10,
+            "unlock_condition": "Seth con High Counter. Fusión (Guillotina Grupo): Isis + Thoth + Anubis + Horus. (Usa carta High Counter de Mementos/Dakini).",
+            "interactions": [{"context": "Entrega la Persona solicitada. Desbloquea: Zaou-Gongen.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          }
         ]
       }
     }
   },
   {
     "id": 12,
-    "arcana_name": "Colgado (Hanged)",
+    "arcana_name": "El Colgado (Hanged Man)",
     "arcana_image": "tarot_p5_hanged.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Munehisa Iwai",
-        "location": "Tienda de Airsoft (Shibuya)",
-        "availability": "Sáb, Dom (Noche). Requiere Agallas 4 (Dauntless).",
+        "location": "Untouchable (Airsoft Shop)",
+        "availability": "Sáb, Dom (Noche). Requiere Valentía 4 (Intrépido).",
+        "unlock_condition": "Disponible desde el 6 de Mayo.",
         "image": "iwai.jpg",
+        "abilities": [
+          "Rango 1: Starter Customization (Modificar armas básicas)",
+          "Rango 3: Camo Customization (Añadir efectos de estado)",
+          "Rango 7: Discount (Menor coste de modificación)",
+          "Rango 10: Special Customization (Modificaciones de grado máximo)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic" },
-          { "rank": 2, "responses": [{ "context": "Enfermedad...", "best_choice": "¿Qué debería hacer?" }] },
-          { "rank": 3, "responses": [{ "context": "Imaginación...", "best_choice": "Siempre imaginé que eras un matón." }] },
-          { "rank": 4, "responses": [{ "context": "Información...", "best_choice": "¿Dónde está la recompensa?" }] },
-          { "rank": 5, "responses": [{ "context": "Compasión...", "best_choice": "Eres patético." }] },
-          { "rank": 6, "responses": [{ "context": "Hijo...", "best_choice": "Por Kaoru." }] },
-          { "rank": 7, "responses": [{ "context": "Inteligencia...", "best_choice": "Es un tipo listo." }] },
-          { "rank": 8, "responses": [{ "context": "Verdad...", "best_choice": "Deberías decírselo." }] },
-          { "rank": 9, "responses": [{ "context": "Kaoru...", "best_choice": "Kaoru es muy fuerte." }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Enfermedad...",
+                "options": [
+                  {"text": "Quizás debería llamarles.", "points": 2},
+                  {"text": "¿Estás enfermo?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Entendido.", "points": 2},
+                  {"text": "Dime qué quieres.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Imaginación...",
+                "options": [
+                  {"text": "Siempre supe que eras un matón.", "points": 3},
+                  {"text": "Tienes una imaginación desbordante.", "points": 2}
+                ]
+              },
+              {
+                "context": "Yakuza...",
+                "options": [
+                  {"text": "¿Lo hacías con ganas?", "points": 2},
+                  {"text": "Da miedo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me lo tomaré en serio.", "points": 2},
+                  {"text": "Siempre vamos en serio.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Trato...",
+                "options": [
+                  {"text": "Iwai.", "points": 3},
+                  {"text": "Ninguno de los dos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "No tiene nada que ver con el dinero.", "points": 2},
+                  {"text": "No es suficiente.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Estoy de acuerdo.", "points": 2},
+                  {"text": "No te pases.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Verdad...",
+                "options": [
+                  {"text": "¿Por qué no se lo dijiste?", "points": 3},
+                  {"text": "Es un buen chico.", "points": 2}
+                ]
+              },
+              {
+                "context": "Hijo...",
+                "options": [
+                  {"text": "Dáselo a mi hijo.", "points": 3},
+                  {"text": "Se lo daré a Kaoru.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eres patético.", "points": 2},
+                  {"text": "Cíñete a las armas.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Secreto...",
+                "options": [
+                  {"text": "¿Por qué me lo diría?", "points": 3},
+                  {"text": "Es nuestro secreto.", "points": 3}
+                ]
+              },
+              {
+                "context": "Familia...",
+                "options": [
+                  {"text": "Deberías comprarnos algo.", "points": 3},
+                  {"text": "Por los viejos tiempos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tiene edad para ello.", "points": 2},
+                  {"text": "Es un chico fuerte.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Cliente...",
+                "options": [
+                  {"text": "Desde luego que no.", "points": 3},
+                  {"text": "Parece sospechoso.", "points": 2}
+                ]
+              },
+              {
+                "context": "Plan...",
+                "options": [
+                  {"text": "Eres muy listo.", "points": 3},
+                  {"text": "¿Estás seguro de esto?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Acepta el cambio.", "points": 2},
+                  {"text": "Si es por el bien de Kaoru.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Kaoru...",
+                "options": [
+                  {"text": "Lo he hecho por Kaoru.", "points": 3},
+                  {"text": "Solo quería ayudar.", "points": 2}
+                ]
+              },
+              {
+                "context": "Recompensa...",
+                "options": [
+                  {"text": "Quiero que me ayudes.", "points": 2},
+                  {"text": "Dinero.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Entendido.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Vida...",
+                "options": [
+                  {"text": "¿Estás seguro de que sigue vivo?", "points": 3},
+                  {"text": "Dime su nombre.", "points": 2}
+                ]
+              },
+              {
+                "context": "Kaoru...",
+                "options": [
+                  {"text": "Kaoru es muy fuerte.", "points": 3},
+                  {"text": "Todo irá bien.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es un tío genial.", "points": 2},
+                  {"text": "Necesita confiar en su hijo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 13,
-    "arcana_name": "Muerte (Death)",
+    "arcana_name": "La Muerte (Death)",
     "arcana_image": "tarot_p5_death.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Tae Takemi",
-        "location": "Clínica Yongen-Jaya",
-        "availability": "Cualquier día (Día). Requiere Agallas 2 (Bold).",
+        "location": "Clínica Takemi",
+        "availability": "Todos los días (Día). Requiere Valentía 2.",
+        "unlock_condition": "Disponible desde el 18 de Abril.",
         "image": "takemi.jpg",
+        "abilities": [
+          "Rango 1: Rejuvenation (Venta de medicinas)",
+          "Rango 5: Immunization (Venta de accesorios de apoyo)",
+          "Rango 7: Discount (50% de descuento en la tienda)",
+          "Rango 10: Resuscitation (Venta de objetos de revivir máximos)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "4/18" },
-          { "rank": 2, "responses": [{ "context": "Plaga...", "best_choice": "Tengo mal corazón." }] },
-          { "rank": 3, "responses": [{ "context": "Medicina...", "best_choice": "Necesito la medicina." }] },
-          { "rank": 4, "responses": [{ "context": "Dr. Takemi...", "best_choice": "El Dr. Takemi te ayudará." }] },
-          { "rank": 5, "responses": [{ "context": "Miya...", "best_choice": "Es bueno verte." }] },
-          { "rank": 6, "responses": [{ "context": "Idoneidad...", "best_choice": "Me parece bien." }] },
-          { "rank": 7, "responses": [{ "context": "Pasado...", "best_choice": "Solo descansa." }] },
-          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Es por Miya." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quería verte (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Fue por mi examen (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Enfermedad...",
+                "options": [
+                  {"text": "Tengo mal corazón.", "points": 2},
+                  {"text": "Tenemos un trato.", "points": 1}
+                ]
+              },
+              {
+                "context": "Acuerdo...",
+                "options": [
+                  {"text": "Estoy de acuerdo.", "points": 2},
+                  {"text": "Estoy bien.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No me importa.", "points": 2},
+                  {"text": "Lo intentaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Rumores...",
+                "options": [
+                  {"text": "No me importa.", "points": 2},
+                  {"text": "¿De qué iba?", "points": 1}
+                ]
+              },
+              {
+                "context": "Medicina...",
+                "options": [
+                  {"text": "Por supuesto no.", "points": 2},
+                  {"text": "¿La necesito?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Si me pagas.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Doctor...",
+                "options": [
+                  {"text": "El Dr. Takemi te ayudará.", "points": 2},
+                  {"text": "Todavía no te has curado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Actitud...",
+                "options": [
+                  {"text": "Pareces contenta.", "points": 3},
+                  {"text": "Eres muy amable.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Reflexionaré sobre mis errores.", "points": 2},
+                  {"text": "Pero me he curado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Llegada...",
+                "options": [
+                  {"text": "Qué bueno verte.", "points": 2},
+                  {"text": "¿Has terminado?", "points": 1}
+                ]
+              },
+              {
+                "context": "Miya...",
+                "options": [
+                  {"text": "¿Quién es?", "points": 2},
+                  {"text": "¿Es amiga tuya?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es bueno oírlo.", "points": 2},
+                  {"text": "Ten cuidado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Director...",
+                "options": [
+                  {"text": "Te queda bien.", "points": 3},
+                  {"text": "No te pega.", "points": 2}
+                ]
+              },
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "Tú puedes hacerlo.", "points": 2},
+                  {"text": "Eres una masoquista.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Por qué no?", "points": 2},
+                  {"text": "Lo consultaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "Es acoso.", "points": 2},
+                  {"text": "Es horrible.", "points": 1}
+                ]
+              },
+              {
+                "context": "Motivación...",
+                "options": [
+                  {"text": "Me alegro de que lo hicieras.", "points": 3},
+                  {"text": "Solo descansa.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Estoy a tu lado.", "points": 2},
+                  {"text": "Somos aliados.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Miwa...",
+                "options": [
+                  {"text": "Es mi especialidad.", "points": 3},
+                  {"text": "Déjamelo a mí.", "points": 3}
+                ]
+              },
+              {
+                "context": "Información...",
+                "options": [
+                  {"text": "Espera y verás.", "points": 3},
+                  {"text": "No puedo decírtelo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Menos mal.", "points": 2},
+                  {"text": "Buen trabajo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Exámenes...",
+                "options": [
+                  {"text": "Ha sido duro.", "points": 3},
+                  {"text": "No te presiones.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Quería verte. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Ha sido por mi examen. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Te quiero.", "points": 3},
+                  {"text": "No es una broma.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "¿Te has puesto roja?", "points": 2},
+                  {"text": "Me alegro.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 14,
-    "arcana_name": "Templanza (Temperance)",
+    "arcana_name": "La Templanza (Temperance)",
     "arcana_image": "tarot_p5_temperance.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Sadayo Kawakami",
-        "location": "Teléfono Amarillo (Leblanc)",
-        "availability": "Vie, Sáb (Noche). Requiere Agallas 3 (Staunch).",
+        "location": "Teléfono Amarillo (LeBlanc)",
+        "availability": "Vie, Sáb (Noche). Requiere Valentía 3. Cuesta 5,000 yenes.",
+        "unlock_condition": "Disponible desde el 24 de Mayo (Evento Maidwatch).",
         "image": "kawakami.jpg",
+        "abilities": [
+          "Rango 1: Slack Off (Tiempo libre en clase de Kawakami)",
+          "Rango 3: Housekeeping (Kawakami hace café/herramientas por ti)",
+          "Rango 5: Free Time (Tiempo libre en otras clases)",
+          "Rango 10: Special Massage (Permite salir de noche tras ir al Metaverso)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "5/24" },
-          { "rank": 2, "responses": [{ "context": "Gato...", "best_choice": "Miau." }] },
-          { "rank": 3, "responses": [{ "context": "Cocina...", "best_choice": "Sí, lo harán." }] },
-          { "rank": 4, "responses": [{ "context": "Rudeza...", "best_choice": "¿Qué grosería?" }] },
-          { "rank": 5, "responses": [{ "context": "Maestra...", "best_choice": "Es divertido." }] },
-          { "rank": 6, "responses": [{ "context": "Descanso...", "best_choice": "Descansa un poco." }] },
-          { "rank": 7, "responses": [{ "context": "Dinero...", "best_choice": "No pagues." }] },
-          { "rank": 8, "responses": [{ "context": "Deseo...", "best_choice": "¿Es eso lo que quieres?" }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero que nos sigamos viendo (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Eres una gran maestra (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "¡Masaje Especial desbloqueado!" }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Llama al servicio de limpieza.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Sospecha...",
+                "options": [
+                  {"text": "Me duele la cabeza.", "points": 2},
+                  {"text": "Me siento mal.", "points": 1}
+                ]
+              },
+              {
+                "context": "Maid...",
+                "options": [
+                  {"text": "¿Lo necesitas?", "points": 2},
+                  {"text": "¿Por el dinero?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tú decides.", "points": 2},
+                  {"text": "Te lo has buscado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Trato...",
+                "options": [
+                  {"text": "Sí, lo hacen.", "points": 2},
+                  {"text": "Son unos pesados.", "points": 1}
+                ]
+              },
+              {
+                "context": "Cocina...",
+                "options": [
+                  {"text": "Lo pediré más a menudo.", "points": 3},
+                  {"text": "Gracias.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Gracias.", "points": 2},
+                  {"text": "Te lo has currado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Maleducado...",
+                "options": [
+                  {"text": "Qué grosero.", "points": 2},
+                  {"text": "¿Quién es?", "points": 1}
+                ]
+              },
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "Tienes que quererte.", "points": 3},
+                  {"text": "Eres muy dura.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me haces sentir mal.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Noche...",
+                "options": [
+                  {"text": "Está bien.", "points": 2},
+                  {"text": "Llegas tarde.", "points": 1}
+                ]
+              },
+              {
+                "context": "Diversión...",
+                "options": [
+                  {"text": "Eres divertida.", "points": 2},
+                  {"text": "Qué miedo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tienes mala cara.", "points": 2},
+                  {"text": "Vete a casa.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Descanso...",
+                "options": [
+                  {"text": "Descansa un poco.", "points": 2},
+                  {"text": "¿Estás bien?", "points": 1}
+                ]
+              },
+              {
+                "context": "Vuelta...",
+                "options": [
+                  {"text": "¿Estás bien?", "points": 3},
+                  {"text": "Vete a casa.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Cómo estás?", "points": 2},
+                  {"text": "No te esfuerces.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "No les pagues.", "points": 3},
+                  {"text": "No te dejes.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Piénsatelo bien.", "points": 2},
+                  {"text": "¿No hay otra manera?", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Decisión...",
+                "options": [
+                  {"text": "¿Eso es lo que quieres?", "points": 3},
+                  {"text": "¿Estás segura?", "points": 2}
+                ]
+              },
+              {
+                "context": "Futuro...",
+                "options": [
+                  {"text": "Si eso es lo que decides.", "points": 3},
+                  {"text": "Te echaré de menos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No te rindas.", "points": 2},
+                  {"text": "Buena suerte.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Guardia...",
+                "options": [
+                  {"text": "Tonterías.", "points": 3},
+                  {"text": "Que se pudran.", "points": 2}
+                ]
+              },
+              {
+                "context": "Regreso...",
+                "options": [
+                  {"text": "Me alegro.", "points": 3},
+                  {"text": "Menos mal.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Quiero que nos veamos. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Seré un buen estudiante. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Lo digo en serio.", "points": 3},
+                  {"text": "Soy un hombre.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Así se habla.", "points": 2},
+                  {"text": "Que se arrepientan.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 15,
-    "arcana_name": "Diablo (Devil)",
+    "arcana_name": "El Diablo (Devil)",
     "arcana_image": "tarot_p5_devil.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Ichiko Ohya",
         "location": "Bar Crossroads (Shinjuku)",
-        "availability": "Cualquier noche. Desbloquea: 6/23.",
+        "availability": "Todos los días (Noche).",
+        "unlock_condition": "Disponible desde el 23 de Junio.",
         "image": "ohya.jpg",
+        "abilities": [
+          "Rango 1: Rumor-filled Scoop (Baja nivel de alerta en Palacios)",
+          "Rango 4: Shocking Scoop (Nivel de alerta baja más rápido)",
+          "Rango 10: Legendary Scoop (Nivel de alerta apenas sube)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/23" },
-          { "rank": 2, "responses": [{ "context": "Artículo...", "best_choice": "Mishimima." }] },
-          { "rank": 3, "responses": [{ "context": "Mentira...", "best_choice": "No debes mentir." }] },
-          { "rank": 4, "responses": [{ "context": "Foto...", "best_choice": "Déjame ver." }] },
-          { "rank": 5, "responses": [{ "context": "Jefe...", "best_choice": "Es imperdonable." }] },
-          { "rank": 6, "responses": [{ "context": "Edad...", "best_choice": "Deberías pensar en tu edad." }] },
-          { "rank": 7, "responses": [{ "context": "Cansancio...", "best_choice": "No trabajes demasiado." }] },
-          { "rank": 8, "responses": [{ "context": "Nombre...", "best_choice": "Tomar el nombre." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Me lo tomo en serio (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Solo somos amigos (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Final...", "best_choice": "Cualquier opción." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Artículo...",
+                "options": [
+                  {"text": "Mishima puede servir.", "points": 2},
+                  {"text": "¿Por qué lo preguntas?", "points": 1}
+                ]
+              },
+              {
+                "context": "Periodismo...",
+                "options": [
+                  {"text": "Merece la pena.", "points": 2},
+                  {"text": "Es peligroso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es solo por el artículo.", "points": 2},
+                  {"text": "No me culpes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Mentira...",
+                "options": [
+                  {"text": "No deberías mentir.", "points": 2},
+                  {"text": "No pongas excusas.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "¿Era una pista?", "points": 2},
+                  {"text": "Eres lista.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Fotos...",
+                "options": [
+                  {"text": "Déjamelo a mí.", "points": 2},
+                  {"text": "Espero que no.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Buena suerte.", "points": 2},
+                  {"text": "Ten cuidado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Jefe...",
+                "options": [
+                  {"text": "Eso es imperdonable.", "points": 3},
+                  {"text": "¿Por qué?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me da igual.", "points": 2},
+                  {"text": "Tengo curiosidad.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Socio...",
+                "options": [
+                  {"text": "Debe de haber sido muy buena.", "points": 2},
+                  {"text": "No te culpes.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Averigüemos la verdad.", "points": 2},
+                  {"text": "Por Kayo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Distracción...",
+                "options": [
+                  {"text": "Qué encantador.", "points": 2},
+                  {"text": "Te pareces a él.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eso es el espíritu.", "points": 2},
+                  {"text": "No te rindas.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Cansancio...",
+                "options": [
+                  {"text": "Pareces cansada.", "points": 2},
+                  {"text": "Te invitaré.", "points": 1}
+                ]
+              },
+              {
+                "context": "Decisión...",
+                "options": [
+                  {"text": "Buena suerte.", "points": 3},
+                  {"text": "Ten cuidado.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Noticia...",
+                "options": [
+                  {"text": "Te lo has tomado bien.", "points": 3},
+                  {"text": "¿Te rindes?", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Me lo he tomado en serio. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Era una broma. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Te quiero, Ichiko.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Quería oír tu voz. (Romance)", "points": 2},
+                  {"text": "Cuento contigo. (Amistad)", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 16,
-    "arcana_name": "Torre (Tower)",
+    "arcana_name": "La Torre (Tower)",
     "arcana_image": "tarot_p5_tower.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Shinya Oda",
         "location": "Arcade de Akihabara",
-        "availability": "Jue, Sáb (Día). Desbloquea misión 'Winners Don't Use Cheats'.",
+        "availability": "Jue, Sáb (Día).",
+        "unlock_condition": "Disponible desde el 4 de Septiembre. Misión 'Winners Don't Use Cheats'.",
         "image": "shinya.jpg",
+        "abilities": [
+          "Rango 1: Down Shot (Derribar enemigo sin debilidad)",
+          "Rango 6: Cheap Shot (Menos munición para Down Shot)",
+          "Rango 10: Oda Special (Disparos ignoran resistencias)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "9/4" },
-          { "rank": 2, "responses": [{ "context": "Comparación...", "best_choice": "No te compares." }] },
-          { "rank": 3, "responses": [{ "context": "Genial...", "best_choice": "¡Eso es genial!" }] },
-          { "rank": 4, "responses": [{ "context": "Trampas...", "best_choice": "¿Quieres ganar haciendo trampas?" }] },
-          { "rank": 5, "responses": [{ "context": "Estrategia...", "best_choice": "Es una buena estrategia." }] },
-          { "rank": 6, "responses": [{ "context": "Respeto...", "best_choice": "Te respeto." }] },
-          { "rank": 7, "responses": [{ "context": "Madre...", "best_choice": "Deberías hablar con ella." }] },
-          { "rank": 8, "responses": [{ "context": "Culpable...", "best_choice": "No, ella no lo es." }] },
-          { "rank": 9, "responses": [{ "context": "Victoria...", "best_choice": "Me alegro de que ganaras." }] },
-          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Gun Controller desbloqueado." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Escuela...",
+                "options": [
+                  {"text": "No te compares con ellos.", "points": 3},
+                  {"text": "¿Qué opinan en la escuela?", "points": 2}
+                ]
+              },
+              {
+                "context": "Trabajo...",
+                "options": [
+                  {"text": "Qué empleado tan maleducado.", "points": 2},
+                  {"text": "¿Le respetan?", "points": 1}
+                ]
+              },
+              {
+                "context": "Admiración...",
+                "options": [
+                  {"text": "¿Admiras a los Phantom Thieves?", "points": 2},
+                  {"text": "Yo les daré el mensaje.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo intentaré.", "points": 2},
+                  {"text": "Esfuérzate.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "Vamos a comer.", "points": 0},
+                  {"text": "¿No vas a comer?", "points": 0}
+                ]
+              },
+              {
+                "context": "Invitar...",
+                "options": [
+                  {"text": "Vale.", "points": 2},
+                  {"text": "Me pides demasiado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Claro que sí.", "points": 2},
+                  {"text": "Tal vez.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Trampas...",
+                "options": [
+                  {"text": "Sí, lo hacen.", "points": 2},
+                  {"text": "¿Tú no?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro por ti.", "points": 2},
+                  {"text": "No te confíes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Dinero...",
+                "options": [
+                  {"text": "Es bastante raro.", "points": 3},
+                  {"text": "¿Estás seguro?", "points": 2}
+                ]
+              },
+              {
+                "context": "Estrategia...",
+                "options": [
+                  {"text": "Seguro que puedes hacerlo.", "points": 2},
+                  {"text": "Necesitas una estrategia nueva.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Ánimo.", "points": 2},
+                  {"text": "Piénsalo bien.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Queja...",
+                "options": [
+                  {"text": "Supongo que sí.", "points": 2},
+                  {"text": "No hagas caso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Sentimientos...",
+                "options": [
+                  {"text": "De nada.", "points": 2},
+                  {"text": "Me alegro.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eso es.", "points": 2},
+                  {"text": "No te pases.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Habilidades...",
+                "options": [
+                  {"text": "No me importaría.", "points": 2},
+                  {"text": "Pide un deseo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tus amigos tienen razón.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "No, no lo es.", "points": 2},
+                  {"text": "¿Es eso lo que piensas?", "points": 2}
+                ]
+              },
+              {
+                "context": "Creencia...",
+                "options": [
+                  {"text": "Cree en ellos.", "points": 3},
+                  {"text": "Lo haré.", "points": 2}
+                ]
+              },
+              {
+                "context": "Despertar...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Déjamelo a mí.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro.", "points": 2},
+                  {"text": "Era lo menos que podía hacer.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Me alegro de oír eso.", "points": 3},
+                  {"text": "No te rindas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Fuerza...",
+                "options": [
+                  {"text": "No, para nada.", "points": 3},
+                  {"text": "Un poco.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro por ti.", "points": 2},
+                  {"text": "Sigue así.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 17,
-    "arcana_name": "Estrella (Star)",
+    "arcana_name": "La Estrella (Star)",
     "arcana_image": "tarot_p5_star.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Hifumi Togo",
         "location": "Iglesia de Kanda",
-        "availability": "Mon, Mie, Sáb (Noche). Requiere Encanto 3 (Suave).",
+        "availability": "Lun, Mie, Sáb (Noche). Requiere Encanto 3.",
+        "unlock_condition": "Disponible desde el 25 de Junio.",
         "image": "hifumi.jpg",
+        "abilities": [
+          "Rango 1: Koma Sabaki (Cambiar miembros en tu turno)",
+          "Rango 5: Narikin (Doble dinero si ganas en 1 turno)",
+          "Rango 9: Touryou (Escapar de cualquier batalla)",
+          "Rango 10: Togo System (Cambiar miembros en turno de cualquiera)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "6/25" },
-          { "rank": 2, "responses": [{ "context": "Shogi...", "best_choice": "Es interesante." }] },
-          { "rank": 3, "responses": [{ "context": "Disgusto...", "best_choice": "Te ves frustrada." }] },
-          { "rank": 4, "responses": [{ "context": "Pasión...", "best_choice": "Debes amar el Shogi." }] },
-          { "rank": 5, "responses": [{ "context": "Miedo...", "best_choice": "Da miedo." }] },
-          { "rank": 6, "responses": [{ "context": "Frustración...", "best_choice": "¿Es eso lo que quieres?" }] },
-          { "rank": 7, "responses": [{ "context": "Suerte...", "best_choice": "La suerte es parte de la estrategia." }] },
-          { "rank": 8, "responses": [{ "context": "Madre...", "best_choice": "Hablemos con tu madre." }] },
-          { "rank": 9, "responses": [{ "context": "Romance...", "best_choice": "Quiero estar contigo para siempre (ROMANCE)" }, { "context": "Amistad...", "best_choice": "Seremos buenos amigos (AMISTAD)" }] },
-          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Hifumi Togo System." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Shogi...",
+                "options": [
+                  {"text": "Es interesante.", "points": 2},
+                  {"text": "Es difícil.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No te preocupes.", "points": 2},
+                  {"text": "Me gusta verte así.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Describir...",
+                "options": [
+                  {"text": "Te describe perfectamente.", "points": 2},
+                  {"text": "No me gusta.", "points": 1}
+                ]
+              },
+              {
+                "context": "Malestar...",
+                "options": [
+                  {"text": "¿Te diviertes?", "points": 2},
+                  {"text": "Es duro.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Gracias.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Lugar...",
+                "options": [
+                  {"text": "No me importa.", "points": 2},
+                  {"text": "Es un poco siniestro.", "points": 1}
+                ]
+              },
+              {
+                "context": "Hombre...",
+                "options": [
+                  {"text": "Son geniales.", "points": 2},
+                  {"text": "Dan miedo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me encantaría.", "points": 2},
+                  {"text": "La próxima vez.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Madre...",
+                "options": [
+                  {"text": "Da miedo.", "points": 2},
+                  {"text": "Es un poco intensa.", "points": 2}
+                ]
+              },
+              {
+                "context": "Retirada...",
+                "options": [
+                  {"text": "¿Deberías dejarlo?", "points": 2},
+                  {"text": "¿Ya no te gusta?", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Tienes razón.", "points": 2},
+                  {"text": "Es difícil.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Frustración...",
+                "options": [
+                  {"text": "¿Es frustrante?", "points": 2},
+                  {"text": "¿Te molesta?", "points": 1}
+                ]
+              },
+              {
+                "context": "Pasión...",
+                "options": [
+                  {"text": "Haz lo que te gusta.", "points": 2},
+                  {"text": "Sigue tu corazón.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eres muy imaginativa.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Alivio...",
+                "options": [
+                  {"text": "Que suerte.", "points": 2},
+                  {"text": "Me alegro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Creencia...",
+                "options": [
+                  {"text": "Creo en ti.", "points": 3},
+                  {"text": "No te rindas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Esa es la actitud.", "points": 2},
+                  {"text": "Confío en ti.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Acción...",
+                "options": [
+                  {"text": "Eso no va a funcionar.", "points": 2},
+                  {"text": "Hay que hacer algo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Decisión...",
+                "options": [
+                  {"text": "Vamos a hacerlo.", "points": 3},
+                  {"text": "Cuento contigo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro.", "points": 2},
+                  {"text": "Ha sido divertido.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Partida...",
+                "options": [
+                  {"text": "Da lo mejor de ti.", "points": 2},
+                  {"text": "Gana.", "points": 2}
+                ]
+              },
+              {
+                "context": "Rey...",
+                "options": [
+                  {"text": "Una decisión muy real.", "points": 3},
+                  {"text": "Es muy valiente.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Quiero estar contigo. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Seremos amigos. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Quería oír tu voz.", "points": 2},
+                  {"text": "Te apoyaré.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 18,
-    "arcana_name": "Luna (Moon)",
+    "arcana_name": "La Luna (Moon)",
     "arcana_image": "tarot_p5_moon.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Yuuki Mishima",
-        "location": "Shinjuku / Akihabara",
-        "availability": "Cualquier noche. ¡Completa misiones de Mementos!",
+        "location": "Calle Central Shibuya / Shinjuku / Akihabara",
+        "availability": "Noches. Requiere completar misiones de Mementos.",
+        "unlock_condition": "Disponible desde el 6 de Mayo.",
         "image": "mishima.jpg",
+        "abilities": [
+          "Rango 1: Mishima's Support (Miembros en reserva ganan XP)",
+          "Rango 5: Mishima's Enthusiasm (Aumenta XP ganada)",
+          "Rango 10: Salvation Wish (Todos ganan la misma XP que los activos)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "5/6" },
-          { "rank": 2, "responses": [{ "context": "Famoso...", "best_choice": "Suenas emocionado." }] },
-          { "rank": 3, "responses": [{ "context": "Genial...", "best_choice": "¡Genial!" }] },
-          { "rank": 4, "responses": [{ "context": "Dinero...", "best_choice": "Es una buena idea." }] },
-          { "rank": 5, "responses": [{ "context": "Justicia...", "best_choice": "¿Es por la justicia?" }] },
-          { "rank": 6, "responses": [{ "context": "Rumores...", "best_choice": "Eres muy popular." }] },
-          { "rank": 7, "responses": [{ "context": "Cambio...", "best_choice": "Has cambiado." }] },
-          { "rank": 8, "responses": [{ "context": "Sombra...", "best_choice": "Espera." }] },
-          { "rank": 9, "responses": [{ "context": "Coraje...", "best_choice": "Fuiste valiente." }] },
-          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "EXP Share definitivo." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Publicidad...",
+                "options": [
+                  {"text": "Has hecho un buen trabajo.", "points": 3},
+                  {"text": "Parece difícil.", "points": 2}
+                ]
+              },
+              {
+                "context": "Phantom Aficionado...",
+                "options": [
+                  {"text": "Suena genial.", "points": 3},
+                  {"text": "Me gusta.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Claro.", "points": 2},
+                  {"text": "Puede ser.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Idea...",
+                "options": [
+                  {"text": "Buena idea.", "points": 3},
+                  {"text": "Estamos en tus manos.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Te lo agradezco.", "points": 2},
+                  {"text": "Inténtalo.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Steak...",
+                "options": [
+                  {"text": "El bistec me encanta.", "points": 3},
+                  {"text": "Suena delicioso.", "points": 2}
+                ]
+              },
+              {
+                "context": "Información...",
+                "options": [
+                  {"text": "Eres increíble.", "points": 3},
+                  {"text": "Gracias.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Contamos contigo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Pregunta...",
+                "options": [
+                  {"text": "¿Es por mí?", "points": 3},
+                  {"text": "Gracias.", "points": 2}
+                ]
+              },
+              {
+                "context": "Periodista...",
+                "options": [
+                  {"text": "Buena idea.", "points": 3},
+                  {"text": "Es útil.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Qué envidia.", "points": 2},
+                  {"text": "Bien hecho.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Rumores...",
+                "options": [
+                  {"text": "Eres muy popular.", "points": 3},
+                  {"text": "Eres famoso.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eres increíble.", "points": 2},
+                  {"text": "Menos mal.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "Puede que tengas razón.", "points": 3},
+                  {"text": "No estoy seguro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Eres indispensable.", "points": 2},
+                  {"text": "Te lo has ganado.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Miedo...",
+                "options": [
+                  {"text": "No voy a irme.", "points": 3},
+                  {"text": "No te preocupes.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Espera.", "points": 2},
+                  {"text": "Cálmate.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Sombra...",
+                "options": [
+                  {"text": "Mostraste mucho valor.", "points": 3},
+                  {"text": "No fue nada.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Brillaban.", "points": 2},
+                  {"text": "Tengo hambre.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 19,
-    "arcana_name": "Sol (Sun)",
+    "arcana_name": "El Sol (Sun)",
     "arcana_image": "tarot_p5_sun.png",
     "type": "standard",
     "routes": {
       "male": {
         "character": "Toranosuke Yoshida",
-        "location": "Estación de Shibuya (Plaza)",
-        "availability": "Domingos (Noche). ¡TIENE FECHA LÍMITE (Noviembre)!",
+        "location": "Plaza de la Estación Shibuya",
+        "availability": "Domingos (Noche).",
+        "unlock_condition": "Disponible desde el 6 de Mayo. Trabaja 2 veces en el Beef Bowl.",
+        "critical_warning": "FECHA LÍMITE: 13 de Noviembre.",
         "image": "yoshida.jpg",
+        "abilities": [
+          "Rango 2: Diplomacy (Pedir más dinero/objetos)",
+          "Rango 3: Fundraising (Pedir mucho dinero)",
+          "Rango 8: Mind Control (Saltar negociación)",
+          "Rango 10: Charismatic Speech (Reclutar sombras de nivel mayor al tuyo)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic" },
-          { "rank": 2, "responses": [{ "context": "Discurso...", "best_choice": "Quiero mejorar mi discurso." }] },
-          { "rank": 3, "responses": [{ "context": "Argumento...", "best_choice": "Tienes razón." }] },
-          { "rank": 4, "responses": [{ "context": "Pasado...", "best_choice": "Eso ya pasó." }] },
-          { "rank": 5, "responses": [{ "context": "Medios...", "best_choice": "Los medios no importan." }] },
-          { "rank": 6, "responses": [{ "context": "Apoyo...", "best_choice": "Estoy contigo." }] },
-          { "rank": 7, "responses": [{ "context": "Negativa...", "best_choice": "Deberías negarte." }] },
-          { "rank": 8, "responses": [{ "context": "Convicción...", "best_choice": "Esa es una decisión difícil." }] },
-          { "rank": 9, "responses": [{ "context": "Popularidad...", "best_choice": "Tu popularidad ha subido." }] },
-          { "rank": 10, "responses": [{ "context": "Habilidad...", "best_choice": "Negociación legendaria." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "interactions": [{"context": "Inicio", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Oratoria...",
+                "options": [
+                  {"text": "Quiero mejorar mi oratoria.", "points": 2},
+                  {"text": "No estoy seguro.", "points": 1}
+                ]
+              },
+              {
+                "context": "Convicción...",
+                "options": [
+                  {"text": "Uno con convicción.", "points": 2},
+                  {"text": "No lo sé.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Fue útil.", "points": 2},
+                  {"text": "Me hizo pensar.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "No-Good Tora...",
+                "options": [
+                  {"text": "¿Su apodo?", "points": 2},
+                  {"text": "Qué grosero.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Fue inspirador.", "points": 2},
+                  {"text": "No lo olvidaré.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Pasado...",
+                "options": [
+                  {"text": "No es mi culpa.", "points": 2},
+                  {"text": "Lo siento.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No pude evitarlo.", "points": 2},
+                  {"text": "Me arrepiento.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Medios...",
+                "options": [
+                  {"text": "Los medios no importan.", "points": 3},
+                  {"text": "Creo que sí.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Te animaré.", "points": 2},
+                  {"text": "Cuento contigo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "interactions": [
+              {
+                "context": "Manifiesto...",
+                "options": [
+                  {"text": "Me niego.", "points": 2},
+                  {"text": "No puedo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Lo tendré en cuenta.", "points": 2},
+                  {"text": "Gracias.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Debate...",
+                "options": [
+                  {"text": "Deberías rechazarlo.", "points": 2},
+                  {"text": "Es una trampa.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es un mensaje difícil.", "points": 2},
+                  {"text": "Lo pensaré.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Creencia...",
+                "options": [
+                  {"text": "Esa es una decisión difícil.", "points": 3},
+                  {"text": "Estoy de acuerdo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Convicción...",
+                "options": [
+                  {"text": "Cíñete a tus creencias.", "points": 3},
+                  {"text": "Haz lo correcto.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Sé que puedes.", "points": 2},
+                  {"text": "Ánimo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Popularidad...",
+                "options": [
+                  {"text": "¿Tu popularidad ha subido?", "points": 3},
+                  {"text": "Felicidades.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No te rindas.", "points": 2},
+                  {"text": "Yo te apoyo.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
   },
   {
     "id": 20,
-    "arcana_name": "Juicio (Judgment)",
+    "arcana_name": "El Juicio (Judgment)",
     "arcana_image": "tarot_p5_judgment.png",
     "type": "shared_automatic",
     "routes": {
       "shared": {
         "character": "Sae Niijima",
         "location": "Sala de Interrogatorios",
-        "availability": "Automático por historia.",
+        "availability": "Automático (Avanza con la historia)",
         "image": "sae.jpg",
+        "abilities": [
+          "Rango 10: True Justice (Desbloquea fusión de Satan)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "7/9" },
-          { "rank": 6, "type": "automatic", "date": "10/29" },
-          { "rank": 10, "type": "automatic", "date": "11/20", "context": "Desbloquea: Satan." }
+          { "rank": 1, "type": "automatic", "date": "7/9", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 2, "type": "automatic", "date": "7/24", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 3, "type": "automatic", "date": "8/22", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 4, "type": "automatic", "date": "9/13", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 5, "type": "automatic", "date": "10/12", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 6, "type": "automatic", "date": "10/28", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 7, "type": "automatic", "date": "11/20", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 8, "type": "automatic", "date": "11/20", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 9, "type": "automatic", "date": "11/20", "interactions": [{"context": "Automático", "options": [{"text": "-", "points": 0}]}] },
+          { "rank": 10, "type": "automatic", "date": "11/20", "interactions": [{"context": "Tras el Final Bueno", "options": [{"text": "-", "points": 0}]}] }
         ]
       }
     }
   },
   {
     "id": 21,
-    "arcana_name": "Fe (Faith)",
-    "arcana_image": "tarot_p5_faith.png",
+    "arcana_name": "El Consejero (Councillor)",
+    "arcana_image": "tarot_p5_councillor.png",
     "type": "standard",
     "routes": {
       "male": {
-        "character": "Kasumi Yoshizawa",
-        "location": "Kichijoji",
-        "availability": "Cualquier día (Día). ¡MAX RANK 5 hasta el Tercer Semestre!",
-        "image": "kasumi.jpg",
+        "character": "Takuto Maruki",
+        "location": "Enfermería (Escuela)",
+        "availability": "Lun, Vie (Día). Aumenta frecuencia en Noviembre.",
+        "unlock_condition": "Disponible desde el 13 de Mayo. Rango 9 LÍMITE: 17 de Noviembre.",
+        "critical_warning": "OBLIGATORIO RANGO 9 ANTES DEL 17/11 PARA EL CONTENIDO ROYAL.",
+        "image": "maruki.jpg",
+        "abilities": [
+          "Rango 2: Detox X (Probabilidad de curar estado al inicio)",
+          "Rango 5: Mindfulness (Recuperar SP cuando está bajo)",
+          "Rango 7: Flow (Probabilidad de atacar fuerte al inicio)",
+          "Rango 10: Wakefulness (Más recuperación de SP)"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "5/30" },
-          { "rank": 2, "responses": [{ "context": "Almuerzo...", "best_choice": "Hacemos un buen trato." }] },
-          { "rank": 3, "responses": [{ "context": "Bento...", "best_choice": "Hacer bento." }] },
-          { "rank": 4, "responses": [{ "context": "Compra...", "best_choice": "Es una buena elección." }] },
-          { "rank": 5, "responses": [{ "context": "Gimnasia...", "best_choice": "¡Fue increíble!" }] },
-          { "rank": 6, "responses": [{ "context": "Nota...", "best_choice": "Enero (Tercer Semestre)." }] }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "date": "5/13",
+            "interactions": [{"context": "Automático", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Trato...",
+                "options": [
+                  {"text": "Hicimos un trato.", "points": 2},
+                  {"text": "Estoy un poco nervioso.", "points": 1}
+                ]
+              },
+              {
+                "context": "Hechos...",
+                "options": [
+                  {"text": "Pero suena correcto.", "points": 3},
+                  {"text": "Es un hecho.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Bueno, está bien.", "points": 2},
+                  {"text": "No hay problema.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Rumores...",
+                "options": [
+                  {"text": "Así que tenían razón.", "points": 2},
+                  {"text": "Gracias.", "points": 2}
+                ]
+              },
+              {
+                "context": "Dolor...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Es el ciclo de la vida.", "points": 1}
+                ]
+              },
+              {
+                "context": "Ayuda...",
+                "options": [
+                  {"text": "Ese dolor es necesario.", "points": 3},
+                  {"text": "Intentaría olvidarlo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Buen trabajo.", "points": 2},
+                  {"text": "Lo hiciste.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Kasumi...",
+                "options": [
+                  {"text": "Lo sé, ¿verdad?", "points": 3},
+                  {"text": "No es para tanto.", "points": 2}
+                ]
+              },
+              {
+                "context": "Investigación...",
+                "options": [
+                  {"text": "¿Eso es lo que estás investigando?", "points": 3},
+                  {"text": "Suena complicado.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es un gran plan.", "points": 2},
+                  {"text": "Suena divertido.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Buffet...",
+                "options": [
+                  {"text": "Esto sabe genial.", "points": 3},
+                  {"text": "No puedo comer más.", "points": 2}
+                ]
+              },
+              {
+                "context": "Engaño...",
+                "options": [
+                  {"text": "Sé cómo te sientes.", "points": 2},
+                  {"text": "No he hecho nada.", "points": 1}
+                ]
+              },
+              {
+                "context": "Verdad...",
+                "options": [
+                  {"text": "De verdad que no me importa.", "points": 3},
+                  {"text": "Olvídalo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "No pasa nada.", "points": 2},
+                  {"text": "Cálmate.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "unlock_condition": "Disponible desde el 20 de Septiembre.",
+            "interactions": [
+              {
+                "context": "Sueño...",
+                "options": [
+                  {"text": "¿Otra taza?", "points": 2},
+                  {"text": "Te ves cansado.", "points": 1}
+                ]
+              },
+              {
+                "context": "Corazón...",
+                "options": [
+                  {"text": "Renuncia.", "points": 3},
+                  {"text": "No puedes rendirte.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Cálmate.", "points": 2},
+                  {"text": "¿Qué vas a hacer?", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Fans...",
+                "options": [
+                  {"text": "Son unos grandes fans.", "points": 3},
+                  {"text": "¿No es ilegal?", "points": 2}
+                ]
+              },
+              {
+                "context": "Cambio...",
+                "options": [
+                  {"text": "El cambio es posible.", "points": 3},
+                  {"text": "No estoy seguro.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Suena bien.", "points": 2},
+                  {"text": "Tengo hambre.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "¿Qué quieres decir?", "points": 3},
+                  {"text": "Tengo hambre.", "points": 2}
+                ]
+              },
+              {
+                "context": "Felicidades...",
+                "options": [
+                  {"text": "Buen trabajo.", "points": 3},
+                  {"text": "Te invito.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "He aprendido mucho.", "points": 2},
+                  {"text": "Gracias.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Soledad...",
+                "options": [
+                  {"text": "La tristeza puede afectar a cualquiera.", "points": 3},
+                  {"text": "Todos sentimos soledad.", "points": 2}
+                ]
+              },
+              {
+                "context": "Kindness...",
+                "options": [
+                  {"text": "Kind words can help.", "points": 3}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "type": "automatic",
+            "date": "11/18",
+            "interactions": [{"context": "Automático si alcanzaste el Rango 9 antes del 17 de Noviembre. Desbloquea Tercer Semestre.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          }
         ]
       }
     }
   },
   {
     "id": 22,
-    "arcana_name": "Consejero (Councillor)",
-    "arcana_image": "tarot_p5_councillor.png",
+    "arcana_name": "La Fe (Faith)",
+    "arcana_image": "tarot_p5_faith.png",
     "type": "standard",
     "routes": {
       "male": {
-        "character": "Takuto Maruki",
-        "location": "Enfermería (Edificio de Prácticas)",
-        "availability": "Lun, Vie (Día). ¡OBLIGATORIO LLEGAR A RANK 9 ANTES DEL 11/18!",
-        "image": "maruki.jpg",
+        "character": "Kasumi Yoshizawa",
+        "location": "Kichijoji (Arcade)",
+        "availability": "Miércoles (Día). A veces otros días.",
+        "unlock_condition": "Disponible desde el 30 de Mayo. Rango 5 LÍMITE: 18 de Diciembre.",
+        "critical_warning": "LLEGA A RANGO 5 ANTES DEL 18/12 PARA CONTINUAR EN EL TERCER SEMESTRE.",
+        "image": "kasumi.jpg",
+        "abilities": [
+          "Rango 2: Tumbling (Evitar emboscadas)",
+          "Rango 4: Chaines Hook (Emboscar a distancia con gancho)",
+          "Rango 8: Endure (Sobrevivir golpe mortal)",
+          "Rango 10: Second Awakening"
+        ],
         "ranks": [
-          { "rank": 1, "type": "automatic", "date": "5/13" },
-          { "rank": 2, "responses": [{ "context": "Trato...", "best_choice": "Hicimos un trato." }] },
-          { "rank": 3, "responses": [{ "context": "Dolor...", "best_choice": "El dolor es necesario." }] },
-          { "rank": 4, "responses": [{ "context": "Galletas...", "best_choice": "Sé que saben bien." }] },
-          { "rank": 5, "responses": [{ "context": "Verdad...", "best_choice": "Es cierto." }] },
-          { "rank": 6, "responses": [{ "context": "Sueño...", "best_choice": "Un sueño, ¿eh?" }] },
-          { "rank": 7, "responses": [{ "context": "Cambio...", "best_choice": "Eres un buen hombre." }] },
-          { "rank": 8, "responses": [{ "context": "Comida...", "best_choice": "¡Qué buena comida!" }] },
-          { "rank": 9, "responses": [{ "context": "Adiós...", "best_choice": "Es una pena." }] },
-          { "rank": 10, "type": "automatic", "date": "11/18" }
+          {
+            "rank": 1,
+            "type": "automatic",
+            "date": "5/30",
+            "interactions": [{"context": "Evento automático en el parque Inokashira.", "options": [{"text": "Cualquiera", "points": 0}]}]
+          },
+          {
+            "rank": 2,
+            "interactions": [
+              {
+                "context": "Saludo...",
+                "options": [
+                  {"text": "Hemos terminado.", "points": 2},
+                  {"text": "¿Quieres un descanso?", "points": 1}
+                ]
+              },
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "A la próxima invito yo.", "points": 3},
+                  {"text": "Vamos a comer.", "points": 2}
+                ]
+              },
+              {
+                "context": "Sabor...",
+                "options": [
+                  {"text": "Suena a una buena dieta.", "points": 2},
+                  {"text": "Es impresionante.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Podría hacerme a ello.", "points": 2},
+                  {"text": "Es una buena oferta.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "interactions": [
+              {
+                "context": "Bento...",
+                "options": [
+                  {"text": "Hacer Bento.", "points": 3},
+                  {"text": "Parece delicioso.", "points": 2}
+                ]
+              },
+              {
+                "context": "Compartir...",
+                "options": [
+                  {"text": "Me ha llenado.", "points": 2},
+                  {"text": "Gracias.", "points": 1}
+                ]
+              },
+              {
+                "context": "Cantidad...",
+                "options": [
+                  {"text": "¿Es todo para ti?", "points": 3},
+                  {"text": "Es un Bento único.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Definitivamente.", "points": 2},
+                  {"text": "Lo estoy deseando.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "interactions": [
+              {
+                "context": "Compras...",
+                "options": [
+                  {"text": "Estás buscando algo.", "points": 2},
+                  {"text": "Es tu decisión.", "points": 1}
+                ]
+              },
+              {
+                "context": "Estilo...",
+                "options": [
+                  {"text": "Muy bien.", "points": 2},
+                  {"text": "Se te ve confiada.", "points": 1}
+                ]
+              },
+              {
+                "context": "Elección...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "Toda la del mundo.", "points": 1}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro.", "points": 2},
+                  {"text": "Lo hiciste.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "interactions": [
+              {
+                "context": "Sorpresa...",
+                "options": [
+                  {"text": "Es una buena idea.", "points": 2},
+                  {"text": "¿Por qué yo?", "points": 1}
+                ]
+              },
+              {
+                "context": "Gimnasia...",
+                "options": [
+                  {"text": "Felicidades.", "points": 3},
+                  {"text": "Lo sabía.", "points": 2}
+                ]
+              },
+              {
+                "context": "Futuro...",
+                "options": [
+                  {"text": "Eso es importante.", "points": 3},
+                  {"text": "No lo olvides.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "A por todas.", "points": 2},
+                  {"text": "Te estaré observando.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "unlock_condition": "Disponible en Enero (Tercer Semestre) si alcanzaste Rango 5.",
+            "interactions": [
+              {
+                "context": "Poder...",
+                "options": [
+                  {"text": "Tranquila.", "points": 2},
+                  {"text": "Relájate.", "points": 1}
+                ]
+              },
+              {
+                "context": "Persona...",
+                "options": [
+                  {"text": "Tienes que afrontarlo.", "points": 2},
+                  {"text": "No huyas.", "points": 1}
+                ]
+              },
+              {
+                "context": "Kasumi...",
+                "options": [
+                  {"text": "Así que Kasumi está contigo.", "points": 2},
+                  {"text": "¿Y qué hay de Kasumi?", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "De nada.", "points": 2},
+                  {"text": "Siempre estaré ahí.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "interactions": [
+              {
+                "context": "Duda...",
+                "options": [
+                  {"text": "No es ningún crimen.", "points": 2},
+                  {"text": "Está bien.", "points": 1}
+                ]
+              },
+              {
+                "context": "Público...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 2},
+                  {"text": "No te preocupes.", "points": 1}
+                ]
+              },
+              {
+                "context": "Amor...",
+                "options": [
+                  {"text": "Te quiero.", "points": 3},
+                  {"text": "Eres muy fuerte.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Es un paso adelante.", "points": 2},
+                  {"text": "Esa es la actitud.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "interactions": [
+              {
+                "context": "Comida...",
+                "options": [
+                  {"text": "Adelante.", "points": 3},
+                  {"text": "No te cortes.", "points": 2}
+                ]
+              },
+              {
+                "context": "Tienda...",
+                "options": [
+                  {"text": "Te pareces a ella.", "points": 3},
+                  {"text": "Es un recuerdo.", "points": 2}
+                ]
+              },
+              {
+                "context": "Sentimiento...",
+                "options": [
+                  {"text": "Definitivamente.", "points": 3},
+                  {"text": "Seguro que sí.", "points": 2}
+                ]
+              },
+              {
+                "context": "Llamada telefónica",
+                "options": [
+                  {"text": "Me alegro.", "points": 2},
+                  {"text": "Todo gracias a ti.", "points": 2}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "interactions": [
+              {
+                "context": "Espectáculo...",
+                "options": [
+                  {"text": "Que se enteren.", "points": 3},
+                  {"text": "A por todas.", "points": 2}
+                ]
+              },
+              {
+                "context": "Final...",
+                "options": [
+                  {"text": "Por supuesto.", "points": 3},
+                  {"text": "Hagámoslo.", "points": 2}
+                ]
+              },
+              {
+                "context": "DECISIÓN DE ROMANCE",
+                "options": [
+                  {"text": "Yo también te quiero. (ROMANCE)", "points": 3, "romance": true},
+                  {"text": "Sigamos siendo amigos. (AMISTAD)", "points": 3}
+                ]
+              },
+              {
+                "context": "Confirmación (Si elegiste Romance)",
+                "options": [
+                  {"text": "Uno muy fuerte.", "points": 3},
+                  {"text": "Para siempre.", "points": 3}
+                ]
+              },
+              {
+                "context": "Llamada telefónica (Si elegiste Romance)",
+                "options": [
+                  {"text": "Acostúmbrate.", "points": 2},
+                  {"text": "Lo siento.", "points": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "interactions": [
+              {
+                "context": "Máximo Nivel",
+                "options": [{"text": "Cualquiera", "points": 3}]
+              }
+            ]
+          }
         ]
       }
     }
