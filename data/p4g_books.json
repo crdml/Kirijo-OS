@@ -1,98 +1,233 @@
 [
   {
-    "id": 1,
-    "title": "The Lovely Man (El adorable hombre)",
-    "available": "20 de Abril",
-    "source": "Librería Yomenaido",
-    "effect": "Coraje (Courage) +++",
-    "type": "normal"
+    "title": "El hombre encantador (The Lovely Man)",
+    "date": "20/4",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el Coraje.",
+    "chapters": 2
   },
   {
-    "id": 2,
-    "title": "Beginner Fishing (Pesca para novatos)",
-    "available": "20 de Abril",
-    "source": "Librería Yomenaido",
-    "effect": "Aumenta la habilidad de pesca",
-    "type": "normal"
+    "title": "Métodos de estudio para expertos (Expert Study Methods)",
+    "date": "20/4",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la ganancia de Conocimiento al estudiar.",
+    "chapters": 3
   },
   {
-    "id": 3,
-    "title": "Off Today (Hoy libro)",
-    "available": "20 de Abril",
-    "source": "Librería Yomenaido",
-    "effect": "Comprensión (Understanding) +++",
-    "type": "normal"
+    "title": "Pesca para principiantes (Beginner Fishing)",
+    "date": "20/4",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el número de veces que puedes pescar antes de cansarte.",
+    "chapters": 3
   },
   {
-    "id": 4,
-    "title": "The Witch Detective (La bruja detective)",
-    "available": "29 de Mayo (Domingo)",
-    "source": "Evento S.Link Fuerza (Kou/Daisuke). ¡Debes aceptar su llamada!",
-    "effect": "Diligencia (Diligence) +++",
-    "type": "missable"
+    "title": "Hoy libre (Off Today)",
+    "date": "6/5",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la Comprensión.",
+    "chapters": 2
   },
   {
-    "id": 5,
-    "title": "The Gentle Way (El camino suave)",
-    "available": "20 de Mayo",
-    "source": "Librería Yomenaido (Después de terminar una mazmorra)",
-    "effect": "Conocimiento (Knowledge) +++ y Expresión ++",
-    "type": "normal"
+    "title": "Manual de oficinista (Office Work Manual)",
+    "date": "6/5",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la ganancia de Diligencia al hacer sobres.",
+    "chapters": 3
   },
   {
-    "id": 6,
-    "title": "Poly-land",
-    "available": "15 de Julio (Viernes)",
-    "source": "Evento S.Link Fuerza (Kou/Daisuke). ¡Acepta la llamada!",
-    "effect": "Conocimiento +++ y Diligencia ++",
-    "type": "missable"
+    "title": "Origami fácil (Easy Origami)",
+    "date": "20/5",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la ganancia de Comprensión al hacer grullas de papel.",
+    "chapters": 3
   },
   {
-    "id": 7,
-    "title": "Hyperspeed Reading (Lectura Rápida)",
-    "available": "4 de Agosto",
-    "source": "Librería Yomenaido",
-    "effect": "¡VITAL! Te permite leer 2 capítulos de un libro en una sola sesión.",
-    "type": "vital"
+    "title": "Inglés fácil (English Made Easy)",
+    "date": "20/5",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la ganancia de Expresión al traducir.",
+    "chapters": 3
   },
   {
-    "id": 8,
-    "title": "The O-Cha Way (El camino del té)",
-    "available": "10 de Agosto",
-    "source": "Evento S.Link Fuerza. ¡Acepta la llamada!",
-    "effect": "Conocimiento +++ y Expresión ++",
-    "type": "missable"
+    "title": "El camino suave (The Gentle Way)",
+    "date": "23/5",
+    "location": "Misión Secundaria 18",
+    "effect": "Aumenta Conocimiento y Expresión. Dáselo al hombre frente a la librería a cambio de una Semilla de Melocotón.",
+    "chapters": 4
   },
   {
-    "id": 9,
-    "title": "The Divine Way (El camino divino)",
-    "available": "21 de Agosto (Festival de Verano)",
-    "source": "Ve al festival con una chica y gana algo.",
-    "effect": "Conocimiento +++ y Coraje ++",
-    "type": "missable"
+    "title": "La bruja detective (Witch Detective)",
+    "date": "29/5",
+    "location": "Evento del Vínculo de Fuerza",
+    "effect": "Aumenta Comprensión y Diligencia. [PERDIBLE] Acepta la invitación de Kou/Daisuke el domingo 29/5. Responde 'Gracias' al recibirlo.",
+    "chapters": 4
   },
   {
-    "id": 10,
-    "title": "Man-God (Hombre Dios)",
-    "available": "20 de Agosto",
-    "source": "Librería Yomenaido",
-    "effect": "Coraje +++",
-    "type": "normal"
+    "title": "El camino del punk (The Punk's Way)",
+    "date": "3/6",
+    "location": "Misión Secundaria 20",
+    "effect": "Aumenta Conocimiento y Expresión. Alimenta al gato en la ribera del río con un pez para el hombre frente a la librería.",
+    "chapters": 4
   },
   {
-    "id": 11,
-    "title": "Farewell to Man (Adiós al hombre)",
-    "available": "20 de Noviembre",
-    "source": "Librería Yomenaido",
-    "effect": "Coraje +++",
-    "type": "normal"
+    "title": "Siempre macho (Forever Macho)",
+    "date": "11/6",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el Coraje.",
+    "chapters": 2
   },
   {
-    "id": 12,
-    "title": "Guide to Pests (Guía de plagas)",
-    "available": "Todo el año",
-    "source": "Completa la misión del 'Anciano' (Pez Guardián).",
-    "effect": "Conocimiento +++",
-    "type": "normal"
+    "title": "100 Historias de fantasmas (100 Ghost Stories)",
+    "date": "11/6",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la ganancia de Coraje al trabajar en el hospital.",
+    "chapters": 3
+  },
+  {
+    "title": "Atrapar bichos (Catching Bugs)",
+    "date": "11/6",
+    "location": "Librería Yomenaido",
+    "effect": "Te permite atrapar más insectos en el santuario.",
+    "chapters": 3
+  },
+  {
+    "title": "Corto de dinero (Short on Cash)",
+    "date": "28/6",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la Comprensión.",
+    "chapters": 2
+  },
+  {
+    "title": "Pesca para expertos (Expert Fishing)",
+    "date": "28/6",
+    "location": "Librería Yomenaido",
+    "effect": "Mejora la velocidad al enrollar el sedal durante la pesca.",
+    "chapters": 3
+  },
+  {
+    "title": "Guía de plagas (Guide to Pests)",
+    "date": "3/7",
+    "location": "Misión Secundaria 34",
+    "effect": "Aumenta Conocimiento y Coraje. Completa la misión para el hombre de la librería.",
+    "chapters": 4
+  },
+  {
+    "title": "El hombre histórico (Man of History)",
+    "date": "15/7",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el Coraje.",
+    "chapters": 2
+  },
+  {
+    "title": "Jardinería casera (Home Gardening)",
+    "date": "15/7",
+    "location": "Librería Yomenaido",
+    "effect": "Acelera el crecimiento de las verduras en un día.",
+    "chapters": 3
+  },
+  {
+    "title": "Poli-landia (Poly-land)",
+    "date": "15/7",
+    "location": "Evento del Vínculo de Fuerza",
+    "effect": "Aumenta Conocimiento y Diligencia. [PERDIBLE] Acepta la invitación de Kou/Daisuke en tu habitación el domingo 15/7. Responde 'Soy alérgico a las matemáticas'.",
+    "chapters": 4
+  },
+  {
+    "title": "Cambio de carrera (Changing Careers)",
+    "date": "4/8",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la Comprensión.",
+    "chapters": 2
+  },
+  {
+    "title": "Lectura ultrarrápida (Hyperspeed Reading)",
+    "date": "4/8",
+    "location": "Librería Yomenaido",
+    "effect": "Te permite leer dos capítulos de un libro por sesión en lugar de uno.",
+    "chapters": 3
+  },
+  {
+    "title": "¡Las reglas del Picross! (Picross Rules!)",
+    "date": "9/8",
+    "location": "Misión Secundaria 40",
+    "effect": "Aumenta Comprensión y Diligencia. Completa la misión del hombre de la librería.",
+    "chapters": 4
+  },
+  {
+    "title": "El camino del té (The O-Cha Way)",
+    "date": "10/8",
+    "location": "Evento del Vínculo de Fuerza",
+    "effect": "Aumenta Conocimiento y Expresión. [PERDIBLE] Acepta la invitación de Kou/Daisuke y acepta el libro durante la salida.",
+    "chapters": 4
+  },
+  {
+    "title": "El camino divino (The Divine Way)",
+    "date": "21/8",
+    "location": "Festival de Verano",
+    "effect": "Aumenta Conocimiento y Expresión. Asiste al festival de verano con una de las chicas y acepta el libro.",
+    "chapters": 4
+  },
+  {
+    "title": "Hombre Dios (Man-God)",
+    "date": "24/8",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el Coraje.",
+    "chapters": 2
+  },
+  {
+    "title": "Adiós al hombre (Farewell to Man)",
+    "date": "24/8",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta el Coraje.",
+    "chapters": 2
+  },
+  {
+    "title": "¡Guerra de comida! (Food Fight!)",
+    "date": "24/8",
+    "location": "Librería Yomenaido",
+    "effect": "Mejora el aumento de atributos al comer en el restaurante Aiya.",
+    "chapters": 3
+  },
+  {
+    "title": "¿Quién soy? (Who Am I?)",
+    "date": "2/9",
+    "location": "Misión Secundaria 45",
+    "effect": "Aumenta Conocimiento y Diligencia. Completa la misión del hombre de la librería.",
+    "chapters": 4
+  },
+  {
+    "title": "Los amigos del Sensei (Sensei's Friends)",
+    "date": "20/9",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la Comprensión.",
+    "chapters": 2
+  },
+  {
+    "title": "El impulso secreto (The Secret Urge)",
+    "date": "26/9",
+    "location": "Misión Secundaria 50",
+    "effect": "Aumenta Comprensión y Diligencia. Completa la misión final del hombre de la librería.",
+    "chapters": 4
+  },
+  {
+    "title": "La última lección (The Final Lesson)",
+    "date": "12/10",
+    "location": "Librería Yomenaido",
+    "effect": "Aumenta la Comprensión.",
+    "chapters": 2
+  },
+  {
+    "title": "Bichos de clase mundial (World Class Bugs)",
+    "date": "1/11",
+    "location": "Librería Yomenaido",
+    "effect": "Te permite atrapar insectos adicionales si sincronizas bien el botón en el santuario.",
+    "chapters": 3
+  },
+  {
+    "title": "El camino del Ramen (The Ramen Way)",
+    "date": "Siempre disponible",
+    "location": "Restaurante Chino Aiya",
+    "effect": "Aumenta Conocimiento y Expresión. Te lo entregan automáticamente como premio por comer 8 veces en Aiya.",
+    "chapters": 4
   }
 ]

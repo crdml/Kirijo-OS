@@ -32,7 +32,8 @@ const app = {
             { id: 'books', label: '📖 Libros', colorClass: 'p4-btn-4' },
             { id: 'quiz', label: '📺 TV Quiz', colorClass: 'p4-btn-4' },
             { id: 'riddle', label: '🎩 Riddles', colorClass: 'p4-btn-5' },
-            { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' }
+            { id: 'fusions', label: '🃏 Fusiones', colorClass: 'p4-btn-6' },
+            { id: 'quests', label: '🦊 Misiones', colorClass: 'p4-btn-7' }
         ],
         p5r: [
             { id: 'school', label: '🎓 Exámenes', colorClass: '' },
@@ -189,14 +190,12 @@ const app = {
         }
 
         // 4. ¡REFRESCAR LA VISTA ACTUAL!
-        // Si estamos en P3P y tenemos un módulo abierto, hay que recargarlo para que se aplique el cambio de MC/FeMC
         const navContainer = document.getElementById('modules-container');
         const activeGame = navContainer ? navContainer.getAttribute('data-game') : null;
         
         if (activeGame === 'p3p') {
             const activeBtn = navContainer.querySelector('button.active-mod');
             if (activeBtn) {
-                // Obtenemos el tipo de módulo del botón activo y recargamos
                 const moduleType = activeBtn.getAttribute('data-type');
                 if(moduleType) this.loadModule(moduleType, 'p3p');
             }
@@ -225,9 +224,6 @@ const app = {
             bgGrid.style.backgroundImage = '';
             bgGrid.style.opacity = '1';
         }
-        
-        // Reset a Male por defecto para limpiar estado interno, salvo que estemos en P3P
-        // (Pero openGame('p3p') ya llama a setGender('male') explícitamente)
     },
 
     setVelvetAtmosphere: function() {
@@ -253,24 +249,16 @@ const app = {
 
         const display = document.getElementById('data-display');
         
-        // Velvet Room check
+        // Velvet Room check robusto
         if (type === 'fusions' || type === 'requests') {
             this.setVelvetAtmosphere();
         } else {
-            // Si no es Velvet, asegurarnos de que el tema del juego se mantiene
-            // (setVelvetAtmosphere lo rompe, así que lo restauramos si es necesario)
-            if(!document.body.style.background.includes('radial') && (gameId === 'p3r' || gameId === 'p4g' || gameId === 'p5r')) {
-               // Ya está el tema aplicado, no hacemos nada
-            } else {
-               // Si venimos de Velvet Room, reseteamos al tema base
-               if(document.documentElement.style.getPropertyValue('--bg-dark') === '#0a0e29') {
-                   this.resetAtmosphere();
-                   if(gameId === 'p3r') document.body.classList.add('theme-p3r');
-                   if(gameId === 'p4g') document.body.classList.add('theme-p4');
-                   if(gameId === 'p5r') document.body.classList.add('theme-p5r');
-                   if(gameId === 'p3p') this.setGender(this.state.protagonist); // Restaurar color P3P
-               }
-            }
+            // Forzamos la limpieza del tema Velvet y reaplicamos el tema del juego actual siempre
+            this.resetAtmosphere();
+            if (gameId === 'p3r') document.body.classList.add('theme-p3r');
+            else if (gameId === 'p4g') document.body.classList.add('theme-p4');
+            else if (gameId === 'p5r') document.body.classList.add('theme-p5r');
+            else if (gameId === 'p3p') this.setGender(this.state.protagonist);
         }
 
         display.innerHTML = '<div class="empty-state">Cargando datos...</div>';
@@ -305,6 +293,7 @@ const app = {
             if(type === 'books') filename = 'data/p4g_books.json';
             if(type === 'quiz') filename = 'data/p4g_tv_quiz.json';
             if(type === 'fusions') filename = 'data/p4g_special_fusions.json';
+            if(type === 'quests') filename = 'data/p4g_side_quests.json';
         }
         else if (gameId === 'p5r') {
             if(type === 'school') filename = 'data/p5r_school_answers.json';
@@ -327,8 +316,6 @@ const app = {
             if(type === 'fusions') this.renderFusions(data, display);
             else if(type === 'requests') this.renderElizabethRequests(data, display);
             else if(type === 'school') this.renderSchool(data, display);
-            
-            // SOCIAL LINKS ESTÁNDAR (P3P, P3R, P4G, P5R)
             else if(type === 'social') this.renderSocial(data, display);
             
             // P3 / P3R
@@ -343,6 +330,7 @@ const app = {
             else if(type === 'lunch') this.renderLunch(data, display);
             else if(type === 'books') this.renderBooks(data, display);
             else if(type === 'quiz') this.renderQuiz(data, display);
+            else if(type === 'quests') this.renderSideQuests(data, display); 
             
             // P5R
             else if(type === 'seeds') this.renderSeeds(data, display);
@@ -364,37 +352,28 @@ const app = {
     renderSocial: function(data, container) {
         let html = '';
         
-        // Ordenar por ID de Arcano
         data.sort((a, b) => a.id - b.id).forEach(sl => {
-            
-            // 1. Lógica de Selección de Ruta (Male/Female/Shared)
             let routeData = null;
             
-            // Caso especial P3P: split_character significa que cambia el personaje según el género
             if (sl.type === 'split_character') {
                 routeData = sl.routes[this.state.protagonist];
             }
-            // Casos compartidos o automáticos
             else if (sl.type === 'shared' || sl.type === 'shared_automatic') {
                 if (sl.routes.shared) {
                     routeData = sl.routes.shared;
                 } else {
-                    // Fallback si por error está en shared pero no tiene clave 'shared'
                     routeData = sl.routes[this.state.protagonist] || sl.routes.male;
                 }
             } 
-            // Estándar (puede tener rutas separadas por género, ej. respuestas distintas para la misma persona)
             else {
                 routeData = sl.routes[this.state.protagonist] || sl.routes.male;
             }
 
             if (!routeData) return;
 
-            // Detectar advertencias (Romances trampas, fechas límite, etc.)
             const warningText = routeData.warning_message || routeData.critical_warning;
             const isCritical = !!routeData.critical_warning;
 
-            // --- CONSTRUCCIÓN DE LA TARJETA ---
             html += `<div class="data-card social-card ${isCritical ? 'critical-border' : ''}">
                 <div class="arcana-header">
                     ${sl.arcana_image ? `<img src="assets/tarot/${sl.arcana_image}" alt="${sl.arcana_name}" class="arcana-img">` : ''}
@@ -417,7 +396,6 @@ const app = {
                     <summary>VER GUÍA DE RESPUESTAS</summary>
                     <div class="ranks-container">`;
             
-            // --- HABILIDADES (P5R) ---
             if (routeData.abilities) {
                 html += `<div class="social-rank-box" style="border-left: 2px solid #ffd700;">
                     <div class="rank-header"><span class="rank-num">HABILIDADES DE CONFIDENTE</span></div>
@@ -428,7 +406,6 @@ const app = {
                 html += `</div></div>`;
             }
 
-            // --- ITERACIÓN DE RANGOS ---
             if (routeData.ranks) {
                 routeData.ranks.forEach(r => {
                     html += `<div class="social-rank-box">
@@ -442,21 +419,17 @@ const app = {
 
                         <div class="responses-list">`;
 
-                    // Renderizado estricto del nuevo formato
                     if (r.interactions && r.interactions.length > 0) {
                         r.interactions.forEach(inter => {
                             html += `<div class="interaction-block">`;
                             
-                            // Contexto (Pregunta o Situación)
                             if (inter.context) {
                                 html += `<div class="context-text">${inter.context}</div>`;
                             }
 
-                            // Opciones de respuesta
                             if (inter.options && inter.options.length > 0) {
                                 html += `<ul class="options-ul">`;
                                 inter.options.forEach(opt => {
-                                    // Lógica de estilo según puntos
                                     let pointsClass = 'points-neutral';
                                     let icon = '';
                                     
@@ -464,10 +437,8 @@ const app = {
                                     else if (opt.points === 2) { pointsClass = 'points-mid'; icon = '♪'; }
                                     else if (opt.points === 1) { pointsClass = 'points-low'; }
                                     
-                                    // Flags especiales
                                     if (opt.romance) { icon = '❤️ ' + icon; pointsClass = 'points-romance'; }
                                     
-                                    // Mostrar +X o icono
                                     const pointsDisplay = opt.points > 0 ? `+${opt.points} ${icon}` : (opt.isNote ? 'ℹ️' : '');
 
                                     html += `<li class="option-li">
@@ -477,17 +448,17 @@ const app = {
                                 });
                                 html += `</ul>`;
                             }
-                            html += `</div>`; // fin interaction-block
+                            html += `</div>`; 
                         });
                     } else if (r.type === 'automatic') {
                         html += `<div class="interaction-block auto-note">La historia avanza automáticamente.</div>`;
                     }
 
-                    html += `</div></div>`; // fin responses-list y social-rank-box
+                    html += `</div></div>`;
                 });
             }
             
-            html += `</div></details></div>`; // fin ranks-container y data-card
+            html += `</div></details></div>`; 
         });
         
         container.innerHTML = html;
@@ -833,16 +804,16 @@ const app = {
                     <div style="font-size:0.9em; margin-bottom:10px; color:#555;">📍 ${r.unlock_condition}</div>
                     <div style="display:flex; gap:10px; margin-bottom:15px; font-family:monospace; font-size:1.1em;">
                         <div style="flex:1; background:#f0f0f0; padding:10px; border-radius:5px;">
-                            <strong style="color:#e60012">Grupo A:</strong><br>${r.question_a}
+                            <strong style="color:#e60012">Grupo A:</strong><br>${r.question_a || (r.answers ? r.answers[0] : '')}
                         </div>
                         <div style="flex:1; background:#f0f0f0; padding:10px; border-radius:5px;">
-                            <strong style="color:#005f73">Grupo B:</strong><br>${r.question_b}
+                            <strong style="color:#005f73">Grupo B:</strong><br>${r.question_b || (r.answers ? r.answers[2] : '')}
                         </div>
                     </div>
                     <div style="background:#ffe600; color:#000; padding:10px; border:2px dashed #000; text-align:center; font-weight:bold; font-size:1.1rem;">
-                        👉 Respuesta: ${r.answer}
+                        👉 Respuesta: ${r.answer || (r.answers ? r.answers.join(', ') : '')}
                     </div>
-                    <div style="margin-top:5px; font-size:0.85em; color:#666; font-style:italic;">💡 Por qué: ${r.explanation}</div>
+                    ${r.explanation ? `<div style="margin-top:5px; font-size:0.85em; color:#666; font-style:italic;">💡 Por qué: ${r.explanation}</div>` : ''}
                 </div>
             </div>`;
         });
@@ -852,9 +823,10 @@ const app = {
     renderLunch: function(data, container) {
         let html = '<h3 style="color:#fff; text-align:center; background:#ff8800; border:2px solid #000; padding:10px; transform:skew(-2deg); text-transform:uppercase;">🍱 Menú de Cocina (LunchBox)</h3>';
         data.forEach(item => {
-            let favsHtml = item.favorites.map(char => 
+            let favsHtml = item.favorites ? item.favorites.map(char => 
                 `<span style="background:#fff; color:#ff8800; padding:2px 8px; border-radius:10px; font-size:0.8em; margin-right:5px; border:1px solid #ff8800;">${char}</span>`
-            ).join('');
+            ).join('') : '';
+            
             html += `<div class="data-card" style="border: 2px solid #ff8800; background: #fff; color:#000; margin-bottom: 20px; box-shadow: 5px 5px 0px rgba(255, 136, 0, 0.4);">
                 <div style="background:#ff8800; color:#fff; padding:5px 10px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
                     <span style="font-size:1.1em;">📅 ${item.date}</span>
@@ -864,10 +836,10 @@ const app = {
                     <div style="margin-bottom:15px;">
                         <div style="font-size:0.85em; color:#666; margin-bottom:5px; text-transform:uppercase; font-weight:bold;">Clave del éxito:</div>
                         <div style="font-size:1.2em; font-weight:bold; color:#d65c00; border-bottom: 2px dashed #ff8800; padding-bottom:5px;">
-                            👉 ${item.correct_choice}
+                            👉 ${item.correct_choice || item.correct_action}
                         </div>
                     </div>
-                    <div><div style="font-size:0.85em; color:#666; margin-bottom:5px;">A quién le gusta:</div><div>${favsHtml}</div></div>
+                    ${favsHtml ? `<div><div style="font-size:0.85em; color:#666; margin-bottom:5px;">A quién le gusta:</div><div>${favsHtml}</div></div>` : ''}
                 </div>
             </div>`;
         });
@@ -897,8 +869,9 @@ const app = {
                     <div style="text-align:right;">${badge}</div>
                 </div>
                 <div style="font-size:0.9em; margin-bottom:8px;">
-                    📅 <strong>Disponible:</strong> ${book.available} <br>
-                    📍 <strong>Origen:</strong> ${book.source}
+                    📅 <strong>Disponible:</strong> ${book.available || book.date} <br>
+                    📍 <strong>Origen:</strong> ${book.source || book.location} <br>
+                    📘 <strong>Capítulos:</strong> ${book.chapters}
                 </div>
                 <div style="background:rgba(0,0,0,0.05); padding:8px; border-radius:4px; font-style:italic;">
                     ✨ Efecto: ${book.effect}
@@ -927,6 +900,46 @@ const app = {
             });
             html += `</div></div></div>`;
         });
+        container.innerHTML = html;
+    },
+
+    renderSideQuests: function(data, container) {
+        let html = '<h3 style="color:#000; text-align:center; background:#ffe600; border:2px solid #000; padding:12px; transform:skew(-2deg); text-transform:uppercase; box-shadow: 5px 5px 0px #000; margin-bottom: 25px;">🦊 MISIONES SECUNDARIAS (SIDE QUESTS)</h3>';
+        
+        html += '<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap:20px;">';
+        
+        data.forEach(q => {
+            html += `<div class="data-card" style="border: 2px solid #000; background: #fff; color:#000; box-shadow: 5px 5px 0px rgba(0,0,0,0.8); display: flex; flex-direction: column; padding: 0; border-radius: 0;">
+                <div style="background:#000; padding:10px 15px; font-weight:bold; font-size:1.1em; display:flex; justify-content:space-between; align-items:center;">
+                    <span style="color:#ffe600;">${q.title}</span>
+                </div>
+                
+                <div style="padding:15px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.85em; border-bottom:2px dashed #ccc; padding-bottom:8px; margin-bottom:10px;">
+                        <span style="background:#eee; padding:2px 8px; border:1px solid #aaa; border-radius:10px; color:#000;">📅 <strong>${q.unlock_date}</strong></span>
+                        <span style="color:#555;">📍 <strong>${q.location}</strong></span>
+                    </div>
+                    
+                    <div style="font-size:0.95em; margin-bottom:5px;">
+                        👤 <strong style="color:#000;">Cliente:</strong> ${q.client}
+                    </div>
+                    
+                    <div style="font-size:0.9em; margin-bottom:12px; color:#d32f2f; font-weight:bold;">
+                        ${q.requirements !== 'Ninguno' ? `⚠️ Req: ${q.requirements}` : '<span style="color:#4caf50;">✅ Sin requisitos previos</span>'}
+                    </div>
+                    
+                    <div style="background:rgba(255, 230, 0, 0.15); color:#000; padding:10px; border-left:3px solid #ffe600; font-size:0.9em; font-style:italic; margin-bottom:15px; flex-grow: 1; line-height:1.4;">
+                        ${q.description}
+                    </div>
+                    
+                    <div style="background:#ffe600; color:#000; padding:8px; text-align:center; font-weight:bold; border: 2px dashed #000; font-size:0.95em; transform:skew(-2deg);">
+                        🎁 ${q.reward}
+                    </div>
+                </div>
+            </div>`;
+        });
+        
+        html += '</div>';
         container.innerHTML = html;
     }
 };

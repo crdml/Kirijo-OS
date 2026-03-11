@@ -78,8 +78,8 @@
       "arcana": "Estrella (Star)",
       "level": 89,
       "type": "Pentagon Spread (5)",
-      "ingredients": ["Helel", "Satan", "Michael", "Metatron", "Trumpeter"],
-      "note": "Diferente receta a P3P. Ahora requiere Helel."
+      "ingredients": ["Samael", "Abaddon", "Beelzebub", "Satan", "Helel"],
+      "note": "Receta clásica de P3."
     },
     {
       "result": "Messiah",
@@ -102,8 +102,8 @@
       "result": "Satanael (DLC)",
       "arcana": "Loco (Fool)",
       "level": 95,
-      "type": "Special DLC",
-      "ingredients": ["Lucifer", "Satan", "Michael", "Anza", "Baal Zebul"],
+      "type": "Hexagon Spread DLC",
+      "ingredients": ["Orpheus", "Michael", "Thanatos", "Satan", "Helel", "Lucifer"],
       "note": "Requiere comprar el DLC de Persona 5 Royal."
     }
   ],

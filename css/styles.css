@@ -374,6 +374,9 @@ body.theme-p4 .p4-btn-5:hover, body.theme-p4 .p4-btn-5.active-mod { background: 
 body.theme-p4 .p4-btn-6 { border-color: #e60012; color: #b3000e; }
 body.theme-p4 .p4-btn-6:hover, body.theme-p4 .p4-btn-6.active-mod { background: #e60012; color: #fff; }
 
+body.theme-p4 .p4-btn-7 { border-color: #ff0055; color: #cc0044; }
+body.theme-p4 .p4-btn-7:hover, body.theme-p4 .p4-btn-7.active-mod { background: #ff0055; color: #fff; }
+
 body.theme-p4 .data-card {
     background: #fff; border: 2px solid #000; box-shadow: 5px 5px 0px rgba(0,0,0,0.8);
     color: #000; border-radius: 0;

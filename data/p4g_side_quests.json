@@ -1,0 +1,692 @@
+[
+  {
+    "id": 1,
+    "title": "Misión 01: ¡¿Quién es el maestro de los acertijos?!",
+    "client": "Estudiante Funky",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "18/04",
+    "requirements": "Ninguno",
+    "description": "Habla con el Estudiante Funky y responde a sus preguntas. Respuestas: 'Grupo A' y 'Son los 6 colores de banderas más comunes'.",
+    "reward": "Llave de cofre x3"
+  },
+  {
+    "id": 2,
+    "title": "Misión 02: La chica de la azotea",
+    "client": "Estudiante",
+    "location": "Aula 2-2",
+    "unlock_date": "25/04",
+    "requirements": "Ninguno",
+    "description": "Habla con el estudiante. Ve a la azotea del instituto y pregúntale a la chica por sus pasatiempos durante 3 días distintos. Vuelve con el estudiante para informarle.",
+    "reward": "Goho-M x1"
+  },
+  {
+    "id": 3,
+    "title": "Misión 03: Consigue Shochu Mori Ranmaru",
+    "client": "Hombre en la ribera",
+    "location": "Llanura aluvial del río Samegawa",
+    "unlock_date": "01/05",
+    "requirements": "Ninguno",
+    "description": "Entra al Mundo de la TV y examina la caja/mesa en el centro de la Plaza de Inaba (el área de descanso) para encontrar el Shochu. Entrégaselo al hombre.",
+    "reward": "4,000 yenes"
+  },
+  {
+    "id": 4,
+    "title": "Misión 04: Consigue una estatua de ángel",
+    "client": "Estudiante tímida",
+    "location": "Aula 2-2",
+    "unlock_date": "02/05",
+    "requirements": "Ninguno",
+    "description": "Consigue el objeto 'Estatua de Ángel' (Angel Statue) derrotando a la Sombra 'Avenger Knight' en los pisos 6-7 del Castillo de Yukiko.",
+    "reward": "Chestnut x3"
+  },
+  {
+    "id": 5,
+    "title": "Misión 05: Consigue una estatua de demonio",
+    "client": "Estudiante sombrío",
+    "location": "Edificio Escolar 2F",
+    "unlock_date": "02/05",
+    "requirements": "Ninguno",
+    "description": "Consigue el objeto 'Estatua de Demonio' (Demon Statue) derrotando a la Sombra 'Magical Magus' en los pisos 6-7 del Castillo de Yukiko.",
+    "reward": "Dokudami Tea x3"
+  },
+  {
+    "id": 6,
+    "title": "Misión 06: Consigue un cable Ritz",
+    "client": "Estudiante masculino",
+    "location": "Edificio de Prácticas 1F",
+    "unlock_date": "02/05",
+    "requirements": "Ninguno",
+    "description": "Consigue el objeto 'Cable Ritz' (Ritz Wire) derrotando a la Sombra 'Heat Balance' en los pisos 6-7 del Castillo de Yukiko.",
+    "reward": "Macca Leaf x1"
+  },
+  {
+    "id": 7,
+    "title": "Misión 07: Deseo encontrar el amor (Zorro Rango 2)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "06/05",
+    "requirements": "Inicia el Vínculo Social de El Ermitaño",
+    "description": "Acepta la petición en la tablilla Ema. Habla con la chica en los casilleros del Edificio Escolar 1F. Al día siguiente, dile 'Lo leí'. Al siguiente día dile 'Tienes razón'. Al último día dile 'Perdónalo'. Informa al Zorro.",
+    "reward": "Rango 2 - El Ermitaño"
+  },
+  {
+    "id": 8,
+    "title": "Misión 08: Consigue una pala resistente",
+    "client": "Estudiante masculino",
+    "location": "Edificio de Prácticas 2F",
+    "unlock_date": "18/05",
+    "requirements": "Desbloquea los Baños Humeantes",
+    "description": "Consigue el objeto 'Pala Resistente' (Hardy Spade) derrotando a la Sombra 'Ruinous Idol' en los pisos 1-2 de los Baños Humeantes.",
+    "reward": "Pociones x1"
+  },
+  {
+    "id": 9,
+    "title": "Misión 09: Un antiguo escritorio",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 1F",
+    "unlock_date": "18/05",
+    "requirements": "Ninguno",
+    "description": "Consigue el objeto 'Madera Adecuada' (Fitting Board) derrotando a la Sombra 'Laughing Table' en el Castillo de Yukiko.",
+    "reward": "Recompensa variable"
+  },
+  {
+    "id": 10,
+    "title": "Misión 10: Desearía no tener antojo de bocadillos (Zorro Rango 3)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 2",
+    "requirements": "Vínculo Social de El Ermitaño Rango 2",
+    "description": "Habla con la mujer delgada en el Distrito Comercial Sur. Pregúntale a Chie en la azotea por chicles y te dará 'Meat Gum'. Dáselo a la mujer y repórtalo al Zorro.",
+    "reward": "Rango 3 - El Ermitaño"
+  },
+  {
+    "id": 11,
+    "title": "Misión 11: Deseo que mi perro regrese (Zorro Rango 4)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 3",
+    "requirements": "Vínculo Social de El Ermitaño Rango 3",
+    "description": "Busca al perro en la ribera del río. Al día siguiente búscalo en el Distrito Comercial Norte. Al día siguiente búscalo de nuevo en el río, háblale y dale un 'Steak Skewer' (brocheta de carne). Repórtalo al Zorro.",
+    "reward": "Rango 4 - El Ermitaño"
+  },
+  {
+    "id": 12,
+    "title": "Misión 12: Desearía ser mejor hablando (Zorro Rango 5)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 4",
+    "requirements": "Vínculo Social de El Ermitaño Rango 4, Nivel 3 Expresión",
+    "description": "Habla con el niño en la ribera del río. Necesitarás darle una pegatina de Tanjou (Prize Sticker) que obtienes al comprar en la Teletienda de Tanaka. Vuelve a hablarle al día siguiente. Repórtalo al Zorro.",
+    "reward": "Rango 5 - El Ermitaño"
+  },
+  {
+    "id": 13,
+    "title": "Misión 13: Desearía no temerle a los gatos (Zorro Rango 6)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 5",
+    "requirements": "Vínculo Social de El Ermitaño Rango 5",
+    "description": "Habla con el hombre en la ribera del río Samegawa. Completa las misiones 20, 21 y 22 para tener a un gato en la casa Dojima. Muéstraselo. Necesitarás pescar un pez rojo (Red Goldfish) para el gato. Repórtalo.",
+    "reward": "Rango 6 - El Ermitaño"
+  },
+  {
+    "id": 14,
+    "title": "Misión 14: Deseo que mi billetera regrese (Zorro Rango 7)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 6",
+    "requirements": "Vínculo Social de El Ermitaño Rango 6",
+    "description": "Habla con la mujer en el río Samegawa. Busca detrás del cartel en la ribera del río Samegawa para encontrar un monedero redondo. Dáselo, pero no es la billetera. Busca ahora en los arbustos del Distrito Comercial Norte. Dásela y repórtalo.",
+    "reward": "Rango 7 - El Ermitaño"
+  },
+  {
+    "id": 15,
+    "title": "Misión 15: Deseo ver la Piedra Watatsumi (Zorro Rango 8)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 7",
+    "requirements": "Vínculo Social de El Ermitaño Rango 7",
+    "description": "Habla con el anciano en la ribera del río. Debes pescar al Guardián del Río (Guardian) en días lluviosos usando el Inaba Jewel Bug. Muéstrale el pez para obtener la piedra y repórtalo.",
+    "reward": "Rango 8 - El Ermitaño"
+  },
+  {
+    "id": 16,
+    "title": "Misión 16: Restauración de escritorio, Parte 1",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 2F",
+    "unlock_date": "18/05",
+    "requirements": "Completar Misión 09",
+    "description": "Derrota a la Sombra 'Laughing Table' (Baños Humeantes) para conseguir el objeto Madera Adecuada (Fitting Board).",
+    "reward": "Snuff Soul x2"
+  },
+  {
+    "id": 17,
+    "title": "Misión 17: Por favor, encuentra a mi hermana menor",
+    "client": "Hermana mayor",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "02/05",
+    "requirements": "Ninguno",
+    "description": "Habla con la gemela menor en la llanura aluvial del río Samegawa y dile que su hermana la busca.",
+    "reward": "Goho-M x5"
+  },
+  {
+    "id": 18,
+    "title": "Misión 18: Intercambio de libros",
+    "client": "Chica lectora",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "23/05",
+    "requirements": "Tener el objeto 'Pechos de Melocotón' (Peach Seed)",
+    "description": "Entrégale a la chica un Peach Seed (obtenido de cofres en las mazmorras) a cambio del libro 'El camino suave' (The Gentle Way).",
+    "reward": "Libro 'El camino suave'"
+  },
+  {
+    "id": 19,
+    "title": "Misión 19: Intercambio de pañuelos",
+    "client": "Hombre del cine",
+    "location": "Cine en Okina",
+    "unlock_date": "23/05",
+    "requirements": "Ninguno",
+    "description": "Simplemente entrégale un Pañuelo de Bolsillo (obtenido como objeto común).",
+    "reward": "Medicinas"
+  },
+  {
+    "id": 20,
+    "title": "Misión 20: Por favor, alimenta al gato",
+    "client": "Dueño del gato",
+    "location": "Río Samegawa",
+    "unlock_date": "03/06",
+    "requirements": "Ninguno",
+    "description": "Dale de comer al gato de la zona del río Samegawa usando un pez cualquiera que hayas pescado. Te entregará el libro 'El camino del punk'.",
+    "reward": "Libro 'El camino del punk'"
+  },
+  {
+    "id": 21,
+    "title": "Misión 21: Alimenta al gato",
+    "client": "Dueño del gato",
+    "location": "Río Samegawa",
+    "unlock_date": "04/06",
+    "requirements": "Completar Misión 20",
+    "description": "Vuelve a alimentar al gato con peces pescados durante varios días para completar la misión.",
+    "reward": "Antibióticos"
+  },
+  {
+    "id": 22,
+    "title": "Misión 22: El gato necesita comida con urgencia",
+    "client": "Dueño del gato",
+    "location": "Río Samegawa",
+    "unlock_date": "05/06",
+    "requirements": "Completar Misión 21",
+    "description": "Sigue alimentando al gato hasta que esté satisfecho por completo.",
+    "reward": "Objeto sanador"
+  },
+  {
+    "id": 23,
+    "title": "Misión 23: Consigue una Llave Antigua",
+    "client": "Mujer mayor",
+    "location": "Río Samegawa",
+    "unlock_date": "05/06",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Bribing Fuzz' en los pisos 1-2 de los Baños Humeantes para conseguir la Llave Antigua (Old Key).",
+    "reward": "Knowledge +3"
+  },
+  {
+    "id": 24,
+    "title": "Misión 24: Consigue Carbón",
+    "client": "Hombre trabajador",
+    "location": "Distrito Comercial Norte",
+    "unlock_date": "05/06",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Selfish Basalt' en los pisos 3-4 de los Baños Humeantes para conseguir el Carbón (Coal).",
+    "reward": "Macca x4000"
+  },
+  {
+    "id": 25,
+    "title": "Misión 25: 100% Repollo cultivado en Inaba",
+    "client": "Ama de casa",
+    "location": "Junes",
+    "unlock_date": "05/06",
+    "requirements": "Acceso al huerto de Dojima",
+    "description": "Compra plántulas de repollo de la tía en Junes, plántalas en el jardín de Dojima, coséchalas en 5 días y entrégale los repollos a la mujer.",
+    "reward": "Anillo Cortador (Sharp Ring)"
+  },
+  {
+    "id": 26,
+    "title": "Misión 26: Consigue una Cruz Torcida",
+    "client": "Estudiante tímida",
+    "location": "Aula 2-2",
+    "unlock_date": "12/07",
+    "requirements": "Completar Misión 04",
+    "description": "Derrota a la Sombra 'Tranquil Idol' en los pisos 7-8 del Club de Striptease para obtener la Cruz Torcida (Crooked Cross).",
+    "reward": "Ungüento Maca x3"
+  },
+  {
+    "id": 27,
+    "title": "Misión 27: Consigue un Velo Encantado",
+    "client": "Estudiante sombrío",
+    "location": "Edificio Escolar 2F",
+    "unlock_date": "12/07",
+    "requirements": "Completar Misión 05",
+    "description": "Derrota a la Sombra 'Liberating Idol' en los pisos 5-10 del Club de Striptease para conseguir el Velo Encantado (Charmed Veil).",
+    "reward": "Bálsamo de Vida x3"
+  },
+  {
+    "id": 28,
+    "title": "Misión 28: Restauración de escritorio, Parte 2",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 2F",
+    "unlock_date": "13/07",
+    "requirements": "Completar Misión 16",
+    "description": "Derrota a la Sombra 'Crying Table' en los pisos 9-10 del Club de Striptease para obtener la Tabla Reflectante (Reflecting Board).",
+    "reward": "Snuff Soul x2"
+  },
+  {
+    "id": 29,
+    "title": "Misión 29: Consigue un Cuerno",
+    "client": "Hombre de aspecto rudo",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "13/07",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Grand Magus' en los pisos 9-10 del Club de Striptease para conseguir el Cuerno (Horn).",
+    "reward": "18,000 yenes"
+  },
+  {
+    "id": 30,
+    "title": "Misión 30: Por favor, encuentra a mi hermana menor, Parte 2",
+    "client": "Hermana mayor",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "13/07",
+    "requirements": "Completar Misión 17",
+    "description": "La hermana gemela está en el Santuario Tatsuhime, háblale y repórtalo a la mayor.",
+    "reward": "Macca Leaf x5"
+  },
+  {
+    "id": 31,
+    "title": "Misión 31: La pasión del Club de Limpieza",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 1F",
+    "unlock_date": "13/07",
+    "requirements": "Ninguno",
+    "description": "Consigue el uniforme de limpiador al tomar el trabajo a tiempo parcial como Conserje del Hospital. Muéstrale el uniforme al cliente.",
+    "reward": "Uniforme del Club de Limpieza"
+  },
+  {
+    "id": 32,
+    "title": "Misión 32: Consigue Trucha de Inaba",
+    "client": "Anciano de la Ribera",
+    "location": "Río Samegawa",
+    "unlock_date": "14/07",
+    "requirements": "Ninguno",
+    "description": "Pesca una Trucha de Inaba (Inaba Trout) usando Yaso Locust como cebo y entrégasela.",
+    "reward": "Soma"
+  },
+  {
+    "id": 33,
+    "title": "Misión 33: Consigue un Bulto de Plata",
+    "client": "Hombre trabajador",
+    "location": "Distrito Comercial Norte",
+    "unlock_date": "14/07",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Silver Dice' en los pisos 7-9 del Club de Striptease para conseguir el Bulto de Plata (Silver Lump).",
+    "reward": "12,000 yenes"
+  },
+  {
+    "id": 34,
+    "title": "Misión 34: Consigue Botas Duras",
+    "client": "Amante de los zapatos",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "15/07",
+    "requirements": "Ninguno",
+    "description": "Consigue el material Piel Gruesa (Thick Hide) de la Sombra 'Dancing Hand' en los Baños Humeantes (pisos 5-8). Véndelo a Daidara para desbloquear y comprar las Botas Duras. Entrégaselas.",
+    "reward": "Libro 'Guía de plagas'"
+  },
+  {
+    "id": 35,
+    "title": "Misión 35: Copia al carbón",
+    "client": "Niña",
+    "location": "Río Samegawa",
+    "unlock_date": "15/07",
+    "requirements": "Ninguno",
+    "description": "Consigue un Sello Flor (Flower Seal) de la Sombra 'Blind Cupid' en los pisos 3-4 del Vacío (Void Quest).",
+    "reward": "Brazalete Antidemonios"
+  },
+  {
+    "id": 36,
+    "title": "Misión 36: Lo que empuña el jefe",
+    "client": "Estudiante",
+    "location": "Edificio Escolar 2F",
+    "unlock_date": "22/08",
+    "requirements": "Ninguno",
+    "description": "Regresa a la última sala del Vacío (Void Quest) y derrota al jefe opcional. Obtendrás un arma, dásela al estudiante.",
+    "reward": "Arma Especial"
+  },
+  {
+    "id": 37,
+    "title": "Misión 37: Clavando los clavos",
+    "client": "Estudiante de la azotea",
+    "location": "Azotea",
+    "unlock_date": "22/08",
+    "requirements": "Ninguno",
+    "description": "Consigue Uñas Malditas (Cursed Nails) derrotando a las sombras en el Vacío (Void Quest).",
+    "reward": "Gema de Luz x2"
+  },
+  {
+    "id": 38,
+    "title": "Misión 38: Cosecha dos tipos de maíz",
+    "client": "Ama de casa",
+    "location": "Junes",
+    "unlock_date": "22/08",
+    "requirements": "Completar Misión 25",
+    "description": "Planta y cosecha en el huerto de Dojima un Barrier Corn y un Return Corn. Entrégaselos a la mujer.",
+    "reward": "Anillo de Protección"
+  },
+  {
+    "id": 39,
+    "title": "Misión 39: Consigue una Lámpara Fina",
+    "client": "Hombre de aspecto rudo",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "22/08",
+    "requirements": "Completar Misión 29",
+    "description": "Derrota a la Sombra 'Amenti Raven' en los pisos 3-4 del Vacío para conseguir la Lámpara Fina (Fine Lamp).",
+    "reward": "30,000 yenes"
+  },
+  {
+    "id": 40,
+    "title": "Misión 40: Consigue una Armadura de Moda",
+    "client": "Estudiante femenino",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "09/08",
+    "requirements": "Ninguno",
+    "description": "Consigue el material de la Sombra 'Sky Balance' en el Vacío (pisos 9-10). Véndeselo a Daidara y compra la armadura solicitada.",
+    "reward": "Libro '¡Las reglas del Picross!'"
+  },
+  {
+    "id": 41,
+    "title": "Misión 41: ¿Qué fue eso en la película?",
+    "client": "Aficionada al cine",
+    "location": "Okina City",
+    "unlock_date": "02/09",
+    "requirements": "Acceso a Okina City",
+    "description": "Vuelve a la ciudad de Inaba, pregúntale a Yosuke por la película, luego a Chie, y por último informa a la fanática del cine en Okina.",
+    "reward": "Pastilla Mágica"
+  },
+  {
+    "id": 42,
+    "title": "Misión 42: ¡El regreso del maestro de los acertijos!",
+    "client": "Estudiante Funky",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "02/09",
+    "requirements": "Completar Misión 01",
+    "description": "Responde: 'Grupo A', 'Movimiento humano', 'Grupo B' y 'Artículos indefinidos'.",
+    "reward": "Snuff Soul x1"
+  },
+  {
+    "id": 43,
+    "title": "Misión 43: Experimentos en Telepatía",
+    "client": "Hermana mayor",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "05/09",
+    "requirements": "Completar Misión 30",
+    "description": "Habla con la gemela en el río Samegawa y dile 'Dile que suene el silbato'. Vuelve con la gemela mayor.",
+    "reward": "Gema Pesada x2"
+  },
+  {
+    "id": 44,
+    "title": "Misión 44: Actividades extracurriculares",
+    "client": "Profesora",
+    "location": "Edificio Escolar 2F",
+    "unlock_date": "20/09",
+    "requirements": "Ninguno",
+    "description": "Consigue el objeto Madera Culinaria (Culinary Board) derrotando a las sombras en el Laboratorio Secreto (Secret Laboratory).",
+    "reward": "Macca"
+  },
+  {
+    "id": 45,
+    "title": "Misión 45: Una prueba de memoria literaria",
+    "client": "Estudiante",
+    "location": "Biblioteca",
+    "unlock_date": "26/09",
+    "requirements": "Ninguno",
+    "description": "Responde las preguntas de libros: 1) Rey Judas, 2) Una década, 3) 2 capítulos, 4) Su nombre. Obtendrás el libro '¿Quién soy?'.",
+    "reward": "Libro '¿Quién soy?'"
+  },
+  {
+    "id": 46,
+    "title": "Misión 46: Restauración de escritorio, Parte 3",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 2F",
+    "unlock_date": "28/09",
+    "requirements": "Completar Misión 28",
+    "description": "Derrota a la Sombra 'Angry Table' en los pisos 5-6 del Laboratorio Secreto para obtener la Tabla de Prueba (Proof Board).",
+    "reward": "Chewing Soul x2"
+  },
+  {
+    "id": 47,
+    "title": "Misión 47: Encuéntrame algo para ponerme",
+    "client": "Ama de casa",
+    "location": "Okina City",
+    "unlock_date": "01/10",
+    "requirements": "Ninguno",
+    "description": "Derrota a sombras en el Laboratorio Secreto para conseguir material de ropa. Véndelo en Daidara, compra el 'Invincible Skirt' y dáselo.",
+    "reward": "Uniforme escolar de verano"
+  },
+  {
+    "id": 48,
+    "title": "Misión 48: Consigue una Bola de Cristal",
+    "client": "Profesora",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "09/10",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Constancy Relic' en el Laboratorio Secreto (pisos 1-2) para conseguir la Bola de Cristal (Crystal Ball).",
+    "reward": "35,000 yenes"
+  },
+  {
+    "id": 49,
+    "title": "Misión 49: Consigue un Caparazón de Entrenamiento",
+    "client": "Director",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "09/10",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Wicked Turret' en el Laboratorio Secreto (pisos 7-8) para obtener el Caparazón de Entrenamiento (Training Shell).",
+    "reward": "Bálsamo Valiente x3"
+  },
+  {
+    "id": 50,
+    "title": "Misión 50: Consigue un Engranaje de Alta Velocidad",
+    "client": "Estudiante curioso",
+    "location": "Aula 2-2",
+    "unlock_date": "09/10",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Mach Fort' en el Laboratorio Secreto (pisos 5-6) para obtener el Engranaje de Alta Velocidad (High-Speed Gear).",
+    "reward": "Libro 'El impulso secreto'"
+  },
+  {
+    "id": 51,
+    "title": "Misión 51: Consigue Carbón Fino",
+    "client": "Anciano",
+    "location": "Distrito Comercial Norte",
+    "unlock_date": "09/10",
+    "requirements": "Completar Misión 24",
+    "description": "Derrota a la Sombra 'Power Castle' en el Laboratorio Secreto (pisos 7-8) para obtener el Carbón Fino (Fine Coal).",
+    "reward": "40,000 yenes"
+  },
+  {
+    "id": 52,
+    "title": "Misión 52: La independencia de una gemela",
+    "client": "Hermana menor",
+    "location": "Río Samegawa",
+    "unlock_date": "09/10",
+    "requirements": "Completar Misión 43",
+    "description": "Consigue una Rama Curvada de los monstruos en las mazmorras y entrégasela a la gemela.",
+    "reward": "Cuentas de Sanación"
+  },
+  {
+    "id": 53,
+    "title": "Misión 53: Experimentos en Telepatía, Parte 2",
+    "client": "Hermana mayor",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "31/10",
+    "requirements": "Completar Misión 52",
+    "description": "Habla con la gemela menor en el río. Repórtalo a la mayor.",
+    "reward": "Soma"
+  },
+  {
+    "id": 54,
+    "title": "Misión 54: Encuentra a mi mascota",
+    "client": "Chica preocupada",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "01/11",
+    "requirements": "Ninguno",
+    "description": "Busca a su perro en el Distrito Comercial Norte y Sur. Cómprale 'Steak Skewer' (Brocheta) y dásela. Informa a la chica.",
+    "reward": "Cuentas Revival"
+  },
+  {
+    "id": 55,
+    "title": "Misión 55: ¡La venganza del maestro de los acertijos!",
+    "client": "Estudiante Funky",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "12/11",
+    "requirements": "Completar Misión 42",
+    "description": "Respuestas: 'Grupo B', 'La forma en que se dibujan', 'Prometio' y 'Necesidad'.",
+    "reward": "Chewing Soul x1"
+  },
+  {
+    "id": 56,
+    "title": "Misión 56: La chica de la azotea, Parte 2",
+    "client": "Estudiante",
+    "location": "Aula 2-2",
+    "unlock_date": "22/11",
+    "requirements": "Completar Misión 02",
+    "description": "Pregunta a la chica en la azotea y convéncela de bajar.",
+    "reward": "Macca Leaf x2"
+  },
+  {
+    "id": 57,
+    "title": "Misión 57: Restauración de escritorio, Parte 4",
+    "client": "Estudiante",
+    "location": "Edificio de Prácticas 2F",
+    "unlock_date": "22/11",
+    "requirements": "Completar Misión 46",
+    "description": "Consigue la Tabla Llorona de la sombra en la mazmorra del Cielo (Heaven).",
+    "reward": "Soul Food x3"
+  },
+  {
+    "id": 58,
+    "title": "Misión 58: Consigue un Mineral Antiguo",
+    "client": "Estudiante de Ciencias",
+    "location": "Edificio de Prácticas 1F",
+    "unlock_date": "22/11",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Revelation Pesce' en los pisos 6-7 del Cielo (Heaven) para conseguir el Mineral Antiguo (Old Ore).",
+    "reward": "Incienso de Fuerza x1"
+  },
+  {
+    "id": 59,
+    "title": "Misión 59: Consigue una Lámpara Modesta",
+    "client": "Hombre de aspecto rudo",
+    "location": "Distrito Comercial Sur",
+    "unlock_date": "22/11",
+    "requirements": "Completar Misión 39",
+    "description": "Derrota a la Sombra 'Phantom Lord' en los pisos 3-6 del Cielo (Heaven) para conseguir la Lámpara Modesta (Modest Lamp).",
+    "reward": "45,000 yenes"
+  },
+  {
+    "id": 60,
+    "title": "Misión 60: Adquiere al Guardián de Samegawa (Zorro Rango 9)",
+    "client": "El Zorro",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "Después del Rango 8",
+    "requirements": "Vínculo Social de El Ermitaño Rango 8",
+    "description": "Pesca al Guardián del Mar (Sea Guardian) en Shichiri Beach durante la lluvia (o nieve). Muéstrale el pez al Zorro para el Rango Final.",
+    "reward": "Rango 10 - El Ermitaño"
+  },
+  {
+    "id": 61,
+    "title": "Misión 61: Encuentra a mi mascota, Parte 2",
+    "client": "Chica preocupada",
+    "location": "Santuario Tatsuhime",
+    "unlock_date": "10/01",
+    "requirements": "Completar Misión 54",
+    "description": "Encuentra al gato perdido en la ribera del río. Llévale un pez y regresa con la chica.",
+    "reward": "Misterio de Vida"
+  },
+  {
+    "id": 62,
+    "title": "Misión 62: Actividades extracurriculares, Parte 2",
+    "client": "Profesora",
+    "location": "Edificio Escolar 2F",
+    "unlock_date": "10/01",
+    "requirements": "Completar Misión 44",
+    "description": "Consigue el Ojo Cristalino en la mazmorra Magatsu Inaba.",
+    "reward": "Gema Mágica x2"
+  },
+  {
+    "id": 63,
+    "title": "Misión 63: Consigue Cadenas Doradas",
+    "client": "Profesora",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "10/01",
+    "requirements": "Ninguno",
+    "description": "Derrota a la Sombra 'Minotaur IV' en Magatsu Inaba (pisos superiores) para conseguir Cadenas Doradas (Golden Chains).",
+    "reward": "65,000 yenes"
+  },
+  {
+    "id": 64,
+    "title": "Misión 64: ¡El bis del maestro de los acertijos!",
+    "client": "Estudiante Funky",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "10/01",
+    "requirements": "Completar Misión 55",
+    "description": "La respuesta final a su acertijo es: 'Uruguay'.",
+    "reward": "Soul Food x3"
+  },
+  {
+    "id": 65,
+    "title": "Misión 65: La lección especial de Kashiwagi",
+    "client": "Kashiwagi",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "16/01",
+    "requirements": "Responde 'Deoxys' a la pregunta del examen de la escuela",
+    "description": "Muéstrale la ropa de 'Coronel' comprada o encontrada.",
+    "reward": "Traje escolar especial"
+  },
+  {
+    "id": 66,
+    "title": "Misión 66: Muéstrame unas pantuflas lindas",
+    "client": "Kashiwagi",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "17/01",
+    "requirements": "Completar Misión 65",
+    "description": "Equipa las pantuflas lindas y háblale.",
+    "reward": "Traje de Mucama"
+  },
+  {
+    "id": 67,
+    "title": "Misión 67: Deslúmbrame con una pata de animal",
+    "client": "Kashiwagi",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "18/01",
+    "requirements": "Completar Misión 66",
+    "description": "Equipa el arma 'Animal Paw' y háblale.",
+    "reward": "Traje escolar especial de invierno"
+  },
+  {
+    "id": 68,
+    "title": "Misión 68: La lección especial de Kashiwagi, Parte 2",
+    "client": "Kashiwagi",
+    "location": "Edificio Escolar 1F",
+    "unlock_date": "19/01",
+    "requirements": "Completar Misión 67",
+    "description": "Equipa la ropa que ella especifica y vuelve a hablarle.",
+    "reward": "Uniforme escolar adicional"
+  },
+  {
+    "id": 69,
+    "title": "Misión 69: Un estudiante debe estudiar",
+    "client": "Director",
+    "location": "Edificio Escolar 3F",
+    "unlock_date": "23/01",
+    "requirements": "Maximizar la estadística de Conocimiento",
+    "description": "Consigue el 'Cristal de Plomo' en Magatsu Inaba y entrégaselo.",
+    "reward": "Arma Especial para el protagonista"
+  }
+]

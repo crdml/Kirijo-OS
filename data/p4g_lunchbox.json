@@ -20,7 +20,7 @@
   {
     "date": "31 de Mayo",
     "dish": "Bento de Yakiniku",
-    "correct_choice": "Usar salsa de soja en lugar de sal",
+    "correct_choice": "Usar salsa de soja",
     "favorites": ["Chie", "Yosuke", "Kanji"]
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "date": "12 de Junio",
-    "dish": "Daigaku Imo (Batatas)",
+    "dish": "Daigaku Imo (Batatas Caramelizadas)",
     "correct_choice": "Freír en aceite abundante",
     "favorites": ["Chie", "Yosuke", "Nanako"]
   },
@@ -55,8 +55,8 @@
   },
   {
     "date": "11 de Julio",
-    "dish": "Pollo Frito",
-    "correct_choice": "Usar harina de patata",
+    "dish": "Pollo Frito (Karaage)",
+    "correct_choice": "Usar harina de patata (maicena)",
     "favorites": ["Chie", "Yosuke", "Kanji"]
   },
   {
@@ -85,7 +85,7 @@
   },
   {
     "date": "11 de Octubre",
-    "dish": "Jo-P (Estofado)",
+    "dish": "Estofado",
     "correct_choice": "Cocer a fuego lento",
     "favorites": ["Yosuke", "Yukiko", "Rise"]
   },
@@ -115,7 +115,7 @@
   },
   {
     "date": "11 de Enero",
-    "dish": "Gyoza (Otra vez)",
+    "dish": "Gyoza",
     "correct_choice": "Envolver bien",
     "favorites": ["Chie", "Yosuke", "Rise"]
   },
