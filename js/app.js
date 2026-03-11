@@ -162,7 +162,7 @@ const app = {
         document.getElementById('data-display').innerHTML = '<div class="empty-state">Seleccione un módulo de datos.</div>';
     },
 
-    setGender: function(gender) {
+    setGender: function(gender, shouldReload = true) {
         // 1. Cambiar estado
         this.state.protagonist = gender;
         
@@ -190,14 +190,16 @@ const app = {
         }
 
         // 4. ¡REFRESCAR LA VISTA ACTUAL!
-        const navContainer = document.getElementById('modules-container');
-        const activeGame = navContainer ? navContainer.getAttribute('data-game') : null;
-        
-        if (activeGame === 'p3p') {
-            const activeBtn = navContainer.querySelector('button.active-mod');
-            if (activeBtn) {
-                const moduleType = activeBtn.getAttribute('data-type');
-                if(moduleType) this.loadModule(moduleType, 'p3p');
+        if (shouldReload) {
+            const navContainer = document.getElementById('modules-container');
+            const activeGame = navContainer ? navContainer.getAttribute('data-game') : null;
+            
+            if (activeGame === 'p3p') {
+                const activeBtn = navContainer.querySelector('button.active-mod');
+                if (activeBtn) {
+                    const moduleType = activeBtn.getAttribute('data-type');
+                    if(moduleType) this.loadModule(moduleType, 'p3p');
+                }
             }
         }
     },
@@ -258,7 +260,7 @@ const app = {
             if (gameId === 'p3r') document.body.classList.add('theme-p3r');
             else if (gameId === 'p4g') document.body.classList.add('theme-p4');
             else if (gameId === 'p5r') document.body.classList.add('theme-p5r');
-            else if (gameId === 'p3p') this.setGender(this.state.protagonist);
+            else if (gameId === 'p3p') this.setGender(this.state.protagonist, false);
         }
 
         display.innerHTML = '<div class="empty-state">Cargando datos...</div>';
@@ -628,16 +630,16 @@ const app = {
                 <div class="data-title">📅 ${month.month}</div>`;
             month.items.forEach(q => {
                 if(q.type === 'exam') {
-                    html += `<div style="border-left: 2px solid var(--alert-red); padding-left:10px; margin:15px 0; background:rgba(255, 42, 42, 0.05)">
+                    html += `<div style="border-left: 2px solid var(--alert-red); padding-left:10px; margin:15px 0; background:rgba(255, 42, 42, 0.1)">
                                 <strong style="color:var(--alert-red); display:block; margin-bottom:5px;">🚨 ${q.title}</strong>`;
-                    q.answers.forEach(a => html += `<div style="margin-bottom:3px;"><span style="font-weight:bold;">${a.date}:</span> ${a.answer}</div>`);
+                    q.answers.forEach(a => html += `<div style="margin-bottom:3px;"><span style="font-weight:bold; color:var(--theme-color, #fff);">${a.date}:</span> ${a.answer}</div>`);
                     html += `</div>`;
                 } else {
-                    html += `<div style="margin-bottom:8px; border-bottom:1px solid #888; padding-bottom:4px;">
-                        <span style="color:var(--kirijo-blue); font-weight:bold;">${q.date}</span> <br>
-                        ❓ ${q.question} <br>
-                        ✅ <strong>${q.answer}</strong> 
-                        <span style="font-size:0.8em; opacity:0.8">(${q.stat_boost || 'Info'})</span>
+                    html += `<div style="margin-bottom:12px; border-bottom:1px dashed rgba(255,255,255,0.2); padding-bottom:8px;">
+                        <span style="color:var(--theme-color, var(--kirijo-blue)); font-weight:bold; font-size:1.1em; background:rgba(255,255,255,0.05); padding:2px 6px; border-radius:4px;">🗓️ ${q.date}</span> <br>
+                        <div style="margin:8px 0; font-style:italic; color: #ddd;">❓ ${q.question}</div>
+                        ✅ <strong style="color:#4caf50; font-size:1.05em;">${q.answer}</strong> 
+                        <span style="font-size:0.8em; opacity:0.8; color:#aaa; margin-left: 5px;">(${q.stat_boost || 'Info'})</span>
                     </div>`;
                 }
             });
